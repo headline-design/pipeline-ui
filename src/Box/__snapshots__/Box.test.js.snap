@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box component sanity matches default snapshot 1`] = `
+.c0 {
+  box-sizing: border-box;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`Box component sanity matches themed snapshot 1`] = `
+.c0 {
+  box-sizing: border-box;
+}
+
+<div
+  class="c0"
+/>
+`;

@@ -1,0 +1,153 @@
+import baseColors, { blurple, blue, green, yellow, red } from './pipeline-colors';
+
+// colors
+const colors = {
+  text: '#3F3D4B',
+  background: '#fff',
+  primary: blurple.base,
+  'primary-light': blurple.light[1],
+  'primary-dark': blurple.dark[1],
+  blue: baseColors.headlineblue,
+  black: '#000',
+  'near-black': '#111',
+  'dark-gray': '#333',
+  'mid-gray': '#555',
+  // maybe we don't need 'grey' here
+  grey: '#CCC',
+  silver: '#999',
+  'light-silver': '#aaa',
+  'moon-gray': '#ccc',
+  'light-gray': '#eee',
+  'near-white': '#f4f4f4',
+  white: '#fff',
+  transparent: 'transparent',
+  blacks: [
+    'rgba(0,0,0,.0125)',
+    'rgba(0,0,0,.025)',
+    'rgba(0,0,0,.05)',
+    'rgba(0,0,0,.1)',
+    'rgba(0,0,0,.2)',
+    'rgba(0,0,0,.3)',
+    'rgba(0,0,0,.4)',
+    'rgba(0,0,0,.5)',
+    'rgba(0,0,0,.6)',
+    'rgba(0,0,0,.7)',
+    'rgba(0,0,0,.8)',
+    'rgba(0,0,0,.9)',
+  ],
+  whites: [
+    'rgba(255,255,255,.0125)',
+    'rgba(255,255,255,.025)',
+    'rgba(255,255,255,.05)',
+    'rgba(255,255,255,.1)',
+    'rgba(255,255,255,.2)',
+    'rgba(255,255,255,.3)',
+    'rgba(255,255,255,.4)',
+    'rgba(255,255,255,.5)',
+    'rgba(255,255,255,.6)',
+    'rgba(255,255,255,.7)',
+    'rgba(255,255,255,.8)',
+    'rgba(255,255,255,.9)',
+  ],
+  success: green.base,
+  warning: yellow.base,
+  danger: red.base,
+  info: blue.base,
+};
+
+// theme.js
+const theme = {
+  colors,
+  space: [0, 4, 8, 16, 32, 64, 128, 256],
+  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
+  fontWeights: [0, 300, 400, 600, 700],
+  letterSpacings: [0, 1, 2, 4, 8],
+  lineHeights: {
+    solid: 1,
+    title: 1.25,
+    copy: 1.5,
+  },
+  fonts: {
+    serif: 'athelas, georgia, times, serif',
+    sansSerif: '"Source Sans Pro", -apple-system, sans-serif',
+    mono: '"Source Code Pro", -apple-system, monospace',
+  },
+  radii: ['0', '4px', '8px', '16px', '32px'],
+  borders: [0, '1px solid transparent'],
+  borderWidths: ['0', '1px', '2px', '4px'],
+  breakpoints: ['40em', '52em', '64em'],
+  shadows: [
+    '0',
+    '0px 2px 4px rgba(0, 0, 0, 0.1)',
+    '0px 8px 16px rgba(0, 0, 0, 0.1)',
+    '0 7px 14px rgba(50,50,93,.1)',
+  ],
+  opacity: {
+    disabled: 0.4,
+  },
+  zIndices: [0, 9, 99, 999, 9999],
+  messageStyle: {
+    base: {
+      color: colors['mid-gray'],
+      backgroundColor: colors['near-white'],
+      borderColor: colors['light-silver'],
+    },
+    success: {
+      color: green.dark[1],
+      backgroundColor: green.light[1],
+      borderColor: green.base,
+    },
+    warning: {
+      color: yellow.dark[1],
+      backgroundColor: yellow.light[1],
+      borderColor: yellow.base,
+    },
+    danger: {
+      color: red.dark[1],
+      backgroundColor: red.light[1],
+      borderColor: red.base,
+    },
+    info: {
+      color: blue.dark[1],
+      backgroundColor: blue.light[1],
+      borderColor: blue.base,
+    },
+  },
+  buttons: {
+    primary: {
+      color: blurple.text,
+      backgroundColor: blurple.base,
+      // use css custom props
+      '--main-color': blurple.base,
+      '--contrast-color': blurple.text,
+    },
+    success: {
+      '--main-color': green.base,
+      '--contrast-color': green.text,
+    },
+    danger: {
+      '--main-color': red.base,
+      '--contrast-color': red.text,
+    },
+  },
+  buttonSizes: {
+    small: {
+      fontSize: '0.75rem',
+      height: '2rem',
+      minWidth: '2rem',
+      padding: '0 1rem',
+    },
+    medium: {
+      fontSize: '1rem',
+      height: '3rem',
+      minWidth: '3rem',
+    },
+    large: {
+      fontSize: '1.5rem',
+      height: '4rem',
+      minWidth: '4rem',
+    },
+  },
+};
+
+export default theme;

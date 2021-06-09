@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image component sanity matches default snapshot 1`] = `
+.c0 {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+}
+
+<img
+  class="c0"
+  height="auto"
+  src="test.jpg"
+/>
+`;
+
+exports[`Image component sanity matches themed snapshot 1`] = `
+.c0 {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+}
+
+<img
+  class="c0"
+  height="auto"
+  src="test.jpg"
+/>
+`;

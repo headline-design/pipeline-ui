@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal component sanity matches default snapshot 1`] = `null`;
+
+exports[`Modal component sanity matches themed snapshot 1`] = `null`;
