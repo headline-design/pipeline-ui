@@ -23,15 +23,15 @@ export const text = () => (
   </Button.Text>
 )
 
-export const metaMaskSolid = () => (
+export const MyAlgoSolid = () => (
   <MyAlgoButton>
     Connect with MyAlgo
   </MyAlgoButton>
 )
 
-export const metaMaskOutline = () => (
+export const MyAlgoOutline = () => (
   <MyAlgoButton.Outline>
-    Connect with MetaMask
+    Connect with MyAlgo
   </MyAlgoButton.Outline>
 )
 
