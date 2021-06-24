@@ -37,7 +37,7 @@ export { default as Pipeline } from './Pipeline';
 export { default as Blockie } from './Blockie';
 export { default as QR } from './QR'; // branded components
 
-export { default as MetaMaskButton } from './MyAlgoButton';
+export { default as MyAlgoButton } from './MyAlgoButton';
 export { default as UPortButton } from './UPortButton'; // utility components
 
 export { default as Portal } from './Portal';
