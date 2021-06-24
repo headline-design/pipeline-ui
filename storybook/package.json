@@ -16,7 +16,8 @@
     "@storybook/addon-viewport": "^6.2.9",
     "@storybook/addons": "^6.2.9",
     "@storybook/react": "^6.2.9",
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "chromatic": "^5.9.2"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
