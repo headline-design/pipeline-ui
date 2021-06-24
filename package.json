@@ -30,6 +30,10 @@
     "@styled-system/theme-get": "^5.1.2",
     "@svgr/rollup": "^4.2.0",
     "@randlabs/myalgo-connect": "^1.0.1",
+<<<<<<< HEAD
+=======
+    "algosdk": "^1.9.1",
+>>>>>>> 382b74354dc6066edd4502466d070e7cbe2a5c0c
     "clipboard": "^2.0.4",
     "ethereum-blockies": "^0.1.1",
     "@pipeline-ui/icons": "^0.1.0",

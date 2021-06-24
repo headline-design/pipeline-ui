@@ -33,8 +33,7 @@ export { default as Tooltip } from './Tooltip';
 export { default as ToastMessage } from './ToastMessage'; // eth specific
 
 export { default as AlgoAddress } from './AlgoAddress';
-export { connectToMyAlgo } from './Button';
-export { myAlgoWallet } from './Button';
+export { default as Pipeline } from './Pipeline';
 export { default as Blockie } from './Blockie';
 export { default as QR } from './QR'; // branded components
 
