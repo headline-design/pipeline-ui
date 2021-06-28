@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/admin"
+  to = "/static/admin"
+  status = 200
