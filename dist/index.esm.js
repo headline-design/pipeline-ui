@@ -48322,5 +48322,5 @@ UPortButton.propTypes = _objectSpread2({}, Button.propTypes);
 UPortButton.displayName = 'UPortButton';
 var UPortButton$1 = UPortButton;
 
-export { AlgoAddress, Avatar, BaseStyles, BlockiesIdenticon as Blockie, Box, Button$2 as Button, Card, Checkbox, Field, Flash, Flex, Form, Heading, Icon$1 as Icon, Image, Input, Link, Loader, MyAlgoButton$1 as MetaMaskButton, Modal, Pill, Portal, Progress, QR, Radio, Select, Slider, Table, Text, Textarea, ThemeProvider, ToastMessage, Tooltip, UPortButton$1 as UPortButton, connectToMyAlgo, myAlgoWallet, theme };
+export { AlgoAddress, Avatar, BaseStyles, BlockiesIdenticon as Blockie, Box, Button$2 as Button, Card, Checkbox, Field, Flash, Flex, Form, Heading, Icon$1 as Icon, Image, Input, Link, Loader, MyAlgoButton$1 as MyAlgoButton, Modal, Pill, Portal, Progress, QR, Radio, Select, Slider, Table, Text, Textarea, ThemeProvider, ToastMessage, Tooltip, UPortButton$1 as UPortButton, connectToMyAlgo, myAlgoWallet, theme };
 //# sourceMappingURL=index.esm.js.map
