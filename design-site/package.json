@@ -1,34 +1,32 @@
 {
-  "name": "gatsby-starter-docz-netlifycms",
-  "author": "Colby Fayock <hello@colbyfayock.com>",
-  "version": "0.1.0",
-  "description": "Easily spin up a static documentation site with Docz and Netlify CMS",
-  "license": "MIT",
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "docz",
-    "documentation",
-    "netlify cms"
+  "private": true,
+  "workspaces": [
+    "smooth-doc",
+    "website"
   ],
   "scripts": {
-    "develop": "docz dev",
-    "build": "docz build --dest public",
-    "serve": "docz serve"
+    "format": "prettier --write \"**/*.{js,md,mdx}\"",
+    "lint": "eslint ."
   },
-  "main": "index.js",
-  "dependencies": {
-    "docz": "^2.3.1",
-    "gatsby": "^2.30.3",
-    "gatsby-plugin-netlify-cms": "^4.1.39",
-    "netlify-cms-app": "^2.11.18",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-smooth": "^2.1.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.1"
   },
-  "homepage": "https://github.com/colbyfayock/gatsby-starter-docz-netlifycms",
-  "repository": "git@github.com:colbyfayock/gatsby-starter-docz-netlifycms.git",
-  "bugs": {
-    "url": "https://github.com/colbyfayock/gatsby-starter-docz-netlifycms/issues"
+  "resolutions": {
+    "gatsby": "^v3.0.0",
+    "graphql": "^15.4.0",
+    "graphql-compose": "^7.25.0",
+    "webpack": "^5.24.2"
   }
 }
