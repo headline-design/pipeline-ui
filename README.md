@@ -13,6 +13,23 @@ PIPELINE is in beta development and should not be considered stable today. We ha
 
 We are actively working on adding new components to PIPELINE and will be sharing more information on the roadmap very soon.
 
+## Using the library on local machine:
+
+```bash cd pipeline-ui
+npm install
+npm pack
+```
+
+Copy the file that is created (ending in .tgz, located in pipeline-ui root) into the root of your project.
+
+Add the following dependency to package.json:
+
+```jsx
+"pipeline-ui": "file:pipeline-ui-0.1.6.tgz",
+```
+
+Run ```bash npm install``` in project root folder
+
 ## Install
 
 ```bash
