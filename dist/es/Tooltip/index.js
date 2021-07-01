@@ -17,7 +17,7 @@ import Text from '../Text';
 
 var StyledTooltip = /*#__PURE__*/styled(Text).withConfig({
   displayName: "Tooltip__StyledTooltip",
-  componentId: "hnzlrg-0"
+  componentId: "sc-hnzlrg-0"
 })(["&{background:", ";color:", ";border:", ";box-shadow:0px 2px 4px rgba(0,0,0,0.1);border-radius:4px;display:flex;align-items:center;min-height:24px;margin:4px;padding:12px;line-height:16px;font-size:12px;z-index:999999;}"], function (props) {
   return props.variant === 'dark' ? '#333' : '#FFF';
 }, function (props) {

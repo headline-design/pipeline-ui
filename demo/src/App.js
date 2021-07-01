@@ -23,7 +23,6 @@ import {
   Progress,
   QR,
   Radio,
-  Select,
   AlgoAddress,
   Slider,
   Table,
@@ -36,7 +35,7 @@ import {
   theme,
 } from 'pipeline-ui'
 
-import { Eth, Btc } from '@pipeline-ui/icons'
+import { Algo, Btc } from '@pipeline-ui/icons'
 
 import TestForm from './components/TestForm'
 import BaseLineGrid from './components/BaseLineGrid'
@@ -56,11 +55,6 @@ const testTheme = {
     info: 'blue',
   },
 }
-
-const selectOptions = [
-  { value: '123', label: 'One Two Three' },
-  { value: 'abc', label: 'A B C' },
-]
 
 const testComponents = props => (
   <React.Fragment>
@@ -144,8 +138,8 @@ const testComponents = props => (
 
     <Button size={'medium'}>Click me!</Button>
     <Link>I'm a Link!</Link>
-    <EthAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
-    <EthAddress
+    <AlgoAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
+    <AlgoAddress
       textLabels
       address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
     />
@@ -157,7 +151,7 @@ const testComponents = props => (
     <Box>
       <Text>Icon component from pipeline-ui</Text>
       <Icon name={'Info'} />
-      <Icon name={'Eth'} />
+      <Icon name={'Algo'} />
       <Icon name={'Btc'} />
     </Box>
 
@@ -166,20 +160,20 @@ const testComponents = props => (
         Icon component from pipeline-ui using "primary" color from theme
       </Text>
       <Icon name={'Info'} color="primary" />
-      <Icon name={'Eth'} color="primary" />
+      <Icon name={'Algo'} color="primary" />
       <Icon name={'Btc'} color="primary" />
     </Box>
     <Box>
       <Text>Icon component from pipeline-ui, color="green"</Text>
       <Icon name={'Info'} color="green" />
-      <Icon name={'Eth'} color="green" />
+      <Icon name={'Algo'} color="green" />
       <Icon name={'Btc'} color="green" />
     </Box>
     <Box>
       <Text>Icons imported as components from @pipeline/icons</Text>
-      <Eth color="primary" />
+      <Algo color="primary" />
       <Btc color="primary" />
-      <Eth color="green" />
+      <Algo color="green" />
       <Btc color="green" />
     </Box>
     <Tooltip message="Your custom message">
@@ -205,21 +199,6 @@ const testComponents = props => (
     <Textarea rows={4} defaultValue="Type here…" />
     <Slider />
     <Slider disabled />
-    <Select>
-      <optgroup label="4-legged pets">
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="hamster" disabled>
-          Hamster
-        </option>
-      </optgroup>
-      <optgroup label="Flying pets">
-        <option value="parrot">Parrot</option>
-        <option value="macaw">Macaw</option>
-        <option value="albatross">Albatross</option>
-      </optgroup>
-    </Select>
-    <Select options={selectOptions} />
     <Progress value={0.5} />
     <Field label="text">
       <Input type="text" />
