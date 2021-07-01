@@ -55,85 +55,83 @@ const testTheme = {
     info: 'blue',
   },
 }
+const testText = "Algorand: Proof-of-stake blockchain";
+const testText2 = "Fetching wallet data";
 
 const testComponents = props => (
   <React.Fragment>
-    <h1>H1 - Quick zephyrs blow, vexing daft Jim.</h1>
-    <h2>H1 - Quick zephyrs blow, vexing daft Jim.</h2>
-    <h3>H1 - Quick zephyrs blow, vexing daft Jim.</h3>
-    <h4>H1 - Quick zephyrs blow, vexing daft Jim.</h4>
-    <h5>H1 - Quick zephyrs blow, vexing daft Jim.</h5>
-    <h6>H1 - Quick zephyrs blow, vexing daft Jim.</h6>
+    <h1>H1 - {testText}</h1>
+    <h2>H1 - {testText}</h2>
+    <h3>H1 - {testText}</h3>
+    <h4>H1 - {testText}</h4>
+    <h5>H1 - {testText}</h5>
+    <h6>H1 - {testText}</h6>
 
-    <Heading as={'h1'}>H1 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h2'}>H2 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h3'}>H3 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h4'}>H4 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h5'}>H5 - Quick zephyrs blow, vexing daft Jim.</Heading>
-    <Heading as={'h6'}>H6 - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading as={'h1'}>H1 - {testText}</Heading>
+    <Heading as={'h2'}>H2 - {testText}</Heading>
+    <Heading as={'h3'}>H3 - {testText}</Heading>
+    <Heading as={'h4'}>H4 - {testText}</Heading>
+    <Heading as={'h5'}>H5 - {testText}</Heading>
+    <Heading as={'h6'}>H6 - {testText}</Heading>
 
     <Heading as={'h1'} fontSize={1}>
-      H1 - Quick zephyrs blow, vexing daft Jim.
+      H1 - {testText}
     </Heading>
     <Heading as={'h2'} fontSize={2}>
-      H2 - Quick zephyrs blow, vexing daft Jim.
+      H2 - {testText}
     </Heading>
     <Heading as={'h3'} fontSize={3}>
-      H3 - Quick zephyrs blow, vexing daft Jim.
+      H3 - {testText}
     </Heading>
     <Heading as={'h4'} fontSize={4}>
-      H4 - Quick zephyrs blow, vexing daft Jim.
+      H4 - {testText}
     </Heading>
     <Heading as={'h5'} fontSize={5}>
-      H5 - Quick zephyrs blow, vexing daft Jim.
+      H5 - {testText}
     </Heading>
     <Heading as={'h6'} fontSize={6}>
-      H6 - Quick zephyrs blow, vexing daft Jim.
+      H6 - {testText}
     </Heading>
 
-    <Heading fontSize={7}>XL - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading fontSize={7}>XL - {testText}</Heading>
 
     <Heading as={'h1'} fontSize={6}>
-      H1 - Quick zephyrs blow, vexing daft Jim.
+      H1 - {testText}
     </Heading>
 
     <Heading as={'h2'} fontSize={5}>
-      H2 - Quick zephyrs blow, vexing daft Jim.
+      H2 - {testText}
     </Heading>
 
     <Heading as={'h3'} fontSize={4}>
-      H3 - Quick zephyrs blow, vexing daft Jim.
+      H3 - {testText}
     </Heading>
 
     <Heading as={'h4'} fontSize={3}>
-      H4 - Quick zephyrs blow, vexing daft Jim.
+      H4 - {testText}
     </Heading>
 
     <Heading as={'h5'} fontSize={2}>
-      H5 - Quick zephyrs blow, vexing daft Jim.
+      H5 - {testText}
     </Heading>
 
     <Heading as={'h6'} fontSize={1}>
-      H6 - Quick zephyrs blow, vexing daft Jim.
+      H6 - {testText}
     </Heading>
 
-    <Heading fontSize={0}>SX - Quick zephyrs blow, vexing daft Jim.</Heading>
+    <Heading fontSize={0}>SX - {testText}</Heading>
 
     <Text fontWeight={1}>
-      1 / 300 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-      quibusdam, assumenda officiis.
+      1 / 300 — {testText2}.
     </Text>
     <Text fontWeight={2}>
-      2 / 400 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-      quibusdam, assumenda officiis.
+      2 / 400 — {testText2}.
     </Text>
     <Text fontWeight={3}>
-      3 / 600 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-      quibusdam, assumenda officiis.
+      3 / 600 — {testText2}.
     </Text>
     <Text fontWeight={4}>
-      4 / 700 — Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-      quibusdam, assumenda officiis.
+      4 / 700 — {testText2}.
     </Text>
 
     <Button size={'medium'}>Click me!</Button>
@@ -353,7 +351,7 @@ export default class App extends Component {
             <BaseStyles>{testComponents()}</BaseStyles>
           </ThemeProvider>
         </Box>
-        <BaseLineGrid />
+       {/*<BaseLineGrid/> uncomment to make background alternating white and rose lines*/}
       </Flex>
     )
   }
