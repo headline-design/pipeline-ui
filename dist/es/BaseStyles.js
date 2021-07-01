@@ -34,7 +34,7 @@ var Base = function Base(_ref) {
 var styleProps = compose(color, typography);
 var BaseStyles = /*#__PURE__*/styled(Base).withConfig({
   displayName: "BaseStyles",
-  componentId: "yc8f7v-0"
+  componentId: "sc-yc8f7v-0"
 })(["", ""], styleProps);
 BaseStyles.defaultProps = {
   fontSize: '2',

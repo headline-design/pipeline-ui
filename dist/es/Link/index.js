@@ -26,7 +26,7 @@ var activeColor = system({
 });
 var StyledLink = /*#__PURE__*/styled(StyledBox).withConfig({
   displayName: "Link__StyledLink",
-  componentId: "c3za4m-0"
+  componentId: "sc-c3za4m-0"
 })(["&{text-decoration:none;cursor:pointer;}&:hover{text-decoration:underline;", ";}&:active{text-decoration:none;", ";}"], hoverColor, activeColor);
 var Link = /*#__PURE__*/React.forwardRef(function (props, ref) {
   return /*#__PURE__*/React.createElement(StyledLink, _extends({

@@ -23,7 +23,7 @@ import Text from '../Text';
 import theme from '../theme';
 var StyledWrapper = /*#__PURE__*/styled(Box).withConfig({
   displayName: "Checkbox__StyledWrapper",
-  componentId: "e7pg4o-0"
+  componentId: "sc-e7pg4o-0"
 })(["&{position:relative;display:inline-block;}> input{cursor:pointer;appearance:none;position:relative;z-index:1;display:block;height:1.5rem;width:1.5rem;margin:0;}> svg{position:absolute;z-index:0;top:0;left:0;right:0;bottom:0;height:100%;width:100%;pointer-events:none;fill:", ";}> svg[name='checked']{display:none;z-index:1;fill:", ";}> input:checked ~ svg[name='checked']{display:block;}"], function (props) {
   return themeGet('colors.grey', '#CCC');
 }, function (props) {
@@ -31,7 +31,7 @@ var StyledWrapper = /*#__PURE__*/styled(Box).withConfig({
 });
 var StyledLabel = /*#__PURE__*/styled(Box).withConfig({
   displayName: "Checkbox__StyledLabel",
-  componentId: "e7pg4o-1"
+  componentId: "sc-e7pg4o-1"
 })(["&{cursor:pointer;}&:hover input:not(:disabled) ~ svg[name='unchecked']{fill:currentColor;}"]);
 var Checkbox = /*#__PURE__*/React.forwardRef(function (_ref, ref) {
   var className = _ref.className,

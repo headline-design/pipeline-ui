@@ -32,7 +32,7 @@ var flashVariant = variant({
 });
 var StyledFlash = /*#__PURE__*/styled(Box).withConfig({
   displayName: "Flash__StyledFlash",
-  componentId: "xn3kdw-0"
+  componentId: "sc-xn3kdw-0"
 })(["", " &{position:relative;}"], flashVariant);
 var StyledLink = /*#__PURE__*/styled(Link).attrs(function (props) {
   return {
@@ -41,7 +41,7 @@ var StyledLink = /*#__PURE__*/styled(Link).attrs(function (props) {
   };
 }).withConfig({
   displayName: "Flash__StyledLink",
-  componentId: "xn3kdw-1"
+  componentId: "sc-xn3kdw-1"
 })(["&{cursor:pointer;}&:hover{color:inherit;}"]);
 var Flash = /*#__PURE__*/React.forwardRef(function (_ref, ref) {
   var className = _ref.className,

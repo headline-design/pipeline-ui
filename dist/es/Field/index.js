@@ -13,7 +13,7 @@ import Box from '../Box';
 import Text from '../Text';
 var OptionalLabel = /*#__PURE__*/styled(Text).withConfig({
   displayName: "Field__OptionalLabel",
-  componentId: "o4retc-0"
+  componentId: "sc-o4retc-0"
 })(["&:after{content:' (optional)';font-weight:normal;font-style:italic;}"]);
 var Field = /*#__PURE__*/React.forwardRef(function (_ref, ref) {
   var label = _ref.label,
