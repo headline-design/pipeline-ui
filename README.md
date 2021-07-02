@@ -26,7 +26,7 @@ In command prompt, enter the following:
 
 ```bash cd pipeline-ui
 npm install
-npm build
+npm run build
 ```
 
 Add the following dependency to the package.json of the project that you will be using the library in:
