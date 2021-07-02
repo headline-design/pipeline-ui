@@ -21,7 +21,7 @@ We are actively working on adding new components to PIPELINE and will be sharing
 ```jsx
 export { default as MyNewComponent } from './MyNewComponent';
 ```
-In command prompt, enter the following: 
+In command prompt, enter the following while in the pipeline-ui root directory: 
 
 ```bash cd pipeline-ui
 npm install
