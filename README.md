@@ -35,10 +35,10 @@ Add the following dependency to the package.json of the project that you will be
 "pipeline-ui": "file:../pipeline-ui",
 ```
 
-Run 
+In the project root folder, run: 
 ```bash 
 npm install
-``` in project root folder
+```
 
 ## Install
 
