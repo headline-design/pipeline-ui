@@ -14,11 +14,10 @@ PIPELINE is in beta development and should not be considered stable today. We ha
 We are actively working on adding new components to PIPELINE and will be sharing more information on the roadmap very soon.
 
 ## Modifying and testing the library on local machine:
-1. Delete dist, node-modules and package-lock files
-2. Create a new folder in src
-3. Add an index.js file in the new folder
-4. Add any new dependecies as neccesary to the package.json file for pipeline-ui
-5. Add the following line to the existing index.js file in src
+1. Create a new folder in src
+2. Add an index.js file in the new folder
+3. Add any new dependecies as neccesary to the package.json file for pipeline-ui
+4. Add the following line to the existing index.js file in src
 ```jsx
 export { default as MyNewComponent } from './MyNewComponent';
 ```
