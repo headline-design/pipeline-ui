@@ -13,7 +13,7 @@ PIPELINE is in beta development and should not be considered stable today. We ha
 
 We are actively working on adding new components to PIPELINE and will be sharing more information on the roadmap very soon.
 
-## Modifying and Using the library on local machine:
+## Modifying and testing the library on local machine:
 1. Delete dist, node-modules and package-lock files
 2. Create a new folder in src
 3. Add an index.js file in the new folder
