@@ -7,6 +7,7 @@ export { default as Flex } from './Flex'; // typography components
 
 export { default as Text } from './Text';
 export { default as Heading } from './Heading'; // form components
+export { default as AsaList } from './AsaList';
 
 export { default as Input } from './Input';
 export { default as Form } from './Form';
