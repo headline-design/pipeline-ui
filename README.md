@@ -27,12 +27,15 @@ In command prompt, enter the following:
 ```bash cd pipeline-ui
 npm install
 npm run build
+npm pack
 ```
+
+A tgz file will be generated in the folder pipelin-ui. Move this file to the root folder of your project. 
 
 Add the following dependency to the package.json of the project that you will be using the library in:
 
 ```jsx
-"pipeline-ui": "file:../pipeline-ui",
+"pipeline-ui": "file:./pipeline-ui-0.1.6.tgz",
 ```
 
 In the project root folder, run: 
