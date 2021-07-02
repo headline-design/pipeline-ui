@@ -36,6 +36,7 @@
     "mixin-deep": "^2.0.1",
     "polished": "^3.2.0",
     "qrcode.react": "^0.9.3",
+    "react-select": "^4.3.1",
     "set-value": "^3.0.1",
     "styled-system": "^5.1.5"
   },
