@@ -14,7 +14,7 @@ PIPELINE is in beta development and should not be considered stable today. We ha
 We are actively working on adding new components to PIPELINE and will be sharing more information on the roadmap very soon.
 
 ## Modifying and Using the library on local machine:
-1. Delete node modules and package-lock files
+1. Delete dist, node-modules and package-lock files
 2. Create a new folder in src
 3. add an index.js file in the new folder
 4. Add any new dependecies as neccesary to the package.json file for pipeline-ui
