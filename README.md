@@ -13,22 +13,32 @@ PIPELINE is in beta development and should not be considered stable today. We ha
 
 We are actively working on adding new components to PIPELINE and will be sharing more information on the roadmap very soon.
 
-## Using the library on local machine:
+## Modifying and Using the library on local machine:
+1. Delete node modules and package-lock files
+2. Create a new folder in src
+3. add an index.js file in the new folder
+4. Add any new dependecies as neccesary to the package.json file for pipeline-ui
+5. add the following line to the existing index.js file in src
+```jsx
+export { default as MyNewComponent } from './MyNewComponent';
+```
+In command prompt, enter the following: 
 
 ```bash cd pipeline-ui
 npm install
-npm pack
+npm build
 ```
 
-Copy the file that is created (ending in .tgz, located in pipeline-ui root) into the root of your project.
-
-Add the following dependency to package.json:
+Add the following dependency to the package.json of the project that you will be using the library in:
 
 ```jsx
-"pipeline-ui": "file:pipeline-ui-0.1.6.tgz",
+"pipeline-ui": "file:../pipeline-ui",
 ```
 
-Run ```bash npm install``` in project root folder
+Run 
+```bash 
+npm install
+``` in project root folder
 
 ## Install
 
