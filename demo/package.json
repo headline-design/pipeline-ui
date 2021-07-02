@@ -6,7 +6,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.2",
-    "pipeline-ui": "^0.1.6",
+    "pipeline-ui": "file:../pipeline-ui-0.1.6.tgz",
     "source-map-explorer": "^2.1.2",
     "styled-components": ">= 4"
   },

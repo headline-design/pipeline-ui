@@ -24,6 +24,7 @@ import {
   QR,
   Radio,
   AlgoAddress,
+  Select,
   Slider,
   Table,
   Text,
@@ -33,6 +34,7 @@ import {
   BaseStyles,
   ThemeProvider,
   theme,
+  AsaList
 } from 'pipeline-ui'
 
 import { Algo, Btc } from '@pipeline-ui/icons'
@@ -197,6 +199,7 @@ const testComponents = props => (
     <Textarea rows={4} defaultValue="Type here…" />
     <Slider />
     <Slider disabled />
+    <Select options={AsaList} />
     <Progress value={0.5} />
     <Field label="text">
       <Input type="text" />
