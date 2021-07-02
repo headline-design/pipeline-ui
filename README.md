@@ -16,9 +16,9 @@ We are actively working on adding new components to PIPELINE and will be sharing
 ## Modifying and Using the library on local machine:
 1. Delete dist, node-modules and package-lock files
 2. Create a new folder in src
-3. add an index.js file in the new folder
+3. Add an index.js file in the new folder
 4. Add any new dependecies as neccesary to the package.json file for pipeline-ui
-5. add the following line to the existing index.js file in src
+5. Add the following line to the existing index.js file in src
 ```jsx
 export { default as MyNewComponent } from './MyNewComponent';
 ```
@@ -30,7 +30,7 @@ npm run build
 npm pack
 ```
 
-A tgz file will be generated in the folder pipelin-ui. Move this file to the root folder of your project. 
+A tgz file will be generated in the folder pipeline-ui. Move this file to the root folder of your project. 
 
 Add the following dependency to the package.json of the project that you will be using the library in:
 
