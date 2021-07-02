@@ -43,12 +43,6 @@ In the project root folder, run:
 npm install
 ```
 
-## Install
-
-```bash
-npm install --save pipeline-ui styled-components
-```
-
 ## Usage
 
 ```jsx
