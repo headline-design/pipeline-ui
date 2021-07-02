@@ -1,3 +1,7 @@
+## Setting Up
+
+Follow the instructions in the pipeline-ui readme to create the tgz file, but do not move it into the Demo directory. This file is automaticaclly linked for the demo app.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
