@@ -82,6 +82,15 @@ export default TestButton;
 - Theming
 - Buttons and other simple components
 
+### 0.1.7
+
+- Fixed Select component
+- Replaced MyAlgoButton component with hard-coded AlgoButton
+- Added Pipeline Algorand Connector as a dependecy
+- Add Verified ASA's and index numbers as a component
+- Updated rollup to latest version
+- Enabled Demo app and updated to reflect changes to parent library
+
 ## License
 
 MIT © [PIPELINE UI](https://github.com/headline-design/pipeline-ui)
