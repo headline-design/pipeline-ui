@@ -44,16 +44,35 @@ npm install
 
 ## Usage
 
+Pipeline is working to hardcode the Algorand connection process into standard components. With Pipeline, the following is a complete React App to connect to a MyAlgo wallet and return the address:
+
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Pipeline from "@pipeline-ui-2/pipeline";
+import { AlgoButton } from 'pipeline-ui';
 
-import { Button } from 'pipeline-ui'
 
-class Example extends Component {
+class TestButton extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      Algaddress: ""
+    }
+  }
+
+  myapp = this;
+  myAlgoWallet = Pipeline.init();
+
   render() {
-    return <Button size={'medium'}>Click me!</Button>
+    return <div>
+      <AlgoButton wallet={this.myAlgoWallet} context={this.myapp} returnTo={"Algaddress"} />
+      <h1>{this.state.Algaddress}</h1>
+    </div>
   }
 }
+
+export default TestButton;
 ```
 
 ## Change log
