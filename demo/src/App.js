@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Pipeline from "@pipeline-ui-2/pipeline";
+
 
 import {
   Avatar,
@@ -16,7 +18,7 @@ import {
   Input,
   Link,
   Loader,
-  MyAlgoButton,
+  AlgoButton,
   UPortButton,
   Modal,
   Pill,
@@ -59,9 +61,11 @@ const testTheme = {
 }
 const testText = "Algorand: Proof-of-stake blockchain";
 const testText2 = "Fetching wallet data";
+const MyAlgoWallet = Pipeline.init();
 
 const testComponents = props => (
   <React.Fragment>
+    <AlgoButton wallet={MyAlgoWallet}>Connect with MyAlgo</AlgoButton>
     <h1>H1 - {testText}</h1>
     <h2>H1 - {testText}</h2>
     <h3>H1 - {testText}</h3>
@@ -307,8 +311,6 @@ const testComponents = props => (
     </Card>
     <Table />
     <Image src="https://source.unsplash.com/random/1280x720" />
-    <MyAlgoButton>Connect with MyAlgo</MyAlgoButton>
-    <MyAlgoButton.Outline>Connect with MyAlgo</MyAlgoButton.Outline>
     <UPortButton>Connect with uPort</UPortButton>
     <UPortButton.Solid>Connect with uPort</UPortButton.Solid>
     <Loader />

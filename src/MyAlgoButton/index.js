@@ -1,15 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { ReactComponent as MAlogo } from './icon.svg';
-import Button, { StyledButton } from '../Button/BaseButton';
+import React from 'react'
+import styled from 'styled-components'
+import PropTypes from 'prop-types'
+import { ReactComponent as MAlogo } from './icon.svg'
+import Pipeline from '@pipeline-ui-2/pipeline'
+import Button, { StyledButton } from '../Button/BaseButton'
 
 const brandColors = {
   baseColor: '#000',
   hoverColor: '#4c4c4c',
   activeColor: '#999',
   foregroundColor: '#FFFFFF',
-};
+}
 
 const MAStyledButton = styled(StyledButton)`
   & {
@@ -26,7 +27,7 @@ const MAStyledButton = styled(StyledButton)`
     margin-right: 0.5rem;
     margin-bottom: -2px;
   }
-`;
+`
 
 const StyledButtonSolid = styled(MAStyledButton)`
   & {
@@ -39,7 +40,7 @@ const StyledButtonSolid = styled(MAStyledButton)`
   &:active {
     background-color: ${brandColors.activeColor};
   }
-`;
+`
 
 const StyledButtonOutline = styled(MAStyledButton)`
   & {
@@ -53,51 +54,68 @@ const StyledButtonOutline = styled(MAStyledButton)`
   &:active {
     background-color: #e4e4e4;
   }
-`;
+`
 
 const ButtonBody = ({ children, size }) => (
   <React.Fragment>
     <MAlogo className={'r-ff-icon'} size={size} />
     {children}
   </React.Fragment>
-);
+)
 
 const MyAlgoButtonSolid = ({ className, children, ...props }) => {
   return (
     <StyledButtonSolid className={className} {...props}>
       <ButtonBody children={children} size={props.size} />
     </StyledButtonSolid>
-  );
-};
+  )
+}
 
 const MyAlgoButtonOutline = ({ className, children, ...props }) => {
   return (
     <StyledButtonOutline className={className} {...props}>
       <ButtonBody children={children} size={props.size} />
     </StyledButtonOutline>
-  );
-};
+  )
+}
 
 const defaultProps = {
   ...Button.defaultProps,
   width: 'auto',
   borderRadius: 1,
   boxShadow: 1,
-};
+}
 
-MyAlgoButtonSolid.defaultProps = defaultProps;
-MyAlgoButtonOutline.defaultProps = defaultProps;
+MyAlgoButtonSolid.defaultProps = defaultProps
+MyAlgoButtonOutline.defaultProps = defaultProps
 
-let MyAlgoButton;
+let MyAlgoButton
 
-MyAlgoButton = MyAlgoButtonSolid;
-MyAlgoButton.Solid = MyAlgoButtonSolid;
-MyAlgoButton.Outline = MyAlgoButtonOutline;
+MyAlgoButton = MyAlgoButtonSolid
+MyAlgoButton.Solid = MyAlgoButtonSolid
+MyAlgoButton.Outline = MyAlgoButtonOutline
 
 MyAlgoButton.propTypes = {
   ...Button.propTypes,
-};
+}
 
-MyAlgoButton.displayName = 'MyAlgoButton';
+MyAlgoButton.displayName = 'MyAlgoButton'
 
-export default MyAlgoButton;
+const AlgoButton = ({ wallet, context, returnTo, ...props }) => {
+  return (
+    <MyAlgoButton
+      {...props}
+      onClick={() => {
+        Pipeline.connect(wallet).then(accounts => {
+          const data = {}
+          data[returnTo] = accounts
+          context.setState(data)
+        })
+      }}
+    >
+      Connect to MyAlgo
+    </MyAlgoButton>
+  )
+}
+
+export default AlgoButton

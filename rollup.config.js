@@ -4,6 +4,8 @@ import external from 'rollup-plugin-peer-deps-external';
 import resolve from 'rollup-plugin-node-resolve';
 import url from 'rollup-plugin-url';
 import svgr from '@svgr/rollup';
+import json from '@rollup/plugin-json';
+import ignore from "rollup-plugin-ignore";
 
 import pkg from './package.json';
 
@@ -21,19 +23,20 @@ export default {
     {
       file: pkg.main,
       format: 'umd',
-      name: 'rimble',
+      name: 'pipeline-ui',
       sourcemap: true,
       globals: outputGlobals,
     },
     {
       file: './dist/index.esm.js',
       format: 'es',
-      name: 'rimble',
+      name: 'pipeline-ui',
       sourcemap: true,
       globals: outputGlobals,
     },
   ],
   plugins: [
+    json(),
     external(),
     url(),
     svgr({
