@@ -75,6 +75,22 @@ class TestButton extends Component {
 export default TestButton;
 ```
 
+### The Send Button
+The AlgoSend button has the largest number of mandatory props. Failing to set them, or setting them incorrectly will result in a transaction not executing.
+
+```jsx
+<AlgoSendButton
+      asset={"Algorand"} //If ASA, must be a numeric index value
+      recipient={this.state.recipient} //string value
+      amount={this.state.amount} //integer value in micro Algos
+      note={this.state.note} //string value
+      myAddress={this.state.Algaddress} //string value
+      wallet={myAlgoWallet} //value of Pipeline.init();
+      context={this}
+      returnTo={"txID"}// string of state key
+      />
+```
+
 ## Change log
 
 ### 0.1.3
