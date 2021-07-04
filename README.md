@@ -85,9 +85,9 @@ The AlgoSend button has the largest number of mandatory props. Failing to set th
       amount={this.state.amount} //integer value in micro Algos
       note={this.state.note} //string value
       myAddress={this.state.Algaddress} //string value
-      wallet={myAlgoWallet} //value of Pipeline.init();
+      wallet={myAlgoWallet} //reference to an instance of Pipeline.init(); that is called once when the app is initialized
       context={this}
-      returnTo={"txID"}// string of state key
+      returnTo={"txID"}// string value of state key to return the transaction id
       />
 ```
 
