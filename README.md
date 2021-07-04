@@ -60,15 +60,14 @@ class TestButton extends Component {
       Algaddress: ""
     }
   }
-
-  myapp = this;
+  
   myAlgoWallet = Pipeline.init();
 
   render() {
     return <div>
       <AlgoButton 
             wallet={this.myAlgoWallet} 
-            context={this.myapp} 
+            context={this} 
             returnTo={"Algaddress"} 
             />
       <h1>{this.state.Algaddress}</h1>
