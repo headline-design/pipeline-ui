@@ -66,7 +66,11 @@ class TestButton extends Component {
 
   render() {
     return <div>
-      <AlgoButton wallet={this.myAlgoWallet} context={this.myapp} returnTo={"Algaddress"} />
+      <AlgoButton 
+            wallet={this.myAlgoWallet} 
+            context={this.myapp} 
+            returnTo={"Algaddress"} 
+            />
       <h1>{this.state.Algaddress}</h1>
     </div>
   }
