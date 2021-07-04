@@ -38,6 +38,6 @@ export { default as Blockie } from './Blockie'
 export { default as QR } from './QR' // branded components
 
 export { default as AlgoButton } from './MyAlgoButton'
-export { default as UPortButton } from './UPortButton' // utility components
+export { default as AlgoSendButton } from './UPortButton' // utility components
 
 export { default as Portal } from './Portal'
