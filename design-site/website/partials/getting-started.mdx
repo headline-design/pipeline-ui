@@ -1,25 +1,23 @@
 ## Getting Started
 
-The easiest way to start a new project is to use the Gatsby starter. It generates a ready-to-use project with all needed dependencies.
+Welcome to Pipeline UI, a library of standardized React components for the Algorand Ecosystem.
 
-### Create your website:
-
-```bash
-npx gatsby-cli new website https://github.com/gregberge/smooth-doc-starter
-```
-
-### Change directories into site folder
+### Install the library:
 
 ```bash
-cd website
+cd myNewApp
+npm install pipeline-ui
 ```
+### Modifying the library:
 
-### Start development server
-
+If you wish to download and modify the library components via source code, run the following code to save it to your user root directory and install its dependencies:
 ```bash
-npm run develop
+git clone https://github.com/headline-design/pipeline-ui
+npm install
 ```
 
-Gatsby will start a hot-reloading development environment accessible by default at http://localhost:8000.
-
-Try editing the home page in `pages/index.mdx`. Saved changes will live reload in the browser.
+You may then edit the components via the index.js file found inside each component folder in the parent folder /src. After saving changes, you must then run the following code from the pipeline-ui parent folder:
+```bash
+npm run build
+npm pack
+```

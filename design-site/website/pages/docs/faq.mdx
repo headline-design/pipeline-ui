@@ -9,14 +9,33 @@ order: 20
 
 <p></p>
 
-<carbon-ad />
+## Do I need to add algosdk and/or @randlabs/myalgo-connect as dependencies to my apps?
 
-## What about version compatibility
+No! Their functions are hard-coded into Pipeline UI components.
 
-Smooth DOC is compatible with Gatsby v2 and React v16.3+.
+## Can I customize Pipeline UI components?
 
-## What browsers does Smooth DOC support?
+To a certain degree. Part of the function of Pipeline UI is to provide standardized components that are readily recognizeable. For most components, you can easily change certain props like size and color themes. Algorand-specific components have hard-coded onClick event handlers that you cannot change. On the other hand, if you really want to, you can overide default styles with inline css, stylesheets or library modification.
 
-Smooth DOC is designed to work in the latest, stable releases of all major browsers, including Chrome, Firefox, Safari, and Edge.
+## Can I use Pipeline UI to create Algorand widgets for my website?
 
-Internet Explorer is not supported.
+Yes! Pipeline expedites and simplifies the process of incorporating Algorand into existing web frameworks. After building your React app, simply deploy it with Vercel, FireBase or AWS and place its URL in an iFrame:
+
+```html
+ <iframe src="pipeline-express-react.vercel.app" height="550" width="350" ></iframe>
+ ```
+## Does Pipeline UI give me out-of-the-box Algorand transaction capability?
+
+Yes, but we highly recommend that you obtain your own API key and server url and replace these before building and deploying your app. If you are using the full version of Pipeline UI, these values can be found in the node_modules folder for your app under @pipeline-ui-2/dist/index.js. If using Pipeline Express, they can be found in node_modules/pipeline-express-react/dist/index.js.
+
+```js
+const algodToken = { 'X-API-Key': 'dmONugeHOX2DC8nDb3v8m6Bo9cI3WHbW6Ntt4QCZ' };
+const algodServer = "https://mainnet-algorand.api.purestake.io/ps2";
+const algodPort = "";
+```
+## I don't need standard components. Is there a lite version of Pipeline?
+
+Yes! We created Pipeliness Express to get your React Apps connect to Algorand in seconds! For more info, check out: 
+[Pipeline Express on Github](https://github.com/headline-design/pipeline-express-react)
+
+

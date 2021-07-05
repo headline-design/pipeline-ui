@@ -5,15 +5,15 @@ module.exports = {
     {
       resolve: 'smooth-doc',
       options: {
-        name: 'Smooth DOC',
-        siteUrl: 'https://smooth-doc.com',
-        description: 'Ready to use documentation theme for Gatsby.',
+        name: 'Pipeline UI',
+        siteUrl: 'https://headline.dev',
+        description: 'Documentation for Pipeline UI, a React library for Algorand.',
         baseDirectory: path.resolve(__dirname, '../'),
-        author: 'Greg Bergé',
+        author: 'Headline Design',
         sections: ['About', 'Guide', 'Components', 'Reference'],
         navItems: [{ title: 'Docs', url: '/docs/' }],
-        twitterAccount: 'neoziro',
-        githubRepositoryURL: 'https://github.com/gregberge/smooth-doc/',
+        twitterAccount: 'headline_crypto',
+        githubRepositoryURL: 'https://github.com/headline-design/pipeline-ui',
         carbonAdsURL:
           '//cdn.carbonads.com/carbon.js?serve=CE7IL2JN&placement=xstyleddev',
         docSearch: {

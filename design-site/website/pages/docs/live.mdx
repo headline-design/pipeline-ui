@@ -1,20 +1,19 @@
 ---
-title: React Live Editor
+title: Live Coding
 section: Guides
-slug: /docs/react-live-editor/
+slug: /docs/live/
 order: 4
 ---
 
 import { x } from '@xstyled/styled-components'
 import { LiveConfig } from 'smooth-doc/components'
+import { Button } from 'pipeline-ui'
 
-<LiveConfig modules={{ '@xstyled/styled-components': { x } }} />
+<LiveConfig modules={{ '@xstyled/styled-components': { x }, 'pipeline-ui': { Button  }}} />
 
 # React Live Editor
 
 Build interactive documentation using React Live Editor.
-
-<carbon-ad />
 
 ## Write live code
 
@@ -22,14 +21,14 @@ To include a live code editor, add `live` in the head of your code block:
 
 ````
 ```js live
-<div>Example</div>
+<Button>Example</Button>
 ```
 ````
 
 **Result:**
 
 ```js live
-<div>Example</div>
+<Button>Example</Button>
 ```
 
 ## Write complex examples
