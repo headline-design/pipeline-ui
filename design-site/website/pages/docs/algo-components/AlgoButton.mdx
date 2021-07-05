@@ -1,0 +1,44 @@
+---
+title: AlgoButton
+section: Algorand Components
+slug: /docs/algo-components/AlgoButton
+order: 1
+---
+
+# AlgoButton
+
+A button to connect to MyAlgo. Generates a popup window to connect to MyAlgo. Uppon success, returns first wallet address to the context and returnTo specified.
+
+## Use Example  
+
+```jsx
+import React, { Component } from 'react';
+import Pipeline from "@pipeline-ui-2/pipeline";
+import { AlgoButton } from 'pipeline-ui';
+
+
+class TestButton extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      Algaddress: ""
+    }
+  }
+  
+  myAlgoWallet = Pipeline.init();
+
+  render() {
+    return <div>
+      <AlgoButton 
+            wallet={this.myAlgoWallet} 
+            context={this} 
+            returnTo={"Algaddress"} 
+            />
+      <h1>{this.state.Algaddress}</h1>
+    </div>
+  }
+}
+
+export default TestButton;
+```
