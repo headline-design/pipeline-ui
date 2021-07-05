@@ -19,7 +19,7 @@ import {
   Link,
   Loader,
   AlgoButton,
-  UPortButton,
+  AlgoSendButton,
   Modal,
   Pill,
   Progress,
@@ -142,10 +142,10 @@ const testComponents = props => (
 
     <Button size={'medium'}>Click me!</Button>
     <Link>I'm a Link!</Link>
-    <AlgoAddress address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2" />
+    <AlgoAddress address="C5E5W3BERJALL2ZH4YB3TAP7ZSJH2PJUPDHLGF74YE6DBMQ62AA47IXGNQ" />
     <AlgoAddress
       textLabels
-      address="0x99cb784f0429efd72wu39fn4256n8wud4e01c7d2"
+      address="C5E5W3BERJALL2ZH4YB3TAP7ZSJH2PJUPDHLGF74YE6DBMQ62AA47IXGNQ"
     />
     <Card my={4}>
       <TestForm />
@@ -203,6 +203,9 @@ const testComponents = props => (
     <Textarea rows={4} defaultValue="Type here…" />
     <Slider />
     <Slider disabled />
+    <Heading as={'h5'} fontSize={5}>
+      Select ASA (ASAList as a component)
+    </Heading>
     <Select options={AsaList} />
     <Progress value={0.5} />
     <Field label="text">
@@ -298,10 +301,7 @@ const testComponents = props => (
     <Card mx="auto" px="4" color="primary">
       <Heading mb={3}>Heading</Heading>
       <Text mb={4}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam autem
-        ratione doloribus quidem neque provident eius error dignissimos delectus
-        architecto nemo quos alias sunt voluptate impedit, facilis sequi
-        tempore. Amet!
+        What Algorand functions would you like to see implemented in Pipeline UI for React?
       </Text>
       <Flex>
         <Button mr={3}>Accept</Button>
@@ -311,9 +311,8 @@ const testComponents = props => (
     </Card>
     <Table />
     <Image src="https://source.unsplash.com/random/1280x720" />
-    <UPortButton>Connect with uPort</UPortButton>
-    <UPortButton.Solid>Connect with uPort</UPortButton.Solid>
-    <Loader />
+    <AlgoSendButton/>
+    <Loader size="80px" />
     <QR value="test" />
     <Modal />
     <ToastMessage />

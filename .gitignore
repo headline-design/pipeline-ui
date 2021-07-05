@@ -10,7 +10,7 @@ node_modules
 # misc
 .DS_Store
 dist
-package-lock
+package-lock.json
 README
 pipeline-ui-0.1.6.tgz
 
