@@ -19,10 +19,11 @@
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c && babel ./src -d ./dist/es",
     "start": "npm-run-all -r -p rollup:watch babel:watch",
-    "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
+    "prepare": "npm run build",
+    "predeploy": "cd demo && npm install && npm run build",
     "rollup:watch": "rollup -c -w",
-    "babel:watch": "babel ./src -d ./dist/es --watch"
+    "babel:watch": "babel ./src -d ./dist/es --watch",
+    "predeploy-storybook": "cd storybook && npm install && npm run build"
   },
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
