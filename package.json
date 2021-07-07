@@ -20,7 +20,7 @@
     "build": "rollup -c && babel ./src -d ./dist/es",
     "start": "npm-run-all -r -p rollup:watch babel:watch",
     "prepare": "npm run build",
-    "predeploy": "cd demo && yarn install && yarn run build",
+    "predeploy": "cd demo && npm install && npm run build",
     "rollup:watch": "rollup -c -w",
     "babel:watch": "babel ./src -d ./dist/es --watch",
     "predeploy-storybook": "cd storybook && npm install && npm run build"
