@@ -6,11 +6,11 @@ module.exports = {
       resolve: 'smooth-doc',
       options: {
         name: 'Pipeline UI',
-        siteUrl: 'https://headline.dev',
+        siteUrl: 'localhost:8000',
         description: 'Documentation for Pipeline UI, a React library for Algorand.',
         baseDirectory: path.resolve(__dirname, '../'),
         author: 'Headline Design',
-        sections: ['About', 'Guide', 'Components', 'Reference'],
+        sections: ['About', 'Guide', 'Components', 'Reference', 'Solutions'],
         navItems: [{ title: 'Docs', url: '/docs/' }],
         twitterAccount: 'headline_crypto',
         githubRepositoryURL: 'https://github.com/headline-design/pipeline-ui',

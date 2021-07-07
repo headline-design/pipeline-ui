@@ -1,15 +1,14 @@
 ---
-title: Live Coding
+title: React Live Editor
 section: Guides
-slug: /docs/live/
+slug: /docs/live
 order: 4
 ---
 
-import { x } from '@xstyled/styled-components'
+import { Loader } from 'pipeline-ui'
 import { LiveConfig } from 'smooth-doc/components'
-import { Button } from 'pipeline-ui'
 
-<LiveConfig modules={{ '@xstyled/styled-components': { x }, 'pipeline-ui': { Button  }}} />
+<LiveConfig modules={{ 'pipeline-ui': { Loader } }} />
 
 # React Live Editor
 
@@ -21,14 +20,14 @@ To include a live code editor, add `live` in the head of your code block:
 
 ````
 ```js live
-<Button>Example</Button>
+<div>Example</div>
 ```
 ````
 
 **Result:**
 
 ```js live
-<Button>Example</Button>
+<div>Example</div>
 ```
 
 ## Write complex examples
@@ -60,22 +59,20 @@ Importing modules is possible in a React Live Editor using ESM `import` syntax. 
 title: Doc Page
 ---
 
-import { x } from '@xstyled/styled-components'
+import { Loader } from 'pipeline-ui'
 import { LiveConfig } from 'smooth-doc/components'
 
 <!-- Define `@xstyled/styled-components` module as `{ x }` -->
-<LiveConfig modules={{ '@xstyled/styled-components': { x } }} />
+<LiveConfig modules={{ 'pipeline-ui': { Loader } }} />
 ```
 
 Once defined, you have access to the module in live editor:
 
 ```js live noInline
-import { x } from '@xstyled/styled-components'
+import { Loader } from 'pipeline-ui'
 
 // I can use xstyled here.
 render(
-  <x.div color="red">
-    <span>Example</span>
-  </x.div>,
+ <div> <Loader/></div>
 )
 ```
