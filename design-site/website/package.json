@@ -29,8 +29,7 @@
     "crypto": false
   },
   "devDependencies": {
-    "path-browserify": "^1.0.1"
-=======
+    "path-browserify": "^1.0.1",
     "styled-components": "^5.3.0",
     "pipeline-ui": "file:../../pipeline-ui-0.1.7.tgz"
   }
