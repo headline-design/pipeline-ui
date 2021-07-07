@@ -4,23 +4,27 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@storybook/addon-controls": "^6.3.3",
+    "@storybook/addon-knobs": "^6.3.0",
     "pipeline-ui": "file:..",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
-    "@storybook/addon-a11y": "^6.2.9",
-    "@storybook/addon-actions": "^6.2.9",
-    "@storybook/addon-docs": "^6.2.9",
-    "@storybook/addon-links": "^6.2.9",
-    "@storybook/addon-viewport": "^6.2.9",
-    "@storybook/addons": "^6.2.9",
-    "@storybook/react": "^6.2.9",
+    "@storybook/addon-a11y": "^6.3.3",
+    "@storybook/addon-actions": "^6.3.3",
+    "@storybook/addon-docs": "^6.3.3",
+    "@storybook/addon-essentials": "^6.3.3",
+    "@storybook/addon-links": "^6.3.3",
+    "@storybook/addon-viewport": "^6.3.3",
+    "@storybook/addons": "^6.3.3",
+    "@storybook/react": "^6.3.3",
     "babel-loader": "^8.0.6",
     "chromatic": "^5.9.2"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=2b9044627d1f"
   }
 }
