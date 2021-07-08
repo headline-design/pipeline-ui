@@ -61,7 +61,7 @@ const StyledButtonOutline = styled(UPStyledButton)`
 
 const ButtonBody = ({ children, size }) => (
   <React.Fragment>
-    <UPlogo className={'r-up-icon'} size={size} />
+    <UPlogo className={'r-ff-icon'} size={size} />
     {children}
   </React.Fragment>
 )
