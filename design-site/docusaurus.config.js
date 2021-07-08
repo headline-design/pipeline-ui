@@ -14,7 +14,7 @@ module.exports = {
   projectName: 'pipeline-ui', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Pipeline UI',
+      title: 'PIPELINE-UI',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -77,7 +77,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} HEADLINE INC. Built with PIPELINE-UI.`,
     },
     prism: {
       theme: lightCodeTheme,
