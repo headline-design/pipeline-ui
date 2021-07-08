@@ -51,7 +51,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 16px;
-  color: #4E3FCE;
+  color: #536dfe;
   opacity: 1;
 }
 
@@ -120,7 +120,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
 
 .c5:focus {
   outline: none;
-  border-color: #4E3FCE;
+  border-color: #536dfe;
 }
 
 .c5:disabled {
@@ -243,7 +243,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
 .c10 > svg[name='checked'] {
   display: none;
   z-index: 1;
-  fill: #4E3FCE;
+  fill: #536dfe;
 }
 
 .c10 > input:checked ~ svg[name='checked'] {
@@ -485,7 +485,7 @@ exports[`Form component sanity renders children elements 1`] = `
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 16px;
-  color: #4E3FCE;
+  color: #536dfe;
   opacity: 1;
 }
 
@@ -554,7 +554,7 @@ exports[`Form component sanity renders children elements 1`] = `
 
 .c5:focus {
   outline: none;
-  border-color: #4E3FCE;
+  border-color: #536dfe;
 }
 
 .c5:disabled {
@@ -677,7 +677,7 @@ exports[`Form component sanity renders children elements 1`] = `
 .c10 > svg[name='checked'] {
   display: none;
   z-index: 1;
-  fill: #4E3FCE;
+  fill: #536dfe;
 }
 
 .c10 > input:checked ~ svg[name='checked'] {

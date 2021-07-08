@@ -27,7 +27,7 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
 
 .c0:focus {
   outline: none;
-  border-color: #4E3FCE;
+  border-color: #536dfe;
 }
 
 .c0:disabled {
@@ -126,7 +126,7 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
 
 .c0:focus {
   outline: none;
-  border-color: #4E3FCE;
+  border-color: #536dfe;
 }
 
 .c0:disabled {

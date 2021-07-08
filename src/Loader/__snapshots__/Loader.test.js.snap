@@ -3,7 +3,7 @@
 exports[`Loader component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
-  color: #4E3FCE;
+  color: #536dfe;
   background-color: transparent;
   width: 1rem;
   height: 1rem;
@@ -75,7 +75,7 @@ exports[`Loader component sanity matches default snapshot 1`] = `
 exports[`Loader component sanity matches themed snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
-  color: #4E3FCE;
+  color: #536dfe;
   background-color: transparent;
   width: 1rem;
   height: 1rem;

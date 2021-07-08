@@ -16,7 +16,7 @@ exports[`Progress component sanity matches default snapshot 1`] = `
 }
 
 .c0::-webkit-progress-value {
-  background-color: #4E3FCE;
+  background-color: #536dfe;
   border-radius: 8px;
 }
 
@@ -41,7 +41,7 @@ exports[`Progress component sanity matches themed snapshot 1`] = `
 }
 
 .c0::-webkit-progress-value {
-  background-color: #4E3FCE;
+  background-color: #536dfe;
   border-radius: 8px;
 }
 

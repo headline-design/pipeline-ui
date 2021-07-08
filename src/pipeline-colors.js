@@ -8,7 +8,7 @@ const baseColors = {
   green: '#28C081',
   yellow: '#FD9D28',
   red: '#DC2C10',
-  blurple: '#4E3FCE',
+  blurple: '#536dfe',
   headlineblue: '#3259D6',
 };
 
