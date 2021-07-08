@@ -1,7 +1,0 @@
-node_modules/
-.*
-*.lock
-/.cache/
-/public/
-CHANGELOG.md
-package.json

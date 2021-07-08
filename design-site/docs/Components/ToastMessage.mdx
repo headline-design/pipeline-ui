@@ -1,0 +1,93 @@
+# ToastMessage
+
+Use toast messages to provide updates about a process. The ToastMessage component extends Box.
+
+import {ToastMessage} from 'pipeline-ui'
+
+<ToastMessage.Failure
+  my={3}
+  message={"Payment failed"}
+  secondaryMessage={"You don't have enough Algorand tokens"}
+  actionText={"Buy tokens"}
+  actionHref={"#!"}
+/>
+
+Usage Example:
+
+```jsx
+<ToastMessage.Failure
+  my={3}
+  message={"Payment failed"}
+  secondaryMessage={"You don't have enough Algorand tokens"}
+  actionText={"Buy tokens"}
+  actionHref={"#!"}
+/>
+```
+
+### Props
+
+actionHref
+string
+(optional)
+Sets URL for button
+Default value:
+
+''
+
+actionText
+string
+(optional)
+Sets text for button
+Default value:
+
+''
+
+closeElem
+bool
+(optional)
+Allows ToastMessage to be closed by user
+Default value:
+
+false
+
+colorTheme
+enum
+(optional)
+Sets background and text color
+Allowed values: 'light' 'dark' .
+Default value:
+
+'light'
+
+icon
+string
+(optional)
+Sets icon to display
+Default value:
+
+''
+
+message
+string
+(optional)
+Sets primary message text
+Default value:
+
+'Write update here [Required]'
+
+secondaryMessage
+string
+(optional)
+Sets secondary message text
+Default value:
+
+''
+
+variant
+enum
+(optional)
+Sets type of ToastMessage to display
+Allowed values: 'default' 'success' 'failure' 'processing' .
+Default value:
+
+'default'

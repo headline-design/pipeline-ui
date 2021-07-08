@@ -1,0 +1,145 @@
+# Button
+
+Use the Button component when you want users to perform an action. It contains a label with an optional icon before or after the label. It maps to a `<button type='button'>` element and extends Box.
+
+import {Button, Flex} from 'pipeline-ui'
+
+<Flex alignItems={"center"}><Button icon="Send" mr={3}>Send</Button><Button icon="Send" iconpos="right" mr={3}>Send</Button><Button icon="MoreHoriz" icononly /></Flex>
+
+## Usage Example
+
+```jsx
+<Flex alignItems={"center"}>
+  <Button icon="Send" mr={3}>
+    Send
+  </Button>
+
+  <Button icon="Send" iconpos="right" mr={3}>
+    Send
+  </Button>
+
+  <Button icon="MoreHoriz" icononly />
+</Flex>
+```
+
+### Props
+
+bg
+(optional)
+Default value:
+
+'silver'
+
+border
+(optional)
+Default value:
+
+'none'
+
+color
+(optional)
+Default value:
+
+'white'
+
+contrastColor
+string
+(optional)
+Sets text color of button
+Default value:
+
+'white'
+
+fontFamily
+(optional)
+Default value:
+
+'sansSerif'
+
+fontSize
+(optional)
+Default value:
+
+'inherit'
+
+fontWeight
+(optional)
+Default value:
+
+3
+
+height
+(optional)
+Default value:
+
+'3rem'
+
+icon
+string
+(optional)
+Sets icon of button
+icononly
+bool
+(optional)
+Sets padding on button with icon and no text
+iconpos
+enum
+(optional)
+Sets icon position on button
+Allowed values: 'left' 'right' .
+lineHeight
+(optional)
+Default value:
+
+1
+
+mainColor
+string
+(optional)
+Sets background color of button
+Default value:
+
+'primary'
+
+minWidth
+(optional)
+Default value:
+
+'3rem'
+
+position
+(optional)
+Default value:
+
+'relative'
+
+px
+(optional)
+Default value:
+
+4
+
+py
+(optional)
+Default value:
+
+0
+
+size
+enum
+(optional)
+Sets font and spacing size of button
+Allowed values: 'small' 'medium' 'large' .
+theme
+object
+(optional)
+Sets theme
+
+Styled System Props
+
+Button uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.
+
+
+
+
+

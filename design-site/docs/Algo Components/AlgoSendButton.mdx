@@ -1,0 +1,21 @@
+# AlgoSendButton
+
+Clicking the AlgoSend button will open a new MyAlgo window prompting the user to confirm the transaction. Upon confirmation, it returns the transaction id to the context and key specified. This component has the largest number of mandatory props. Failing to set them, or setting them incorrectly will result in a transaction not executing.
+
+import {UPortButton} from 'pipeline-ui'
+
+<UPortButton>Send</UPortButton>
+
+## Use Example
+```jsx
+<AlgoSendButton
+      asset={"Algorand"} //If ASA, must be a numeric index value
+      recipient={this.state.recipient} //string value
+      amount={this.state.amount} //integer value in micro Algos
+      note={this.state.note} //string value
+      myAddress={this.state.Algaddress} //string value
+      wallet={myAlgoWallet} //reference to an instance of Pipeline.init(); that is called ONCE when the app is initialized
+      context={this}
+      returnTo={"txID"}// string value of state key to return the transaction id
+      />
+```

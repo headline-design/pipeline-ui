@@ -1,0 +1,37 @@
+# ToastMessage Provider
+
+`ToastMessage.Provider` wraps a `ToastMessage`, providing the ability to programatically show and hide the `ToastMessage`.
+
+import {ToastMessage, Button} from 'pipeline-ui'
+
+<ToastMessage.Provider ref={node => (window.toastProvider = node)} />
+<Button
+    mb={3}
+    onClick={e =>
+      window.toastProvider.addMessage("Processing transaction...", {
+        secondaryMessage: "Checking progress on Algo Explorer",
+        actionHref:
+          "https://algoexplorer.io/",
+        actionText: "Check",
+        variant: "processing"
+      })
+    }>Transaction Progress
+  </Button>
+
+## Usage Example
+
+```jsx
+<ToastMessage.Provider ref={node => (window.toastProvider = node)} />
+<Button
+    mb={3}
+    onClick={e =>
+      window.toastProvider.addMessage("Processing transaction...", {
+        secondaryMessage: "Checking progress on Algo Explorer",
+        actionHref:
+          "https://algoexplorer.io/",
+        actionText: "Check",
+        variant: "processing"
+      })
+    }>Transaction Progress
+  </Button>
+  ```

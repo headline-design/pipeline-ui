@@ -1,0 +1,60 @@
+# Image
+
+Use the Image component to display an image in your product. This renders the `<img>` HTML element and extends the Box component.
+
+import {Image} from 'pipeline-ui'
+
+<Image
+  alt="random unsplash image"
+  borderRadius={8}
+  height="auto"
+  src="https://pbs.twimg.com/profile_images/1393101775062904837/qZ8yxiPY_400x400.jpg"
+/>
+
+## Usage Example
+
+```jsx
+<Image
+  alt="random unsplash image"
+  borderRadius={8}
+  height="auto"
+  src="https://pbs.twimg.com/profile_images/1393101775062904837/qZ8yxiPY_400x400.jpg"
+/>
+```
+
+### Props
+
+Props
+alt
+string
+(optional)
+Sets alt attribute on image for accessibility
+as
+(optional)
+Default value:
+
+'img'
+
+height
+(optional)
+Default value:
+
+'auto'
+
+maxWidth
+(optional)
+Default value:
+
+'100%'
+
+src
+string
+(required)
+Sets the src attribute of the img element
+theme
+object
+(optional)
+
+Styled System Props
+
+Image uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.

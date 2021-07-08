@@ -1,0 +1,71 @@
+# QR
+
+Use the QR component to renders a QR code for a provided string. Can be used as a shortcut to input a public Algorand address or link to a specific website.
+
+import {QR} from 'pipeline-ui'
+
+<QR value="0xAc03BB73b6a9e108530AFf4Df5077c2B3D481e5A"/>
+
+## Usage Example
+
+```jsx
+<QR value="this.setState.myAddress" size={"25%"} />
+```
+
+### props
+
+Props
+bgColor
+string
+(optional)
+Sets the background color
+Default value:
+
+'#FFFFFF'
+
+fgColor
+string
+(optional)
+Sets the foreground color
+Default value:
+
+'#000000'
+
+includeMargin
+bool
+(optional)
+Adds margin around the QR code
+Default value:
+
+false
+
+level
+enum
+(optional)
+Sets the amount of error correction
+Allowed values: 'L' 'M' 'Q' 'H' .
+Default value:
+
+'L'
+
+renderAs
+enum
+(optional)
+Changes the element that contains the QR code
+Allowed values: 'canvas' 'svg' .
+Default value:
+
+'svg'
+
+size
+number
+(optional)
+Sets the height and width in pixels
+Default value:
+
+128
+
+value
+string
+(required)
+Sets the value of the QR code

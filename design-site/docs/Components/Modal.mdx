@@ -1,0 +1,78 @@
+# Modal
+
+The Modal component displays any content fixed positioned in the screen centre with a background colour and can be used to generate popup windwos.
+
+import {AlgoAddress} from 'pipeline-ui'
+
+<AlgoAddress address="LMKFQIPL3VQCZGGFK4WZ7FPCQWLNBTJQ3UWSTA7D7QZSPJTZQKTDVT7WG4" />
+
+## Usage Example
+(Note: the code below does not correspond to the above component)
+
+```jsx
+function ModalExample() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const closeModal = e => {
+    e.preventDefault();
+    setIsOpen(false);
+  };
+
+  const openModal = e => {
+    e.preventDefault();
+    setIsOpen(true);
+  };
+
+  return (
+    <Box className="App" p={4}>
+      <Box>
+        <Button onClick={openModal}>Open Modal</Button>
+
+        <Modal isOpen={isOpen}>
+          <Card width={"420px"} p={0}>
+            <Button.Text
+              icononly
+              icon={"Close"}
+              color={"moon-gray"}
+              position={"absolute"}
+              top={0}
+              right={0}
+              mt={3}
+              mr={3}
+              onClick={closeModal}
+            />
+
+            <Box p={4} mb={3}>
+              <Heading.h3>Confirm Action</Heading.h3>
+              <Text>Are you sure you want to action?</Text>
+            </Box>
+
+            <Flex
+              px={4}
+              py={3}
+              borderTop={1}
+              borderColor={"#E8E8E8"}
+              justifyContent={"flex-end"}
+            >
+              <Button.Outline onClick={closeModal}>Cancel</Button.Outline>
+              <Button ml={3}>Confirm</Button>
+            </Flex>
+          </Card>
+        </Modal>
+      </Box>
+    </Box>
+  );
+}
+```
+
+### Props
+
+Props
+isOpen
+bool
+(optional)
+Shows the content of the Modal when true
+Default value:
+
+false
+

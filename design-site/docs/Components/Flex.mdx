@@ -1,0 +1,39 @@
+# Flex
+
+The Flex component renders a responsive flexbox layout component that controls the layout of the components nested inside. Use it when you want to create mobile responsive layouts or want to arrange content in columns or rows. This component extends Box.
+
+import {Flex, Box} from 'pipeline-ui'
+
+<Flex>
+  <Box p={3} width={1 / 2} color="salmon" bg="black">
+    Flex
+  </Box>
+  <Box p={3} width={1 / 2} color="white" bg="salmon">
+    Box
+  </Box>
+</Flex>
+
+## Usage Example
+
+```jsx
+<Flex>
+  <Box p={3} width={1 / 2} color="salmon" bg="black">
+    Flex
+  </Box>
+  <Box p={3} width={1 / 2} color="white" bg="salmon">
+    Box
+  </Box>
+</Flex>
+```
+### props
+
+Props
+display
+(optional)
+Default value:
+
+'flex'
+
+Styled System Props
+
+Flex uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.

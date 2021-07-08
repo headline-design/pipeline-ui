@@ -1,0 +1,89 @@
+# Card
+
+Card renders a responsive box-model layout component. Inherits props from Box component.
+
+import {Card,Text,Icon,MyAlgoButton} from 'pipeline-ui'
+
+<Card bg={"grey"} width={"auto"} maxWidth={"420px"} mx={"auto"} px={[3, 3, 4]}>
+  <Text
+    caps
+    fontSize={0}
+    fontWeight={4}
+    mb={3}
+    display={"flex"}
+    alignItems={"center"}
+  >
+  <Icon name={"AccountBalanceWallet"} mr={2} />
+    Connect your Wallet:
+  </Text>
+  <MyAlgoButton fullWidth width={[1, "auto", "auto"]} px={[3, 4, 4]}>
+    Connect to MyAlgo
+  </MyAlgoButton>
+</Card>
+
+## Usage Example
+
+```jsx
+<Card bg={"grey"} width={"auto"} maxWidth={"420px"} mx={"auto"} px={[3, 3, 4]}>
+  <Text
+    caps
+    fontSize={0}
+    fontWeight={4}
+    mb={3}
+    display={"flex"}
+    alignItems={"center"}
+  >
+  <Icon name={"AccountBalanceWallet"} mr={2} />
+    Connect your Wallet:
+  </Text>
+  <MyAlgoButton fullWidth width={[1, "auto", "auto"]} px={[3, 4, 4]}>
+    Connect to MyAlgo
+  </MyAlgoButton>
+</Card>
+```
+
+### Props
+
+bg
+(optional)
+Default value:
+
+'white'
+
+border
+(optional)
+Default value:
+
+1
+
+borderColor
+(optional)
+Default value:
+
+'light-gray'
+
+boxShadow
+(optional)
+Default value:
+
+2
+
+p
+(optional)
+Default value:
+
+4
+
+position
+(optional)
+Default value:
+
+'relative'
+
+theme
+object
+(optional)
+
+Styled System Props
+
+Box uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.

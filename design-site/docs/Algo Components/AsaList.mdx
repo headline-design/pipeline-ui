@@ -1,0 +1,27 @@
+# AsaList
+
+An array of verified Algorand ASA's and index numbers that can be imported like a component and used to populate dropdown menus. 
+
+import {Select, AsaList,Text} from 'pipeline-ui'
+
+<Select options={AsaList}/>
+
+## Usage Example
+
+```jsx
+import {Select, AsaList,Text} from 'pipeline-ui'
+<Text label="Verified ASA's:" required={true} ></Text>
+        <Select
+          defaultValue={this.state.value}
+          onChange={this.asaNumbChangeHandler}
+          options={AsaList}
+        />
+```
+In the above example, the OnChange event calls the function asaNumbChangeHandler, which can be seen below:
+
+```jsx
+asaNumbChangeHandler = (event) => {
+    this.setState({ asaNumb: event.value });
+
+  }
+```
