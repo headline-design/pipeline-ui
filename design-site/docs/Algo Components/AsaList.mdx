@@ -4,13 +4,13 @@ An array of verified Algorand ASA's and index numbers that can be imported like 
 
 import {Select, AsaList,Text} from 'pipeline-ui'
 
-<Select options={AsaList}/>
+<Text>Select a Verified ASA:</Text><br/><Select options={AsaList}/>
 
 ## Usage Example
 
 ```jsx
 import {Select, AsaList,Text} from 'pipeline-ui'
-<Text label="Verified ASA's:" required={true} ></Text>
+<Text >Select a Verified ASA:</Text>
         <Select
           defaultValue={this.state.value}
           onChange={this.asaNumbChangeHandler}
