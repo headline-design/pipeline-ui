@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@pipeline-ui-2/pipeline": "^1.1.3",
-    "pipeline-ui": "file:../pipeline-ui-0.1.7.tgz",
+    "pipeline-ui": "file:../pipeline-ui-0.1.8.tgz",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.2",

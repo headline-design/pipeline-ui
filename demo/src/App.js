@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Pipeline from "@pipeline-ui-2/pipeline";
-
+//import Pipeline from "@pipeline-ui-2/pipeline";
+//uncomment above line to and relavant code referencing Pipeline below to enable Algorand connectivity
 
 import {
   Avatar,
@@ -61,11 +61,11 @@ const testTheme = {
 }
 const testText = "Algorand: Proof-of-stake blockchain";
 const testText2 = "Fetching wallet data";
-const MyAlgoWallet = Pipeline.init();
+//const MyAlgoWallet = Pipeline.init();
 
 const testComponents = props => (
   <React.Fragment>
-    <AlgoButton wallet={MyAlgoWallet}>Connect with MyAlgo</AlgoButton>
+    <AlgoButton /*wallet={MyAlgoWallet}*/>Connect with MyAlgo</AlgoButton>
     <h1>H1 - {testText}</h1>
     <h2>H1 - {testText}</h2>
     <h3>H1 - {testText}</h3>
@@ -311,7 +311,7 @@ const testComponents = props => (
     </Card>
     <Table />
     <Image src="https://source.unsplash.com/random/1280x720" />
-    <AlgoSendButton/>
+    <AlgoSendButton>Send</AlgoSendButton>
     <Loader size="80px" />
     <QR value="test" />
     <Modal />
