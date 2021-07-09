@@ -13,6 +13,23 @@ PIPELINE is in beta development and should not be considered stable today. We ha
 
 We are actively working on adding new components to PIPELINE and will be sharing more information on the roadmap very soon.
 
+## IMPORTANT UPDATE
+Algorand Connector is currently disabled while working on the documentation site due to issues with webpack and the algosdk dependency js-sha256 reliance on nodejs 'crypto' module. 
+
+To enable Algorand connectivity and test with React apps or the demo:
+
+1. add "@pipeline-ui-2/pipeline": "^1.1.3" to pipline-ui/package.json and demo/package.json
+2. uncomment the relevant code in src/MyAlgoButton/index.js, src/AlgoSendButton.js and demo/src/app.js
+
+run
+
+```bash
+npm install
+npm run build
+npm pack
+``
+
+
 ## Modifying and testing the library on local machine:
 1. Create a new folder in src
 2. Add an index.js file in the new folder
