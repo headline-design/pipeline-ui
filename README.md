@@ -27,8 +27,7 @@ run
 npm install
 npm run build
 npm pack
-``
-
+```
 
 ## Modifying and testing the library on local machine:
 1. Create a new folder in src
