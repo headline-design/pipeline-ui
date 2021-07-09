@@ -23,7 +23,8 @@
     "predeploy": "cd demo && npm install && npm run build",
     "rollup:watch": "rollup -c -w",
     "babel:watch": "babel ./src -d ./dist/es --watch",
-    "predeploy-storybook": "cd storybook && npm install && npm run build"
+    "predeploy-storybook": "cd storybook && npm install && npm run start storybook",
+    "update-snapshots": "jest --updateSnapshot"
   },
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
