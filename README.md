@@ -9,7 +9,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/tterb/playmusic.svg?style=social&label=Star)](https://github.com/headline-design/pipeline-ui)
 [![Twitter Follow](https://img.shields.io/twitter/follow/pipeline_ui.svg?style=social)](https://twitter.com/pipeline_ui)  
 [![Netlify Status](https://api.netlify.com/api/v1/badges/40588036-5b95-4358-a88a-e601e5db99e1/deploy-status)](https://app.netlify.com/sites/zealous-meitner-907a4d/deploys)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)<br>
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/headline-design/pipeline-ui)<br>
 [![NPM](https://nodei.co/npm/pipeline-ui.png?downloads=true)](https://www.npmjs.com/package/pipeline-ui)  
 
 PIPELINE is a project from HEADLINE Design, aiming to provide adaptable components and design standards for decentralized Algorand applications (dAApps). Our goal is to make it easier for developers to build dAApps with outstanding user experience. If you're interested, we have written a bit more about [our rationale and approach to building PIPELINE](https://www.reddit.com/r/HEADLINECrypto).
