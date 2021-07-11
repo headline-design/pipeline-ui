@@ -2,9 +2,20 @@
 
 Clicking the AlgoSend button will open a new MyAlgo window prompting the user to confirm the transaction. Upon confirmation, it returns the transaction id to the context and key specified. This component has the largest number of mandatory props. Failing to set them, or setting them incorrectly will result in a transaction not executing.
 
-import {AlgoSendButton} from 'pipeline-ui'
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<AlgoSendButton>Send</AlgoSendButton>
+export const BrowserOnlyButton = (props) => {
+  return (
+    <BrowserOnly>{() => {
+      const AlgoSendButton = require('pipeline-ui').AlgoSendButton;
+      return <AlgoSendButton />;
+      }
+    }
+    </BrowserOnly>
+    );
+    };
+
+<BrowserOnlyButton />
 
 ## Use Example
 ```jsx

@@ -4,11 +4,21 @@ A button to connect to MyAlgo.
 
 Generates a popup window to connect to MyAlgo. Uppon success, returns first wallet address to the context and returnTo specified.
 
-import {AlgoButton, Pipeline} from 'pipeline-ui'
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-export const myAlgoWallet = Pipeline.init();
+export const BrowserOnlyButton = (props) => {
+  return (
+    <BrowserOnly>{() => {
+      const AlgoButton = require('pipeline-ui').AlgoButton;
+      const Pipeline = require('pipeline-ui').Pipeline;
+      return <AlgoButton wallet={Pipeline.init()} />;
+      }
+    }
+    </BrowserOnly>
+    );
+    };
 
-<AlgoButton wallet={myAlgoWallet}>Connect to MyAlgo</AlgoButton>
+<BrowserOnlyButton />
 
 ## Use Example  
 

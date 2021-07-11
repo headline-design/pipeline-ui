@@ -21,6 +21,14 @@ export default class Pipeline {
     const paramServer = 'https://algoexplorerapi.io/v2/transactions/params'
     const transServer = 'https://algoexplorerapi.io/v2/transactions'
 
+    var buf = new Array(myNote.length)
+    var encodedNote = new Uint8Array(buf)
+    for (var i = 0, strLen = myNote.length; i < strLen; i++) {
+      encodedNote[i] = myNote.charCodeAt(i)
+    }
+
+    console.log('My encoded note: ' + encodedNote)
+
     try {
       const params = await (await fetch(paramServer)).json()
 
@@ -28,7 +36,7 @@ export default class Pipeline {
         from: sendingAddress,
         to: address,
         amount: parseInt(amt),
-        note: new Uint8Array(Buffer.from(myNote)),
+        note: encodedNote,
         genesisID: 'mainnet-v1.0',
         genesisHash: 'wGHE2Pwdvd7S12BL5FaOP20EGYesN73ktiC1qzkkit8=',
         type: 'pay',
@@ -78,7 +86,7 @@ Pipeline.connect(myAlgoWallet)
         console.log(data);
     });
 
-Pipeline.send(address, amount, note, sendingAddress, myAlgowallet)
+Pipeline.send(address, amount, note, sendingAddress, myAlgowallet, index)
     .then(data => {
         console.log(data);
     });
