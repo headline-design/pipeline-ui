@@ -7,6 +7,7 @@
 [![Travis Build Status](https://travis-ci.com/headline-design/pipeline-ui.svg?branch=master)](https://travis-ci.com/headline-design/pipeline-ui)
 [![Twitter](https://twitter.com)](https://twitter.com/headline_crypto)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/40588036-5b95-4358-a88a-e601e5db99e1/deploy-status)](https://app.netlify.com/sites/zealous-meitner-907a4d/deploys)
+[![NPM](https://nodei.co/npm/pipeline-ui.png?downloads=true)](https://www.npmjs.com/package/pipeline-ui)  
 
 PIPELINE is a project from HEADLINE Design, aiming to provide adaptable components and design standards for decentralized Algorand applications (dAApps). Our goal is to make it easier for developers to build dAApps with outstanding user experience. If you're interested, we have written a bit more about [our rationale and approach to building PIPELINE](https://www.reddit.com/r/HEADLINECrypto).
 
