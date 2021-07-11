@@ -41,3 +41,4 @@ export { default as AlgoButton } from './MyAlgoButton'
 export { default as AlgoSendButton } from './AlgoSendButton' // utility components
 
 export { default as Portal } from './Portal'
+export { default as Pipeline } from './Pipeline'

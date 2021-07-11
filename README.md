@@ -12,23 +12,6 @@ PIPELINE is a project from HEADLINE Design, aiming to provide adaptable componen
 PIPELINE is in beta development and should not be considered stable today. We have made the project public in a very early stage of work in order to gather feedback from the community of designers and developers building Algorand dAApps.
 
 We are actively working on adding new components to PIPELINE and will be sharing more information on the roadmap very soon.
-
-## IMPORTANT UPDATE
-Algorand Connector is currently disabled while working on the documentation site due to issues with webpack and the algosdk dependency js-sha256 reliance on nodejs 'crypto' module. 
-
-To enable Algorand connectivity and test with React apps or the demo:
-
-1. add "@pipeline-ui-2/pipeline": "^1.1.3" to pipline-ui/package.json and demo/package.json
-2. uncomment the relevant code in src/MyAlgoButton/index.js, src/AlgoSendButton.js and demo/src/app.js
-
-run
-
-```bash
-npm install
-npm run build
-npm pack
-```
-
 ## Modifying and testing the library on local machine:
 1. Create a new folder in src
 2. Add an index.js file in the new folder
@@ -64,8 +47,7 @@ Pipeline is working to hardcode the Algorand connection process into standard co
 
 ```jsx
 import React, { Component } from 'react';
-import Pipeline from "@pipeline-ui-2/pipeline";
-import { AlgoButton } from 'pipeline-ui';
+import { AlgoButton, Pipeline} from 'pipeline-ui';
 
 
 class TestButton extends Component {
@@ -95,7 +77,7 @@ export default TestButton;
 ```
 
 ### The Send Button
-The AlgoSend button has the largest number of mandatory props. Failing to set them, or setting them incorrectly will result in a transaction not executing.
+The AlgoSend button has the largest number of mandatory props. Failing to set them, or setting them incorrectly will result in a transaction not executing. This button also has the optional prop `index` , which can be used to set and specify an ASA index number for an ASA transaction. 
 
 ```jsx
 <AlgoSendButton

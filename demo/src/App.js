@@ -36,7 +36,8 @@ import {
   BaseStyles,
   ThemeProvider,
   theme,
-  AsaList
+  AsaList,
+  Pipeline
 } from 'pipeline-ui'
 
 import { Algo, Btc } from '@pipeline-ui/icons'
@@ -61,11 +62,11 @@ const testTheme = {
 }
 const testText = "Algorand: Proof-of-stake blockchain";
 const testText2 = "Fetching wallet data";
-//const MyAlgoWallet = Pipeline.init();
+const MyAlgoWallet = Pipeline.init();
 
 const testComponents = props => (
   <React.Fragment>
-    <AlgoButton /*wallet={MyAlgoWallet}*/>Connect with MyAlgo</AlgoButton>
+    <AlgoButton wallet={MyAlgoWallet}/>
     <h1>H1 - {testText}</h1>
     <h2>H1 - {testText}</h2>
     <h3>H1 - {testText}</h3>

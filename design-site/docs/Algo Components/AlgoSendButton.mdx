@@ -8,6 +8,10 @@ import {AlgoSendButton} from 'pipeline-ui'
 
 ## Use Example
 ```jsx
+import {AlgoButton, AlgoSendButton, Pipeline} from 'pipeline-ui'
+
+const myAlgoWallet = Pipeline.init();
+
 <AlgoSendButton
       asset={"Algorand"} //If ASA, must be a numeric index value
       recipient={this.state.recipient} //string value

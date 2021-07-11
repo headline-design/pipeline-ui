@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { ReactComponent as MAlogo } from './icon.svg'
-//import Pipeline from '@pipeline-ui-2/pipeline'
+import Pipeline from '../Pipeline'
 import Button, { StyledButton } from '../Button/BaseButton'
 
 const brandColors = {
@@ -101,7 +101,7 @@ MyAlgoButton.propTypes = {
 
 MyAlgoButton.displayName = 'MyAlgoButton'
 
-/*const AlgoButton = ({ wallet, context, returnTo, ...props }) => {
+const AlgoButton = ({ wallet, context, returnTo, ...props }) => {
   return (
     <MyAlgoButton
       {...props}
@@ -117,7 +117,5 @@ MyAlgoButton.displayName = 'MyAlgoButton'
     </MyAlgoButton>
   )
 }
-*/
-//to enable Algorand connectivity, uncomment block above and @pipeline-ui-2 import, and change export default to AlgoButton
 
-export default MyAlgoButton
+export default AlgoButton

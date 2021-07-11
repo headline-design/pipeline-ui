@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { tint, shade } from 'polished'
 import { ReactComponent as UPlogo } from './icon.svg'
 import Button, { StyledButton } from '../Button/BaseButton'
-//import Pipeline from '@pipeline-ui-2/pipeline'
+import Pipeline from '../Pipeline'
 
 const brandColors = {
   baseColor: '#5c50ca',
@@ -104,8 +104,7 @@ AlgoSendButtonB.propTypes = {
 
 AlgoSendButtonB.displayName = 'AlgoSendButtonB'
 
-/* const AlgoSendButton = ({
-  asset,
+const AlgoSendButton = ({
   recipient,
   amount,
   note,
@@ -113,6 +112,7 @@ AlgoSendButtonB.displayName = 'AlgoSendButtonB'
   wallet,
   context,
   returnTo,
+  index,
   ...props
 }) => {
   return (
@@ -120,7 +120,7 @@ AlgoSendButtonB.displayName = 'AlgoSendButtonB'
       <AlgoSendButtonB
         {...props}
         onClick={() => {
-          if (asset == 'Algorand') {
+          if (index == 0) {
             Pipeline.send(
               recipient,
               parseInt(amount),
@@ -135,13 +135,13 @@ AlgoSendButtonB.displayName = 'AlgoSendButtonB'
               }
             })
           } else {
-            Pipeline.sendASA(
+            Pipeline.send(
               recipient,
               parseInt(amount),
               note,
               myAddress,
               wallet,
-              parseInt(asset)
+              parseInt(index)
             ).then(data => {
               if (typeof data !== 'undefined') {
                 const object = {}
@@ -158,8 +158,4 @@ AlgoSendButtonB.displayName = 'AlgoSendButtonB'
   )
 }
 
-*/
-
-//to enable Algorand connectivity, uncomment block above and @pipeline-ui-2 import, and change export default to AlgoSendButton
-
-export default AlgoSendButtonB
+export default AlgoSendButton

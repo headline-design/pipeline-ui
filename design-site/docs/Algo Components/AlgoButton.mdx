@@ -4,16 +4,17 @@ A button to connect to MyAlgo.
 
 Generates a popup window to connect to MyAlgo. Uppon success, returns first wallet address to the context and returnTo specified.
 
-import {AlgoButton} from 'pipeline-ui'
+import {AlgoButton, Pipeline} from 'pipeline-ui'
 
-<AlgoButton>Connect to MyAlgo</AlgoButton>
+export const myAlgoWallet = Pipeline.init();
+
+<AlgoButton wallet={myAlgoWallet}>Connect to MyAlgo</AlgoButton>
 
 ## Use Example  
 
 ```jsx
 import React, { Component } from 'react';
-import Pipeline from "@pipeline-ui-2/pipeline";
-import { AlgoButton } from 'pipeline-ui';
+import { AlgoButton, Pipeline} from 'pipeline-ui';
 
 
 class TestButton extends Component {
