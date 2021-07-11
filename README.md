@@ -13,8 +13,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/40588036-5b95-4358-a88a-e601e5db99e1/deploy-status)](https://app.netlify.com/sites/zealous-meitner-907a4d/deploys)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/headline-design/pipeline-ui)<br>
-[![NPM](https://nodei.co/npm/pipeline-ui.png?downloads=true)](https://www.npmjs.com/package/pipeline-ui)<br>
-[![Edit with Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/headline-design/pipeline-ui)
+[![NPM](https://nodei.co/npm/pipeline-ui.png?downloads=true)](https://www.npmjs.com/package/pipeline-ui)
 
 PIPELINE is a project from HEADLINE Design, aiming to provide adaptable components and design standards for decentralized Algorand applications (dAApps). Our goal is to make it easier for developers to build dAApps with outstanding user experience. If you're interested, we have written a bit more about [our rationale and approach to building PIPELINE](https://www.reddit.com/r/HEADLINECrypto).
 
@@ -100,6 +99,8 @@ The AlgoSend button has the largest number of mandatory props. Failing to set th
       returnTo={"txID"}// string value of state key to return the transaction id
       />
 ```
+
+[![Edit with Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/headline-design/pipeline-ui)
 
 ## Change log
 
