@@ -9,8 +9,7 @@
 [![codecov](https://codecov.io/gh/headline-design/pipeline-ui/branch/main/graph/badge.svg?token=CA32VFU6F0)](https://codecov.io/gh/headline-design/pipeline-ui)
 [![GitHub stars](https://img.shields.io/github/stars/tterb/playmusic.svg?style=social&label=Star)](https://github.com/headline-design/pipeline-ui)
 [![Twitter Follow](https://img.shields.io/twitter/follow/pipeline_ui.svg?style=social)](https://twitter.com/pipeline_ui)
-[discussions-image]: https://img.shields.io/badge/discussions-on%20github-blue?style=flat-square
-[discussions-url]: https://github.com/headline-design/pipeline-ui/discussions
+[![PIPELINE Discussion](https://img.shields.io/badge/discussions-on%20github-blue?style=flat-square)](https://github.com/headline-design/pipeline-ui/discussions)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/40588036-5b95-4358-a88a-e601e5db99e1/deploy-status)](https://app.netlify.com/sites/zealous-meitner-907a4d/deploys)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/headline-design/pipeline-ui)<br>
