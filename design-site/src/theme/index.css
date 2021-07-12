@@ -24,3 +24,27 @@ pre {
       display: block !important;
     }
   }
+
+  .menu__link, .menu__link:hover {
+    border-radius: 0px;
+  }
+  
+  .button--secondary {
+    border-radius: 0px;
+  }
+  
+  .button {
+    border-radius: 0px;
+  }
+  
+  .codeBlock_23N8, .navbar__item.dropdown {
+    border-radius: 0px;
+  }
+  
+  a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, summary, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border-radius: 0px !important;
+  }
+  
+  .pagination-nav__link {
+    border-radius: 0px;
+  }
