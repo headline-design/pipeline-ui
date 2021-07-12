@@ -6,17 +6,15 @@ Generates a popup window to connect to MyAlgo. Uppon success, returns first wall
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-export const BrowserOnlyButton = (props) => {
+export function BrowserOnlyButton() {
   return (
-    <BrowserOnly>{() => {
-      const AlgoButton = require('pipeline-ui').AlgoButton;
-      const Pipeline = require('pipeline-ui').Pipeline;
-      return <AlgoButton wallet={Pipeline.init()} />;
-      }
-    }
+    <BrowserOnly fallback={<p>Some Fallback Content</p>}>
+      {() => {
+const AlgoButton = require('pipeline-ui').AlgoButton; const Pipeline = require('pipeline-ui').Pipeline; return <AlgoButton wallet={Pipeline.init()} />      }}
     </BrowserOnly>
-    );
-    };
+  );
+}
+
 
 <BrowserOnlyButton />
 
