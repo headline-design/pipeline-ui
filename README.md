@@ -21,7 +21,7 @@ PIPELINE is in beta development and should not be considered stable today. We ha
 
 ## Important Update
 
-Due to unkown issues (possibily arrising from the June 2021 update to VSCode, Pipeline-UI will fail to build in Visual Studio Code with the following error:
+Due to unknown issues (possibly arrising from the June 2021 update to VSCode, Pipeline-UI will fail to build in Visual Studio Code with the following error:
 
 ```bash
 [!] (plugin babel) SyntaxError: C:\Users\headl\Documents\GitHub\pipeline-ui\src\BaseStyles.js: Support for the experimental syntax 'jsx' isn't currently enabled (44:5)
