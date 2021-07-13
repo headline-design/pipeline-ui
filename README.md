@@ -19,6 +19,15 @@ PIPELINE is a project from HEADLINE Design, aiming to provide adaptable componen
 
 PIPELINE is in beta development and should not be considered stable today. We have made the project public in a very early stage of work in order to gather feedback from the community of designers and developers building Algorand dAApps.
 
+## Important Update
+
+Due to unknown issues (possibly arrising from the June 2021 update to VSCode, Pipeline-UI will fail to build in Visual Studio Code with the following error:
+
+```bash
+[!] (plugin babel) SyntaxError: C:\Users\headl\Documents\GitHub\pipeline-ui\src\BaseStyles.js: Support for the experimental syntax 'jsx' isn't currently enabled (44:5)
+```
+However, the library can still be built from the source code using gitpod or bare Command Prompt (without the above error being thrown). 
+
 We are actively working on adding new components to PIPELINE and will be sharing more information on the roadmap very soon.
 ## Modifying and testing the library on local machine:
 1. Create a new folder in src
