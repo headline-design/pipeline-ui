@@ -26,3 +26,137 @@
 .pagination-nav__link {
   border-radius: 0px;
 }
+
+.copyButton_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 16px;
+  padding: 8px 8px 8px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+  background: linear-gradient(90deg,rgba(22,22,22,0),#161616 24px)
+}
+
+.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module {
+  background-color: #161616
+}
+
+.pagination-nav__link:hover {
+  background-color: var(--ifm-color-secondary);
+  border-color: var(--ifm-color-secondary-darker);
+}
+
+@media (min-width: 997px){
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module {
+  background-color: var(--ifm-background-surface-color);
+}
+}
+
+li>code, p>code, td>code {
+  font-size: .875em;
+}
+
+.table-of-contents__link--active {
+  outline-offset: 2px !;
+}
+
+.footer__link-item {
+  outline-offset: 2px;
+}
+
+.table-of-contents__link--active, .table-of-contents__link--active code, .table-of-contents__link:hover, .table-of-contents__link:hover code {
+  outline-offset: 2px;
+}
+
+.footer__link-item {
+  outline-offset: 2px;
+}
+
+.navbar-sidebar {
+  width: var(--doc-sidebar-width);
+  background: var(--ifm-background-surface-color);
+}
+
+.menu--show {
+  -ms-scroll-chaining: none;
+  background: var(--ifm-background-surface-color);
+  bottom: 0;
+  left: auto;
+  overscroll-behavior: contain;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: var(--ifm-z-index-overlay);
+  transform: translateZ(0);
+  width: var(--doc-sidebar-width);
+}
+
+.menu--show {
+  transform: translateX(0);
+  transition: all .15s cubic-bezier(0,0,.38,.9);
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  box-shadow: -2px 2px 6px rgb(0 0 0 / 20%);
+}
+
+.menu--show {
+  z-index: 10000;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  width: 16rem;
+  border-left: 1px solid var(--ifm-toc-border-color);
+  transform: translateX(16rem);
+  overflow-y: hidden;
+  transition: all .11s cubic-bezier(.2,0,1,.9);
+}
+
+.navbar {
+  background-color: var(--ifm-navbar-background-color);
+  right: 0;
+  left: 0;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  border-bottom: 1px solid 1px solid var(--ifm-toc-border-color);
+  box-shadow: none;
+}
+
+.menu--show, .navbar-sidebar--show .navbar-sidebar {
+  transform: translateZ(0);
+}
+
+.navbar-sidebar--show .navbar-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  max-width: 16rem;
+  transition: width .11s cubic-bezier(.2,0,1,.9);
+  will-change: width;
+}
+
+.docSidebarContainer {
+  background-color: var(--ifm-background-surface-color);
+}
+
+.navbar-sidebar__brand {
+  box-shadow: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.announcementBar{
+  z-index: 1000;
+  position:fixed;
+  bottom:0px;
+}
+
+.navbar__title {
+  font-family: IBM Plex Sans,Helvetica Neue,Arial,sans-serif;
+}
