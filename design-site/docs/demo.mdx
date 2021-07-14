@@ -1,21 +1,27 @@
----
-title: Using the Demo
-section: Guides
-slug: /docs/demo/
-order: 11
----
-
-# Using the Demo
+# Demos
 
 After installing, building and packing the Pipeline UI library, run the included demo to preview the Pipeline UI components.
 
-## Install and run the demo
+## Included Demo
+
+<iframe src="https://pipeline-ui.vercel.app/" width="100%"/>
+
+## Install and run the included demo
 
 ```bash
 cd demo
 npm install
 npm run start
 ```
+## Functional Demo
+This demo was used in the creation of Pipeline-UI Algorand components. It is fully functional and allows you to send and view transactions. 
+
+<iframe src="https://test-five-brown.vercel.app/" width="100%"/>
+
+## Pipeline Express Demo
+
+<iframe src="https://pipeline-express-react.vercel.app/" width="100%"/>
+
 ## Testing Library modifications
 
 To test any modifications you wish to make to the library, you must delete the demo's node-modules folder and re-install. Alternatively, you can replace the demo's package.json tgz pipeline-ui path with "file:../" and update the version code in the pipeline-ui package.json.

@@ -24,7 +24,7 @@ import {AlgoButton, AlgoSendButton, Pipeline} from 'pipeline-ui'
 const myAlgoWallet = Pipeline.init();
 
 <AlgoSendButton
-      asset={"Algorand"} //If ASA, must be a numeric index value
+      index={this.state.index} //If Algorand, must be 0. If ASA, must be numeric index value
       recipient={this.state.recipient} //string value
       amount={this.state.amount} //integer value in micro Algos
       note={this.state.note} //string value

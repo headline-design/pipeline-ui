@@ -89,7 +89,7 @@ The AlgoSend button has the largest number of mandatory props. Failing to set th
 
 ```jsx
 <AlgoSendButton
-      asset={"Algorand"} //If ASA, must be a numeric index value
+      index={this.state.index} //If Algorand, must be 0. If ASA, must be a numeric index value
       recipient={this.state.recipient} //string value
       amount={this.state.amount} //integer value in micro Algos
       note={this.state.note} //string value
