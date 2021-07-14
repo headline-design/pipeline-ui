@@ -7,24 +7,8 @@
   }
 }
 
-.menu__link, .menu__link:hover {
-  border-radius: 0px;
-}
-
-.button--secondary {
-  border-radius: 0px;
-}
-
-.button {
-  border-radius: 0px;
-}
-
-.codeBlock_23N8, .navbar__item.dropdown {
-  border-radius: 0px;
-}
-
-.pagination-nav__link {
-  border-radius: 0px;
+.button,.button--secondary,.codeBlock_23N8,.menu__link,.menu__link:hover,.navbar__item.dropdown,.pagination-nav__link {
+  border-radius: 0
 }
 
 .copyButton_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module {
@@ -46,72 +30,44 @@
 
 .pagination-nav__link:hover {
   background-color: var(--ifm-color-secondary);
-  border-color: var(--ifm-color-secondary-darker);
+  border-color: var(--ifm-color-secondary-darker)
 }
 
-@media (min-width: 997px){
-.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module {
-  background-color: var(--ifm-background-surface-color);
-}
-}
-
-li>code, p>code, td>code {
-  font-size: .875em;
+@media (min-width:997px) {
+  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module {
+      background-color: var(--ifm-background-surface-color)
+  }
 }
 
-.table-of-contents__link--active {
-  outline-offset: 2px !;
+li>code,p>code,td>code {
+  font-size: .875em
 }
 
-.footer__link-item {
-  outline-offset: 2px;
+.footer__link-item,.table-of-contents__link--active,.table-of-contents__link--active code,.table-of-contents__link:hover,.table-of-contents__link:hover code {
+  outline-offset: 2px
 }
 
-.table-of-contents__link--active, .table-of-contents__link--active code, .table-of-contents__link:hover, .table-of-contents__link:hover code {
-  outline-offset: 2px;
-}
-
-.footer__link-item {
-  outline-offset: 2px;
-}
-
-.navbar-sidebar {
+.menu--show,.navbar-sidebar {
   width: var(--doc-sidebar-width);
-  background: var(--ifm-background-surface-color);
+  background: var(--ifm-background-surface-color)
 }
 
 .menu--show {
   -ms-scroll-chaining: none;
-  background: var(--ifm-background-surface-color);
   bottom: 0;
-  left: auto;
   overscroll-behavior: contain;
   padding: 1rem;
-  position: fixed;
-  right: 0;
-  top: 0;
   z-index: var(--ifm-z-index-overlay);
-  transform: translateZ(0);
-  width: var(--doc-sidebar-width);
-}
-
-.menu--show {
   transform: translateX(0);
-  transition: all .15s cubic-bezier(0,0,.38,.9);
-  border-bottom: 1px solid var(--ifm-toc-border-color);
-  box-shadow: -2px 2px 6px rgb(0 0 0 / 20%);
-}
-
-.menu--show {
   z-index: 10000;
   position: fixed;
-  right: 0;
+  left: 0;
+  right: auto;
   height: 100%;
   width: 16rem;
-  border-left: 1px solid var(--ifm-toc-border-color);
   transform: translateX(16rem);
   overflow-y: hidden;
-  transition: all .11s cubic-bezier(.2,0,1,.9);
+  transition: all .11s cubic-bezier(.2,0,1,.9)
 }
 
 .navbar {
@@ -122,41 +78,127 @@ li>code, p>code, td>code {
   height: 3rem;
   align-items: center;
   border-bottom: 1px solid 1px solid var(--ifm-toc-border-color);
-  box-shadow: none;
-}
-
-.menu--show, .navbar-sidebar--show .navbar-sidebar {
-  transform: translateZ(0);
-}
-
-.navbar-sidebar--show .navbar-sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  max-width: 16rem;
-  transition: width .11s cubic-bezier(.2,0,1,.9);
-  will-change: width;
+  box-shadow: none
 }
 
 .docSidebarContainer {
-  background-color: var(--ifm-background-surface-color);
+  background-color: var(--ifm-background-surface-color)
 }
 
 .navbar-sidebar__brand {
   box-shadow: none;
   position: fixed;
-  bottom: 0px;
-  width: 100%;
+  bottom: 0;
+  width: 100%
 }
 
-.announcementBar{
+.announcementBar_3WsW {
   z-index: 1000;
-  position:fixed;
-  bottom:0px;
+  position: fixed!important;
+  bottom: 0!important;
+  background-color: var(--ifm-navbar-background-color)!important;
+  border-top: 1px solid var(--ifm-toc-border-color);
+  border-bottom: 0!important;
+  color: var(--ifm-navbar-link-color)!important
+}
+
+.navbar__toggle {
+  position: absolute;
+  right: 0
+}
+
+.announcementBar {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0
 }
 
 .navbar__title {
-  font-family: IBM Plex Sans,Helvetica Neue,Arial,sans-serif;
+  font-family: IBM Plex Sans,Helvetica Neue,Arial,sans-serif
+}
+
+.navbar-sidebar {
+  -ms-scroll-chaining: none;
+  border-left: 1px solid var(--ifm-toc-border-color);
+  bottom: 0;
+  box-shadow: -2px 2px 6px rgb(0 0 0/20%);
+  height: 100%;
+  left: auto;
+  overflow-y: hidden;
+  overscroll-behavior: contain;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  transform: translateX(16rem);
+  transition: .11s cubic-bezier(.2,0,1,.9);
+  width: 16rem;
+  z-index: var(--ifm-z-index-overlay);
+  z-index: 17;
+  right: 0
+}
+
+@media (max-width:996px) {
+  .navbar-sidebar .navbar__brand {
+      padding-left: 5rem
+  }
+}
+
+.menu--responsive .menu__button {
+  display: none;
+  z-index: var(--ifm-z-index-fixed);
+  background-color: var(--ifm-background-surface-color)
+}
+
+.menu--show,.navbar-sidebar--show .navbar-sidebar {
+  top: 3rem
+}
+
+.menu--responsive .menu__button {
+  bottom: auto;
+  color: var(--ifm-navbar-link-color);
+  height: 3rem;
+  left: 0;
+  position: fixed;
+  right: 1rem;
+  top: 0
+}
+
+.menu--show .menu__list {
+  background-color: var(--ifm-background-surface-color);
+  padding: inherit!important
+}
+
+.menu--show,.navbar-sidebar--show .navbar-sidebar {
+  top: 0;
+  transform: translateZ(0);
+  padding-top: 3rem!important;
+  padding: inherit
+}
+
+.menu--show .menu__list {
+  display: inherit;
+  left: 0!important;
+  opacity: 1;
+  transition: opacity var(--ifm-transition-fast) linear;
+  width: 16rem;
+  height: 100%;
+  margin-top: -.25rem
+}
+
+.menu--show {
+  transform: translateZ(0);
+  transition: 0s;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.menu__list {
+  background-color: var(--ifm-background-surface-color);
+  margin-top: 1px !important;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  box-shadow: -2px 2px 6px rgb(0 0 0/20%);
+  border-right: 1px solid var(--ifm-toc-border-color);
+}
+
+.navbar-sidebar {
+  background-color: var(--ifm-background-surface-color) !important;
 }
