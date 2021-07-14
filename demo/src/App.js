@@ -37,7 +37,8 @@ import {
   ThemeProvider,
   theme,
   AsaList,
-  Pipeline
+  Pipeline,
+  AlgoFetch
 } from 'pipeline-ui'
 
 import { Algo, Btc } from '@pipeline-ui/icons'
@@ -148,6 +149,7 @@ const testComponents = props => (
       textLabels
       address="C5E5W3BERJALL2ZH4YB3TAP7ZSJH2PJUPDHLGF74YE6DBMQ62AA47IXGNQ"
     />
+    <AlgoFetch address="C5E5W3BERJALL2ZH4YB3TAP7ZSJH2PJUPDHLGF74YE6DBMQ62AA47IXGNQ"/>
     <Card my={4}>
       <TestForm />
     </Card>

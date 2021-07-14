@@ -1,0 +1,22 @@
+# AlgoFetch
+
+A powerfull component that automatically fetches and displays id's and AlgoExplorer links for the latest 5 transactions for a given address. Includes a built-in 'refresh' button. 
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+export function BrowserOnlyTable() {
+  return (
+    <BrowserOnly fallback={<p>Some Fallback Content</p>}>
+      {() => {
+const AlgoFetch = require('pipeline-ui').AlgoFetch; return <AlgoFetch address="LMKFQIPL3VQCZGGFK4WZ7FPCQWLNBTJQ3UWSTA7D7QZSPJTZQKTDVT7WG4" />      }}
+    </BrowserOnly>
+  );
+}
+
+<BrowserOnlyTable />
+
+## Usage Example
+
+```jsx
+<AlgoFetch address="LMKFQIPL3VQCZGGFK4WZ7FPCQWLNBTJQ3UWSTA7D7QZSPJTZQKTDVT7WG4"/>
+```
