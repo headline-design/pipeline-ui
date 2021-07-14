@@ -1,5 +1,62 @@
----
-title: Theme
-section: Components
-slug: /docs/components/Theme
----
+# Theme
+
+Pipeline Components come with built-in access to the default Pipeline theme. The theme file contains an object which holds values for common variables such as color, fonts, box shadows, and more.
+
+## Strategies
+
+You can override the entire theme for an entire tree of components using the ThemeProvider from styled-components:
+
+```jsx
+import {Box, Button, Text, theme} from 'pipeline-ui'
+import {ThemeProvider} from 'styled-components'
+// a theme with custom spacing and font sizes
+const customTheme = {
+  ...theme,
+  space: [0, 8, 16, 32, 64],
+  fontSizes: [10, 12, 16, 24, 48]
+}
+// override
+customTheme.colors.black = '#111'
+export default () => (
+  <ThemeProvider theme={customTheme}>
+    <Box color='black' p={4}>
+      <Text fontSize={4}>Hello, world!</Text>
+    </Box>
+  </ThemeProvider>
+)
+```
+Option B: You can merge the pipeline theme with your custom theme using Object.assign:
+```jsx
+import {theme} from 'pipeline-ui';
+import { ThemeProvider } from 'styled-components';
+const customTheme = {
+  space: [0, 8, 16, 32, 64],
+  fontSizes: [10, 12, 16, 24, 48],
+  colors: {
+    ...theme.colors,
+    black: '#111'
+  }
+};
+const App = (props) => {
+  return (
+    <div>
+      <ThemeProvider theme={Object.assign({}, theme, customTheme)}> // matching keys in customTheme will override keys in the pipeline theme
+        <App />
+      </ThemeProvider>
+    </div>
+  )
+}
+```
+Option 3: You can theme individual components by passing the theme prop directly:
+```jsx
+import {Text} from 'pipeline-ui'
+const customTheme = {
+  colors: {
+    magenta: '#f0f'
+  }
+}
+export default () => (
+  <Text theme={customTheme} color='magenta'>Hi, I'm magenta!</Text>
+)
+```
+

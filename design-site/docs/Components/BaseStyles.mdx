@@ -1,6 +1,18 @@
----
-title: BaseStyles
-section: Components
-slug: /docs/components/BaseStyles
----
+# BaseStyles
+
+In order to set basic color, font-sizes, font-family, line-heights, style resets via normalize across your project, you will need to establish Pipeline's base styles for your app by wrapping all of your components in `<BaseStyles>`: 
+
+```jsx
+import {BaseStyles, Box, Heading} from 'pipeline-ui'
+const App = (props) => {
+  return (
+  <BaseStyles>
+      <Box m={4}>
+        <Heading mb={2}>Hello, world!</Heading>
+        <p>These elements will have Pipeline's base styles applied to them.</p>
+      </Box>
+    </BaseStyles>
+  )
+}
+```
 

@@ -1,5 +1,34 @@
----
-title: Icon
-section: Components
-slug: /docs/components/Icon
----
+# Pipeline Icons
+
+Pipeline Icons includes over 300 tokens and 970+ Google Material Design icons. The icons are React components are Styled-Components that support Styled-System v5 props.
+
+## Install dependency
+
+```bash
+npm install @headline-design/pipeline-icons styled-components --save
+```
+
+## Import in app
+
+```jsx
+import { Icon } from '@headline-design/pipeline-icons'; // imports all icons - bad for bundle size
+import { Eth } from '@headline-design/pipeline-icons'; // import single token icon
+import { MoneyOff } from '@headline-design/pipeline-icons'; // import single material design icon
+```
+
+### Examples
+
+//import {Eth, Btc, MoneyOff} from '@headline-design/pipeline-icons';
+
+<MoneyOff color="primary"/>
+<Eth color="primary" />
+<Btc color="primary" />
+
+
+```jsx
+<>
+  <Icon color="primary" name="MoneyOff" />
+  <Eth color="primary" />
+  <Btc color="primary" />
+</>
+```
