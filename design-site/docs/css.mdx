@@ -1,0 +1,80 @@
+# CSS & Style Guides
+
+Pipeline-UI components are incorporated into a React app via JSX, a language with syntax that resembles familiar html tags (and can include convenvtional html elements alongside it). However, Pipeline-UI components do not neccesarily have all of the properties of their corresponding html elements (i.e. `<Button>` is not exactly equivalent to `<button>`). Many of the components are complex and consist of many nested components and elements. Therefore, we recommend setting their properties using their specified React props and Themes. However, there are several ways to use both inline css and css stylesheets, though the resulting styling may not be what is expected. 
+
+## Inline CSS & React
+Changing CSS properties inside React component JSX tags is at times slightly different from conventional CSS:
+
+import {Button} from 'pipeline-ui';
+
+<Button borderRadius="20" />
+
+```jsx
+<Button borderRadius="20" />
+```
+
+Note: CSS can only be used like this if the CSS property is also a "prop" of the React component. If it is not, it may be incorporated by using the `style` keyword like this:
+
+```jsx
+<Button style={{borderRadius: 20}}/>
+```
+In JSX, brackets are used to both specify that the value is JavaScript, and to create a JavaScript object. In addition, dashes are not permitted in object names (the keys that come before colons), so the CSS property is camelCased.
+
+## CSS Stylesheets and React
+To use a stylesheet in React, the stylesheet must first be imported:
+
+```jsx
+import React, { Component } from 'react';
+import { Button } from 'pipeline-ui'
+import styles from './custom.css';
+
+class App extends Component {
+  render() {
+    // You can use them as regular CSS styles
+    return <Button className={styles.button} />;
+  }
+}
+```
+## Why CSS is not recommended
+The below example graphically illustrates why css is not the preferred way to change the style of a Pipeline-UI component:
+
+<Button 
+    style={{
+      backgroundColor: 'red',
+      border: 'solid red',
+      borderRadius: 20,
+    }}/>
+
+```jsx
+<Button
+    style={{
+      backgroundColor: 'red',
+      border: 'solid red',
+      borderRadius: 20,
+    }}
+  />
+```
+
+  In the example, our CSS value for backgroundColor is having no visible effect on the Pipeline-Ui component, since the component's background color is actually set by its prop `mainColor`. We can easily change the background color by setting its non-CSS prop:
+
+<Button 
+    mainColor="red"
+    style={{
+      backgroundColor: 'blue',
+      border: 'solid red',
+      borderRadius: 20,
+    }}/>
+
+```jsx
+<Button
+    mainColor="red"
+    style={{
+      backgroundColor: 'blue',
+      border: 'solid red',
+      borderRadius: 20,
+    }}
+  />
+```
+
+
+
