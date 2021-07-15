@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "design-site/build"
+  publish = "/build"
 
   [[headers]]
   for = "/pipeline-report"
