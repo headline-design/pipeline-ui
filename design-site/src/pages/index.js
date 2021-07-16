@@ -22,6 +22,7 @@ function HomepageHeader() {
           </Link>
         </div>
       </div>
+     <img alt="Refs" class="hero-1" src="/img/hero-1.svg"></img>
     </header>
   );
 }

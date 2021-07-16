@@ -254,3 +254,54 @@ li>code,p>code,td>code {
     width: 0px;
 }
 }
+
+@media (min-width:997px) {
+  .hero-1 {
+    height: auto;
+    position: absolute;
+    right: 10%;
+    width: 263px;
+    top: 0px;
+  }
+  }
+
+  @media (min-width:997px) {
+    .hero {
+      display: grid;
+      padding: 1rem;
+      flex-direction: row;
+      align-content: flex-end;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+    }
+  }
+
+  @media (min-width:997px) {
+    .heroBanner_1ZBZ {
+      overflow: hidden;
+      text-align: left;
+    }
+  }
+
+  @media (min-width:997px) {
+    .heroBanner {
+      overflow: hidden;
+      text-align: left !important;
+    }
+  }
+
+  @media (min-width:997px) {
+    .heroBanner, .heroBanner_1ZBZ {
+      padding: 8rem!important;
+      position: unset!important;
+      width: 100%!important;
+    }
+  }
+
+  @media (max-width: 996px){
+.hero-1 {
+display: none;
+}
+  }
+  
