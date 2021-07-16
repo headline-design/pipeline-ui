@@ -12,60 +12,26 @@ import {QR} from 'pipeline-ui'
 <QR value="this.setState.myAddress" size={"25%"} />
 ```
 
-### props
+### Props
 
-Props
-bgColor
-string
-(optional)
-Sets the background color
-Default value:
+import { Table } from 'pipeline-ui';
 
-'#FFFFFF'
-
-fgColor
-string
-(optional)
-Sets the foreground color
-Default value:
-
-'#000000'
-
-includeMargin
-bool
-(optional)
-Adds margin around the QR code
-Default value:
-
-false
-
-level
-enum
-(optional)
-Sets the amount of error correction
-Allowed values: 'L' 'M' 'Q' 'H' .
-Default value:
-
-'L'
-
-renderAs
-enum
-(optional)
-Changes the element that contains the QR code
-Allowed values: 'canvas' 'svg' .
-Default value:
-
-'svg'
-
-size
-number
-(optional)
-Sets the height and width in pixels
-Default value:
-
-128
-
-value
-string
-(required)
-Sets the value of the QR code
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>bgColor</td><td>string (optional)</td><td>'#FFFFFF'</td><td>Sets the background color</td></tr>
+  <tr><td>fgColor</td><td>string (optional)</td><td>'#000000'</td><td>Sets the foreground color</td></tr>
+  <tr><td>includeMargin</td><td>bool (optional)</td><td>false</td><td>Adds margin around the QR code</td></tr>
+  <tr><td>level</td><td>enum (optional)</td><td>'L'</td><td>Sets the amount of error correction. Allowed values: 'L' 'M' 'Q' 'H'.</td></tr>
+  <tr><td>renderAs</td><td>enum (optional)</td><td>'svg'</td><td>Changes the element that contains the QR code. Allowed values: 'canvas' 'svg'.</td></tr>
+  <tr><td>size</td><td>integer (optional)</td><td>128</td><td>Sets the height and width in pixels</td></tr>
+  <tr><td>value</td><td>string (required)</td><td></td><td>Sets the value of the QR code</td></tr>
+    </tbody>
+    </Table>

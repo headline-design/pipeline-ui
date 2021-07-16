@@ -42,46 +42,26 @@ import {Card, Text, Icon, AlgoButton, Pipeline} from 'pipeline-ui'
 
 ### Props
 
-bg
-(optional)
-Default value:
+import { Table } from 'pipeline-ui';
 
-'white'
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>bg</td><td>string (optional)</td><td>'white'</td><td></td></tr>
+  <tr><td>border</td><td>integer (optional)</td><td>1</td><td></td></tr>
+  <tr><td>borderColor</td><td>string (optional)</td><td>'light-gray'</td><td></td></tr>
+  <tr><td>boxShadow</td><td>integer (optional)</td><td>2</td><td></td></tr>
+  <tr><td>p</td><td>integer (optional)</td><td>4</td><td></td></tr>
+  <tr><td>position</td><td>string (optional)</td><td>'relative'</td><td></td></tr>
+  <tr><td>theme</td><td>object (optional)</td><td></td><td></td></tr>
+    </tbody>
+    </Table>
 
-border
-(optional)
-Default value:
-
-1
-
-borderColor
-(optional)
-Default value:
-
-'light-gray'
-
-boxShadow
-(optional)
-Default value:
-
-2
-
-p
-(optional)
-Default value:
-
-4
-
-position
-(optional)
-Default value:
-
-'relative'
-
-theme
-object
-(optional)
-
-Styled System Props
-
-Box uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.
+<br></br>Box uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.

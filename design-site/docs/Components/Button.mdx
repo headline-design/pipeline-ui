@@ -24,112 +24,48 @@ import {Button, Flex} from 'pipeline-ui'
 
 ### Props
 
-bg
-(optional)
-Default value:
+import { Table } from 'pipeline-ui';
 
-'silver'
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>bg</td><td>string (optional)</td><td>'silver'</td><td></td></tr>
+  <tr><td>border</td><td>string (optional)</td><td>'none'</td><td></td></tr>
+  <tr><td>color</td><td>string (optional)</td><td>'white'</td><td></td></tr>
+  <tr><td>contrastColor</td><td>string (optional)</td><td>'white'</td><td>Sets text color of button.</td></tr>
+  <tr><td>fontFamily</td><td>string (optional)</td><td>'sansSerif'</td><td>Sets font of button text.</td></tr>
+  <tr><td>fontSize</td><td>string (optional)</td><td>'inherit'</td><td>Sets font size.</td></tr>
+  <tr><td>fontWeight</td><td>integer (optional)</td><td>3</td><td>Sets font weight.</td></tr>
+  <tr><td>height</td><td>string (optional)</td><td>'3rem'</td><td></td></tr>
+  <tr><td>icon</td><td>string (optional)</td><td></td><td>Sets icon of button.</td></tr>
+  <tr><td>icononly</td><td>bool (optional)</td><td>false</td><td>Sets padding on button with icon and no text</td></tr>
+  <tr><td>iconpos</td><td>enum (optional)</td><td></td><td>Sets icon position on button. Allowed values: 'left' 'right'.</td></tr>
+  <tr><td>lineHeight</td><td>integer (optional)</td><td>1</td><td></td></tr>
+  <tr><td>mainColor</td><td>string (optional)</td><td>'primary'</td><td>Sets background color of button.</td></tr>
+  <tr><td>minWidth</td><td>string (optional)</td><td>'3rem'</td><td></td></tr>
+  <tr><td>position</td><td>string (optional)</td><td>'relative'</td><td></td></tr>
+  <tr><td>px</td><td>integer (optional)</td><td>4</td><td></td></tr>
+  <tr><td>py</td><td>integer (optional)</td><td>0</td><td></td></tr>
+  <tr><td>size</td><td>enum (optional)</td><td></td><td>Sets font and spacing size of button. Allowed values: 'small' 'medium' 'large'.</td></tr>
+  <tr><td>theme</td><td>object (optional)</td><td></td><td>Sets theme.</td></tr>
+    </tbody>
+    </Table>
 
-border
-(optional)
-Default value:
 
-'none'
-
-color
-(optional)
-Default value:
-
-'white'
-
-contrastColor
-string
-(optional)
-Sets text color of button
-Default value:
-
-'white'
-
-fontFamily
-(optional)
-Default value:
-
-'sansSerif'
-
-fontSize
-(optional)
-Default value:
-
-'inherit'
-
-fontWeight
-(optional)
-Default value:
-
-3
-
-height
-(optional)
-Default value:
-
-'3rem'
-
-icon
-string
-(optional)
-Sets icon of button
-icononly
-bool
-(optional)
-Sets padding on button with icon and no text
-iconpos
-enum
-(optional)
-Sets icon position on button
-Allowed values: 'left' 'right' .
-lineHeight
-(optional)
-Default value:
-
-1
-
-mainColor
-string
-(optional)
-Sets background color of button
-Default value:
-
-'primary'
-
-minWidth
-(optional)
-Default value:
-
-'3rem'
-
-position
-(optional)
-Default value:
-
-'relative'
-
-px
-(optional)
-Default value:
-
-4
-
-py
-(optional)
-Default value:
-
-0
 
 size
 enum
 (optional)
 Sets font and spacing size of button
 Allowed values: 'small' 'medium' 'large' .
+
 theme
 object
 (optional)

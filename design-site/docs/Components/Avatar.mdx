@@ -20,38 +20,25 @@ import {Avatar} from 'pipeline-ui'
 
 ### Props
 
-Props
-alt
-string
-(optional)
-Sets alt attribute on image for accessibility
-Default value:
+import { Table } from 'pipeline-ui';
 
-'Avatar'
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>alt</td><td>string (optional)</td><td>'Avatar'</td><td>Sets alt attribute on image for accessibility.</td></tr>
+  <tr><td>bg</td><td>string (optional)</td><td>'grey'</td><td>Sets background color.</td></tr>
+  <tr><td>size</td><td>string (optional)</td><td>'2rem'</td><td>Sets avatar height and width.</td></tr>
+  <tr><td>src</td><td>string (required)</td><td></td><td>Sets avatar image.</td></tr>
+  <tr><td>theme</td><td>object (optional)</td><td></td><td>Sets theme.</td></tr>
+    </tbody>
+    </Table>
 
-bg
-(optional)
-Default value:
 
-'grey'
-
-size
-string
-(optional)
-Sets avatar height and width
-Default value:
-
-'2rem'
-
-src
-string
-(required)
-Sets avatar image
-theme
-object
-(optional)
-Sets theme
-
-Styled System Props
-
-Avatar uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.
+<br></br>Avatar also uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.

@@ -18,41 +18,24 @@ import {Link} from 'pipeline-ui'
 
 ### Props
 
-Props
-activeColor
-(optional)
-Default value:
+import { Table } from 'pipeline-ui';
 
-'primary-dark'
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>activeColor</td><td>string (optional)</td><td>'primary-dark'</td><td></td></tr>
+  <tr><td>color</td><td>string (optional)</td><td>'primary'</td><td></td></tr>
+  <tr><td>fontSize</td><td>integer (optional)</td><td>1</td><td></td></tr>
+  <tr><td>fontWeight</td><td>integer (optional)</td><td>3</td><td></td></tr>
+  <tr><td>hoverColor</td><td>string (optional)</td><td>'primary-light'</td><td></td></tr>
+    </tbody>
+    </Table>
 
-color
-(optional)
-Default value:
-
-'primary'
-
-fontSize
-(optional)
-Default value:
-
-1
-
-fontWeight
-(optional)
-Default value:
-
-3
-
-hoverColor
-(optional)
-Default value:
-
-'primary-light'
-
-theme
-object
-(optional)
-
-Styled System Props
-
-Text uses COMMON, TYPOGRAPHY groups of Styled System props.
+<br></br>Link uses COMMON, TYPOGRAPHY groups of Styled System props.

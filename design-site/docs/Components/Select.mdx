@@ -13,3 +13,13 @@ import {Select, AsaList} from 'pipeline-ui'
 
 <Select options={AsaList}/>
 ```
+
+The value of the options prop must is an array of objects:
+
+```jsx
+const options = [
+  { value: '1', label: 'Algorand' },
+  { value: '2', label: 'Ethereum' },
+  { value: '3', label: 'Bitcoin' }
+]
+```

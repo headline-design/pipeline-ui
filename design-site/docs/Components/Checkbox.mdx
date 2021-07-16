@@ -14,19 +14,22 @@ import {Checkbox} from 'pipeline-ui'
 
 ### Props
 
-color
-(optional)
-Default value:
+import { Table } from 'pipeline-ui';
 
-'primary'
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>color</td><td>string (optional)</td><td>'primary'</td><td></td></tr>
+  <tr><td>label</td><td>string (optional)</td><td></td><td></td></tr>
+  <tr><td>theme</td><td>object (optional)</td><td></td><td>Sets theme.</td></tr>
+    </tbody>
+    </Table>
 
-label
-string
-(optional)
-theme
-object
-(optional)
-
-Styled System Props
-
-Checkbox uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.
+<br></br>Checkbox uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.

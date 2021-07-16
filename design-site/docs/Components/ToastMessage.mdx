@@ -26,68 +26,25 @@ Usage Example:
 
 ### Props
 
-actionHref
-string
-(optional)
-Sets URL for button
-Default value:
+import { Table } from 'pipeline-ui';
 
-''
-
-actionText
-string
-(optional)
-Sets text for button
-Default value:
-
-''
-
-closeElem
-bool
-(optional)
-Allows ToastMessage to be closed by user
-Default value:
-
-false
-
-colorTheme
-enum
-(optional)
-Sets background and text color
-Allowed values: 'light' 'dark' .
-Default value:
-
-'light'
-
-icon
-string
-(optional)
-Sets icon to display
-Default value:
-
-''
-
-message
-string
-(optional)
-Sets primary message text
-Default value:
-
-'Write update here [Required]'
-
-secondaryMessage
-string
-(optional)
-Sets secondary message text
-Default value:
-
-''
-
-variant
-enum
-(optional)
-Sets type of ToastMessage to display
-Allowed values: 'default' 'success' 'failure' 'processing' .
-Default value:
-
-'default'
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>actionHref</td><td>string (optional)</td><td>''</td><td>Sets URL for button.</td></tr>
+  <tr><td>actionText</td><td>string (optional)</td><td>''</td><td>Sets text for button.</td></tr>
+  <tr><td>closeElem</td><td>bool (optional)</td><td>false</td><td>Allows ToastMessage to be closed by user</td></tr>
+  <tr><td>colorTheme</td><td>enum (optional)</td><td>'light'</td><td>Sets background and text color. Allowed values: 'light' 'dark'.</td></tr>
+  <tr><td>icon</td><td>string (optional)</td><td>''</td><td>Sets icon to display</td></tr>
+  <tr><td>message</td><td>string (optional)</td><td>'Write update here [Required]'</td><td>Sets primary message text</td></tr>
+  <tr><td>secondaryMessage</td><td>string (optional)</td><td>''</td><td>Sets secondary message text</td></tr>
+  <tr><td>variant</td><td>enum (optional)</td><td>'default'</td><td>Sets type of ToastMessage to display. Allowed values: 'default' 'success' 'failure' 'processing'.</td></tr>
+    </tbody>
+    </Table>

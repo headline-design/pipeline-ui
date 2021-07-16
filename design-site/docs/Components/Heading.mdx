@@ -12,21 +12,24 @@ import {Heading} from 'pipeline-ui'
 <Heading as={"h2"}>Latest transaction</Heading>
 ```
 
-### props
+### Props
 
-as
-(optional)
-Default value:
+import { Table } from 'pipeline-ui';
 
-'h2'
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>as</td><td>string (optional)</td><td>'h2'</td><td></td></tr>
+  <tr><td>fontSize</td><td>(optional)</td><td></td><td></td></tr>
+    </tbody>
+    </Table>
 
-fontSize
-(optional)
-Default value:
-
-''
-
-Styled System Props
-
-Heading uses COMMON, TYPOGRAPHY groups of Styled System props.
+<br></br>Heading uses COMMON, TYPOGRAPHY groups of Styled System props.
 

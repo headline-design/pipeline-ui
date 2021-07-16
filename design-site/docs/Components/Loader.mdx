@@ -14,24 +14,22 @@ import {Loader} from 'pipeline-ui'
 
 ### Props
 
-bg
-(optional)
-Default value:
+import { Table } from 'pipeline-ui';
 
-'transparent'
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>bg</td><td>string (optional)</td><td>'transparent'</td><td></td></tr>
+  <tr><td>color</td><td>string (optional)</td><td>'primary'</td><td></td></tr>
+  <tr><td>size</td><td>string (optional)</td><td>'1rem'</td><td></td></tr>
+    </tbody>
+    </Table>
 
-color
-(optional)
-Default value:
-
-'primary'
-
-size
-(optional)
-Default value:
-
-'1rem'
-
-Styled System Props
-
-Loader uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.
+<br></br>Loader uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.

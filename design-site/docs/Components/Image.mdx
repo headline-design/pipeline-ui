@@ -24,37 +24,24 @@ import {Image} from 'pipeline-ui'
 
 ### Props
 
-Props
-alt
-string
-(optional)
-Sets alt attribute on image for accessibility
-as
-(optional)
-Default value:
+import { Table } from 'pipeline-ui';
 
-'img'
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>alt</td><td>string (optional)</td><td></td><td>Sets alt attribute on image for accessibility.</td></tr>
+  <tr><td>height</td><td>string (optional)</td><td>'auto'</td><td></td></tr>
+  <tr><td>maxWidth</td><td>string (optional)</td><td>'100%'</td><td></td></tr>
+  <tr><td>src</td><td>string (required)</td><td></td><td>Sets the src attribute of the img element.</td></tr>
+  <tr><td>theme</td><td>object (optional)</td><td></td><td>Sets theme.</td></tr>
+    </tbody>
+    </Table>
 
-height
-(optional)
-Default value:
-
-'auto'
-
-maxWidth
-(optional)
-Default value:
-
-'100%'
-
-src
-string
-(required)
-Sets the src attribute of the img element
-theme
-object
-(optional)
-
-Styled System Props
-
-Image uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.
+<br></br>Image uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.
