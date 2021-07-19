@@ -1,4 +1,4 @@
-import { tint, shade, readableColor } from 'polished';
+import { tint, shade, readableColor } from 'polished'
 
 // pipeline base colors
 const baseColors = {
@@ -8,9 +8,9 @@ const baseColors = {
   green: '#28C081',
   yellow: '#FD9D28',
   red: '#DC2C10',
-  blurple: '#536dfe',
+  blurple: '#3578e5',
   headlineblue: '#3259D6',
-};
+}
 
 // pipeline palette
 const colors = {
@@ -44,18 +44,18 @@ const colors = {
     light: [null, tint(0.9, baseColors.red)],
     dark: [null, shade(0.4, baseColors.red)],
   },
-};
+}
 
-const blurple = colors.blurple;
-const blue = colors.blue;
-const green = colors.green;
-const yellow = colors.yellow;
-const red = colors.red;
+const blurple = colors.blurple
+const blue = colors.blue
+const green = colors.green
+const yellow = colors.yellow
+const red = colors.red
 
-export { blurple };
-export { blue };
-export { green };
-export { yellow };
-export { red };
+export { blurple }
+export { blue }
+export { green }
+export { yellow }
+export { red }
 
-export default baseColors;
+export default baseColors

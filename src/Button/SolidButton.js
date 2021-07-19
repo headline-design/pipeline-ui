@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import theme from '../theme';
-import Button, { StyledButton, ButtonBody } from './BaseButton';
+import React from 'react'
+import styled from 'styled-components'
+import theme from '../theme'
+import Button, { StyledButton, ButtonBody } from './BaseButton'
 
 // outline styles
 const StyledSolidButton = styled(StyledButton)`
@@ -40,7 +40,7 @@ const StyledSolidButton = styled(StyledButton)`
     background: var(--main-color);
     pointer-events: none;
   }
-`;
+`
 
 const SolidButton = React.forwardRef(
   ({ children, icon, iconpos, ...props }, ref) => {
@@ -48,16 +48,16 @@ const SolidButton = React.forwardRef(
       <StyledSolidButton {...props} ref={ref}>
         <ButtonBody icon={icon} iconpos={iconpos} children={children} />
       </StyledSolidButton>
-    );
+    )
   }
-);
+)
 
 SolidButton.defaultProps = {
   ...Button.defaultProps,
-  borderRadius: 1,
+  borderRadius: 0,
   boxShadow: 1,
-};
+}
 
-export { StyledSolidButton };
+export { StyledSolidButton }
 
-export default SolidButton;
+export default SolidButton
