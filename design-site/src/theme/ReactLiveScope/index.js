@@ -6,13 +6,53 @@
  */
 
 import React from 'react';
-import {Button} from 'pipeline-ui';
+import { Button,
+  Avatar,
+  Box,
+  Card,
+  Checkbox,
+  Flash,
+  Flex,
+  Heading,
+  Icon,
+  Input,
+  Loader,
+  Modal,
+  Pill,
+  Progress,
+  QR,
+  Radio,
+  Select,
+  Slider,
+  Table,
+  Textarea,
+  ToastMessage} from 'pipeline-ui';
 
 // Add react-live imports you need here
 const ReactLiveScope = {
   React,
   ...React,
   Button,
+  Avatar,
+  Box,
+  Card,
+  Checkbox,
+  Flash,
+  Flex,
+  Heading,
+  Icon,
+  Input,
+  Loader,
+  Modal,
+  Pill,
+  Progress,
+  QR,
+  Radio,
+  Select,
+  Slider,
+  Table,
+  Textarea,
+  ToastMessage
 };
 
 export default ReactLiveScope;
