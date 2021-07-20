@@ -1,0 +1,21 @@
+# Component Demo
+
+After installing, building and packing the Pipeline UI library, run the included demo to preview the Pipeline UI components.
+
+```bash
+cd demo
+npm install
+npm run start
+```
+
+<iframe src="https://pipeline-ui.vercel.app/" width="100%" height="3000px"/>
+
+## Testing library modifications
+
+To test any modifications you wish to make to the library, you must delete the demo's node-modules folder and re-install. Alternatively, you can replace the demo's package.json tgz pipeline-ui path with "file:../" and update the version code in the pipeline-ui package.json.
+
+:::tip
+
+To view changes to the library in your own project, add the dependency (with latest version number) "pipeline-ui": "file:./pipeline-ui-0.1.6.tgz" to its package.json file, and copy the tgz file to your project root directory. 
+
+:::
