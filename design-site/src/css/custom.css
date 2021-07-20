@@ -305,3 +305,29 @@ display: none;
 }
   }
   
+  .navbar-sidebar--expanded_3zB3 .navbar-sidebar__icon_2hHO>svg.navbar-sidebar-collapse-icon_37Qp {
+    display: block;
+    position: fixed;
+    top: 8px;
+    left: 20px;
+    z-index: 10000 !important;
+    width: 32px !important;
+    height: 32px !important;
+}
+
+@media (min-width: 997px){
+  .navbar-sidebar--expanded_3zB3 .navbar-sidebar__icon_2hHO>svg.navbar-sidebar-collapse-icon_37Qp,  .navbar-sidebar__icon_2hHO {
+  display: none !important;
+  }
+    }
+    
+    .navbar-sidebar__icon_2hHO {
+      z-index: 100 !important;
+      display: block !important;
+      position: fixed !important;
+      top: 8px !important;
+      left: 20px;
+      z-index: 10000 !important;
+      width: 32px !important;
+      height: 32px !important;
+    }
