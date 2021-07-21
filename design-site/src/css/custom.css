@@ -331,3 +331,11 @@ display: none;
       width: 32px !important;
       height: 32px !important;
     }
+
+.navbar-sidebar {
+    transition: opacity var(--ifm-transition-fast);
+}
+
+.navbar__brand:focus {
+    outline-width: 0px !important;
+}
