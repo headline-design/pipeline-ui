@@ -2,18 +2,16 @@
 
 Use the Radio component when users can select only one option from a short list and you want all the options to be visible. Radio maps to a radio input and a label.
 
-import {Radio, Field} from 'pipeline-ui'
-
-<Field label="Choose your Asset"><Radio label="Algorand" my={2} /><Radio defaultChecked label="ASA" my={2} /><Radio disabled label="Create" my={2} /></Field>
+import {Radio} from 'pipeline-ui'
 
 ## Usage Example
 
-```jsx
-<Field label="Choose your Asset">
+```jsx live
+<>
   <Radio label="Algorand" my={2} />
   <Radio defaultChecked label="ASA" my={2} />
   <Radio checked disabled label="Create" my={2} />
-</Field>
+  </>
 ```
 ### Props
 

@@ -7,6 +7,7 @@
 
 import React from 'react';
 import { Button,
+  AsaList,
   Avatar,
   Box,
   Card,
@@ -16,7 +17,9 @@ import { Button,
   Heading,
   Icon,
   Input,
+  Image,
   Loader,
+  Link,
   Modal,
   Pill,
   Progress,
@@ -26,6 +29,7 @@ import { Button,
   Slider,
   Table,
   Textarea,
+  Text,
   ToastMessage} from 'pipeline-ui';
 
 // Add react-live imports you need here
@@ -33,6 +37,7 @@ const ReactLiveScope = {
   React,
   ...React,
   Button,
+  AsaList,
   Avatar,
   Box,
   Card,
@@ -41,8 +46,10 @@ const ReactLiveScope = {
   Flex,
   Heading,
   Icon,
+  Image,
   Input,
   Loader,
+  Link,
   Modal,
   Pill,
   Progress,
@@ -52,6 +59,7 @@ const ReactLiveScope = {
   Slider,
   Table,
   Textarea,
+  Text,
   ToastMessage
 };
 

@@ -11,7 +11,7 @@ npm install @pipeline-ui/icons
 ## Import in app
 
 ```jsx
-import { Icon } from '@pipeline-ui/icons'; // imports all icons - bad for bundle size
+import { Icon } from '@pipeline-ui'; // imports all icons - bad for bundle size
 import { Eth } from '@pipeline-ui/icons'; // import single token icon
 import { MoneyOff } from '@pipeline-ui/icons'; // import single material design icon
 ```
@@ -20,16 +20,26 @@ import { MoneyOff } from '@pipeline-ui/icons'; // import single material design 
 
 import {Eth, Btc, Icon} from '@pipeline-ui/icons';
 
-<Icon color="red" name="MoneyOff" size="80" />
-<Eth color="blue" size="80" />
-<Btc color="green" size="80" />
-
-
-```jsx
 <>
   <Icon color="red" name="MoneyOff" size="80" />
   <Eth color="blue" size="80" />
   <Btc color="green" size="80" />
+</>
+
+```jsx
+import {Eth, Btc} from '@pipeline-ui/icons';
+import {Icon} from 'pipeline-ui';
+<>
+  <Icon color="red" name="MoneyOff" size="80" />
+  <Eth color="blue" size="80" />
+  <Btc color="green" size="80" />
+</>
+```
+
+
+```jsx live
+<>
+  <Icon color="red" name="MoneyOff" size="80" />
 </>
 ```
 Icon uses COMMON, LAYOUT, POSITION, FLEXBOX, BORDERS groups of Styled System props.

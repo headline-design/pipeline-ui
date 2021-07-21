@@ -4,26 +4,13 @@ Card renders a responsive box-model layout component. Inherits props from Box co
 
 import {Card, Text, Icon, Button} from 'pipeline-ui'
 
-<Card bg={"grey"} width={"auto"} maxWidth={"420px"} mx={"auto"} px={[3, 3, 4]}>
-  <Text
-    caps
-    fontSize={0}
-    fontWeight={4}
-    mb={3}
-    display={"flex"}
-    alignItems={"center"}
-  >
-  <Icon name={"AccountBalanceWallet"} mr={2} />
-    Connect your Wallet:
-  </Text>
-  <Button >Check My Balance</Button>
-</Card>
-
 ## Usage Example
 
 ```jsx
-import {Card, Text, Icon, AlgoButton, Pipeline} from 'pipeline-ui'
+import {Card, Text, Icon, Button} from 'pipeline-ui'
+```
 
+```jsx live
 <Card bg={"grey"} width={"auto"} maxWidth={"420px"} mx={"auto"} px={[3, 3, 4]}>
   <Text
     caps
@@ -34,9 +21,9 @@ import {Card, Text, Icon, AlgoButton, Pipeline} from 'pipeline-ui'
     alignItems={"center"}
   >
   <Icon name={"AccountBalanceWallet"} mr={2} />
-    Connect your Wallet:
+    Your balance:
   </Text>
-  <AlgoButton />
+  <Button>Check</Button>
 </Card>
 ```
 
