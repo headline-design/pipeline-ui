@@ -113,43 +113,25 @@ const AlgoSendButton = ({
   context,
   returnTo,
   index,
-  ...props
 }) => {
   return (
     <div>
       <AlgoSendButtonB
-        {...props}
         onClick={() => {
-          if (index == 0) {
-            Pipeline.send(
-              recipient,
-              parseInt(amount),
-              note,
-              myAddress,
-              wallet
-            ).then(data => {
-              if (typeof data !== 'undefined') {
-                const object = {}
-                object[returnTo] = data
-                context.setState(object)
-              }
-            })
-          } else {
-            Pipeline.send(
-              recipient,
-              parseInt(amount),
-              note,
-              myAddress,
-              wallet,
-              parseInt(index)
-            ).then(data => {
-              if (typeof data !== 'undefined') {
-                const object = {}
-                object[returnTo] = data
-                context.setState(object)
-              }
-            })
-          }
+          Pipeline.send(
+            recipient,
+            parseInt(amount),
+            note,
+            myAddress,
+            wallet,
+            index
+          ).then(data => {
+            if (typeof data !== 'undefined') {
+              const object = {}
+              object[returnTo] = data
+              context.setState(object)
+            }
+          })
         }}
       >
         Send

@@ -64,7 +64,7 @@ export default class Pipeline {
       })
         .then(response => response.json())
         .then(data => {
-          transactionID = JSON.stringify(data)
+          return data.txId
         })
         .catch(error => {
           console.error('Error:', error)

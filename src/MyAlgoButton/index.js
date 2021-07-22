@@ -101,10 +101,9 @@ MyAlgoButton.propTypes = {
 
 MyAlgoButton.displayName = 'MyAlgoButton'
 
-const AlgoButton = ({ wallet, context, returnTo, ...props }) => {
+const AlgoButton = ({ wallet, context, returnTo }) => {
   return (
     <MyAlgoButton
-      {...props}
       onClick={() => {
         Pipeline.connect(wallet).then(accounts => {
           const data = {}
