@@ -29,8 +29,8 @@
 }
 
 .pagination-nav__link:hover {
-  background-color: var(--ifm-color-secondary);
-  border-color: var(--ifm-color-secondary-darker)
+  background-color: var(--ifm-code-background);
+  border-color: var(--ifm-color-secondary-darker);
 }
 
 @media (min-width:997px) {
@@ -82,13 +82,27 @@ li>code,p>code,td>code {
 }
 
 .docSidebarContainer {
-  background-color: var(--ifm-background-surface-color)
+  background-color: var(--ifm-background-surface-color);
 }
+
+@media (min-width: 997px) {
+.docSidebarContainer_3Kbt {
+      background-color: var(--ifm-background-surface-color);
+      z-index: 1;
+}
+}
+
+@media (min-width: 997px) {
+  .docSidebarContainer {
+        background-color: var(--ifm-background-surface-color);
+        z-index: 1;
+  }
+  }
 
 .navbar-sidebar__brand {
   box-shadow: none;
   position: fixed;
-  bottom: 0;
+  bottom: 4rem;
   width: 100%
 }
 
@@ -151,6 +165,7 @@ li>code,p>code,td>code {
   bottom: auto;
   color: var(--ifm-navbar-link-color);
   height: 3rem;
+  max-width:5rem;
   left: 0;
   position: fixed;
   right: 1rem;
@@ -337,5 +352,35 @@ display: none;
 }
 
 .navbar__brand:focus {
-    outline-width: 0px !important;
+  outline-width: 0!important;
 }
+
+.navbar__brand:hover, .navbar__brand:focus {
+  color: var(--ifm-navbar-link-hover-color);
+}
+
+@media (min-width: 997px) {
+  .padding-bottom--lg, .padding-vert--lg {
+      padding-bottom: 2rem!important;
+      padding-top: 15rem !important;
+  }
+  }
+
+  @media (min-width: 997px) {
+    .h1Heading_27L5 {
+        font-size: 3rem;
+        margin-bottom: calc(var(--ifm-leading-desktop)*var(--ifm-leading));
+        background-color: var(--ifm-color-content-inverse);
+        width: 100%;
+        padding-left: calc(var(--doc-sidebar-width) + 1rem);
+        position: absolute;
+        left: 0px;
+        right: auto;
+        z-index: 0;
+        top: 0px;
+        padding-top: 10rem;
+        padding-bottom: 2rem;
+        color: var(--ifm-color-content);
+        border-bottom: 1px solid var(--ifm-toc-border-color);
+    }
+    }
