@@ -121,7 +121,7 @@ li>code,p>code,td>code {
   -ms-scroll-chaining: none;
   border-left: 1px solid var(--ifm-toc-border-color);
   bottom: 0;
-  box-shadow: -2px 2px 6px rgb(0 0 0/20%);
+  box-shadow: none;
   height: 100%;
   left: auto;
   overflow-y: hidden;
@@ -196,8 +196,8 @@ li>code,p>code,td>code {
   overflow-x: hidden;
 }
 
-.menu--show .menu__list thin-scrollbar::-webkit-scrollbar { 
-  height: var(--ifm-scrollbar-size); 
+.menu--show .menu__list thin-scrollbar::-webkit-scrollbar {
+  height: var(--ifm-scrollbar-size);
   width: var(--ifm-scrollbar-size);
 }
 
@@ -205,13 +205,13 @@ li>code,p>code,td>code {
   width: 6px;
 }
 
-@media (pointer: fine) {.menu--show 
+@media (pointer: fine) {.menu--show
 .thin-scrollbar::-webkit-scrollbar {
     height: var(--ifm-scrollbar-size);
     width: var(--ifm-scrollbar-size);
 }
 }
-    
+
 
 .menu .menu--responsive .thin-scrollbar {
   height: var(--ifm-scrollbar-size);
@@ -304,7 +304,7 @@ li>code,p>code,td>code {
 display: none;
 }
   }
-  
+
   .navbar-sidebar--expanded_3zB3 .navbar-sidebar__icon_2hHO>svg.navbar-sidebar-collapse-icon_37Qp {
     display: block;
     position: fixed;
@@ -320,7 +320,7 @@ display: none;
   display: none !important;
   }
     }
-    
+
     .navbar-sidebar__icon_2hHO {
       z-index: 100 !important;
       display: block !important;

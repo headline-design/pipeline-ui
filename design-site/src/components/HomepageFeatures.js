@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('../../static/img/pipeline_vectilla_1.svg').default,
     description: (
       <>
         Minimal Javascript knowledge required. Algorand functions can be accessed through JSX tags.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/pipeline_vectilla_2.svg').default,
     description: (
       <>
         Pipeline UI provides a ready-to-go design library for the Algorand Ecosystem
@@ -23,10 +23,10 @@ const FeatureList = [
   },
   {
     title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/pipeline_vectilla_3.svg').default,
     description: (
       <>
-        Rapidly integrate Algorand into your web design with aesthetic and consistently recognizeable components. 
+        Rapidly integrate Algorand into your web design with aesthetic and consistently recognizeable components.
       </>
     ),
   },
