@@ -357,10 +357,6 @@ display: none;
   outline-width: 0!important;
 }
 
-  .navbar__brand:focus {
-  color: var(--ifm-navbar-link-hover-color);
-}
-
 @media (min-width: 997px) {
   .padding-bottom--lg, .padding-vert--lg {
       padding-bottom: 2rem!important;
@@ -409,18 +405,87 @@ display: none;
 }
     }
 
-  .navbar__brand:hover {
-  color: var(--ifm-color-gray-800);
-  }
-
   @media (min-width: 1650px){
 .padding-bottom--lg, .padding-vert--lg {
     padding-top: 17rem!important;
 }
   }
 
+  @media (min-width: 1650px){
+  .h1Heading_27L5 {
+       padding-left: calc(var(--doc-sidebar-width) + 4rem);
+  }
+}
+
   @media (min-width: 2300px){
 .padding-bottom--lg, .padding-vert--lg {
     padding-top: 20rem!important;
 }
   }
+
+  html[data-theme=dark]{
+    background-color:var(--ifm-background-surface-color);
+  }
+
+  .menu--responsive .menu__button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--ifm-toc-border-color) !important;
+}
+
+@media (max-width: 996px) {
+  .navbar__toggle:focus {
+      border-color: var(--ifm-primary-color);
+  }
+  }
+
+  @media (max-width: 996px){
+  .navbar__toggle {
+      border: 1px solid var(--ifm-toc-border-color);
+      display: inherit;
+      height: 3rem;
+      max-width: 6rem;
+      vertical-align: middle;
+      width: 6rem;
+  }
+  }
+
+  @media (max-width: 996px){
+  .clean-btn {
+      padding: 8px!important;
+  }
+}
+
+  @media (max-width: 996px){
+  .navbar__toggle {
+      position: absolute;
+      margin-right: 0!important;
+      right: 0;
+      align-items: center;
+      display: flex!important;
+      align-content: space-between;
+      justify-content: center;
+  }
+}
+
+
+@media (max-width: 996px){
+.navbar__toggle:hover, .menu--responsive .menu__button:hover {
+    background-color: var(--ifm-code-background);
+    border-color: var(--ifm-color-secondary-darker);
+}
+}
+
+.navbar__title {
+  padding: 10px;
+}
+
+.navbar__title:hover {
+  background-color: var(--ifm-code-background);
+  border-color: var(--ifm-color-secondary-darker);
+}
+
+.navbar__title:focus {
+  outline: 2px;
+  outline-offset: 2px;
+}
