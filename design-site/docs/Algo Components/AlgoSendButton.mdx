@@ -24,13 +24,38 @@ import {AlgoButton, AlgoSendButton, Pipeline} from 'pipeline-ui'
 const myAlgoWallet = Pipeline.init();
 
 <AlgoSendButton
-      index={this.state.index} //If Algorand, must be 0. If ASA, must be numeric index value
-      recipient={this.state.recipient} //string value
-      amount={this.state.amount} //integer value in micro Algos
-      note={this.state.note} //string value
-      myAddress={this.state.Algaddress} //string value
-      wallet={myAlgoWallet} //reference to an instance of Pipeline.init(); that is called ONCE when the app is initialized
+      index={this.state.index}
+      recipient={this.state.recipient}
+      amount={this.state.amount}
+      note={this.state.note}
+      myAddress={this.state.Algaddress}
+      wallet={myAlgoWallet} 
       context={this}
-      returnTo={"txID"}// string value of state key to return the transaction id
+      returnTo={"txID"}
       />
 ```
+
+### Props
+
+import {Table} from 'pipeline-ui';
+
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>index</td><td>integer</td><td>0</td><td>If Algorand, must be 0. If ASA, must be numeric index value</td></tr>
+  <tr><td>recipient</td><td>string</td><td></td><td>Address of recipient</td></tr>
+  <tr><td>amount</td><td>integer</td><td>1</td><td>amount to send in micro Algos</td></tr>
+  <tr><td>note</td><td>string</td><td>"note"</td><td></td></tr>
+  <tr><td>myAddress</td><td>string</td><td></td><td>Address of sender</td></tr>
+  <tr><td>wallet</td><td>reference</td><td></td><td>reference to an instance of Pipeline.init(); that is called ONCE when the app is initialized</td></tr>
+  <tr><td>context</td><td>reference</td><td></td><td>Recommended value: this</td></tr>
+  <tr><td>returnTo</td><td>string</td><td></td><td>string value of state key to return the transaction id</td></tr>
+    </tbody>
+    </Table>

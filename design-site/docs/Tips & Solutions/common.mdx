@@ -1,0 +1,54 @@
+# Basics
+
+Tips and tricks for common issues.
+
+## How do I make a blank React app?
+
+In command prompt, enter:
+
+```bash
+npx create-react-app myApp
+```
+Running this command generates a new folder called "myApp" (or whichever custom name you specify). Inside this folder you will find several pre-configured files. The primary file that you will be working with is App.js that is found in the src folder. 
+
+## setState is not defined
+
+Make sure that your app is written as a class rather than as a function. Your code in App.js should look like this:
+
+```jsx
+import React, {Component} from 'react';
+
+class myApp extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            myValue: "", //your values go here
+
+        };
+    }
+
+    //your function and lifecycle code goes here
+
+    render(){
+        return ( //your jsx code goes between the <div> tags below:
+            <div>
+            </div>
+        )
+    }
+}
+
+export default App;
+```
+
+## How to trigger other actions after connecting to MyAlgo or sending a transaction
+
+Add the following code just above the `render()` call:
+
+```jsx
+ componentDidUpdate(_prevProps, prevState) {
+    if (prevState.address !== this.state.address){ // note: address can be replaced with any state key
+        //do something
+    }
+ }
+ ```
+In order to avoid an inifinite loop and browser crashing, setState (or functions that setState) should only be called in `componentDidUpdate` in a conditional block. 

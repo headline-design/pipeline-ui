@@ -9,6 +9,20 @@ pipeline scopes the :valid and :invalid styles to parent .was-validated class, u
 
 ## Usage Example
 
+(to view component preview, scroll to bottom of page)
+
+import {
+  Box,
+  Form,
+  Input,
+  Select,
+  Field,
+  Button,
+  Text,
+  Checkbox,
+  Radio
+} from "pipeline-ui";
+
 ```jsx
 import {
   Box,
@@ -21,6 +35,10 @@ import {
   Checkbox,
   Radio
 } from "pipeline-ui";
+```
+
+
+```jsx live
 
 function CustomForm() {
   const [formValidated, setFormValidated] = useState(false);
