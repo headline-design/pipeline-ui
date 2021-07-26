@@ -829,6 +829,6 @@ padding-bottom: 0px !important;
 
 @media (max-width: 550px){
 .hero__subtitle, .hero__title {
-    padding-left: 2rem !important;
+    padding-left: 2rem;
 }
 }
