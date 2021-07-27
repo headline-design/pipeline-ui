@@ -1,6 +1,12 @@
 # Pipeline Class
 
-A custom class to sign and send transactions with MyAlgo Connect and check balances. For advanced users who do not wish to use the Algo Components with hard-coded onClick functions. 
+A custom class to sign and send transactions with MyAlgo Connect and check balances. For advanced users who do not wish to use the Algo Components with hard-coded onClick functions. Note: the codesandbox example uses `@pipeline-ui-2/pipeline`.
+
+## Use Example
+
+(Live updates coming soon)
+
+<iframe src="https://codesandbox.io/embed/github/headline-design/Pipeline/tree/main/example?codemirror=1&fontsize=14&hidenavigation=1&theme=dark" width="100%" height="1000px" title="example" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts" ></iframe>
 
 ## Methods
 
@@ -21,47 +27,3 @@ import {Table} from 'pipeline-ui';
   <tr><td>Pipeline.send</td><td>string (transaction id) </td><td>Can only be called after Pipeline.init and Pipeline.connect.</td></tr>
     </tbody>
     </Table>
-
-
-## Use Examples
-
-(Live updates coming soon)
-
-```jsx
-import {Pipeline} from 'pipeline-ui';
-```
-
-```jsx
-
-function App () {
-
-var balance = 0;
-
-const address ="LMKFQIPL3VQCZGGFK4WZ7FPCQWLNBTJQ3UWSTA7D7QZSPJTZQKTDVT7WG4"
-
-function myBalance(){Pipeline.balance(address).then(data => alert(data));}
-
- /*
-
-const myAlgoWallet = Pipeline.init();
-
-Pipeline.connect(myAlgoWallet)
-    .then(data => {
-        console.log(data);
-    });
-
-Pipeline.send(address, amount, note, sendingAddress, myAlgowallet, index)
-    .then(data => {
-        console.log(data);
-    });
-*/
-    return(
-      <div>
-        <h1>uncomment and edit the code to make things happen!</h1>
-        <button onClick={myBalance}>Click to check balance</button>
-      </div>
-    );
-
-}
-
-```
