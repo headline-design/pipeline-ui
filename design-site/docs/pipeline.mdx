@@ -1,0 +1,70 @@
+# Pipeline Class
+
+A custom class to sign and send transactions with MyAlgo Connect and check balances. For advanced users who do not wish to use the Algo Components with hard-coded onClick functions. 
+
+## Methods
+
+import {Table} from 'pipeline-ui';
+
+<Table>
+  <thead>
+  <tr>
+    <th>Method</th>
+    <th>Returns</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>Pipeline.init()</td><td>new instance of MyAlgo</td><td>Must be called once before connect or send methods</td></tr>
+  <tr><td>Pipeline.balance(address)</td><td>string (balance + "Algos")</td><td>Takes input string address. Pipeline.init not neccesary for use.</td></tr>
+  <tr><td>Pipeline.connect</td><td>string (address)</td><td>Generates pop-up to sign in. Must be called before Pipeline.send</td></tr>
+  <tr><td>Pipeline.send</td><td>string (transaction id) </td><td>Can only be called after Pipeline.init and Pipeline.connect.</td></tr>
+    </tbody>
+    </Table>
+
+
+## Use Examples
+
+Uncomment to experiment with the Pipeline class!
+
+import {Pipeline} from 'pipeline-ui';
+
+```jsx
+import {Pipeline} from 'pipeline-ui';
+```
+
+```jsx live 
+
+function App () {
+
+var balance = 0;
+
+const address ="LMKFQIPL3VQCZGGFK4WZ7FPCQWLNBTJQ3UWSTA7D7QZSPJTZQKTDVT7WG4"
+
+function myBalance(){Pipeline.balance(address).then(data => alert(data));}
+
+ /*
+
+const myAlgoWallet = Pipeline.init();
+
+Pipeline.connect(myAlgoWallet)
+    .then(data => {
+        console.log(data);
+    });
+
+Pipeline.send(address, amount, note, sendingAddress, myAlgowallet, index)
+    .then(data => {
+        console.log(data);
+    });
+*/
+    return(
+      <div>
+        <h1>uncomment and edit the code to make things happen!</h1>
+        <button onClick={myBalance}>Click to check balance</button>
+      </div>
+    );
+
+}
+
+    
+```
