@@ -9,7 +9,11 @@ In command prompt, enter:
 ```bash
 npx create-react-app myApp
 ```
-Running this command generates a new folder called "myApp" (or whichever custom name you specify). Inside this folder you will find several pre-configured files. The primary file that you will be working with is App.js that is found in the src folder. 
+Running this command generates a new folder called "myApp" (or whichever custom name you specify). Inside this folder you will find several pre-configured files. The primary file that you will be working with is App.js that is found in the src folder.
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<img alt="Docusaurus with Keytar" width="100%" height="400px" src={useBaseUrl('/img/pipeline_vectilla_5.svg')} />
 
 ## setState is not defined
 
@@ -51,4 +55,4 @@ Add the following code just above the `render()` call:
     }
  }
  ```
-In order to avoid an inifinite loop and browser crashing, setState (or functions that setState) should only be called in `componentDidUpdate` in a conditional block. 
+In order to avoid an inifinite loop and browser crashing, setState (or functions that setState) should only be called in `componentDidUpdate` in a conditional block.
