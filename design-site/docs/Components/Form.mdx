@@ -60,7 +60,7 @@ function CustomForm() {
   };
 
   const handleSelect = e => {
-    setSelectValue(e.target.value);
+    setSelectValue(e.value);
     validateInput(e);
   };
 
@@ -131,7 +131,7 @@ function CustomForm() {
           </Flex>
           <Flex mx={-3} flexWrap={"wrap"}>
             <Box width={[1, 1, 1/2]} px={3}>
-              <Field label="Select Input" validated={validated} width={1}>
+              <Field label="Select Input"  width={10}></Field>
                 <Select
                   options={[
                     { value: "", label: ""},
@@ -141,12 +141,10 @@ function CustomForm() {
                     { value: "gnt", label: "Golem" },
                     { value: "rep", label: "Augur" }
                   ]}
-                  value={selectValue}
+                  defaultValue={selectValue}
                   onChange={handleSelect}
-                  required // set required attribute to use brower's HTML5 input validation
                   width={1}
                 />
-              </Field>
             </Box>
           </Flex>
           
