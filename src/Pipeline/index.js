@@ -5,6 +5,19 @@ export default class Pipeline {
     return new MyAlgo()
   }
 
+  static async balance(address) {
+    const indexerURL = 'https://algoexplorerapi.io/idx2/v2/accounts/'
+    let url2 = indexerURL + address
+    try {
+      let data = await fetch(url2)
+      let data2 = await data.json()
+      let data3 = JSON.stringify(data2.account.amount / 1000000) + ' Algos'
+      return data3
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   static async connect(wallet) {
     try {
       const accounts = await wallet.connect()
@@ -78,6 +91,10 @@ export default class Pipeline {
 }
 
 /* usage
+
+var balance = 0;
+
+Pipeline.balance(address).then(data => balance = data);
 
 const myAlgoWallet = Pipeline.init();
 
