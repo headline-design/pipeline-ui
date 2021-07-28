@@ -17,7 +17,7 @@ module.exports = {
 // ...
   title: 'Pipeline UI',
   tagline: 'Integrating Algorand and React',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://pipeline-ui.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
