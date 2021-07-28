@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
+ import BrowserOnly from '@docusaurus/BrowserOnly';
 import React from 'react';
 import { Button,
   AsaList,
@@ -24,6 +24,7 @@ import { Button,
   Link,
   Modal,
   Pill,
+  //Pipeline,
   Progress,
   QR,
   Radio,
@@ -34,10 +35,13 @@ import { Button,
   Text,
   ToastMessage} from 'pipeline-ui';
 
+
+
 // Add react-live imports you need here
 const ReactLiveScope = {
   React,
   ...React,
+  //Pipeline,
   Button,
   AsaList,
   Avatar,

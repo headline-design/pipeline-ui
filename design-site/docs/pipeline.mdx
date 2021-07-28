@@ -1,0 +1,29 @@
+# Pipeline Class
+
+A custom class to sign and send transactions with MyAlgo Connect and check balances. For advanced users who do not wish to use the Algo Components with hard-coded onClick functions. Note: the codesandbox example uses `@pipeline-ui-2/pipeline`.
+
+## Use Example
+
+(Live updates coming soon)
+
+<iframe src="https://codesandbox.io/embed/github/headline-design/Pipeline/tree/main/example?codemirror=1&fontsize=14&hidenavigation=1&theme=dark" width="100%" height="1000px" title="example" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts" ></iframe>
+
+## Methods
+
+import {Table} from 'pipeline-ui';
+
+<Table>
+  <thead>
+  <tr>
+    <th>Method</th>
+    <th>Returns</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>Pipeline.init()</td><td>new instance of MyAlgo</td><td>Must be called once before connect or send methods</td></tr>
+  <tr><td>Pipeline.balance(address)</td><td>string (balance + "Algos")</td><td>Takes input string address. Pipeline.init not neccesary for use.</td></tr>
+  <tr><td>Pipeline.connect</td><td>string (address)</td><td>Generates pop-up to sign in. Must be called before Pipeline.send</td></tr>
+  <tr><td>Pipeline.send</td><td>string (transaction id) </td><td>Can only be called after Pipeline.init and Pipeline.connect.</td></tr>
+    </tbody>
+    </Table>
