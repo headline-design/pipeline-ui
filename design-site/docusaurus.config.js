@@ -1,5 +1,5 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const darkCodeTheme = require('prism-react-renderer/themes/nightOwl');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -25,6 +25,7 @@ module.exports = {
   organizationName: 'headline-design', // Usually your GitHub org/user name.
   projectName: 'pipeline-ui', // Usually your repo name.
   themeConfig: {
+
         announcementBar: {
           id: 'announcementBar-1', // Increment on change
           content:
