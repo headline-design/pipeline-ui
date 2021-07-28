@@ -48,8 +48,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#536dfe",
-    "background_color": "#536dfe",
-    "start_url": "https://www.pipeline-ui.com",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "start_url": "https://pipeline-ui.com",
     "display": "standalone"
 }

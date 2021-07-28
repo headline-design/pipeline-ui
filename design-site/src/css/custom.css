@@ -391,23 +391,22 @@ li>code,p>code,td>code {
 
   @media (min-width: 997px) {
     .h1Heading_27L5 {
-        font-size: 3rem;
-        margin-bottom: calc(var(--ifm-leading-desktop)*var(--ifm-leading));
         background-color: var(--ra-color-note);
-        width: 100%;
-        padding-left: calc(var(--doc-sidebar-width) + 2rem);
-        position: absolute;
-        left: 0px;
-        right: auto;
-        z-index: 0;
-        top: 0px;
-        padding-top: 10rem;
-        padding-bottom: 2rem;
-        color: var(--ifm-color-content);
         border-bottom: 1px solid var(--ifm-toc-border-color);
+        color: var(--ifm-color-content);
+        font-size: 3rem;
+        font-size: calc(1.82813rem + 2.34375vw);
+        margin-left: -5rem;
+        margin-bottom: calc(var(--ifm-leading-desktop)*var(--ifm-leading));
+        padding-bottom: 2rem;
+        padding-left: 5rem;
+        padding-top: 10rem;
+        position: absolute;
+        right: auto;
+        top: 0;
+        width: 100%;
     }
-    }
-
+  }
     @media (min-width: 997px){
   .h1Heading_27L5 {
     font-size: calc(1.82813rem + 2.34375vw);

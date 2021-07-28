@@ -5,6 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
     // ...
       plugins: ['@docusaurus/theme-live-codeblock'],
+
       themeConfig: {
         liveCodeBlock: {
           /**
@@ -13,6 +14,7 @@ module.exports = {
            */
           playgroundPosition: 'bottom',
         },
+          hideableSidebar: true,
       },
 // ...
   title: 'Pipeline UI',
@@ -25,15 +27,7 @@ module.exports = {
   organizationName: 'headline-design', // Usually your GitHub org/user name.
   projectName: 'pipeline-ui', // Usually your repo name.
   themeConfig: {
-
-        announcementBar: {
-          id: 'announcementBar-1', // Increment on change
-          content:
-            '⭐️ If you like PIPELINE-UI, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/headline-design/pipeline-ui">GitHub</a>! ⭐',
-          backgroundColor: '#fafbfc', // Defaults to `#fff`.
-          textColor: '#091E42', // Defaults to `#000`.
-          isCloseable: false, // Defaults to `true`.
-        },
+      hideableSidebar: true,
       navbar: {
         title: 'PIPELINE-UI',
         logo: {
@@ -98,7 +92,7 @@ module.exports = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} HEADLINE INC. Built with PIPELINE-UI.`,
+        copyright: `Copyright © ${new Date().getFullYear()} HEADLINE INC. Built with ReactJS.`,
       },
       prism: {
         theme: lightCodeTheme,
