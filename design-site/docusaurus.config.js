@@ -1,5 +1,5 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/nightOwl');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -17,7 +17,7 @@ module.exports = {
 // ...
   title: 'Pipeline UI',
   tagline: 'Integrating Algorand and React',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://pipeline-ui.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
