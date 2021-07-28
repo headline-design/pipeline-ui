@@ -57,7 +57,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
 
 .c3:focus {
   outline: none;
-  border-color: #536dfe;
+  border-color: #3578e5;
 }
 
 .c3:disabled {
@@ -198,7 +198,7 @@ exports[`Field component sanity matches themed snapshot 1`] = `
 
 .c3:focus {
   outline: none;
-  border-color: #536dfe;
+  border-color: #3578e5;
 }
 
 .c3:disabled {

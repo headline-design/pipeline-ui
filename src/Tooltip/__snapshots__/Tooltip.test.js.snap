@@ -17,9 +17,9 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -185,9 +185,9 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -483,7 +483,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
               <Button
                 bg="silver"
                 border="none"
-                borderRadius={1}
+                borderRadius={0}
                 boxShadow={1}
                 color="white"
                 contrastColor="white"
@@ -504,7 +504,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                   as="button"
                   bg="silver"
                   border="none"
-                  borderRadius={1}
+                  borderRadius={0}
                   boxShadow={1}
                   color="white"
                   contrastColor="white"
@@ -561,10 +561,10 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                           "--main-color": "#DC2C10",
                         },
                         "primary": Object {
-                          "--contrast-color": "#fff",
-                          "--main-color": "#536dfe",
-                          "backgroundColor": "#536dfe",
-                          "color": "#fff",
+                          "--contrast-color": "#000",
+                          "--main-color": "#3578e5",
+                          "backgroundColor": "#3578e5",
+                          "color": "#000",
                         },
                         "success": Object {
                           "--contrast-color": "#FFF",
@@ -599,9 +599,9 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                         "moon-gray": "#ccc",
                         "near-black": "#111",
                         "near-white": "#f4f4f4",
-                        "primary": "#536dfe",
-                        "primary-dark": "#3e32a4",
-                        "primary-light": "#7165d7",
+                        "primary": "#3578e5",
+                        "primary-dark": "#2a60b7",
+                        "primary-light": "#5d93ea",
                         "silver": "#999",
                         "success": "#28C081",
                         "text": "#3F3D4B",
@@ -724,7 +724,7 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                     as="button"
                     bg="silver"
                     border="none"
-                    borderRadius={1}
+                    borderRadius={0}
                     boxShadow={1}
                     color="white"
                     contrastColor="white"
@@ -776,10 +776,10 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                                 "--main-color": "#DC2C10",
                               },
                               "primary": Object {
-                                "--contrast-color": "#fff",
-                                "--main-color": "#536dfe",
-                                "backgroundColor": "#536dfe",
-                                "color": "#fff",
+                                "--contrast-color": "#000",
+                                "--main-color": "#3578e5",
+                                "backgroundColor": "#3578e5",
+                                "color": "#000",
                               },
                               "success": Object {
                                 "--contrast-color": "#FFF",
@@ -814,9 +814,9 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                               "moon-gray": "#ccc",
                               "near-black": "#111",
                               "near-white": "#f4f4f4",
-                              "primary": "#536dfe",
-                              "primary-dark": "#3e32a4",
-                              "primary-light": "#7165d7",
+                              "primary": "#3578e5",
+                              "primary-dark": "#2a60b7",
+                              "primary-light": "#5d93ea",
                               "silver": "#999",
                               "success": "#28C081",
                               "text": "#3F3D4B",
@@ -1118,10 +1118,10 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                             "--main-color": "#DC2C10",
                           },
                           "primary": Object {
-                            "--contrast-color": "#fff",
-                            "--main-color": "#536dfe",
-                            "backgroundColor": "#536dfe",
-                            "color": "#fff",
+                            "--contrast-color": "#000",
+                            "--main-color": "#3578e5",
+                            "backgroundColor": "#3578e5",
+                            "color": "#000",
                           },
                           "success": Object {
                             "--contrast-color": "#FFF",
@@ -1156,9 +1156,9 @@ exports[`Tooltip component sanity matches default snapshot 1`] = `
                           "moon-gray": "#ccc",
                           "near-black": "#111",
                           "near-white": "#f4f4f4",
-                          "primary": "#536dfe",
-                          "primary-dark": "#3e32a4",
-                          "primary-light": "#7165d7",
+                          "primary": "#3578e5",
+                          "primary-dark": "#2a60b7",
+                          "primary-light": "#5d93ea",
                           "silver": "#999",
                           "success": "#28C081",
                           "text": "#3F3D4B",
@@ -1322,9 +1322,9 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -1480,10 +1480,10 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
           "--main-color": "#DC2C10",
         },
         "primary": Object {
-          "--contrast-color": "#fff",
-          "--main-color": "#536dfe",
-          "backgroundColor": "#536dfe",
-          "color": "#fff",
+          "--contrast-color": "#000",
+          "--main-color": "#3578e5",
+          "backgroundColor": "#3578e5",
+          "color": "#000",
         },
         "success": Object {
           "--contrast-color": "#FFF",
@@ -1518,9 +1518,9 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
         "moon-gray": "#ccc",
         "near-black": "#111",
         "near-white": "#f4f4f4",
-        "primary": "#536dfe",
-        "primary-dark": "#3e32a4",
-        "primary-light": "#7165d7",
+        "primary": "#3578e5",
+        "primary-dark": "#2a60b7",
+        "primary-light": "#5d93ea",
         "silver": "#999",
         "success": "#28C081",
         "text": "#3F3D4B",
@@ -1681,10 +1681,10 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
             "--main-color": "#DC2C10",
           },
           "primary": Object {
-            "--contrast-color": "#fff",
-            "--main-color": "#536dfe",
-            "backgroundColor": "#536dfe",
-            "color": "#fff",
+            "--contrast-color": "#000",
+            "--main-color": "#3578e5",
+            "backgroundColor": "#3578e5",
+            "color": "#000",
           },
           "success": Object {
             "--contrast-color": "#FFF",
@@ -1719,9 +1719,9 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
           "moon-gray": "#ccc",
           "near-black": "#111",
           "near-white": "#f4f4f4",
-          "primary": "#536dfe",
-          "primary-dark": "#3e32a4",
-          "primary-light": "#7165d7",
+          "primary": "#3578e5",
+          "primary-dark": "#2a60b7",
+          "primary-light": "#5d93ea",
           "silver": "#999",
           "success": "#28C081",
           "text": "#3F3D4B",
@@ -1892,9 +1892,9 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -2190,7 +2190,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                   <Button
                     bg="silver"
                     border="none"
-                    borderRadius={1}
+                    borderRadius={0}
                     boxShadow={1}
                     color="white"
                     contrastColor="white"
@@ -2211,7 +2211,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                       as="button"
                       bg="silver"
                       border="none"
-                      borderRadius={1}
+                      borderRadius={0}
                       boxShadow={1}
                       color="white"
                       contrastColor="white"
@@ -2268,10 +2268,10 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                               "--main-color": "#DC2C10",
                             },
                             "primary": Object {
-                              "--contrast-color": "#fff",
-                              "--main-color": "#536dfe",
-                              "backgroundColor": "#536dfe",
-                              "color": "#fff",
+                              "--contrast-color": "#000",
+                              "--main-color": "#3578e5",
+                              "backgroundColor": "#3578e5",
+                              "color": "#000",
                             },
                             "success": Object {
                               "--contrast-color": "#FFF",
@@ -2306,9 +2306,9 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                             "moon-gray": "#ccc",
                             "near-black": "#111",
                             "near-white": "#f4f4f4",
-                            "primary": "#536dfe",
-                            "primary-dark": "#3e32a4",
-                            "primary-light": "#7165d7",
+                            "primary": "#3578e5",
+                            "primary-dark": "#2a60b7",
+                            "primary-light": "#5d93ea",
                             "silver": "#999",
                             "success": "#28C081",
                             "text": "#3F3D4B",
@@ -2431,7 +2431,7 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                         as="button"
                         bg="silver"
                         border="none"
-                        borderRadius={1}
+                        borderRadius={0}
                         boxShadow={1}
                         color="white"
                         contrastColor="white"
@@ -2483,10 +2483,10 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                     "--main-color": "#DC2C10",
                                   },
                                   "primary": Object {
-                                    "--contrast-color": "#fff",
-                                    "--main-color": "#536dfe",
-                                    "backgroundColor": "#536dfe",
-                                    "color": "#fff",
+                                    "--contrast-color": "#000",
+                                    "--main-color": "#3578e5",
+                                    "backgroundColor": "#3578e5",
+                                    "color": "#000",
                                   },
                                   "success": Object {
                                     "--contrast-color": "#FFF",
@@ -2521,9 +2521,9 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                   "moon-gray": "#ccc",
                                   "near-black": "#111",
                                   "near-white": "#f4f4f4",
-                                  "primary": "#536dfe",
-                                  "primary-dark": "#3e32a4",
-                                  "primary-light": "#7165d7",
+                                  "primary": "#3578e5",
+                                  "primary-dark": "#2a60b7",
+                                  "primary-light": "#5d93ea",
                                   "silver": "#999",
                                   "success": "#28C081",
                                   "text": "#3F3D4B",
@@ -2825,10 +2825,10 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                                 "--main-color": "#DC2C10",
                               },
                               "primary": Object {
-                                "--contrast-color": "#fff",
-                                "--main-color": "#536dfe",
-                                "backgroundColor": "#536dfe",
-                                "color": "#fff",
+                                "--contrast-color": "#000",
+                                "--main-color": "#3578e5",
+                                "backgroundColor": "#3578e5",
+                                "color": "#000",
                               },
                               "success": Object {
                                 "--contrast-color": "#FFF",
@@ -2863,9 +2863,9 @@ exports[`Tooltip component sanity matches themed snapshot 1`] = `
                               "moon-gray": "#ccc",
                               "near-black": "#111",
                               "near-white": "#f4f4f4",
-                              "primary": "#536dfe",
-                              "primary-dark": "#3e32a4",
-                              "primary-light": "#7165d7",
+                              "primary": "#3578e5",
+                              "primary-dark": "#2a60b7",
+                              "primary-light": "#5d93ea",
                               "silver": "#999",
                               "success": "#28C081",
                               "text": "#3F3D4B",

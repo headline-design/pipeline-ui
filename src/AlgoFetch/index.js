@@ -45,7 +45,6 @@ export default function AlgoFetch(props) {
               </td>
             </tr>
           ))}
-          <tr></tr>
         </tbody>
       </Table>
       <Button onClick={getData}>Refresh</Button>

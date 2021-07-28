@@ -3,7 +3,7 @@
 exports[`Link component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
-  color: #536dfe;
+  color: #3578e5;
   font-size: 14px;
   font-weight: 600;
 }
@@ -17,13 +17,13 @@ exports[`Link component sanity matches default snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  color: #7165d7;
+  color: #5d93ea;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #3e32a4;
+  color: #2a60b7;
 }
 
 <a
@@ -37,7 +37,7 @@ exports[`Link component sanity matches default snapshot 1`] = `
 exports[`Link component sanity matches themed snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
-  color: #536dfe;
+  color: #3578e5;
   font-size: 14px;
   font-weight: 600;
 }
@@ -51,13 +51,13 @@ exports[`Link component sanity matches themed snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  color: #7165d7;
+  color: #5d93ea;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #3e32a4;
+  color: #2a60b7;
 }
 
 <a
