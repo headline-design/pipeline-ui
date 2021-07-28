@@ -353,11 +353,6 @@ export default class App extends Component {
         <Box m={4}>
           <BaseStyles>{testComponents()}</BaseStyles>
         </Box>
-        <Box m={4}>
-          <ThemeProvider theme={testTheme}>
-            <BaseStyles>{testComponents()}</BaseStyles>
-          </ThemeProvider>
-        </Box>
        {/*<BaseLineGrid/> uncomment to make background alternating white and rose lines*/}
       </Flex>
     )

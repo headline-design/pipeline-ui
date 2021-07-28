@@ -1,0 +1,1 @@
+{"version":3,"sources":["custom.css"],"names":[],"mappings":"AAAA,yBAA2B,MACvB,qBAAsB,CACtB,iBAAkB,CAClB,YAAa,CACb,qBACJ,CACA","file":"main.0faab938.chunk.css","sourcesContent":["@media (max-width: 996px) {.body {\r\n    box-sizing: border-box;\r\n    position: relative;\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n}\r\n"]}
