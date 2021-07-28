@@ -2,7 +2,7 @@
 
 exports[`Select component sanity matches danger variant snapshot 1`] = `
 <Styled(Box)
-  aria-describedby="Flash0Content"
+  aria-describedby="Flash4Content"
   aria-live="polite"
   border="1"
   borderRadius={1}
@@ -216,7 +216,7 @@ exports[`Select component sanity matches danger variant snapshot 1`] = `
     display="inherit"
     fontSize={2}
     fontWeight={2}
-    id="Flash0Content"
+    id="Flash4Content"
     lineHeight="copy"
     theme={
       Object {
@@ -848,7 +848,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
 
 exports[`Select component sanity matches info variant snapshot 1`] = `
 <Styled(Box)
-  aria-describedby="Flash0Content"
+  aria-describedby="Flash1Content"
   aria-live="polite"
   border="1"
   borderRadius={1}
@@ -1062,7 +1062,7 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
     display="inherit"
     fontSize={2}
     fontWeight={2}
-    id="Flash0Content"
+    id="Flash1Content"
     lineHeight="copy"
     theme={
       Object {
@@ -1271,7 +1271,7 @@ exports[`Select component sanity matches info variant snapshot 1`] = `
 
 exports[`Select component sanity matches success variant snapshot 1`] = `
 <Styled(Box)
-  aria-describedby="Flash0Content"
+  aria-describedby="Flash2Content"
   aria-live="polite"
   border="1"
   borderRadius={1}
@@ -1485,7 +1485,7 @@ exports[`Select component sanity matches success variant snapshot 1`] = `
     display="inherit"
     fontSize={2}
     fontWeight={2}
-    id="Flash0Content"
+    id="Flash2Content"
     lineHeight="copy"
     theme={
       Object {
@@ -1743,7 +1743,7 @@ exports[`Select component sanity matches themed snapshot 1`] = `
 
 exports[`Select component sanity matches warning variant snapshot 1`] = `
 <Styled(Box)
-  aria-describedby="Flash0Content"
+  aria-describedby="Flash3Content"
   aria-live="polite"
   border="1"
   borderRadius={1}
@@ -1957,7 +1957,7 @@ exports[`Select component sanity matches warning variant snapshot 1`] = `
     display="inherit"
     fontSize={2}
     fontWeight={2}
-    id="Flash0Content"
+    id="Flash3Content"
     lineHeight="copy"
     theme={
       Object {
