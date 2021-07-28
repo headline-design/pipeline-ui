@@ -1,31 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MyAlgoButton component sanity matches default snapshot 1`] = `
-<MyAlgoButton
-  bg="silver"
-  border="none"
-  borderRadius={1}
-  boxShadow={1}
-  color="white"
-  contrastColor="white"
-  fontFamily="sansSerif"
-  fontSize="inherit"
-  fontWeight={3}
-  height="3rem"
-  lineHeight={1}
-  mainColor="primary"
-  minWidth="3rem"
-  onClick={[Function]}
-  position="relative"
-  px={4}
-  py={0}
-  width="auto"
->
-  Connect to MyAlgo
-</MyAlgoButton>
+exports[`AlgoSendButton component sanity matches default snapshot 1`] = `
+<div>
+  <AlgoSendButtonB
+    bg="silver"
+    border="none"
+    borderRadius={1}
+    boxShadow={1}
+    color="white"
+    contrastColor="white"
+    fontFamily="sansSerif"
+    fontSize="inherit"
+    fontWeight={3}
+    height="3rem"
+    lineHeight={1}
+    mainColor="primary"
+    minWidth="3rem"
+    onClick={[Function]}
+    position="relative"
+    px={4}
+    py={0}
+    width={
+      Array [
+        1,
+        "auto",
+      ]
+    }
+  >
+    Send
+  </AlgoSendButtonB>
+</div>
 `;
 
-exports[`MyAlgoButton component sanity matches themed snapshot 1`] = `
+exports[`AlgoSendButton component sanity matches themed snapshot 1`] = `
 <ThemeProvider
   theme={
     Object {
@@ -227,6 +234,6 @@ exports[`MyAlgoButton component sanity matches themed snapshot 1`] = `
     }
   }
 >
-  <AlgoButton />
+  <AlgoSendButton />
 </ThemeProvider>
 `;

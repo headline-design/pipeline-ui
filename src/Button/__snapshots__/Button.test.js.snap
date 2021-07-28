@@ -32,9 +32,9 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -212,9 +212,9 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -392,9 +392,9 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -530,6 +530,10 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
       width="24px"
     >
       <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
         d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
       />
     </svg>
@@ -569,9 +573,9 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -734,9 +738,9 @@ exports[`Button component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -881,9 +885,9 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -1028,9 +1032,9 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -1176,9 +1180,9 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -1325,9 +1329,9 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -1477,9 +1481,9 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
   font-size: 1.5rem;
   height: 4rem;
@@ -1628,9 +1632,9 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -1780,9 +1784,9 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
   font-size: 1.5rem;
   height: 4rem;
@@ -1930,10 +1934,10 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0;
   border-color: #CCC;
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -2103,10 +2107,10 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0;
   border-color: #CCC;
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -2276,7 +2280,7 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -2407,7 +2411,7 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -2538,10 +2542,10 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0;
   border-color: #CCC;
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -2716,9 +2720,9 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -2876,9 +2880,9 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -3100,9 +3104,9 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #536dfe;
+  --main-color: #3578e5;
   --contrast-color: #fff;
 }
 
@@ -3237,6 +3241,10 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
       viewBox="0 0 24 24"
       width="24px"
     >
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
       <path
         d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
       />
