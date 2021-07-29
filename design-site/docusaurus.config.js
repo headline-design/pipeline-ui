@@ -27,11 +27,20 @@ module.exports = {
   organizationName: 'headline-design', // Usually your GitHub org/user name.
   projectName: 'pipeline-ui', // Usually your repo name.
   themeConfig: {
-      hideableSidebar: true,
+
+    announcementBar: {
+      id: 'announcementBar-1', // Increment on change
+      content:
+        '⭐️ If you like PIPELINE-UI, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/headline-design/pipeline-ui">GitHub</a>! ⭐',
+      backgroundColor: '#fafbfc', // Defaults to `#fff`.
+      textColor: '#091E42', // Defaults to `#000`.
+      isCloseable: false, // Defaults to `true`.
+    },
+    hideableSidebar: true,
       navbar: {
         title: 'PIPELINE-UI',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'PIPELINE Logo',
           src: 'img/logo.svg',
         },
         items: [
