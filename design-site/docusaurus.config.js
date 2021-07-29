@@ -60,7 +60,7 @@ module.exports = {
             label: 'Getting Started',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: 'showcase', label: 'Showcase', position: 'left'},
+          {to: 'showcase', label: 'Algo Bridge', position: 'left'},
           {
             href: 'https://github.com/headline-design',
             label: 'GitHub',
