@@ -29,7 +29,7 @@ module.exports = {
   themeConfig: {
 
     algolia: {
-    apiKey: '6c8df293aba1bc005a225f6b5cd25cbe', indexName: 'YOUR_INDEX_NAME',
+    apiKey: '6c8df293aba1bc005a225f6b5cd25cbe', indexName: 'pipelinedoc',
       // Optional: see doc section below contextualSearch: true,
       // Optional: see doc section below 
       //appId: 'RXQN7UK0TL',
