@@ -28,6 +28,15 @@ module.exports = {
   projectName: 'pipeline-ui', // Usually your repo name.
   themeConfig: {
 
+    algolia: {
+    apiKey: '6c8df293aba1bc005a225f6b5cd25cbe', indexName: 'YOUR_INDEX_NAME',
+      // Optional: see doc section below contextualSearch: true,
+      // Optional: see doc section below 
+      appId: 'RXQN7UK0TL',
+      // Optional: Algolia search parameters searchParameters: {},
+      //... other Algolia params    
+    },
+
     announcementBar: {
       id: 'announcementBar-1', // Increment on change
       content:
