@@ -389,28 +389,22 @@ li>code,p>code,td>code {
       }
 
 
-  @media (min-width: 997px) {
-    .h1Heading_27L5 {
-        background-color: var(--ra-color-note);
-        border-bottom: 1px solid var(--ifm-toc-border-color);
-        color: var(--ifm-color-content);
-        font-size: 3rem;
-        font-size: calc(1.82813rem + 2.34375vw);
-        margin-left: -5rem;
-        margin-bottom: calc(var(--ifm-leading-desktop)*var(--ifm-leading));
-        padding-bottom: 2rem;
-        padding-left: 5rem;
-        padding-top: 10rem;
-        position: absolute;
-        right: auto;
-        top: 0;
-        width: 100%;
-    }
-  }
-    @media (min-width: 997px){
-  .h1Heading_27L5 {
-    font-size: calc(1.82813rem + 2.34375vw);
-}
+      @media (min-width: 997px){
+      .h1Heading_27L5 {
+          background-color: var(--ra-color-note);
+          border-bottom: 1px solid var(--ifm-toc-border-color);
+          color: var(--ifm-color-content);
+          font-size: 3rem;
+          font-size: calc(1.82813rem + 2.34375vw);
+          margin-bottom: calc(var(--ifm-leading-desktop)*var(--ifm-leading));
+          padding-bottom: 2rem;
+          padding-left: 21rem;
+          padding-top: 10rem;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+      }
     }
 
   @media (min-width: 1650px){
@@ -550,6 +544,10 @@ table {
   margin-bottom: var(--ifm-spacing-vertical);
   width: 100%;
   border-color: var(--ifm-toc-border-color) !important;
+}
+
+.button .button--secondary .button--outline .collapseSidebarButton_1CGd {
+margin-bottom: 3px !important;
 }
 
 @media (max-width:996px) {
@@ -1423,4 +1421,8 @@ tr:hover {
   color: var(--ifm-navbar-link-color)!important;
 }
 
-
+@media (min-width: 997px){
+.collapseSidebarButton_1CGd {
+    margin-bottom: 1.86rem !important;
+}
+}
