@@ -4,6 +4,12 @@ Algorand, and blockchains in general, are powerful technologies that have not se
 
 ## What is Pipeline UI?
 
+:::caution
+
+All Pipeline UI libraries and demos execute transactions on the Algorand MainNet. Carefully read the documentation for all components and demos before using. 
+
+:::
+
 Pipeline UI is a ready-to-use library to rapidly add standardized Algorand functional components to your React apps.
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -22,3 +28,46 @@ import { Card } from 'pipeline-ui';
 <Card bg="blue" color="white">Hard-coded transaction and blockchain API components</Card>
 <Card bg="blue" color="white">Built in QR code generators</Card>
 <Card bg="blue" color="white">...and many other features in the works!</Card>
+
+## Pipeline Ecosystem
+
+The Pipeline project is a bridge to blockchain for web developers of all levels of coding experience, creating an ecosystem of tools for everyone from html bloggers to advanced JavaScript coders!
+
+import {Box, Flex, Heading} from 'pipeline-ui';
+
+export const compareHead = { textAlign: "center", color: "white", width: "100%", borderRadius: 0};
+export const compareBody = {border: "2px solid", borderColor: "grey",padding: "5px", color: "black", width: "auto", maxWidth: "100%", height: "auto"}
+
+
+<Flex>
+
+<Box bg={"blue"} style={compareHead}><Heading>Pipeline Express</Heading>
+<Box bg={"green"}>Beginner</Box>
+<Box bg={"white"} style={compareBody}>
+<Heading as="h5">2 Algo Buttons</Heading>
+<Heading as="h5">Sign Transactions</Heading>
+<Heading as="h5">Send Transactions</Heading>
+</Box></Box>
+
+<Box bg={"blue"} style={compareHead}><Heading>Pipeline UI</Heading>
+<Box bg={"orange"}>Intermediate</Box>
+<Box bg={"white"} style={compareBody}>
+<Heading as="h5">5 Algo Components</Heading>
+<Heading as="h5">Sign Transactions</Heading>
+<Heading as="h5">Send Transactions</Heading>
+<Heading as="h5">QR Code Address</Heading>
+<Heading as="h5">Last 5 Transactions</Heading>
+<Heading as="h5">ASA List</Heading>
+<Heading as="h5">Standard Components</Heading>
+</Box></Box>
+
+<Box bg={"blue"} style={compareHead}><Heading>Pipeline Class</Heading>
+<Box bg={"red"}>Advanced</Box>
+<Box bg={"white"} style={compareBody}>
+<Heading as="h5">3 Algo Methods</Heading>
+<Heading as="h5">Sign Transactions</Heading>
+<Heading as="h5">Send Transactions</Heading>
+<Heading as="h5">Check Balance</Heading>
+<Heading as="h5">Pure JavaScript</Heading>
+</Box></Box>
+</Flex>
