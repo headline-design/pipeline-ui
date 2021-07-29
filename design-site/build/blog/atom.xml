@@ -2,30 +2,16 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://pipeline-ui.com/blog</id>
     <title>Pipeline UI Blog</title>
-    <updated>2019-05-30T00:00:00.000Z</updated>
+    <updated>2019-05-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://pipeline-ui.com/blog"/>
     <subtitle>Pipeline UI Blog</subtitle>
     <icon>https://pipeline-ui.com/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Welcome]]></title>
-        <id>welcome</id>
-        <link href="https://pipeline-ui.com/blog/welcome"/>
-        <updated>2019-05-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello]]></title>
-        <id>hello-world</id>
-        <link href="https://pipeline-ui.com/blog/hello-world"/>
-        <updated>2019-05-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Welcome to this blog. This blog is created with Docusaurus 2.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hola]]></title>
-        <id>hola</id>
-        <link href="https://pipeline-ui.com/blog/hola"/>
+        <title type="html"><![CDATA[Solving Server Side Render Issues]]></title>
+        <id>ssr</id>
+        <link href="https://pipeline-ui.com/blog/ssr"/>
         <updated>2019-05-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Server side build failure is a fairly common and frustrating issue that is encountered when generating documentation sites with tools like Docusaurus. SSR issues typically arise when code that functioned flawlessly in a client-side React app is incorporated on a doc site either as a component or live code block. The problem can typically be traced to dependencies or contexts that the server does not have access to. Often, such issues can be difficult to track down due to the complexities of rollup, babel, webpack, polyfills, transpiling and minifying. Fortunately, two simple bypasses can resolve the majority of such problems.]]></summary>
     </entry>
 </feed>
