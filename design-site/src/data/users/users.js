@@ -44,7 +44,7 @@
  // Please choose widely, we'll remove unappropriate tags
  export const Tags = {
    // DO NOT USE THIS TAG: we choose sites to add to favorites
-   favorite: {
+   algorand: {
      label: 'Favorite',
      description:
        'Our favorite Docusaurus sites that you must absolutely check-out!',
@@ -125,28 +125,28 @@
  // prettier-ignore
  const Users = [
    {
-     title: 'Aide Jeune',
-     description: 'French Discord server that helps young people who have been bullied or feel bad about themselves',
-     preview: require('./showcase/preview.png'),
-     website: 'https://aidejeune.fr',
-     source: 'https://github.com/AideJeune',
-     tags: ['opensource'],
+     title: 'Algorand Foundation',
+     description: 'Dedicated to fulfilling the global promise of blockchain technology by leveraging the Algorand protocol and open source software',
+     preview: require('./showcase/algorand.png'),
+     website: 'https://algorand.foundation/',
+     source: 'https://github.com/algorand/',
+     tags: ['opensource', 'algorand'],
    },
    {
-     title: 'AgileTs',
-     description: 'Global State and Logic Framework for reactive Applications',
-     preview: require('./showcase/preview.png'),
-     website: 'https://agile-ts.org/',
-     source: 'https://github.com/agile-ts/documentation',
-     tags: ['opensource', 'design'],
+     title: 'Yieldly',
+     description: 'The worlds first and only DeFi suite on Algorand. No-loss prize games Multi-asset staking.Cross-chain swapping.',
+     preview: require('./showcase/yieldly.png'),
+     website: 'https://yieldly.finance/',
+     source: 'https://yieldly.finance/',
+     tags: ['opensource','algorand'],
    },
    {
-     title: 'AI-Speaker',
-     description: 'Local, reliable, fast and private Audio and IoT gate.',
-     preview: require('./showcase/preview.png'),
-     website: 'https://ai-speaker.com/',
-     source: 'https://github.com/sviete/AIS-WWW',
-     tags: ['opensource'],
+     title: 'Algo Explorer',
+     description: 'from Rand Labs: a blockchain development lab specialized in Algorand technology',
+     preview: require('./showcase/randlabs.png'),
+     website: 'https://algoexplorer.io/',
+     source: 'https://algoexplorer.io/',
+     tags: ['opensource','algorand'],
    }
   ]
  

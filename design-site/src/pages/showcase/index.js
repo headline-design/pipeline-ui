@@ -18,8 +18,8 @@
  import {toggleListItem} from '../../utils/jsUtils';
  import {SortedUsers, Tags, TagList} from '../../data/users/users.js';
  
- const TITLE = 'Docusaurus Site Showcase';
- const DESCRIPTION = 'List of websites people are building with Docusaurus';
+ const TITLE = 'Algorand Bridge';
+ const DESCRIPTION = 'Algorand Ecosystem';
  const EDIT_URL =
    'https://github.com/facebook/docusaurus/edit/master/website/src/data/users.js';
  

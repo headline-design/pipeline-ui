@@ -9,7 +9,7 @@
 
  import styles from './styles.module.css';
  import clsx from 'clsx';
- import { Image } from 'pipeline-ui';
+ import Image from '@theme/IdealImage';
  import {Tags, TagList} from '../../../data/users/users.js';
  import {sortBy} from '../../../utils/jsUtils';
  
@@ -44,7 +44,7 @@
      <div key={user.title} className="col col--4 margin-bottom--lg">
        <div className={clsx('card', styles.showcaseCard)}>
          <div className={clsx('card__image', styles.showcaseCardImage)}>
-           <Image img={user.preview} alt={user.title} />
+         <Image img={user.preview} alt={user.title} />
          </div>
          <div className="card__body">
            <div className="avatar">
