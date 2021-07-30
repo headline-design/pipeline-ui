@@ -9,7 +9,7 @@
  import {difference, sortBy} from '../../utils/jsUtils';
  
  /*
-  * ADD YOUR SITE TO THE DOCUSAURUS SHOWCASE:
+  * ADD YOUR SITE TO THE ALGORAND BRIDGE:
   *
   * Requirements for adding your site to our showcase:
   * - It is a production-ready site with real content and decent customizations (different from the init templates)
@@ -18,24 +18,22 @@
   *
   * Instructions:
   * - Add your site in the json array below
-  * - Add a local image preview (decent screenshot of your Docusaurus site)
+  * - Add a local image preview (decent screenshot of your site)
   * - Use relevant tags to qualify your site (read the tag descriptions bellow)
   * - The image MUST be added to the GitHub repository, and use `require("image")`
   * - Open a PR and check for reported CI errors
   *
-  * Example PR: https://github.com/facebook/docusaurus/pull/3976
   *
   * If you edit this file through the Github interface, you can:
   * - Submit first your users.js edit PR
-  * - This will create a branch on your Docusaurus fork (usually "patch-1")
-  * - Go to https://github.com/<username>/docusaurus/tree/<branch>/website/src/data/showcase
+  * - This will create a branch on your fork (usually "patch-1")
   * - Drag-and-drop an image here to add it to your existing PR
   *
   * Please help us maintain this showcase page data:
   * - Update sites with wrong data
   * - Ensure site tags remains correct over time
-  * - Remove sites not using Docusaurus anymore
-  * - Add missing Docusaurus sites (if the site owner agreed)
+  * - Remove sites not using Algorand anymore
+  * - Add missing sites (if the site owner agreed)
   *
   */
  
@@ -47,76 +45,76 @@
    algorand: {
      label: 'Favorite',
      description:
-       'Our favorite Docusaurus sites that you must absolutely check-out!',
+       'Our favorite sites that you must absolutely check-out!',
      icon: <>❤️</>,
    },
  
    // For open-source sites, a link to the source code is required
    opensource: {
      label: 'Open-Source',
-     description: 'Open-Source Docusaurus sites can be useful for inspiration!',
+     description: 'Open-Source sites can be useful for inspiration!',
      icon: <>👨‍💻</>,
    },
  
    product: {
      label: 'Product',
-     description: 'Docusaurus sites associated to a commercial product!',
+     description: 'Sites associated to a commercial product!',
      icon: <>💵</>,
    },
  
    design: {
      label: 'Design',
      description:
-       'Beautiful Docusaurus sites, polished and standing out from the initial template!',
+       'Beautiful sites, polished and standing out from the initial template!',
      icon: <>💅</>,
    },
  
    i18n: {
      label: 'I18n',
      description:
-       'Translated Docusaurus sites using the internationalization support with more than 1 locale.',
+       'Translated sites using the internationalization support with more than 1 locale.',
      icon: <>🏳️</>,
    },
  
    versioning: {
      label: 'Versioning',
      description:
-       'Docusaurus sites using the versioning feature of the docs plugin to manage multiple versions.',
+       'Sites using the versioning feature of the docs plugin to manage multiple versions.',
      icon: <>👨‍👦‍👦</>,
    },
    // Sites using multi-instance plugins
    multiInstance: {
      label: 'Multi-Instance',
      description:
-       'Docusaurus sites using multiple instances of the same plugin on the same site.',
+       'Sites using multiple instances of the same plugin on the same site.',
      icon: <>👨‍👩‍👧‍👦</>,
    },
  
-   // Large Docusaurus sites, with a lot of content (> 200 pages, excluding versions)
+   // Large sites, with a lot of content (> 200 pages, excluding versions)
    large: {
      label: 'Large site',
      description:
-       'Very large Docusaurus sites, including much more pages than the average!',
+       'Very large sites, including much more pages than the average!',
      icon: <>💪</>,
    },
  
    facebook: {
      label: 'Facebook sites',
-     description: 'Docusaurus sites of Facebook projects',
+     description: 'Sites that include Facebook projects',
      icon: <>👥</>,
    },
  
    personal: {
      label: 'Personal sites',
      description:
-       'Personal websites, blogs and digital gardens built with Docusaurus',
+       'Personal websites, blogs and digital gardens.',
      icon: <>🙋</>,
    },
  
    rtl: {
      label: 'RTL Direction',
      description:
-       'Docusaurus sites using the right-to-left reading direction support.',
+       'Sites using the right-to-left reading direction support.',
      icon: <>↪️</>,
    },
  };
@@ -214,7 +212,7 @@
          (user.preview.startsWith('http') || user.preview.startsWith('//')))
      ) {
        throw new Error(
-         `Site has bad image preview=[${user.preview}].\nThe image should be hosted on Docusaurus site, and not use remote HTTP or HTTPS URLs`,
+         `Site has bad image preview=[${user.preview}].\nThe image should be hosted on site, and not use remote HTTP or HTTPS URLs`,
        );
      }
    }
@@ -236,7 +234,7 @@
    function checkOpenSource() {
      if (typeof user.source === 'undefined') {
        throw new Error(
-         "The source attribute is required.\nIf your Docusaurus site is not open-source, please make it explicit with 'source: null'",
+         "The source attribute is required.\nIf your site is not open-source, please make it explicit with 'source: null'",
        );
      } else {
        const hasOpenSourceTag = user.tags.includes('opensource');

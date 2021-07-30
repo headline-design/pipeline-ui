@@ -21,7 +21,7 @@
  const TITLE = 'Algorand Bridge';
  const DESCRIPTION = 'Algorand Ecosystem';
  const EDIT_URL =
-   'https://github.com/facebook/docusaurus/edit/master/website/src/data/users.js';
+   'https://github.com/headline-design/pipeline-ui/blob/main/design-site/src/data/users/users.js';
  
  function filterUsers(users, selectedTags, operator) {
    if (selectedTags.length === 0) {
@@ -99,7 +99,7 @@
            className={'button button--primary'}
            href={EDIT_URL}
            target={'_blank'}>
-           🙏 Add your site now!
+           🙏 Add Site
          </a>
        </p>
      </div>

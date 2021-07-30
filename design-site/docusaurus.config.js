@@ -34,7 +34,7 @@ module.exports = {
     apiKey: '6c8df293aba1bc005a225f6b5cd25cbe', indexName: 'pipelinedoc',
       // Optional: see doc section below contextualSearch: true,
       // Optional: see doc section below 
-      //appId: 'RXQN7UK0TL',
+      appId: 'RXQN7UK0TL',
       // Optional: Algolia search parameters searchParameters: {},
       //... other Algolia params    
     },
