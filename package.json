@@ -38,6 +38,7 @@
     "polished": "^3.2.0",
     "qrcode.react": "^0.9.3",
     "react-select": "^4.3.1",
+    "rollup-plugin-import-css": "^3.0.0",
     "set-value": "^3.0.1",
     "styled-system": "^5.1.5"
   },

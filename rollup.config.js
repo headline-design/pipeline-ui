@@ -1,4 +1,5 @@
 import babel from 'rollup-plugin-babel';
+import css from "rollup-plugin-import-css";
 import commonjs from 'rollup-plugin-commonjs';
 import external from 'rollup-plugin-peer-deps-external';
 import resolve from 'rollup-plugin-node-resolve';
@@ -36,6 +37,7 @@ export default {
     },
   ],
   plugins: [
+    css(),
     json(),
     external(),
     url(),

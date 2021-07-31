@@ -1,21 +1,28 @@
-import BaseButton from './BaseButton';
-import TextButton from './TextButton';
-import OutlineButton from './OutlineButton';
-import SolidButton from './SolidButton';
-import { LocalConvenienceStore } from '@pipeline-ui/icons/es/md';
-var Button; // solid style
+import BaseButton from './BaseButton'
+import TextButton from './TextButton'
+import OutlineButton from './OutlineButton'
+import SolidButton from './SolidButton'
+import { LocalConvenienceStore } from '@pipeline-ui/icons/es/md'
+import React, { Component } from 'react'
 
-Button = SolidButton;
-Button.displayName = 'Button'; // outline style
+var Button // solid style
 
-Button.Outline = OutlineButton;
-Button.Outline.displayName = 'Button.Outline'; // text style
+Button = SolidButton
+Button.displayName = 'Button' // outline style
 
-Button.Text = TextButton;
-Button.Text.displayName = 'Button.Text'; // base style
+Button.Outline = OutlineButton
+Button.Outline.displayName = 'Button.Outline' // text style
 
-Button.Base = BaseButton;
-Button.Base.displayName = 'Button.Base';
+Button.Text = TextButton
+Button.Text.displayName = 'Button.Text' // base style
 
+Button.Base = BaseButton
+Button.Base.displayName = 'Button.Base'
 
-export default Button;
+class App extends Component {
+  render() {
+    return <Button>Hello Aaron!</Button>
+  }
+}
+
+export default Button

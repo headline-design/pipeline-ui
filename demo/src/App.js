@@ -63,7 +63,7 @@ const testTheme = {
 }
 const testText = "Algorand: Proof-of-stake blockchain";
 const testText2 = "Fetching wallet data";
-const MyAlgoWallet = Pipeline.init();
+const MyAlgoWallet = Pipeline.init(); 
 
 const testComponents = props => (
   <React.Fragment>
@@ -347,7 +347,7 @@ const testComponents = props => (
 )
 
 export default class App extends Component {
-  render() {
+  render() { 
     return (
       <Flex position={'relative'}>
         <Box m={4}>
