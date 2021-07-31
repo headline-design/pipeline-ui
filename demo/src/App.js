@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-//import Pipeline from "@pipeline-ui-2/pipeline";
-//uncomment above line to and relavant code referencing Pipeline below to enable Algorand connectivity
+
+import './index.css'
 
 import {
   Avatar,
