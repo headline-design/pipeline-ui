@@ -1339,7 +1339,7 @@ tr:hover {
     right: 8rem;
 }
 
-@media (max-width: 996px)
+@media (max-width: 996px){
 .navbar__items--right>:last-child {
     margin-right: 6rem !important;
 }
