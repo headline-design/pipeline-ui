@@ -34,7 +34,7 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -214,7 +214,7 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -394,7 +394,7 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -575,7 +575,7 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -740,7 +740,7 @@ exports[`Button component sanity matches default snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -887,7 +887,7 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -1034,7 +1034,7 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -1182,7 +1182,7 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -1331,7 +1331,7 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -1483,7 +1483,7 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 1.5rem;
   height: 4rem;
@@ -1634,7 +1634,7 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -1786,7 +1786,7 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 1.5rem;
   height: 4rem;
@@ -1937,7 +1937,7 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   border-radius: 0;
   box-shadow: 0;
   border-color: #CCC;
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -2110,7 +2110,7 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   border-radius: 0;
   box-shadow: 0;
   border-color: #CCC;
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -2280,7 +2280,7 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -2411,7 +2411,7 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
   color: #fff;
   background-color: #999;
   border: none;
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -2545,7 +2545,7 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   border-radius: 0;
   box-shadow: 0;
   border-color: #CCC;
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -2722,7 +2722,7 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -2882,7 +2882,7 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -3106,7 +3106,7 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 

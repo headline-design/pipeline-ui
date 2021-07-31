@@ -75,8 +75,8 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
             },
             "primary": Object {
               "--contrast-color": "#000",
-              "--main-color": "#3578e5",
-              "backgroundColor": "#3578e5",
+              "--main-color": "#1c1ce1",
+              "backgroundColor": "#1c1ce1",
               "color": "#000",
             },
             "success": Object {
@@ -112,7 +112,7 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
             "moon-gray": "#ccc",
             "near-black": "#111",
             "near-white": "#f4f4f4",
-            "primary": "#3578e5",
+            "primary": "#1c1ce1",
             "primary-dark": "#2a60b7",
             "primary-light": "#5d93ea",
             "silver": "#999",
@@ -285,8 +285,8 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
           },
           "primary": Object {
             "--contrast-color": "#000",
-            "--main-color": "#3578e5",
-            "backgroundColor": "#3578e5",
+            "--main-color": "#1c1ce1",
+            "backgroundColor": "#1c1ce1",
             "color": "#000",
           },
           "success": Object {
@@ -322,7 +322,7 @@ exports[`ToastMessage component sanity matches failure snapshot 1`] = `
           "moon-gray": "#ccc",
           "near-black": "#111",
           "near-white": "#f4f4f4",
-          "primary": "#3578e5",
+          "primary": "#1c1ce1",
           "primary-dark": "#2a60b7",
           "primary-light": "#5d93ea",
           "silver": "#999",
@@ -464,7 +464,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 
 .c3 {
   box-sizing: border-box;
-  color: #3578e5;
+  color: #1c1ce1;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -517,7 +517,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
 
 .c11 {
   box-sizing: border-box;
-  color: #3578e5;
+  color: #1c1ce1;
   font-size: 14px;
   font-weight: 600;
 }
@@ -664,8 +664,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
         },
         "primary": Object {
           "--contrast-color": "#000",
-          "--main-color": "#3578e5",
-          "backgroundColor": "#3578e5",
+          "--main-color": "#1c1ce1",
+          "backgroundColor": "#1c1ce1",
           "color": "#000",
         },
         "success": Object {
@@ -701,7 +701,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
         "moon-gray": "#ccc",
         "near-black": "#111",
         "near-white": "#f4f4f4",
-        "primary": "#3578e5",
+        "primary": "#1c1ce1",
         "primary-dark": "#2a60b7",
         "primary-light": "#5d93ea",
         "silver": "#999",
@@ -865,8 +865,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
           },
           "primary": Object {
             "--contrast-color": "#000",
-            "--main-color": "#3578e5",
-            "backgroundColor": "#3578e5",
+            "--main-color": "#1c1ce1",
+            "backgroundColor": "#1c1ce1",
             "color": "#000",
           },
           "success": Object {
@@ -902,7 +902,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
           "moon-gray": "#ccc",
           "near-black": "#111",
           "near-white": "#f4f4f4",
-          "primary": "#3578e5",
+          "primary": "#1c1ce1",
           "primary-dark": "#2a60b7",
           "primary-light": "#5d93ea",
           "silver": "#999",
@@ -1216,8 +1216,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     },
                     "primary": Object {
                       "--contrast-color": "#000",
-                      "--main-color": "#3578e5",
-                      "backgroundColor": "#3578e5",
+                      "--main-color": "#1c1ce1",
+                      "backgroundColor": "#1c1ce1",
                       "color": "#000",
                     },
                     "success": Object {
@@ -1253,7 +1253,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                     "moon-gray": "#ccc",
                     "near-black": "#111",
                     "near-white": "#f4f4f4",
-                    "primary": "#3578e5",
+                    "primary": "#1c1ce1",
                     "primary-dark": "#2a60b7",
                     "primary-light": "#5d93ea",
                     "silver": "#999",
@@ -1429,8 +1429,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           },
                           "primary": Object {
                             "--contrast-color": "#000",
-                            "--main-color": "#3578e5",
-                            "backgroundColor": "#3578e5",
+                            "--main-color": "#1c1ce1",
+                            "backgroundColor": "#1c1ce1",
                             "color": "#000",
                           },
                           "success": Object {
@@ -1466,7 +1466,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           "moon-gray": "#ccc",
                           "near-black": "#111",
                           "near-white": "#f4f4f4",
-                          "primary": "#3578e5",
+                          "primary": "#1c1ce1",
                           "primary-dark": "#2a60b7",
                           "primary-light": "#5d93ea",
                           "silver": "#999",
@@ -1656,8 +1656,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       },
                       "primary": Object {
                         "--contrast-color": "#000",
-                        "--main-color": "#3578e5",
-                        "backgroundColor": "#3578e5",
+                        "--main-color": "#1c1ce1",
+                        "backgroundColor": "#1c1ce1",
                         "color": "#000",
                       },
                       "success": Object {
@@ -1693,7 +1693,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                       "moon-gray": "#ccc",
                       "near-black": "#111",
                       "near-white": "#f4f4f4",
-                      "primary": "#3578e5",
+                      "primary": "#1c1ce1",
                       "primary-dark": "#2a60b7",
                       "primary-light": "#5d93ea",
                       "silver": "#999",
@@ -1869,8 +1869,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             },
                             "primary": Object {
                               "--contrast-color": "#000",
-                              "--main-color": "#3578e5",
-                              "backgroundColor": "#3578e5",
+                              "--main-color": "#1c1ce1",
+                              "backgroundColor": "#1c1ce1",
                               "color": "#000",
                             },
                             "success": Object {
@@ -1906,7 +1906,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "moon-gray": "#ccc",
                             "near-black": "#111",
                             "near-white": "#f4f4f4",
-                            "primary": "#3578e5",
+                            "primary": "#1c1ce1",
                             "primary-dark": "#2a60b7",
                             "primary-light": "#5d93ea",
                             "silver": "#999",
@@ -2075,8 +2075,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   },
                                   "primary": Object {
                                     "--contrast-color": "#000",
-                                    "--main-color": "#3578e5",
-                                    "backgroundColor": "#3578e5",
+                                    "--main-color": "#1c1ce1",
+                                    "backgroundColor": "#1c1ce1",
                                     "color": "#000",
                                   },
                                   "success": Object {
@@ -2112,7 +2112,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "moon-gray": "#ccc",
                                   "near-black": "#111",
                                   "near-white": "#f4f4f4",
-                                  "primary": "#3578e5",
+                                  "primary": "#1c1ce1",
                                   "primary-dark": "#2a60b7",
                                   "primary-light": "#5d93ea",
                                   "silver": "#999",
@@ -2300,8 +2300,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               },
                               "primary": Object {
                                 "--contrast-color": "#000",
-                                "--main-color": "#3578e5",
-                                "backgroundColor": "#3578e5",
+                                "--main-color": "#1c1ce1",
+                                "backgroundColor": "#1c1ce1",
                                 "color": "#000",
                               },
                               "success": Object {
@@ -2337,7 +2337,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "moon-gray": "#ccc",
                               "near-black": "#111",
                               "near-white": "#f4f4f4",
-                              "primary": "#3578e5",
+                              "primary": "#1c1ce1",
                               "primary-dark": "#2a60b7",
                               "primary-light": "#5d93ea",
                               "silver": "#999",
@@ -2508,8 +2508,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   },
                                   "primary": Object {
                                     "--contrast-color": "#000",
-                                    "--main-color": "#3578e5",
-                                    "backgroundColor": "#3578e5",
+                                    "--main-color": "#1c1ce1",
+                                    "backgroundColor": "#1c1ce1",
                                     "color": "#000",
                                   },
                                   "success": Object {
@@ -2545,7 +2545,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "moon-gray": "#ccc",
                                   "near-black": "#111",
                                   "near-white": "#f4f4f4",
-                                  "primary": "#3578e5",
+                                  "primary": "#1c1ce1",
                                   "primary-dark": "#2a60b7",
                                   "primary-light": "#5d93ea",
                                   "silver": "#999",
@@ -2711,8 +2711,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     },
                                     "primary": Object {
                                       "--contrast-color": "#000",
-                                      "--main-color": "#3578e5",
-                                      "backgroundColor": "#3578e5",
+                                      "--main-color": "#1c1ce1",
+                                      "backgroundColor": "#1c1ce1",
                                       "color": "#000",
                                     },
                                     "success": Object {
@@ -2748,7 +2748,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "moon-gray": "#ccc",
                                     "near-black": "#111",
                                     "near-white": "#f4f4f4",
-                                    "primary": "#3578e5",
+                                    "primary": "#1c1ce1",
                                     "primary-dark": "#2a60b7",
                                     "primary-light": "#5d93ea",
                                     "silver": "#999",
@@ -2914,8 +2914,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       },
                                       "primary": Object {
                                         "--contrast-color": "#000",
-                                        "--main-color": "#3578e5",
-                                        "backgroundColor": "#3578e5",
+                                        "--main-color": "#1c1ce1",
+                                        "backgroundColor": "#1c1ce1",
                                         "color": "#000",
                                       },
                                       "success": Object {
@@ -2951,7 +2951,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "moon-gray": "#ccc",
                                       "near-black": "#111",
                                       "near-white": "#f4f4f4",
-                                      "primary": "#3578e5",
+                                      "primary": "#1c1ce1",
                                       "primary-dark": "#2a60b7",
                                       "primary-light": "#5d93ea",
                                       "silver": "#999",
@@ -3120,8 +3120,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             },
                                             "primary": Object {
                                               "--contrast-color": "#000",
-                                              "--main-color": "#3578e5",
-                                              "backgroundColor": "#3578e5",
+                                              "--main-color": "#1c1ce1",
+                                              "backgroundColor": "#1c1ce1",
                                               "color": "#000",
                                             },
                                             "success": Object {
@@ -3157,7 +3157,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             "moon-gray": "#ccc",
                                             "near-black": "#111",
                                             "near-white": "#f4f4f4",
-                                            "primary": "#3578e5",
+                                            "primary": "#1c1ce1",
                                             "primary-dark": "#2a60b7",
                                             "primary-light": "#5d93ea",
                                             "silver": "#999",
@@ -3344,8 +3344,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         },
                                         "primary": Object {
                                           "--contrast-color": "#000",
-                                          "--main-color": "#3578e5",
-                                          "backgroundColor": "#3578e5",
+                                          "--main-color": "#1c1ce1",
+                                          "backgroundColor": "#1c1ce1",
                                           "color": "#000",
                                         },
                                         "success": Object {
@@ -3381,7 +3381,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "moon-gray": "#ccc",
                                         "near-black": "#111",
                                         "near-white": "#f4f4f4",
-                                        "primary": "#3578e5",
+                                        "primary": "#1c1ce1",
                                         "primary-dark": "#2a60b7",
                                         "primary-light": "#5d93ea",
                                         "silver": "#999",
@@ -3686,8 +3686,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 },
                                 "primary": Object {
                                   "--contrast-color": "#000",
-                                  "--main-color": "#3578e5",
-                                  "backgroundColor": "#3578e5",
+                                  "--main-color": "#1c1ce1",
+                                  "backgroundColor": "#1c1ce1",
                                   "color": "#000",
                                 },
                                 "success": Object {
@@ -3723,7 +3723,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "moon-gray": "#ccc",
                                 "near-black": "#111",
                                 "near-white": "#f4f4f4",
-                                "primary": "#3578e5",
+                                "primary": "#1c1ce1",
                                 "primary-dark": "#2a60b7",
                                 "primary-light": "#5d93ea",
                                 "silver": "#999",
@@ -3892,8 +3892,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       },
                                       "primary": Object {
                                         "--contrast-color": "#000",
-                                        "--main-color": "#3578e5",
-                                        "backgroundColor": "#3578e5",
+                                        "--main-color": "#1c1ce1",
+                                        "backgroundColor": "#1c1ce1",
                                         "color": "#000",
                                       },
                                       "success": Object {
@@ -3929,7 +3929,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "moon-gray": "#ccc",
                                       "near-black": "#111",
                                       "near-white": "#f4f4f4",
-                                      "primary": "#3578e5",
+                                      "primary": "#1c1ce1",
                                       "primary-dark": "#2a60b7",
                                       "primary-light": "#5d93ea",
                                       "silver": "#999",
@@ -4117,8 +4117,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   },
                                   "primary": Object {
                                     "--contrast-color": "#000",
-                                    "--main-color": "#3578e5",
-                                    "backgroundColor": "#3578e5",
+                                    "--main-color": "#1c1ce1",
+                                    "backgroundColor": "#1c1ce1",
                                     "color": "#000",
                                   },
                                   "success": Object {
@@ -4154,7 +4154,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                   "moon-gray": "#ccc",
                                   "near-black": "#111",
                                   "near-white": "#f4f4f4",
-                                  "primary": "#3578e5",
+                                  "primary": "#1c1ce1",
                                   "primary-dark": "#2a60b7",
                                   "primary-light": "#5d93ea",
                                   "silver": "#999",
@@ -4325,8 +4325,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       },
                                       "primary": Object {
                                         "--contrast-color": "#000",
-                                        "--main-color": "#3578e5",
-                                        "backgroundColor": "#3578e5",
+                                        "--main-color": "#1c1ce1",
+                                        "backgroundColor": "#1c1ce1",
                                         "color": "#000",
                                       },
                                       "success": Object {
@@ -4362,7 +4362,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "moon-gray": "#ccc",
                                       "near-black": "#111",
                                       "near-white": "#f4f4f4",
-                                      "primary": "#3578e5",
+                                      "primary": "#1c1ce1",
                                       "primary-dark": "#2a60b7",
                                       "primary-light": "#5d93ea",
                                       "silver": "#999",
@@ -4530,8 +4530,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         },
                                         "primary": Object {
                                           "--contrast-color": "#000",
-                                          "--main-color": "#3578e5",
-                                          "backgroundColor": "#3578e5",
+                                          "--main-color": "#1c1ce1",
+                                          "backgroundColor": "#1c1ce1",
                                           "color": "#000",
                                         },
                                         "success": Object {
@@ -4567,7 +4567,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "moon-gray": "#ccc",
                                         "near-black": "#111",
                                         "near-white": "#f4f4f4",
-                                        "primary": "#3578e5",
+                                        "primary": "#1c1ce1",
                                         "primary-dark": "#2a60b7",
                                         "primary-light": "#5d93ea",
                                         "silver": "#999",
@@ -4735,8 +4735,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           },
                                           "primary": Object {
                                             "--contrast-color": "#000",
-                                            "--main-color": "#3578e5",
-                                            "backgroundColor": "#3578e5",
+                                            "--main-color": "#1c1ce1",
+                                            "backgroundColor": "#1c1ce1",
                                             "color": "#000",
                                           },
                                           "success": Object {
@@ -4772,7 +4772,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "moon-gray": "#ccc",
                                           "near-black": "#111",
                                           "near-white": "#f4f4f4",
-                                          "primary": "#3578e5",
+                                          "primary": "#1c1ce1",
                                           "primary-dark": "#2a60b7",
                                           "primary-light": "#5d93ea",
                                           "silver": "#999",
@@ -4942,8 +4942,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 },
                                                 "primary": Object {
                                                   "--contrast-color": "#000",
-                                                  "--main-color": "#3578e5",
-                                                  "backgroundColor": "#3578e5",
+                                                  "--main-color": "#1c1ce1",
+                                                  "backgroundColor": "#1c1ce1",
                                                   "color": "#000",
                                                 },
                                                 "success": Object {
@@ -4979,7 +4979,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "moon-gray": "#ccc",
                                                 "near-black": "#111",
                                                 "near-white": "#f4f4f4",
-                                                "primary": "#3578e5",
+                                                "primary": "#1c1ce1",
                                                 "primary-dark": "#2a60b7",
                                                 "primary-light": "#5d93ea",
                                                 "silver": "#999",
@@ -5167,8 +5167,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             },
                                             "primary": Object {
                                               "--contrast-color": "#000",
-                                              "--main-color": "#3578e5",
-                                              "backgroundColor": "#3578e5",
+                                              "--main-color": "#1c1ce1",
+                                              "backgroundColor": "#1c1ce1",
                                               "color": "#000",
                                             },
                                             "success": Object {
@@ -5204,7 +5204,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             "moon-gray": "#ccc",
                                             "near-black": "#111",
                                             "near-white": "#f4f4f4",
-                                            "primary": "#3578e5",
+                                            "primary": "#1c1ce1",
                                             "primary-dark": "#2a60b7",
                                             "primary-light": "#5d93ea",
                                             "silver": "#999",
@@ -5384,8 +5384,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       },
                                       "primary": Object {
                                         "--contrast-color": "#000",
-                                        "--main-color": "#3578e5",
-                                        "backgroundColor": "#3578e5",
+                                        "--main-color": "#1c1ce1",
+                                        "backgroundColor": "#1c1ce1",
                                         "color": "#000",
                                       },
                                       "success": Object {
@@ -5421,7 +5421,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "moon-gray": "#ccc",
                                       "near-black": "#111",
                                       "near-white": "#f4f4f4",
-                                      "primary": "#3578e5",
+                                      "primary": "#1c1ce1",
                                       "primary-dark": "#2a60b7",
                                       "primary-light": "#5d93ea",
                                       "silver": "#999",
@@ -5589,8 +5589,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         },
                                         "primary": Object {
                                           "--contrast-color": "#000",
-                                          "--main-color": "#3578e5",
-                                          "backgroundColor": "#3578e5",
+                                          "--main-color": "#1c1ce1",
+                                          "backgroundColor": "#1c1ce1",
                                           "color": "#000",
                                         },
                                         "success": Object {
@@ -5626,7 +5626,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "moon-gray": "#ccc",
                                         "near-black": "#111",
                                         "near-white": "#f4f4f4",
-                                        "primary": "#3578e5",
+                                        "primary": "#1c1ce1",
                                         "primary-dark": "#2a60b7",
                                         "primary-light": "#5d93ea",
                                         "silver": "#999",
@@ -5794,8 +5794,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           },
                                           "primary": Object {
                                             "--contrast-color": "#000",
-                                            "--main-color": "#3578e5",
-                                            "backgroundColor": "#3578e5",
+                                            "--main-color": "#1c1ce1",
+                                            "backgroundColor": "#1c1ce1",
                                             "color": "#000",
                                           },
                                           "success": Object {
@@ -5831,7 +5831,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                           "moon-gray": "#ccc",
                                           "near-black": "#111",
                                           "near-white": "#f4f4f4",
-                                          "primary": "#3578e5",
+                                          "primary": "#1c1ce1",
                                           "primary-dark": "#2a60b7",
                                           "primary-light": "#5d93ea",
                                           "silver": "#999",
@@ -6001,8 +6001,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 },
                                                 "primary": Object {
                                                   "--contrast-color": "#000",
-                                                  "--main-color": "#3578e5",
-                                                  "backgroundColor": "#3578e5",
+                                                  "--main-color": "#1c1ce1",
+                                                  "backgroundColor": "#1c1ce1",
                                                   "color": "#000",
                                                 },
                                                 "success": Object {
@@ -6038,7 +6038,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                                 "moon-gray": "#ccc",
                                                 "near-black": "#111",
                                                 "near-white": "#f4f4f4",
-                                                "primary": "#3578e5",
+                                                "primary": "#1c1ce1",
                                                 "primary-dark": "#2a60b7",
                                                 "primary-light": "#5d93ea",
                                                 "silver": "#999",
@@ -6226,8 +6226,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             },
                                             "primary": Object {
                                               "--contrast-color": "#000",
-                                              "--main-color": "#3578e5",
-                                              "backgroundColor": "#3578e5",
+                                              "--main-color": "#1c1ce1",
+                                              "backgroundColor": "#1c1ce1",
                                               "color": "#000",
                                             },
                                             "success": Object {
@@ -6263,7 +6263,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             "moon-gray": "#ccc",
                                             "near-black": "#111",
                                             "near-white": "#f4f4f4",
-                                            "primary": "#3578e5",
+                                            "primary": "#1c1ce1",
                                             "primary-dark": "#2a60b7",
                                             "primary-light": "#5d93ea",
                                             "silver": "#999",
@@ -6451,8 +6451,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           },
                           "primary": Object {
                             "--contrast-color": "#000",
-                            "--main-color": "#3578e5",
-                            "backgroundColor": "#3578e5",
+                            "--main-color": "#1c1ce1",
+                            "backgroundColor": "#1c1ce1",
                             "color": "#000",
                           },
                           "success": Object {
@@ -6488,7 +6488,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                           "moon-gray": "#ccc",
                           "near-black": "#111",
                           "near-white": "#f4f4f4",
-                          "primary": "#3578e5",
+                          "primary": "#1c1ce1",
                           "primary-dark": "#2a60b7",
                           "primary-light": "#5d93ea",
                           "silver": "#999",
@@ -6658,8 +6658,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             },
                             "primary": Object {
                               "--contrast-color": "#000",
-                              "--main-color": "#3578e5",
-                              "backgroundColor": "#3578e5",
+                              "--main-color": "#1c1ce1",
+                              "backgroundColor": "#1c1ce1",
                               "color": "#000",
                             },
                             "success": Object {
@@ -6695,7 +6695,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                             "moon-gray": "#ccc",
                             "near-black": "#111",
                             "near-white": "#f4f4f4",
-                            "primary": "#3578e5",
+                            "primary": "#1c1ce1",
                             "primary-dark": "#2a60b7",
                             "primary-light": "#5d93ea",
                             "silver": "#999",
@@ -6865,8 +6865,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               },
                               "primary": Object {
                                 "--contrast-color": "#000",
-                                "--main-color": "#3578e5",
-                                "backgroundColor": "#3578e5",
+                                "--main-color": "#1c1ce1",
+                                "backgroundColor": "#1c1ce1",
                                 "color": "#000",
                               },
                               "success": Object {
@@ -6902,7 +6902,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                               "moon-gray": "#ccc",
                               "near-black": "#111",
                               "near-white": "#f4f4f4",
-                              "primary": "#3578e5",
+                              "primary": "#1c1ce1",
                               "primary-dark": "#2a60b7",
                               "primary-light": "#5d93ea",
                               "silver": "#999",
@@ -7072,8 +7072,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     },
                                     "primary": Object {
                                       "--contrast-color": "#000",
-                                      "--main-color": "#3578e5",
-                                      "backgroundColor": "#3578e5",
+                                      "--main-color": "#1c1ce1",
+                                      "backgroundColor": "#1c1ce1",
                                       "color": "#000",
                                     },
                                     "success": Object {
@@ -7109,7 +7109,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                     "moon-gray": "#ccc",
                                     "near-black": "#111",
                                     "near-white": "#f4f4f4",
-                                    "primary": "#3578e5",
+                                    "primary": "#1c1ce1",
                                     "primary-dark": "#2a60b7",
                                     "primary-light": "#5d93ea",
                                     "silver": "#999",
@@ -7299,8 +7299,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 },
                                 "primary": Object {
                                   "--contrast-color": "#000",
-                                  "--main-color": "#3578e5",
-                                  "backgroundColor": "#3578e5",
+                                  "--main-color": "#1c1ce1",
+                                  "backgroundColor": "#1c1ce1",
                                   "color": "#000",
                                 },
                                 "success": Object {
@@ -7336,7 +7336,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                 "moon-gray": "#ccc",
                                 "near-black": "#111",
                                 "near-white": "#f4f4f4",
-                                "primary": "#3578e5",
+                                "primary": "#1c1ce1",
                                 "primary-dark": "#2a60b7",
                                 "primary-light": "#5d93ea",
                                 "silver": "#999",
@@ -7522,8 +7522,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       },
                                       "primary": Object {
                                         "--contrast-color": "#000",
-                                        "--main-color": "#3578e5",
-                                        "backgroundColor": "#3578e5",
+                                        "--main-color": "#1c1ce1",
+                                        "backgroundColor": "#1c1ce1",
                                         "color": "#000",
                                       },
                                       "success": Object {
@@ -7559,7 +7559,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                       "moon-gray": "#ccc",
                                       "near-black": "#111",
                                       "near-white": "#f4f4f4",
-                                      "primary": "#3578e5",
+                                      "primary": "#1c1ce1",
                                       "primary-dark": "#2a60b7",
                                       "primary-light": "#5d93ea",
                                       "silver": "#999",
@@ -7731,8 +7731,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             },
                                             "primary": Object {
                                               "--contrast-color": "#000",
-                                              "--main-color": "#3578e5",
-                                              "backgroundColor": "#3578e5",
+                                              "--main-color": "#1c1ce1",
+                                              "backgroundColor": "#1c1ce1",
                                               "color": "#000",
                                             },
                                             "success": Object {
@@ -7768,7 +7768,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                             "moon-gray": "#ccc",
                                             "near-black": "#111",
                                             "near-white": "#f4f4f4",
-                                            "primary": "#3578e5",
+                                            "primary": "#1c1ce1",
                                             "primary-dark": "#2a60b7",
                                             "primary-light": "#5d93ea",
                                             "silver": "#999",
@@ -7980,8 +7980,8 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         },
                                         "primary": Object {
                                           "--contrast-color": "#000",
-                                          "--main-color": "#3578e5",
-                                          "backgroundColor": "#3578e5",
+                                          "--main-color": "#1c1ce1",
+                                          "backgroundColor": "#1c1ce1",
                                           "color": "#000",
                                         },
                                         "success": Object {
@@ -8017,7 +8017,7 @@ exports[`ToastMessage component sanity matches full component mount snapshot 1`]
                                         "moon-gray": "#ccc",
                                         "near-black": "#111",
                                         "near-white": "#f4f4f4",
-                                        "primary": "#3578e5",
+                                        "primary": "#1c1ce1",
                                         "primary-dark": "#2a60b7",
                                         "primary-light": "#5d93ea",
                                         "silver": "#999",
@@ -8321,8 +8321,8 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             },
             "primary": Object {
               "--contrast-color": "#000",
-              "--main-color": "#3578e5",
-              "backgroundColor": "#3578e5",
+              "--main-color": "#1c1ce1",
+              "backgroundColor": "#1c1ce1",
               "color": "#000",
             },
             "success": Object {
@@ -8358,7 +8358,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             "moon-gray": "#ccc",
             "near-black": "#111",
             "near-white": "#f4f4f4",
-            "primary": "#3578e5",
+            "primary": "#1c1ce1",
             "primary-dark": "#2a60b7",
             "primary-light": "#5d93ea",
             "silver": "#999",
@@ -8531,8 +8531,8 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             },
             "primary": Object {
               "--contrast-color": "#000",
-              "--main-color": "#3578e5",
-              "backgroundColor": "#3578e5",
+              "--main-color": "#1c1ce1",
+              "backgroundColor": "#1c1ce1",
               "color": "#000",
             },
             "success": Object {
@@ -8568,7 +8568,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             "moon-gray": "#ccc",
             "near-black": "#111",
             "near-white": "#f4f4f4",
-            "primary": "#3578e5",
+            "primary": "#1c1ce1",
             "primary-dark": "#2a60b7",
             "primary-light": "#5d93ea",
             "silver": "#999",
@@ -8738,8 +8738,8 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             },
             "primary": Object {
               "--contrast-color": "#000",
-              "--main-color": "#3578e5",
-              "backgroundColor": "#3578e5",
+              "--main-color": "#1c1ce1",
+              "backgroundColor": "#1c1ce1",
               "color": "#000",
             },
             "success": Object {
@@ -8775,7 +8775,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
             "moon-gray": "#ccc",
             "near-black": "#111",
             "near-white": "#f4f4f4",
-            "primary": "#3578e5",
+            "primary": "#1c1ce1",
             "primary-dark": "#2a60b7",
             "primary-light": "#5d93ea",
             "silver": "#999",
@@ -8948,8 +8948,8 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           },
           "primary": Object {
             "--contrast-color": "#000",
-            "--main-color": "#3578e5",
-            "backgroundColor": "#3578e5",
+            "--main-color": "#1c1ce1",
+            "backgroundColor": "#1c1ce1",
             "color": "#000",
           },
           "success": Object {
@@ -8985,7 +8985,7 @@ exports[`ToastMessage component sanity matches full component shallow snapshot 1
           "moon-gray": "#ccc",
           "near-black": "#111",
           "near-white": "#f4f4f4",
-          "primary": "#3578e5",
+          "primary": "#1c1ce1",
           "primary-dark": "#2a60b7",
           "primary-light": "#5d93ea",
           "silver": "#999",
@@ -9274,8 +9274,8 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
             },
             "primary": Object {
               "--contrast-color": "#000",
-              "--main-color": "#3578e5",
-              "backgroundColor": "#3578e5",
+              "--main-color": "#1c1ce1",
+              "backgroundColor": "#1c1ce1",
               "color": "#000",
             },
             "success": Object {
@@ -9311,7 +9311,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
             "moon-gray": "#ccc",
             "near-black": "#111",
             "near-white": "#f4f4f4",
-            "primary": "#3578e5",
+            "primary": "#1c1ce1",
             "primary-dark": "#2a60b7",
             "primary-light": "#5d93ea",
             "silver": "#999",
@@ -9484,8 +9484,8 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           },
           "primary": Object {
             "--contrast-color": "#000",
-            "--main-color": "#3578e5",
-            "backgroundColor": "#3578e5",
+            "--main-color": "#1c1ce1",
+            "backgroundColor": "#1c1ce1",
             "color": "#000",
           },
           "success": Object {
@@ -9521,7 +9521,7 @@ exports[`ToastMessage component sanity matches generic snapshot 1`] = `
           "moon-gray": "#ccc",
           "near-black": "#111",
           "near-white": "#f4f4f4",
-          "primary": "#3578e5",
+          "primary": "#1c1ce1",
           "primary-dark": "#2a60b7",
           "primary-light": "#5d93ea",
           "silver": "#999",
@@ -9720,8 +9720,8 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
             },
             "primary": Object {
               "--contrast-color": "#000",
-              "--main-color": "#3578e5",
-              "backgroundColor": "#3578e5",
+              "--main-color": "#1c1ce1",
+              "backgroundColor": "#1c1ce1",
               "color": "#000",
             },
             "success": Object {
@@ -9757,7 +9757,7 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
             "moon-gray": "#ccc",
             "near-black": "#111",
             "near-white": "#f4f4f4",
-            "primary": "#3578e5",
+            "primary": "#1c1ce1",
             "primary-dark": "#2a60b7",
             "primary-light": "#5d93ea",
             "silver": "#999",
@@ -9930,8 +9930,8 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
           },
           "primary": Object {
             "--contrast-color": "#000",
-            "--main-color": "#3578e5",
-            "backgroundColor": "#3578e5",
+            "--main-color": "#1c1ce1",
+            "backgroundColor": "#1c1ce1",
             "color": "#000",
           },
           "success": Object {
@@ -9967,7 +9967,7 @@ exports[`ToastMessage component sanity matches processing snapshot 1`] = `
           "moon-gray": "#ccc",
           "near-black": "#111",
           "near-white": "#f4f4f4",
-          "primary": "#3578e5",
+          "primary": "#1c1ce1",
           "primary-dark": "#2a60b7",
           "primary-light": "#5d93ea",
           "silver": "#999",
@@ -10166,8 +10166,8 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
             },
             "primary": Object {
               "--contrast-color": "#000",
-              "--main-color": "#3578e5",
-              "backgroundColor": "#3578e5",
+              "--main-color": "#1c1ce1",
+              "backgroundColor": "#1c1ce1",
               "color": "#000",
             },
             "success": Object {
@@ -10203,7 +10203,7 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
             "moon-gray": "#ccc",
             "near-black": "#111",
             "near-white": "#f4f4f4",
-            "primary": "#3578e5",
+            "primary": "#1c1ce1",
             "primary-dark": "#2a60b7",
             "primary-light": "#5d93ea",
             "silver": "#999",
@@ -10376,8 +10376,8 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
           },
           "primary": Object {
             "--contrast-color": "#000",
-            "--main-color": "#3578e5",
-            "backgroundColor": "#3578e5",
+            "--main-color": "#1c1ce1",
+            "backgroundColor": "#1c1ce1",
             "color": "#000",
           },
           "success": Object {
@@ -10413,7 +10413,7 @@ exports[`ToastMessage component sanity matches success snapshot 1`] = `
           "moon-gray": "#ccc",
           "near-black": "#111",
           "near-white": "#f4f4f4",
-          "primary": "#3578e5",
+          "primary": "#1c1ce1",
           "primary-dark": "#2a60b7",
           "primary-light": "#5d93ea",
           "silver": "#999",

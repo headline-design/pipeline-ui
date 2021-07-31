@@ -34,7 +34,7 @@ exports[`File Input component sanity matches default snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 
@@ -242,7 +242,7 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
 }
 

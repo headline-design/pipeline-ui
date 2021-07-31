@@ -68,7 +68,11 @@ const ButtonBody = ({ children, size }) => (
 
 const AlgoSendButtonBSolid = ({ className, children, ...props }) => {
   return (
-    <StyledButtonSolid className={className} {...props}>
+    <StyledButtonSolid
+      className="pipeline-algobtn-solid"
+      className={className}
+      {...props}
+    >
       <ButtonBody children={children} size={props.size} />
     </StyledButtonSolid>
   )
@@ -76,7 +80,11 @@ const AlgoSendButtonBSolid = ({ className, children, ...props }) => {
 
 const AlgoSendButtonBOutline = ({ className, children, ...props }) => {
   return (
-    <StyledButtonOutline className={className} {...props}>
+    <StyledButtonOutline
+      className="pipeline-algobtn-outline"
+      className={className}
+      {...props}
+    >
       <ButtonBody children={children} size={props.size} />
     </StyledButtonOutline>
   )

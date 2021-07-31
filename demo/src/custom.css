@@ -5,3 +5,103 @@
     flex-direction: column;
 }
 }
+
+
+button {
+  overflow: visible;
+  background-color: #1c1ce1 !important;
+  color: #fff!important;
+  display: inline-block;
+  white-space: pre-wrap;
+  text-decoration: none;
+  border: 1px solid #333 !important;
+  cursor: pointer;
+border-radius: 4px !important;
+width: 100% !important;
+}
+
+.Box__StyledBox-sc{
+  overflow: visible;
+  background-color: #1c1ce1 !important;
+  color: #fff!important;
+  display: inline-block;
+  white-space: pre-wrap;
+  text-decoration: none;
+  border: 1px solid #333 !important;
+  cursor: pointer;
+border-radius: 4px !important;
+width: 100% !important;
+}
+
+.SolidButton {
+  overflow: visible;
+  background-color: #1c1ce1 !important;
+  color: #fff!important;
+  display: inline-block;
+  white-space: pre-wrap;
+  text-decoration: none;
+  border: 1px solid #333 !important;
+  cursor: pointer;
+border-radius: 4px !important;
+width: 100% !important;
+}
+
+.styled.button {
+overflow: visible;
+background-color: #1c1ce1 !important;
+color: #fff!important;
+display: inline-block;
+white-space: pre-wrap;
+text-decoration: none;
+border: 1px solid #333 !important;
+cursor: pointer;
+border-radius: 4px !important;
+width: 100% !important;
+}
+
+.Box__StyledBox {
+color: #1c1ce1;
+border: 1px solid #1c1ce1 !important;
+box-shadow: 4px 4px 0 0 rgb(210 210 249) !important;
+background: rgba(28,28,225,.8) !important;
+}
+
+
+button:hover {
+    color: #1c1ce1;
+    border: 1px solid #1c1ce1 !important;
+    box-shadow: 4px 4px 0 0 rgb(210 210 249) !important;
+    background: rgba(28,28,225,.8) !important;
+}
+button:active {
+background-color: #1616b4 !important;
+}
+
+div#root {
+  height: 100vh;
+  padding: 7vh;
+}
+
+.AlgoSendButton.button {
+  color: #fff !important;
+  background: #FFFFFF !important;
+  border: 10px solid #ccc;
+}
+
+html {
+  background-color: #f4f4f4;
+}
+
+.edAVVp.pipeline-box {
+  background: #fff;
+  box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%), 4px 4px 0 0 rgb(210 210 249);
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+button.Box__StyledBox-sc-12bsn2y-0.BaseButton__StyledButton-sc-1hj5v8i-0.SolidButton__StyledSolidButton-sc-16jeih0-0.jjafTl.hBTdxa.jcgxFN {
+  background-color: #1c1ce1 !important;
+}

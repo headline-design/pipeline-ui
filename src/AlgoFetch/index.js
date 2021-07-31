@@ -26,7 +26,11 @@ export default function AlgoFetch(props) {
 
   return (
     <div>
-      <Table id="transTable" style={{ textAlign: 'center' }}>
+      <Table
+        className="pipeline-algofetch"
+        id="transTable"
+        style={{ textAlign: 'center' }}
+      >
         <thead>
           <tr style={{ textAlign: 'center' }}>
             <th style={{ textAlign: 'center' }}>My Latest Transactions</th>

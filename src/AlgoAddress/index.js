@@ -1,32 +1,32 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import Box from '../Box';
-import Flex from '../Flex';
-import Card from '../Card';
-import Text from '../Text';
-import Tooltip from '../Tooltip';
+import Box from '../Box'
+import Flex from '../Flex'
+import Card from '../Card'
+import Text from '../Text'
+import Tooltip from '../Tooltip'
 
-import Icon from '../Icon';
-import Button from '../Button';
-import Input from '../Input';
-import QR from '../QR';
-import Portal from '../Portal';
-import { useHiddenState } from '../Hidden';
-import { ModalBackdrop } from '../Modal';
+import Icon from '../Icon'
+import Button from '../Button'
+import Input from '../Input'
+import QR from '../QR'
+import Portal from '../Portal'
+import { useHiddenState } from '../Hidden'
+import { ModalBackdrop } from '../Modal'
 
-import Clipboard from './CopyToClipboard';
+import Clipboard from './CopyToClipboard'
 
 const StyledInput = styled(Input)`
   text-overflow: ellipsis;
   white-space: nowrap;
-`;
+`
 
 StyledInput.defaultProps = {
   title: 'Algorand Address',
   'aria-label': 'Algorand Address',
-};
+}
 
 const StyledWrapper = styled(Box)`
   & {
@@ -36,19 +36,19 @@ const StyledWrapper = styled(Box)`
     width: 100%;
     position: relative;
   }
-`;
+`
 
 const AddressQrModal = ({ isOpen, hide, address }) => {
   const text = {
     title: 'Algorand Address',
     description:
       'To send funds to this Algorand address, scan this code using your mobile wallet app',
-  };
+  }
 
   const colors = {
     foreground: 'black',
     background: 'white',
-  };
+  }
 
   if (isOpen) {
     return (
@@ -139,19 +139,19 @@ const AddressQrModal = ({ isOpen, hide, address }) => {
           </Card>
         </ModalBackdrop>
       </Portal>
-    );
+    )
   }
 
-  return null;
-};
+  return null
+}
 
 const QRButton = ({ address, ...props }) => {
-  const { visible, toggle } = useHiddenState();
+  const { visible, toggle } = useHiddenState()
 
   const text = {
     tooltip: 'Show QR Code',
     button: 'Show QR Code',
-  };
+  }
 
   if (!props.textLabels) {
     return (
@@ -163,7 +163,7 @@ const QRButton = ({ address, ...props }) => {
         </Tooltip>
         <AddressQrModal address={address} isOpen={visible} hide={toggle} />
       </React.Fragment>
-    );
+    )
   }
   return (
     <React.Fragment>
@@ -172,14 +172,14 @@ const QRButton = ({ address, ...props }) => {
       </Button>
       <AddressQrModal address={address} isOpen={visible} hide={toggle} />
     </React.Fragment>
-  );
-};
+  )
+}
 
 const CopyButton = ({ clipboardText, ...props }) => {
   const text = {
     tooltip: 'Copy to clipboard',
     button: 'Copy',
-  };
+  }
 
   if (!props.textLabels) {
     return (
@@ -192,7 +192,7 @@ const CopyButton = ({ clipboardText, ...props }) => {
           </Tooltip>
         )}
       </Clipboard>
-    );
+    )
   }
   return (
     <Clipboard text={clipboardText}>
@@ -200,13 +200,13 @@ const CopyButton = ({ clipboardText, ...props }) => {
         <Button size={'small'}>{!isCopied ? text.button : 'Copied!'}</Button>
       )}
     </Clipboard>
-  );
-};
+  )
+}
 
 class AlgoAddress extends Component {
   render() {
     return (
-      <StyledWrapper {...this.props}>
+      <StyledWrapper className="pipeline-algoaddress" {...this.props}>
         <StyledInput
           readOnly
           value={this.props.address}
@@ -229,7 +229,7 @@ class AlgoAddress extends Component {
           />
         </Flex>
       </StyledWrapper>
-    );
+    )
   }
 }
 
@@ -243,12 +243,12 @@ AlgoAddress.propTypes = {
    * Changes buttons to text from icons
    */
   textLabels: PropTypes.bool,
-};
+}
 
 AlgoAddress.defaultProps = {
   textLabels: false,
-};
+}
 
-AlgoAddress.displayName = 'AlgoAddress';
+AlgoAddress.displayName = 'AlgoAddress'
 
-export default AlgoAddress;
+export default AlgoAddress

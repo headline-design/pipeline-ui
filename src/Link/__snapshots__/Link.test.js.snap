@@ -3,7 +3,7 @@
 exports[`Link component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
-  color: #3578e5;
+  color: #1c1ce1;
   font-size: 14px;
   font-weight: 600;
 }
@@ -37,7 +37,7 @@ exports[`Link component sanity matches default snapshot 1`] = `
 exports[`Link component sanity matches themed snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
-  color: #3578e5;
+  color: #1c1ce1;
   font-size: 14px;
   font-weight: 600;
 }
