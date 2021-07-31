@@ -82,8 +82,11 @@ const Radio = React.forwardRef(
           ref={ref}
           {...props}
         />
-        <RadioButtonChecked name={'checked'} />
-        <RadioButtonUnchecked name={'unchecked'} />
+        <RadioButtonChecked className="pipeline-rb-checked" name={'checked'} />
+        <RadioButtonUnchecked
+          className="pipeline-rb-unchecked"
+          name={'unchecked'}
+        />
       </StyledWrapper>
       <Text
         color={'text'}

@@ -1,14 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Box from '../Box';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Box from '../Box'
 
-const Image = React.forwardRef((props, ref) => <Box ref={ref} {...props} />);
+const Image = React.forwardRef((props, ref) => (
+  <Box className="pipeline-img" ref={ref} {...props} />
+))
 
 Image.defaultProps = {
   as: 'img',
   maxWidth: '100%',
   height: 'auto',
-};
+}
 
 Image.propTypes = {
   ...Box.propTypes,
@@ -21,8 +23,8 @@ Image.propTypes = {
    * Sets the src attribute of the img element
    */
   src: PropTypes.string.isRequired,
-};
+}
 
-Image.displayName = 'Image';
+Image.displayName = 'Image'
 
-export default Image;
+export default Image

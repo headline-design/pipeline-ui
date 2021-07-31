@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import QRCode from 'qrcode.react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import QRCode from 'qrcode.react'
 
-const QR = React.forwardRef((props, ref) => <QRCode ref={ref} {...props} />);
+const QR = React.forwardRef((props, ref) => (
+  <QRCode className="pipeline-qr-code" ref={ref} {...props} />
+))
 
 QR.propTypes = {
   /**
@@ -33,7 +35,7 @@ QR.propTypes = {
    * Adds margin around the QR code
    */
   includeMargin: PropTypes.bool,
-};
+}
 
 QR.defaultProps = {
   renderAs: 'svg',
@@ -42,8 +44,8 @@ QR.defaultProps = {
   fgColor: '#000000',
   level: 'L',
   includeMargin: false,
-};
+}
 
-QR.displayName = 'QR';
+QR.displayName = 'QR'
 
-export default QR;
+export default QR

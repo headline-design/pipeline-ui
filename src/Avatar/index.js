@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import theme from '../theme';
-import Box from '../Box';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import theme from '../theme'
+import Box from '../Box'
 
 const size = props => {
   switch (props.size) {
@@ -10,21 +10,21 @@ const size = props => {
       return `
         height: 2em;
         width: 2em;
-      `;
+      `
     case 'medium':
       return `
         height: 3em;
         width: 3em;
-      `;
+      `
     case 'large':
       return `
         height: 4em;
         width: 4em;
-      `;
+      `
     default:
-      return ``;
+      return ``
   }
-};
+}
 
 const StyledAvatar = styled(Box)`
   & {
@@ -38,21 +38,21 @@ const StyledAvatar = styled(Box)`
   }
 
   ${size}
-`;
+`
 
 StyledAvatar.defaultProps = {
   theme,
-};
+}
 
 const Avatar = React.forwardRef((props, ref) => (
-  <StyledAvatar ref={ref} {...props} />
-));
+  <StyledAvatar className="pipeline-avatar" ref={ref} {...props} />
+))
 
 Avatar.defaultProps = {
   size: '2rem',
   bg: 'grey',
   alt: 'Avatar',
-};
+}
 
 Avatar.propTypes = {
   /**
@@ -75,8 +75,8 @@ Avatar.propTypes = {
    * Inherits system props from Box
    */
   ...Box.propTypes,
-};
+}
 
-Avatar.displayName = 'Avatar';
+Avatar.displayName = 'Avatar'
 
-export default Avatar;
+export default Avatar

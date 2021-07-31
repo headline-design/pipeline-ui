@@ -55,10 +55,9 @@ const SolidButton = React.forwardRef(
 
 SolidButton.defaultProps = {
   ...Button.defaultProps,
-  borderRadius: 0,
+  borderRadius: 1,
   boxShadow: 1,
 }
-
 export { StyledSolidButton }
 
 export default SolidButton

@@ -1,11 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { height, fontFamily, boxShadow } from 'styled-system';
-import { themeGet } from '@styled-system/theme-get';
-import theme from '../theme';
-import Box from '../Box';
-import { TYPOGRAPHY } from '../constants';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { height, fontFamily, boxShadow } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
+import theme from '../theme'
+import Box from '../Box'
+import { TYPOGRAPHY } from '../constants'
 
 const StyledTable = styled(Box)`
   & {
@@ -36,15 +36,20 @@ const StyledTable = styled(Box)`
   }
 
   ${TYPOGRAPHY}
-`;
+`
 
 StyledTable.defaultProps = {
   theme,
-};
+}
 
 const Table = React.forwardRef((props, ref) => (
-  <StyledTable ref={ref} {...props} forwardedAs={'table'} />
-));
+  <StyledTable
+    className="pipeline-table"
+    ref={ref}
+    {...props}
+    forwardedAs={'table'}
+  />
+))
 
 Table.defaultProps = {
   width: 1,
@@ -55,13 +60,13 @@ Table.defaultProps = {
   fontFamily: 'sansSerif',
   color: 'dark-gray',
   boxShadow: 1,
-};
+}
 
 Table.propTypes = {
   ...Box.propTypes,
   theme: PropTypes.object,
-};
+}
 
-Table.displayName = 'Table';
+Table.displayName = 'Table'
 
-export default Table;
+export default Table

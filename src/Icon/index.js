@@ -6,7 +6,7 @@ import theme from '../theme'
 
 const Icon = React.forwardRef(({ name, size, ...rest }, ref) => (
   <Box ref={ref} {...rest}>
-    <RmdIcon name={name} size={size} />
+    <RmdIcon className="pipeline-rmd-icon" name={name} size={size} />
   </Box>
 ))
 

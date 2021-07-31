@@ -1332,3 +1332,9 @@ tr:hover {
         margin-bottom: 1.86rem!important
     }
 }
+
+@media (max-width: 996px){
+.navbar__items--right>:last-child {
+    margin-right: 6.5rem !important;
+}
+}
