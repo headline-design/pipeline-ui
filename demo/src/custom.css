@@ -92,7 +92,7 @@ html {
   background-color: #f4f4f4;
 }
 
-.Box__StyledBox-sc-12bsn2y-0.cmoZDc {
+.edAVVp.pipeline-box {
   background: #fff;
   box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%), 4px 4px 0 0 rgb(210 210 249);
   border-radius: 10px;
@@ -100,7 +100,6 @@ html {
   margin: 0 auto;
   overflow: hidden;
   padding: 1rem;
-  font-family: "Courier New",Courier,monospace;
 }
 
 button.Box__StyledBox-sc-12bsn2y-0.BaseButton__StyledButton-sc-1hj5v8i-0.SolidButton__StyledSolidButton-sc-16jeih0-0.jjafTl.hBTdxa.jcgxFN {
