@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { StyledInput } from '../Input';
-import theme from '../theme';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { StyledInput } from '../Input'
+import theme from '../theme'
 
 const StyledSlider = styled(StyledInput)`
   & {
@@ -66,11 +66,16 @@ const StyledSlider = styled(StyledInput)`
       border-color: currentColor;
     }
   }
-`;
+`
 
 const Slider = React.forwardRef((props, ref) => (
-  <StyledSlider ref={ref} {...props} type={'range'} />
-));
+  <StyledSlider
+    className="pipeline-slider"
+    ref={ref}
+    {...props}
+    type={'range'}
+  />
+))
 
 StyledSlider.defaultProps = {
   color: 'primary',
@@ -82,16 +87,16 @@ StyledSlider.defaultProps = {
   border: 'none',
   boxShadow: 'none',
   theme,
-};
+}
 
 Slider.defaultProps = {
   'aria-label': 'range slider',
-};
+}
 
 Slider.propTypes = {
   'aria-label': PropTypes.string,
-};
+}
 
-Slider.displayName = 'Slider';
+Slider.displayName = 'Slider'
 
-export default Slider;
+export default Slider

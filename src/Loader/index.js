@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
-import Box from '../Box';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled, { keyframes } from 'styled-components'
+import Box from '../Box'
 
 const rotate = keyframes`
   0% {
@@ -11,7 +11,7 @@ const rotate = keyframes`
   100% {
     transform: rotate(585deg);
   }
-`;
+`
 
 const Rotate = styled(Box)`
   & {
@@ -28,10 +28,10 @@ const Rotate = styled(Box)`
     animation: ${rotate} 1000ms linear infinite;
     animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
-`;
+`
 
 const Loader = React.forwardRef((props, ref) => (
-  <Rotate ref={ref} {...props}>
+  <Rotate className="pipeline-rotate" ref={ref} {...props}>
     <svg
       width="24"
       height="24"
@@ -67,18 +67,18 @@ const Loader = React.forwardRef((props, ref) => (
       </g>
     </svg>
   </Rotate>
-));
+))
 
 Loader.defaultProps = {
   color: 'primary',
   bg: 'transparent',
   size: '1rem',
-};
+}
 
 Loader.propTypes = {
   ...Box.propTypes,
-};
+}
 
-Loader.displayName = 'Loader';
+Loader.displayName = 'Loader'
 
-export default Loader;
+export default Loader

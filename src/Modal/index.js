@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Portal from '../Portal';
-import Box from '../Box';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import Portal from '../Portal'
+import Box from '../Box'
 
 const StyledOverlay = styled(Box)`
   & {
@@ -19,7 +19,7 @@ const StyledOverlay = styled(Box)`
     place-items: center;
     place-content: center;
   }
-`;
+`
 
 StyledOverlay.defaultProps = {
   bg: 'blacks.10',
@@ -27,56 +27,58 @@ StyledOverlay.defaultProps = {
   fontSize: '2',
   fontFamily: 'sansSerif',
   p: 3,
-};
+}
 
 class Modal extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       isOpen: this.props.isOpen || false,
-    };
+    }
   }
 
   closeModal = e => {
-    e.preventDefault();
+    e.preventDefault()
     this.setState((state, props) => ({
       isOpen: false,
-    }));
-  };
+    }))
+  }
 
   openModal = e => {
-    e.preventDefault();
+    e.preventDefault()
     this.setState((state, props) => ({
       isOpen: true,
-    }));
-  };
+    }))
+  }
 
   render() {
     if (!this.props.isOpen) {
-      return null;
+      return null
     }
 
     return (
-      <Portal>
-        <StyledOverlay>{this.props.children}</StyledOverlay>
+      <Portal className="pipeline-portal">
+        <StyledOverlay className="pipeline-overlay">
+          {this.props.children}
+        </StyledOverlay>
       </Portal>
-    );
+    )
   }
 }
 
 Modal.defaultProps = {
   isOpen: false,
-};
+}
 
 Modal.propTypes = {
   /**
    * Shows the content of the Modal when true
    */
   isOpen: PropTypes.bool,
-};
+}
 
-Modal.displayName = 'Modal';
+Modal.displayName = 'Modal'
 
-export { StyledOverlay as ModalBackdrop };
+export { StyledOverlay as ModalBackdrop }
 
-export default Modal;
+export default Modal

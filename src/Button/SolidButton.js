@@ -45,7 +45,7 @@ const StyledSolidButton = styled(StyledButton)`
 const SolidButton = React.forwardRef(
   ({ children, icon, iconpos, ...props }, ref) => {
     return (
-      <StyledSolidButton {...props} ref={ref}>
+      <StyledSolidButton className="pipeline-btn-solid" {...props} ref={ref}>
         <ButtonBody icon={icon} iconpos={iconpos} children={children} />
       </StyledSolidButton>
     )
@@ -54,10 +54,9 @@ const SolidButton = React.forwardRef(
 
 SolidButton.defaultProps = {
   ...Button.defaultProps,
-  borderRadius: 0,
+  borderRadius: 1,
   boxShadow: 1,
 }
-
 export { StyledSolidButton }
 
 export default SolidButton

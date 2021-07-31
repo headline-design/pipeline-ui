@@ -1,19 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { variant } from 'styled-system';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { variant } from 'styled-system'
 
-import theme from '../theme';
-import Box from '../Box';
-import Text from '../Text';
-import Link from '../Link';
+import theme from '../theme'
+import Box from '../Box'
+import Text from '../Text'
+import Link from '../Link'
 
-let lastId = 0;
-const newID = (prefix = 'id') => `${prefix}${lastId++}`;
+let lastId = 0
+const newID = (prefix = 'id') => `${prefix}${lastId++}`
 
 const flashVariant = variant({
   key: 'messageStyle',
-});
+})
 
 const StyledFlash = styled(Box)`
   ${flashVariant}
@@ -21,7 +21,7 @@ const StyledFlash = styled(Box)`
   & {
     position: relative;
   }
-`;
+`
 
 const StyledLink = styled(Link).attrs(props => ({
   color: 'inherit',
@@ -33,27 +33,28 @@ const StyledLink = styled(Link).attrs(props => ({
   &:hover {
     color: inherit;
   }
-`;
+`
 
 const Flash = React.forwardRef(({ className, children, ...props }, ref) => {
-  const status = props.variant;
-  const id = newID('Flash');
-  const contentID = `${id}Content`;
-  let ariaRoleType = 'status';
+  const status = props.variant
+  const id = newID('Flash')
+  const contentID = `${id}Content`
+  let ariaRoleType = 'status'
 
   switch (status) {
     case 'warning':
-      ariaRoleType = 'alert';
-      break;
+      ariaRoleType = 'alert'
+      break
     case 'danger':
-      ariaRoleType = 'alert';
-      break;
+      ariaRoleType = 'alert'
+      break
     default:
     // invalid status
   }
 
   return (
     <StyledFlash
+      className="pipeline-flash"
       className={className}
       tabIndex={0}
       role={ariaRoleType}
@@ -66,8 +67,8 @@ const Flash = React.forwardRef(({ className, children, ...props }, ref) => {
         {children}
       </Text>
     </StyledFlash>
-  );
-});
+  )
+})
 
 Flash.defaultProps = {
   theme,
@@ -76,7 +77,7 @@ Flash.defaultProps = {
   border: '1',
   borderRadius: 1,
   width: '100%',
-};
+}
 
 Flash.propTypes = {
   /**
@@ -84,11 +85,11 @@ Flash.propTypes = {
    */
   variant: PropTypes.oneOf(['base', 'success', 'warning', 'danger', 'info']),
   ...Box.propTypes,
-};
+}
 
-Flash.displayName = 'Flash';
+Flash.displayName = 'Flash'
 
-Flash.Link = StyledLink;
-Flash.Link.displayName = 'Flash.Link';
+Flash.Link = StyledLink
+Flash.Link.displayName = 'Flash.Link'
 
-export default Flash;
+export default Flash

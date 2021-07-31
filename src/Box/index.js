@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import {
   compose,
   color,
@@ -11,9 +11,9 @@ import {
   border,
   typography,
   shadow,
-} from 'styled-system';
-import propTypes from '@styled-system/prop-types';
-import theme from '../theme';
+} from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import theme from '../theme'
 
 const styleProps = compose(
   color,
@@ -24,28 +24,28 @@ const styleProps = compose(
   border,
   typography,
   shadow
-);
+)
 
 const StyledBox = styled('div')`
   box-sizing: border-box;
   ${styleProps}
-`;
+`
 
 StyledBox.defaultProps = {
   theme,
-};
+}
 
 const Box = React.forwardRef((props, ref) => (
-  <StyledBox ref={ref} {...props} />
-));
+  <StyledBox className="pipeline-box" ref={ref} {...props} />
+))
 
 Box.propTypes = {
   ...propTypes.styleProps,
   theme: PropTypes.object,
-};
+}
 
-Box.displayName = 'Box';
+Box.displayName = 'Box'
 
-export { StyledBox };
+export { StyledBox }
 
-export default Box;
+export default Box

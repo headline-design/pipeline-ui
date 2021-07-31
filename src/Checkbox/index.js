@@ -61,6 +61,7 @@ const StyledLabel = styled(Box)`
 const Checkbox = React.forwardRef(
   ({ className, label, name, value, id, ...props }, ref) => (
     <StyledLabel
+      className="pipeline-label"
       forwardedAs={'label'}
       display={'flex'}
       alignItems={'center'}
@@ -69,7 +70,7 @@ const Checkbox = React.forwardRef(
       htmlFor={id}
       opacity={props.disabled ? 0.4 : 1}
     >
-      <StyledWrapper theme={props.theme}>
+      <StyledWrapper className="pipeline-wrapper" theme={props.theme}>
         <input
           type={'checkbox'}
           name={name}
@@ -78,10 +79,14 @@ const Checkbox = React.forwardRef(
           ref={ref}
           {...props}
         />
-        <CheckBox name={'checked'} />
-        <CheckBoxOutlineBlank name={'unchecked'} />
+        <CheckBox className="pipeline-checkbox" name={'checked'} />
+        <CheckBoxOutlineBlank
+          className="pipeline-checkbox-outline"
+          name={'unchecked'}
+        />
       </StyledWrapper>
       <Text
+        className="pipeline-text"
         color={'text'}
         fontSize={1}
         fontWeight={3}

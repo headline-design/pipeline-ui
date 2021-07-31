@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Text from '../Text';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import Text from '../Text'
 
 const StyledPill = styled(Text)`
   & {
@@ -21,11 +21,11 @@ const StyledPill = styled(Text)`
     background: currentColor;
     pointer-events: none;
   }
-`;
+`
 
 const Pill = React.forwardRef((props, ref) => (
-  <StyledPill ref={ref} {...props} />
-));
+  <StyledPill className="pipeline-pill" ref={ref} {...props} />
+))
 
 Pill.defaultProps = {
   color: 'dark-gray',
@@ -39,12 +39,12 @@ Pill.defaultProps = {
   borderRadius: 3,
   display: 'inline-flex',
   alignItems: 'center',
-};
+}
 
 Pill.propTypes = {
   ...Text.propTypes,
-};
+}
 
-Pill.displayName = 'Pill';
+Pill.displayName = 'Pill'
 
-export default Pill;
+export default Pill

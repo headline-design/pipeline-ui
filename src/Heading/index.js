@@ -25,7 +25,7 @@ Heading.propTypes = {
 Heading.displayName = 'Heading'
 
 // H1
-Heading.h1 = props => <Heading {...props} />
+Heading.h1 = props => <Heading className="pipeline-h1" {...props} />
 Heading.h1.defaultProps = {
   ...defaultProps,
   as: 'h1',
@@ -34,7 +34,7 @@ Heading.h1.defaultProps = {
 Heading.h1.displayName = 'Heading.h1'
 
 // H2
-Heading.h2 = props => <Heading {...props} />
+Heading.h2 = props => <Heading className="pipeline-h2" {...props} />
 Heading.h2.defaultProps = {
   ...defaultProps,
   as: 'h2',
@@ -43,7 +43,7 @@ Heading.h2.defaultProps = {
 Heading.h2.displayName = 'Heading.h2'
 
 // H3
-Heading.h3 = props => <Heading {...props} />
+Heading.h3 = props => <Heading className="pipeline-h3" {...props} />
 Heading.h3.defaultProps = {
   ...defaultProps,
   as: 'h3',
@@ -52,7 +52,7 @@ Heading.h3.defaultProps = {
 Heading.h3.displayName = 'Heading.h3'
 
 // H4
-Heading.h4 = props => <Heading {...props} />
+Heading.h4 = props => <Heading className="pipeline-h4" {...props} />
 Heading.h4.defaultProps = {
   ...defaultProps,
   as: 'h4',
@@ -61,7 +61,7 @@ Heading.h4.defaultProps = {
 Heading.h4.displayName = 'Heading.h4'
 
 // H5
-Heading.h5 = props => <Heading {...props} />
+Heading.h5 = props => <Heading className="pipeline-h5" {...props} />
 Heading.h5.defaultProps = {
   ...defaultProps,
   as: 'h5',
@@ -70,7 +70,7 @@ Heading.h5.defaultProps = {
 Heading.h5.displayName = 'Heading.h5'
 
 // H6
-Heading.h6 = props => <Heading {...props} />
+Heading.h6 = props => <Heading className="pipeline-h6" {...props} />
 Heading.h6.defaultProps = {
   ...defaultProps,
   as: 'h6',

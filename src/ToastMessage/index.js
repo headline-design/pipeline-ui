@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
-import { timingFunctions, ellipsis } from 'polished';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import styled, { keyframes } from 'styled-components'
+import { timingFunctions, ellipsis } from 'polished'
 
-import Box from '../Box';
-import Icon from '../Icon';
-import Text from '../Text';
-import Link from '../Link';
-import Button from '../Button';
+import Box from '../Box'
+import Icon from '../Icon'
+import Text from '../Text'
+import Link from '../Link'
+import Button from '../Button'
 
-import AnimatedIconProcessing from './AnimatedIconProcessing.js';
-import IconPositive from './IconPositive';
-import IconNegative from './IconNegative';
+import AnimatedIconProcessing from './AnimatedIconProcessing.js'
+import IconPositive from './IconPositive'
+import IconNegative from './IconNegative'
 
 const animInKeyframes = keyframes`
   from {
@@ -21,7 +21,7 @@ const animInKeyframes = keyframes`
   to {
     transform: translateY(0);
   }
-`;
+`
 
 const animOutKeyframes = keyframes`
   from {
@@ -33,7 +33,7 @@ const animOutKeyframes = keyframes`
     opacity: 0;
     transform: translateY(120%);
   }
-`;
+`
 
 const animOutKeyframesDesktop = keyframes`
   from {
@@ -45,7 +45,7 @@ const animOutKeyframesDesktop = keyframes`
     opacity: 0;
     transform: translateX(120%);
   }
-`;
+`
 
 const AnimationWrapper = styled.div`
   & {
@@ -64,7 +64,7 @@ const AnimationWrapper = styled.div`
     animation-name: ${props =>
       props.direction ? animOutKeyframesDesktop : animInKeyframes};
   }
-`;
+`
 
 const StyledToastContainer = styled.div`
   & {
@@ -88,14 +88,14 @@ const StyledToastContainer = styled.div`
   > div {
     width: 100%;
   }
-`;
+`
 
 const StyledTextCell = styled(Box)`
   & {
     ${ellipsis()}
     text-align: left;
   }
-`;
+`
 
 const StyledToastMessage = styled(Box)`
   & {
@@ -149,26 +149,26 @@ const StyledToastMessage = styled(Box)`
       align-self: flex-start;
     }
   }
-`;
+`
 
 const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
-  const themeIsDark = props.colorTheme === 'dark' ? true : false;
+  const themeIsDark = props.colorTheme === 'dark' ? true : false
 
   const renderVariantSvg = variant => {
     switch (variant) {
       case 'processing':
-        return <AnimatedIconProcessing width={'32px'} height={'32px'} />;
-        break;
+        return <AnimatedIconProcessing width={'32px'} height={'32px'} />
+        break
       case 'success':
-        return <IconPositive width={'32px'} height={'32px'} />;
-        break;
+        return <IconPositive width={'32px'} height={'32px'} />
+        break
       case 'failure':
-        return <IconNegative width={'32px'} height={'32px'} />;
-        break;
+        return <IconNegative width={'32px'} height={'32px'} />
+        break
       default:
-        return '';
+        return ''
     }
-  };
+  }
 
   const renderFigure = ({ variant, icon }) => {
     if (variant && variant !== 'default') {
@@ -176,7 +176,7 @@ const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
         <Box className={'iconBox'} flex={'0 0'} mr={2}>
           {renderVariantSvg(variant)}
         </Box>
-      );
+      )
     } else if (icon && icon.length) {
       return (
         <Box className={'iconBox'} flex={'0 0'} mr={2}>
@@ -186,11 +186,11 @@ const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
             size={'32px'}
           />
         </Box>
-      );
+      )
     } else {
-      return null;
+      return null
     }
-  };
+  }
 
   const renderCloseBttn = ({ closeElem, closeFunction }) => {
     if (closeElem) {
@@ -207,14 +207,15 @@ const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
             color={!themeIsDark ? '#666' : '#afafaf'}
           />
         </Button.Text>
-      );
+      )
     } else {
-      return null;
+      return null
     }
-  };
+  }
 
   return (
     <StyledToastMessage
+      className="pipeline-toast-message"
       className={className}
       bg={!themeIsDark ? 'white' : 'near-black'}
       border={1}
@@ -223,7 +224,7 @@ const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
       {...props}
     >
       {renderFigure(props)}
-      <StyledTextCell flex={'1 1 auto'} mx={2}>
+      <StyledTextCell className="pipeline-text-cell" flex={'1 1 auto'} mx={2}>
         {props.message && (
           <Text
             fontSize={1}
@@ -252,15 +253,15 @@ const ToastMessage = React.forwardRef(({ className, ...props }, ref) => {
       </Text>
       {renderCloseBttn(props)}
     </StyledToastMessage>
-  );
-});
+  )
+})
 
 class ProtoToastMessage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
-  static displayName = 'Proto Toast Message';
+  static displayName = 'Proto Toast Message'
 
   static defaultProps = {
     message: 'Message text… ',
@@ -271,11 +272,11 @@ class ProtoToastMessage extends Component {
     icon: '',
     colorTheme: 'dark',
     closeElem: true,
-  };
+  }
 
   handleClose = e => {
-    e.preventDefault();
-  };
+    e.preventDefault()
+  }
 
   render() {
     const {
@@ -285,32 +286,33 @@ class ProtoToastMessage extends Component {
       actionText,
       variant,
       icon,
-    } = this.props;
+    } = this.props
     return (
       <ToastMessage
+        className="pipeline-toast"
         message={message}
         secondaryMessage={secondaryMessage}
         actionHref={actionHref}
         actionText={actionText}
         {...this.props}
       />
-    );
+    )
   }
 }
 
 class ToastProvider extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       isReady: false,
       isOpen: false,
       unMount: true,
       currentMsg: this.props.messageData,
-    };
-    this.timer = {};
+    }
+    this.timer = {}
   }
 
-  static displayName = 'Toast Message Provider';
+  static displayName = 'Toast Message Provider'
 
   static defaultProps = {
     messageData: {
@@ -322,29 +324,29 @@ class ToastProvider extends React.Component {
       variant: 'default',
     },
     delay: 3000,
-  };
+  }
 
   componentDidMount() {
     this.setState((state, props) => ({
       isReady: true,
-    }));
+    }))
 
     window.onfocus = () => {
-      this.startTimer();
-    };
+      this.startTimer()
+    }
     window.onblur = () => {
-      this.clearTimer();
-    };
+      this.clearTimer()
+    }
   }
 
   componentWillUnmount() {
-    window.onfocus = null;
-    window.onblur = null;
+    window.onfocus = null
+    window.onblur = null
   }
 
   addMessage = (msg, data) => {
     if (!msg) {
-      return false;
+      return false
     }
 
     this.setState(
@@ -363,51 +365,51 @@ class ToastProvider extends React.Component {
               },
             }),
             () => {
-              this.startTimer();
+              this.startTimer()
             }
-          );
-        }, 500);
+          )
+        }, 500)
       }
-    );
-  };
+    )
+  }
 
   removeMessage = () => {
     if (!this.state.isOpen) {
-      return null;
+      return null
     }
-    this.clearTimer();
+    this.clearTimer()
     this.setState((state, props) => ({
       isOpen: false,
-    }));
-  };
+    }))
+  }
 
   startTimer = () => {
     if (!document.hasFocus()) {
-      return null;
+      return null
     }
-    this.clearTimer();
+    this.clearTimer()
     this.timer = setTimeout(() => {
-      this.removeMessage();
-    }, this.props.delay);
-  };
+      this.removeMessage()
+    }, this.props.delay)
+  }
 
   clearTimer = () => {
-    clearTimeout(this.timer);
-  };
+    clearTimeout(this.timer)
+  }
 
   handleClose = e => {
-    e.preventDefault();
-  };
+    e.preventDefault()
+  }
 
   handleEnter = e => {
-    e.preventDefault();
-    this.clearTimer();
-  };
+    e.preventDefault()
+    this.clearTimer()
+  }
 
   handleLeave = e => {
-    e.preventDefault();
-    this.startTimer();
-  };
+    e.preventDefault()
+    this.startTimer()
+  }
 
   renderMessage = () => {
     return (
@@ -417,12 +419,12 @@ class ToastProvider extends React.Component {
         onMouseLeave={this.handleLeave}
         closeFunction={this.removeMessage}
       />
-    );
-  };
+    )
+  }
 
   render() {
     if (!this.state.isReady) {
-      return null;
+      return null
     }
     return (
       <StyledToastContainer>
@@ -432,23 +434,23 @@ class ToastProvider extends React.Component {
           </AnimationWrapper>
         )}
       </StyledToastContainer>
-    );
+    )
   }
 }
 
 ToastMessage.Success = React.forwardRef((props, ref) => (
   <ToastMessage ref={ref} {...props} variant={'success'} />
-));
+))
 
 ToastMessage.Failure = React.forwardRef((props, ref) => (
   <ToastMessage ref={ref} {...props} variant={'failure'} />
-));
+))
 
 ToastMessage.Processing = React.forwardRef((props, ref) => (
   <ToastMessage ref={ref} {...props} variant={'processing'} />
-));
+))
 
-ToastMessage.Provider = ToastProvider;
+ToastMessage.Provider = ToastProvider
 
 ToastMessage.defaultProps = {
   message: 'Write update here [Required]',
@@ -459,7 +461,7 @@ ToastMessage.defaultProps = {
   icon: '',
   colorTheme: 'light',
   closeElem: false,
-};
+}
 
 ToastMessage.propTypes = {
   /**
@@ -494,8 +496,8 @@ ToastMessage.propTypes = {
    * Allows ToastMessage to be closed by user
    */
   closeElem: PropTypes.bool,
-};
+}
 
-ToastMessage.displayName = 'ToastMessage';
+ToastMessage.displayName = 'ToastMessage'
 
-export default ToastMessage;
+export default ToastMessage

@@ -91,17 +91,17 @@ const StyledIconWrapper = styled.div`
 
 const WithValidationStyle = React.forwardRef((props, ref) => {
   return (
-    <StyledIconWrapper>
-      <StyledInput {...props} ref={ref} />
-      <CheckCircle className={'icon-valid'} />
-      <Warning className={'icon-invalid'} />
+    <StyledIconWrapper className="pipeline-icon-wrapper">
+      <StyledInput className="pipeline-input" {...props} ref={ref} />
+      <CheckCircle className="pipeline-check-circle" className={'icon-valid'} />
+      <Warning className="pipeline-invalid" className={'icon-invalid'} />
     </StyledIconWrapper>
   )
 })
 
 const Input = React.forwardRef((props, ref) => {
   if (props.type === 'file') {
-    return <FileInput {...props} ref={ref} />
+    return <FileInput className="pipeline-file-input" {...props} ref={ref} />
   } else {
     return <StyledInput {...props} ref={ref} />
   }
