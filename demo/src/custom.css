@@ -6,6 +6,9 @@
 }
 }
 
+div[class*="pipeline-avatar"] {
+  border-radius: 0px;
+}
 
 button {
   overflow: visible;
