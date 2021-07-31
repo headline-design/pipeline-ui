@@ -1334,20 +1334,7 @@ tr:hover {
 }
 
 @media (max-width: 996px){
-.searchBox_xXbB {
-    position: absolute;
-    right: 8rem;
-}
-}
-
-@media (max-width: 996px){
 .navbar__items--right>:last-child {
-    margin-right: 6rem !important;
-}
-}
-
-@media (max-width: 996px){
-.navbar__items--right>:last-child {
-    margin-right: 7rem !important;
+    margin-right: 6.5rem !important;
 }
 }
