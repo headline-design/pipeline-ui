@@ -1332,3 +1332,9 @@ tr:hover {
         margin-bottom: 1.86rem!important
     }
 }
+
+@media (max-width: 996px)
+.searchBox_xXbB {
+    position: absolute;
+    right: 8rem;
+}
