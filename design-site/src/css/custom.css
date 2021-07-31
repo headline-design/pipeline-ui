@@ -1338,8 +1338,15 @@ tr:hover {
     position: absolute;
     right: 8rem;
 }
+
 @media (max-width: 996px)
 .navbar__items--right>:last-child {
     margin-right: 6rem !important;
+}
+}
+
+@media (max-width: 996px){
+.navbar__items--right>:last-child {
+    margin-right: 7rem !important;
 }
 }
