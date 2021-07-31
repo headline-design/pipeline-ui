@@ -1333,10 +1333,11 @@ tr:hover {
     }
 }
 
-@media (max-width: 996px)
+@media (max-width: 996px){
 .searchBox_xXbB {
     position: absolute;
     right: 8rem;
+}
 }
 
 @media (max-width: 996px){
