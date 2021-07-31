@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './custom.css'
+import './index.css'
 
 import {
   Avatar,
