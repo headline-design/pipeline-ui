@@ -1338,3 +1338,7 @@ tr:hover {
     margin-right: 6.5rem !important;
 }
 }
+
+.DocSearch-Logo {
+    display: none !important;
+}
