@@ -58,7 +58,7 @@ exports[`AlgoAddress component sanity matches default snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -198,7 +198,7 @@ exports[`AlgoAddress component sanity matches default snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -347,7 +347,7 @@ exports[`AlgoAddress component sanity matches default snapshot 1`] = `
 
 .c2:focus {
   outline: none;
-  border-color: #3578e5;
+  border-color: #1c1ce1;
 }
 
 .c2:disabled {
@@ -552,7 +552,7 @@ exports[`AlgoAddress component sanity matches default snapshot textLabels 1`] = 
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -690,7 +690,7 @@ exports[`AlgoAddress component sanity matches default snapshot textLabels 1`] = 
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -838,7 +838,7 @@ exports[`AlgoAddress component sanity matches default snapshot textLabels 1`] = 
 
 .c2:focus {
   outline: none;
-  border-color: #3578e5;
+  border-color: #1c1ce1;
 }
 
 .c2:disabled {
@@ -1034,7 +1034,7 @@ exports[`AlgoAddress component sanity matches themed snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -1174,7 +1174,7 @@ exports[`AlgoAddress component sanity matches themed snapshot 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -1323,7 +1323,7 @@ exports[`AlgoAddress component sanity matches themed snapshot 1`] = `
 
 .c2:focus {
   outline: none;
-  border-color: #3578e5;
+  border-color: #1c1ce1;
 }
 
 .c2:disabled {
@@ -1528,7 +1528,7 @@ exports[`AlgoAddress component sanity matches themed snapshot textLabels 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -1666,7 +1666,7 @@ exports[`AlgoAddress component sanity matches themed snapshot textLabels 1`] = `
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #3578e5;
+  --main-color: #1c1ce1;
   --contrast-color: #fff;
   font-size: 0.75rem;
   height: 2rem;
@@ -1814,7 +1814,7 @@ exports[`AlgoAddress component sanity matches themed snapshot textLabels 1`] = `
 
 .c2:focus {
   outline: none;
-  border-color: #3578e5;
+  border-color: #1c1ce1;
 }
 
 .c2:disabled {

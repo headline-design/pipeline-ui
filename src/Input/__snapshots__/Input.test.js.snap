@@ -27,7 +27,7 @@ exports[`Input component sanity matches default snapshot 1`] = `
 
 .c0:focus {
   outline: none;
-  border-color: #3578e5;
+  border-color: #1c1ce1;
 }
 
 .c0:disabled {
@@ -126,7 +126,7 @@ exports[`Input component sanity matches themed snapshot 1`] = `
 
 .c0:focus {
   outline: none;
-  border-color: #3578e5;
+  border-color: #1c1ce1;
 }
 
 .c0:disabled {

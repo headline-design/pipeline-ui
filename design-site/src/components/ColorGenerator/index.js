@@ -8,11 +8,11 @@
  import React, {useState} from 'react';
 
  import Color from 'color';
- 
+
  import CodeBlock from '@theme/CodeBlock';
- 
+
  import styles from './styles.module.css';
- 
+
  const COLOR_SHADES = {
    '--ifm-color-primary': {
      adjustment: 0,
@@ -57,9 +57,9 @@
      codeOrder: 6,
    },
  };
- 
- const DEFAULT_PRIMARY_COLOR = '3578e5';
- 
+
+ const DEFAULT_PRIMARY_COLOR = '1c1ce1';
+
  function ColorGenerator({children, minHeight, url}) {
    const [baseColor, setBaseColor] = useState(DEFAULT_PRIMARY_COLOR);
    const [shades, setShades] = useState(COLOR_SHADES);
@@ -73,7 +73,7 @@
        ...value,
        hex: color.darken(value.adjustment).hex(),
      }));
- 
+
    return (
      <div>
        <p>
@@ -169,5 +169,5 @@
      </div>
    );
  }
- 
+
  export default ColorGenerator;
