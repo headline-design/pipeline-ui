@@ -65,7 +65,7 @@ const ButtonBody = ({ children, size }) => (
 
 const MyAlgoButtonSolid = ({ className, children, ...props }) => {
   return (
-    <StyledButtonSolid className={className} {...props}>
+    <StyledButtonSolid className={'algo-btn-solid'} {...props}>
       <ButtonBody children={children} size={props.size} />
     </StyledButtonSolid>
   )
@@ -73,7 +73,7 @@ const MyAlgoButtonSolid = ({ className, children, ...props }) => {
 
 const MyAlgoButtonOutline = ({ className, children, ...props }) => {
   return (
-    <StyledButtonOutline className={className} {...props}>
+    <StyledButtonOutline className={'algo-btn-outline'} {...props}>
       <ButtonBody children={children} size={props.size} />
     </StyledButtonOutline>
   )

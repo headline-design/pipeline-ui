@@ -61,18 +61,14 @@ const StyledButtonOutline = styled(UPStyledButton)`
 
 const ButtonBody = ({ children, size }) => (
   <React.Fragment>
-    <UPlogo className="pipeline-up-logo" className={'r-ff-icon'} size={size} />
+    <UPlogo className={'algosend-icon'} size={size} />
     {children}
   </React.Fragment>
 )
 
 const AlgoSendButtonBSolid = ({ className, children, ...props }) => {
   return (
-    <StyledButtonSolid
-      className="pipeline-algobtn-solid"
-      className={className}
-      {...props}
-    >
+    <StyledButtonSolid className={'algosend-solid'} {...props}>
       <ButtonBody children={children} size={props.size} />
     </StyledButtonSolid>
   )
@@ -80,11 +76,7 @@ const AlgoSendButtonBSolid = ({ className, children, ...props }) => {
 
 const AlgoSendButtonBOutline = ({ className, children, ...props }) => {
   return (
-    <StyledButtonOutline
-      className="pipeline-algobtn-outline"
-      className={className}
-      {...props}
-    >
+    <StyledButtonOutline className={'algosend-outline'} {...props}>
       <ButtonBody children={children} size={props.size} />
     </StyledButtonOutline>
   )
