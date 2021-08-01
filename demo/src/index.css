@@ -3,32 +3,117 @@ div[class*="pipeline-avatar"] {
 }
 
 button[class*="SolidButton"] {
-  overflow: visible;
-  background-color: blue !important;
-  color: #fff!important;
-  display: inline-block;
-  white-space: pre-wrap;
-  text-decoration: none;
-  border: 4px solid red !important;
-  cursor: pointer;
-border-radius: 4px !important;
-width: 100% !important;
-}
-
-.Box__StyledBox-sc{
-  overflow: visible;
   background-color: #1c1ce1 !important;
   color: #fff!important;
-  display: inline-block;
   white-space: pre-wrap;
   text-decoration: none;
   border: 1px solid #333 !important;
   cursor: pointer;
 border-radius: 4px !important;
-width: 100% !important;
+margin-top: .5rem !important;
+margin-bottom: .5rem !important;
 }
 
-input.Box__StyledBox-sc-12bsn2y-0.Input__StyledInput-sc-1l6guh8-0.ccvWen.jAxhYb.pipeline-input {
+.pipeline-algoaddress {
+  box-sizing: inherit;
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
+}
+
+.pipeline-link{
+  padding: 1rem !important;
+}
+
+button[class*="AlgoSendButton"] {
+  background-color: transparent !important;
+  border: 1px solid #333 !important;
+  cursor: pointer;
+  border-radius: 4px !important;
+  margin-top: 1rem !important;
+  margin-bottom: .5rem !important;
+  box-shadow: none;
+}
+
+.css-yt9ioa-option {
+  background-color: #f4f4f4 !important;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+}
+
+.css-1pahdxg-control:hover {
+  background-color: #fff !important;
+  border-color: #1c1ce1 !important;
+}
+
+.pipeline-select css-2b097c-container {
+  background-color: #fff !important;
+  border-color: #1c1ce1 !important;
+}
+
+.css-yk16xz-control {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.css-yk16xz-control {
+  align-items: center;
+  background-color: #f8f8f9;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+}
+
+.css-yk16xz-control:hover {
+  align-items: center;
+  background-color: #fff !important;
+  border-color: #1c1ce1 !important;
+}
+
+
+.iDnvvq {
+    border-radius: 4px;
+    margin: .5rem;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.pipeline-pill {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pipeline-img {
+  border-radius: 6px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px;
+}
+
+button[class*="AlgoSendButton"]:hover {
+  background-color: #fff !important;
+}
+
+button[class*="AlgoSendButton"]:active {
+background-color: #e5e5e5 !important;
+}
+
+input[class*="input"]:focus{
+  border: 1px solid #1c1ce1 !important;
+  box-shadow: 4px 4px 0 0 rgb(210 210 249) !important;
+}
+
+svg.pipeline-qr-code {
+  margin: 2rem;
+  margin-left: 0px;
+}
+
+.pipeline-rotate {
+  margin: 1rem;
+  left: 0rem;
+}
+
+
+button{
+--main-color:unset !important;
+}
+
+input[class*="input"]{
   display: block;
   width: 100%;
   height: calc(1.5em + .75rem + 2px);
@@ -43,17 +128,25 @@ input.Box__StyledBox-sc-12bsn2y-0.Input__StyledInput-sc-1l6guh8-0.ccvWen.jAxhYb.
   border: 1px solid #ced4da;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  box-shadow: none;
 }
 
-input.Box__StyledBox-sc-12bsn2y-0.Input__StyledInput-sc-1l6guh8-0.ccvWen.jAxhYb.pipeline-input:hover {
+input:hover {
   background-color: #fff;
 }
 
-input.Box__StyledBox-sc-12bsn2y-0.Input__StyledInput-sc-1l6guh8-0.ccvWen.jAxhYb.pipeline-input:focus {
+input:focus {
+  outline: none;
+  border-color: #1c1ce1;
+  background-color: #fff;
+  box-shadow: 4px 4px 0 0 rgb(210 210 249) !important;
+}
+
+input:focus {
 color: #495057;
 background-color: #fff;
 border: 1px solid #1c1ce1;
-box-shadow: 4px 4px 0 0 rgb(210 210 249);
+box-shadow: 4px 4px 0 0 rgb(210 210 249) !important;
 outline: 0;
 }
 
@@ -71,38 +164,6 @@ width: 100% !important;
 margin-bottom: 1rem;
 }
 
-.SolidButton {
-  overflow: visible;
-  background-color: #1c1ce1 !important;
-  color: #fff!important;
-  display: inline-block;
-  white-space: pre-wrap;
-  text-decoration: none;
-  border: 1px solid #333 !important;
-  cursor: pointer;
-border-radius: 4px !important;
-width: 100% !important;
-}
-
-.styled.button {
-overflow: visible;
-background-color: #1c1ce1 !important;
-color: #fff!important;
-display: inline-block;
-white-space: pre-wrap;
-text-decoration: none;
-border: 1px solid #333 !important;
-cursor: pointer;
-border-radius: 4px !important;
-width: 100% !important;
-}
-
-.Box__StyledBox {
-color: #1c1ce1;
-border: 1px solid #1c1ce1 !important;
-box-shadow: 4px 4px 0 0 rgb(210 210 249) !important;
-background: rgba(28,28,225,.8) !important;
-}
 
 
 button:hover {
@@ -111,13 +172,20 @@ button:hover {
     box-shadow: 4px 4px 0 0 rgb(210 210 249) !important;
     background: rgba(28,28,225,.8) !important;
 }
-button:active {
-background-color: #1616b4 !important;
+button:hover {
+background-color: rgba(28,28,225,.8) !important;
 }
 
-div#root {
-  height: 100vh;
-  padding: 7vh;
+button:active {
+  background-color: #1616b4 !important;
+  --main-color: #1616b4 !important;
+  }
+
+  div#root {
+    height: 100vh;
+    padding: 4vh;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
 }
 
 .AlgoSendButton.button {
@@ -134,7 +202,7 @@ html {
   background: #fff;
   box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%), 4px 4px 0 0 rgb(210 210 249);
   border-radius: 10px;
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
   overflow: hidden;
   padding: 1rem;
@@ -153,9 +221,18 @@ button.Box__StyledBox-sc-12bsn2y-0.BaseButton__StyledButton-sc-1hj5v8i-0.SolidBu
   padding: 0rem !important;
 }
 
+input:hover {
+  background-color: #fff;
+  box-shadow: none !important;
+}
+
 table#transTable {
   margin-top: 2rem;
   margin-left: 0rem;
   margin-right: 0rem;
   margin-bottom: .5rem;
+}
+
+.fgINMr {
+  padding: .3rem;
 }
