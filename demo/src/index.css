@@ -87,11 +87,6 @@ input[class*=input]:focus {
   box-shadow: 4px 4px 0 0 rgb(210 210 249)!important
 }
 
-svg.pipeline-qr-code {
-  margin: 2rem;
-  margin-left: 0
-}
-
 .pipeline-rotate {
   margin: 1rem;
   left: 0
@@ -156,7 +151,7 @@ button:active {
 
 div#root {
   height: 100vh;
-  padding: 2vh;
+  padding: .5vh;
 }
 
 .AlgoSendButton.button {
