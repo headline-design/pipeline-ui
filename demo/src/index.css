@@ -164,6 +164,11 @@ html {
   background-color: #f4f4f4
 }
 
+.iGHAKn {
+  box-sizing: border-box;
+  margin: 14px !important;
+}
+
 .pipeline-shell {
   background: #fff;
   box-shadow: 0 30px 60px 0 rgb(90 116 148/40%),4px 4px 0 0 rgb(210 210 249);
