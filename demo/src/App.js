@@ -38,7 +38,8 @@ import {
   theme,
   AsaList,
   Pipeline,
-  AlgoFetch
+  AlgoFetch,
+  PipelineShell
 } from 'pipeline-ui'
 
 import { Algo, Btc } from '@pipeline-ui/icons'
@@ -349,12 +350,12 @@ const testComponents = props => (
 export default class App extends Component {
   render() {
     return (
-      <Flex className="pipeline-shell" position={'relative'}>
+      <PipelineShell textAlign="left" position={'relative'}>
         <Box m={4}>
           <BaseStyles>{testComponents()}</BaseStyles>
         </Box>
        {/*<BaseLineGrid/> uncomment to make background alternating white and rose lines*/}
-      </Flex>
+      </PipelineShell>
     )
   }
 }
