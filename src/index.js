@@ -43,3 +43,4 @@ export { default as AlgoSendButton } from './AlgoSendButton' // utility componen
 export { default as Portal } from './Portal'
 export { default as Pipeline } from './Pipeline'
 export { default as AlgoFetch } from './AlgoFetch'
+export { default as PipelineShell } from './PipelineShell'

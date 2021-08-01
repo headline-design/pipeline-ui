@@ -2,14 +2,21 @@ div[class*=pipeline-avatar] {
   border-radius: 0
 }
 
-button[class*=AlgoSendButton],button[class*=SolidButton] {
+button[class*=algo-btn-solid]{
+  border: 1px solid #333!important;
+  cursor: pointer;
+  border-radius: 20px!important;
+  margin-bottom: .5rem!important
+}
+
+button[class*=SolidButton] {
   border: 1px solid #333!important;
   cursor: pointer;
   border-radius: 4px!important;
   margin-bottom: .5rem!important
 }
 
-button[class*=SolidButton] {
+button:not([class*=algo-btn-solid]), button [class*=SolidButton] {
   background-color: #1c1ce1!important;
   color: #fff!important;
   white-space: pre-wrap;
@@ -78,9 +85,6 @@ button[class*=AlgoSendButton] {
   background-color: #fff!important
 }
 
-button[class*=AlgoSendButton]:active {
-  background-color: #e5e5e5!important
-}
 
 input[class*=input]:focus {
   border: 1px solid #1c1ce1!important;
@@ -124,7 +128,7 @@ input:focus {
 
 .algo-btn-solid {
   overflow: visible;
-  background-color: #1c1ce1!important;
+  background-color: red!important;
   color: #fff!important;
   display: inline-block;
   white-space: pre-wrap;

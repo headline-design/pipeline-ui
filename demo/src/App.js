@@ -200,9 +200,9 @@ const testComponents = props => (
       }}
     />
     <Avatar src={'https://source.unsplash.com/128x128/?people,face,portrait'} />
-    <Avatar size="small" />
-    <Avatar size="medium" />
-    <Avatar size="large" />
+    <Avatar src={'https://source.unsplash.com/128x128/?people,face,portrait'} size="small" />
+    <Avatar  src={'https://source.unsplash.com/128x128/?people,face,portrait'} size="medium" />
+    <Avatar src={'https://source.unsplash.com/128x128/?people,face,portrait'} size="large" />
     <Textarea rows={4} defaultValue="Type here…" />
     <Slider />
     <Slider disabled />
