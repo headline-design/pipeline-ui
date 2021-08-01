@@ -161,12 +161,13 @@ div#root {
 }
 
 html {
-  background-color: #f4f4f4
+  background-color: transparent;
 }
 
 .iGHAKn {
   box-sizing: border-box;
   margin: 14px !important;
+  margin-top: 18px !important;
 }
 
 .pipeline-shell {
