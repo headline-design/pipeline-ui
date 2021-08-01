@@ -171,7 +171,6 @@ html {
   max-width: 700px;
   margin: 0 auto;
   overflow: hidden;
-  padding: 1rem;
   flex-direction: column!important
 }
 
