@@ -2,6 +2,12 @@ div[class*=pipeline-avatar] {
   border-radius: 0
 }
 
+div[class*=pipeline-select] > div:hover{
+  background-color: rgba(0, 255, 21, 0.514)!important;
+  border-color: #ff0800!important;
+  border-radius: 4px!important;
+}
+
 button[class*=SolidButton] {
   border: 1px solid #333!important;
   cursor: pointer;
@@ -10,7 +16,7 @@ button[class*=SolidButton] {
 }
 
 button[class*=algo-btn-solid]:hover {
-  background-color: green
+  background-color: green!important
 }
 
 button:not([class*=algo-btn-solid]), button [class*=SolidButton] {
@@ -40,11 +46,6 @@ button[class*=AlgoSendButton] {
 .css-yt9ioa-option {
   background-color: #f4f4f4!important;
   box-shadow: 0 2px 4px rgb(0 0 0/10%)
-}
-
-.css-1pahdxg-control:hover,.pipeline-select css-2b097c-container {
-  background-color: #fff!important;
-  border-color: #1c1ce1!important
 }
 
 .css-yk16xz-control {
