@@ -23,12 +23,16 @@ button[class*=algo-btn-solid]:hover {
   background-color: rgba(0, 0, 0, 0.685)!important
 }
 
-button:not([class*=algo-btn-solid]):not([class*=AlgoSendButton]), button [class*=SolidButton] {
+button:not([class*=algo-btn-solid]):not([class*=AlgoSendButton]) {
+  color: #fff!important;
+}
+
+button:not([class*=algo-btn-solid]):not([class*=AlgoSendButton]):hover {
   background-color: #1c1ce1!important;
   color: #fff!important;
   white-space: pre-wrap;
   text-decoration: none;
-  margin-top: .5rem!important
+  margin-top: .1rem!important
 }
 
 .pipeline-algoaddress {
@@ -137,7 +141,7 @@ input:focus {
   margin-bottom: 1rem
 }
 
-button:not([class*=algo-btn-solid]):not([class*=AlgoSendButton]), button [class*=SolidButton]button:hover {
+button:not([class*=algo-btn-solid]):not([class*=AlgoSendButton]), button[class*=SolidButton]:hover {
   color: #1c1ce1;
   border: 1px solid #1c1ce1!important;
   box-shadow: 4px 4px 0 0 rgb(210 210 249)!important;
