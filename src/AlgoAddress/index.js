@@ -251,27 +251,4 @@ AlgoAddress.defaultProps = {
 
 AlgoAddress.displayName = 'AlgoAddress'
 
-/* uncomment to test component with React Preview VScode extension
-
-class Test extends Component{
-  constructor(props){
-    super(props);
-    this.state={address:""}
-  }
-
-  updateAddress = () => {
-    this.setState({address: "238572936598236598256"})
-  }
-
-  render(){
-    return(
-      <div>
-        <AlgoAddress address={this.state.address}/>
-        <button onClick={this.updateAddress}>Update Address</button>
-      </div>
-    )
-  }
-}
-*/
-
 export default AlgoAddress

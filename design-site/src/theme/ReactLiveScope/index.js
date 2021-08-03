@@ -10,6 +10,7 @@ import { Button,
   AsaList,
   Avatar,
   Box,
+  Blockie,
   Card,
   Checkbox,
   Flash,
@@ -33,6 +34,7 @@ import { Button,
   Table,
   Textarea,
   Text,
+  PipelineShell,
   ToastMessage} from 'pipeline-ui';
 
 
@@ -44,6 +46,7 @@ const ReactLiveScope = {
   //Pipeline,
   Button,
   AsaList,
+  Blockie,
   Avatar,
   Box,
   Card,
@@ -68,7 +71,8 @@ const ReactLiveScope = {
   Table,
   Textarea,
   Text,
-  ToastMessage
+  ToastMessage,
+  PipelineShell
 };
 
 export default ReactLiveScope;

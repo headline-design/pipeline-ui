@@ -30,7 +30,7 @@ const Clipboard = props => {
       clipboard.destroy()
       clearTimeout(timer.current)
     }
-  }, [])
+  }, [props.text])
 
   return <div ref={targetEl}>{props.children(isCopied)}</div>
 }
