@@ -85,7 +85,7 @@ export default TestButton;
 ```
 
 ### The Send Button
-The AlgoSend button has the largest number of mandatory props. Failing to set them, or setting them incorrectly will result in a transaction not executing. This button also has the optional prop `index` , which can be used to set and specify an ASA index number for an ASA transaction. 
+The AlgoSend button has the largest number of mandatory props. Failing to set them, or setting them incorrectly will result in a transaction not executing. This button also has the optional prop `index` , which can be used to set and specify an ASA index number for an ASA transaction. An app that uses the AlgoSendButton must also call `Pipeline.init()` and either use `AlgoButton` or call `Pipeline.connect(wallet,context,returnTo)`.
 
 ```jsx
 <AlgoSendButton
@@ -117,6 +117,15 @@ The AlgoSend button has the largest number of mandatory props. Failing to set th
 - Add Verified ASA's and index numbers as a component
 - Updated rollup to latest version
 - Enabled Demo app and updated to reflect changes to parent library
+
+### 0.2.4
+
+- Fixed AlgorAddress and Blockie components (formerly would not re-render on state change of props)
+- Added Pipeline Algorand Connector as component Pipeline
+- Added AlgoFetch component
+- Added PipelineShell component
+- Updated Demo app to reflect changes to parent library
+
 
 ## License
 
