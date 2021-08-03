@@ -11,7 +11,7 @@ Card.defaultProps = {
   bg: '#ffffff',
   border: 1,
   borderColor: '#dadde1',
-  boxShadow: '0px 1px 10px',
+  boxShadow: 2,
   p: 4,
 }
 
@@ -21,14 +21,5 @@ Card.propTypes = {
 }
 
 Card.displayName = 'Card'
-
-/*
-class App extends Component{
-  render(){
-    return (
-      <Card>hello</Card>
-    )
-  }
-} */
 
 export default Card

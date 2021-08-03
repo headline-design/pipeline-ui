@@ -25,7 +25,7 @@ export default function AlgoFetch(props) {
   }
 
   return (
-    <div>
+    <div {...props} align="center">
       <Table
         className="pipeline-algofetch"
         id="transTable"
