@@ -8,10 +8,10 @@ const Card = React.forwardRef((props, ref) => (
 
 Card.defaultProps = {
   position: 'relative',
-  bg: 'white',
+  bg: '#ffffff',
   border: 1,
-  borderColor: 'light-gray',
-  boxShadow: 2,
+  borderColor: '#dadde1',
+  boxShadow: '0px 1px 10px',
   p: 4,
 }
 
@@ -21,5 +21,14 @@ Card.propTypes = {
 }
 
 Card.displayName = 'Card'
+
+/*
+class App extends Component{
+  render(){
+    return (
+      <Card>hello</Card>
+    )
+  }
+} */
 
 export default Card
