@@ -15,11 +15,15 @@ button[class*=SolidButton] {
   margin-bottom: .5rem!important
 }
 
-button[class*=algo-btn-solid]:hover {
-  background-color: green!important
+button[class*=AlgoSendButton]:hover {
+  background-color: rgba(0, 0, 0, 0.144)!important
 }
 
-button:not([class*=algo-btn-solid]), button [class*=SolidButton] {
+button[class*=algo-btn-solid]:hover {
+  background-color: rgba(0, 0, 0, 0.685)!important
+}
+
+button:not([class*=algo-btn-solid]):not([class*=AlgoSendButton]), button [class*=SolidButton] {
   background-color: #1c1ce1!important;
   color: #fff!important;
   white-space: pre-wrap;
@@ -121,7 +125,7 @@ input:focus {
 
 .algo-btn-solid {
   overflow: visible;
-  background-color: red!important;
+  background-color: black!important;
   color: #fff!important;
   display: inline-block;
   white-space: pre-wrap;
@@ -133,7 +137,7 @@ input:focus {
   margin-bottom: 1rem
 }
 
-button:hover {
+button:not([class*=algo-btn-solid]):not([class*=AlgoSendButton]), button [class*=SolidButton]button:hover {
   color: #1c1ce1;
   border: 1px solid #1c1ce1!important;
   box-shadow: 4px 4px 0 0 rgb(210 210 249)!important;
@@ -141,7 +145,7 @@ button:hover {
   background-color: rgba(28,28,225,.8)!important
 }
 
-button:active {
+button:not([class*=algo-btn-solid]):not([class*=AlgoSendButton]), button [class*=SolidButton]button:active {
   background-color: #1616b4!important;
   --main-color: #1616b4!important
 }
@@ -152,7 +156,7 @@ div#root {
 }
 
 .AlgoSendButton.button {
-  color: #fff!important;
+  color: rgb(0, 0, 0)!important;
   background: #fff!important;
   border: 10px solid #ccc
 }

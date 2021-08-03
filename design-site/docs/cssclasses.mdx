@@ -1,0 +1,50 @@
+# CSS Class Names and Usage
+
+## Set a Component's class Name
+
+```jsx
+<Button className="myNewButton">Click Me!</Button>
+```
+
+## Stylesheet Examples
+
+Due to the nested complex nature of many React components, we recommend using CSS selector `*` and child combinator `>`.
+
+### Select style on hover
+```css
+div[class*=pipeline-select] > div:hover{
+  background-color: rgba(0, 255, 21, 0.514)!important;
+  border-color: #ff0800!important;
+}
+```
+
+### button element style with class SolidButton and exclude Algo Buttons
+
+```css
+button:not([class*=algo-btn-solid]):not([class*=AlgoSendButton]), button [class*=SolidButton] {
+  background-color: #1c1ce1!important;
+  color: #fff!important;
+  white-space: pre-wrap;
+  text-decoration: none;
+  margin-top: .5rem!important
+}
+```
+## className Reference
+
+We have also attached classes to each Pipeline-UI component for user convenience, and will be providing the reference sheet soon.
+
+(coming soon)
+
+import {Table} from 'pipeline-ui';
+
+<Table>
+  <thead>
+  <tr>
+    <th>Component</th>
+    <th>CSS Class</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>Component1</td><td>component-class</td></tr>
+    </tbody>
+    </Table>
