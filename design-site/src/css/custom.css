@@ -1356,3 +1356,9 @@ button.Box__StyledBox-sc-12bsn2y-0.BaseButton__StyledButton-sc-1hj5v8i-0.SolidBu
 table tr:nth-child(2n):hover {
     background-color: var(--ifm-table-header);
 }
+
+button.Box__StyledBox-sc-12bsn2y-0.BaseButton__StyledButton-sc-1hj5v8i-0.SolidButton__StyledSolidButton-sc-16jeih0-0.kthlOe.bdAZj.fovaWu.pipeline-btn-solid {
+    margin-top: 1rem;
+    border-radius: 4px !important;
+    width: 100%;
+}
