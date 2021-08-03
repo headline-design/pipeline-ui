@@ -1352,3 +1352,7 @@ button.Box__StyledBox-sc-12bsn2y-0.BaseButton__StyledButton-sc-1hj5v8i-0.SolidBu
     margin-bottom: 1rem;
     width: 50%;
 }
+
+table tr:nth-child(2n):hover {
+    background-color: var(--ifm-table-header);
+}
