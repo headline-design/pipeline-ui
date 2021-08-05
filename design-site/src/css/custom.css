@@ -1367,3 +1367,10 @@ button.Box__StyledBox-sc-12bsn2y-0.BaseButton__StyledButton-sc-1hj5v8i-0.SolidBu
     border-radius: 4px !important;
     width: 100%;
 }
+
+.card.showcaseCard_yLZh {
+    box-shadow: var(--ifm-global-shadow-lw);
+    border: var(--ifm-toc-border-color);
+    border-width: 1px;
+    border-style: solid;
+}
