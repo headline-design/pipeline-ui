@@ -1373,4 +1373,5 @@ button.Box__StyledBox-sc-12bsn2y-0.BaseButton__StyledButton-sc-1hj5v8i-0.SolidBu
     border: var(--ifm-toc-border-color);
     border-width: 1px;
     border-style: solid;
+    border-width: 0px;
 }
