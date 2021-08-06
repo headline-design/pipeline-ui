@@ -2,16 +2,28 @@ import MyAlgo from '@randlabs/myalgo-connect'
 
 export default class Pipeline {
   static init() {
+    this.main = true
+    this.address = ''
+    this.txID = ''
+    this.myBalance = 0
     return new MyAlgo()
   }
 
   static async balance(address) {
-    const indexerURL = 'https://algoexplorerapi.io/idx2/v2/accounts/'
+    let indexerURL = 'https://'
+
+    if (this.main == true) {
+      indexerURL = indexerURL + 'algoexplorerapi.io/idx2/v2/accounts/'
+    } else {
+      indexerURL = indexerURL + 'testnet.algoexplorerapi.io/idx2/v2/accounts/'
+    }
+
     let url2 = indexerURL + address
     try {
       let data = await fetch(url2)
       let data2 = await data.json()
       let data3 = JSON.stringify(data2.account.amount / 1000000) + ' Algos'
+      this.myBalance = data3
       return data3
     } catch (error) {
       console.log(error)
@@ -23,16 +35,27 @@ export default class Pipeline {
       const accounts = await wallet.connect()
       let item1 = accounts[0]
       item1 = item1['address']
+      this.address = item1
       return item1
     } catch (err) {
       console.error(err)
     }
   }
 
-  static async send(address, amt, myNote, sendingAddress, wallet, index = 0) {
+  static async send(address, amt, myNote, _sendingAddress, wallet, index = 0) {
+    let paramServer = 'https://'
+    let transServer = 'https://'
+
+    if (this.main == true) {
+      paramServer = paramServer + 'algoexplorerapi.io/v2/transactions/params/'
+      transServer = transServer + 'algoexplorerapi.io/v2/transactions/'
+    } else {
+      paramServer =
+        paramServer + 'testnet.algoexplorerapi.io/v2/transactions/params/'
+      transServer = transServer + 'testnet.algoexplorerapi.io/v2/transactions/'
+    }
+
     const algodToken = '0'
-    const paramServer = 'https://algoexplorerapi.io/v2/transactions/params'
-    const transServer = 'https://algoexplorerapi.io/v2/transactions'
 
     var buf = new Array(myNote.length)
     var encodedNote = new Uint8Array(buf)
@@ -46,7 +69,7 @@ export default class Pipeline {
       const params = await (await fetch(paramServer)).json()
 
       let txn = {
-        from: sendingAddress,
+        from: this.address,
         to: address,
         amount: parseInt(amt),
         note: encodedNote,
@@ -62,6 +85,11 @@ export default class Pipeline {
       if (index !== 0) {
         txn.type = 'axfer'
         txn.assetIndex = parseInt(index)
+      }
+
+      if (this.main == false) {
+        txn.genesisID = 'testnet-v1.0'
+        txn.genesisHash = 'SGO1GKSzyE7IEPItTxCByw9x8FmnrCDexi9/cOUJOiI='
       }
 
       console.log(txn)
@@ -83,6 +111,7 @@ export default class Pipeline {
           console.error('Error:', error)
         })
 
+      this.txID = transactionID
       return transactionID
     } catch (err) {
       console.error(err)
@@ -103,7 +132,11 @@ Pipeline.connect(myAlgoWallet)
         console.log(data);
     });
 
-Pipeline.send(address, amount, note, sendingAddress, myAlgowallet, index)
+//switch to TestNet:
+
+Pipeline.main = false;
+
+Pipeline.send(address, amount, note, undefined, myAlgowallet, index)
     .then(data => {
         console.log(data);
     });

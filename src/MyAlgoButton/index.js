@@ -101,14 +101,19 @@ MyAlgoButton.propTypes = {
 
 MyAlgoButton.displayName = 'MyAlgoButton'
 
-const AlgoButton = ({ wallet, context, returnTo }) => {
+const AlgoButton = props => {
   return (
     <MyAlgoButton
       onClick={() => {
-        Pipeline.connect(wallet).then(accounts => {
-          const data = {}
-          data[returnTo] = accounts
-          context.setState(data)
+        Pipeline.connect(props.wallet).then(accounts => {
+          if (props.returnTo !== undefined) {
+            const data = {}
+            data[props.returnTo] = accounts
+            props.context.setState(data)
+          }
+          if (typeof props.onChange === 'function') {
+            props.onChange(accounts)
+          }
         })
       }}
     >

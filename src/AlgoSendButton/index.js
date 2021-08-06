@@ -104,32 +104,29 @@ AlgoSendButtonB.propTypes = {
 
 AlgoSendButtonB.displayName = 'AlgoSendButtonB'
 
-const AlgoSendButton = ({
-  recipient,
-  amount,
-  note,
-  myAddress,
-  wallet,
-  context,
-  returnTo,
-  index,
-}) => {
+const AlgoSendButton = props => {
   return (
     <div>
       <AlgoSendButtonB
+        className="AlgoSendButton"
         onClick={() => {
           Pipeline.send(
-            recipient,
-            parseInt(amount),
-            note,
-            myAddress,
-            wallet,
-            index
+            props.recipient,
+            parseInt(props.amount || 1),
+            props.note || '',
+            Pipeline.myAddress,
+            props.wallet,
+            props.index || 0
           ).then(data => {
             if (typeof data !== 'undefined') {
-              const object = {}
-              object[returnTo] = data
-              context.setState(object)
+              if (props.returnTo !== undefined) {
+                const object = {}
+                object[props.returnTo] = data
+                props.context.setState(object)
+              }
+              if (typeof props.onChange === 'function') {
+                props.onChange(data)
+              }
             }
           })
         }}
