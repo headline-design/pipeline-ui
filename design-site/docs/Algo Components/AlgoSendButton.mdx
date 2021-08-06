@@ -33,11 +33,11 @@ export const BrowserOnlyButton = (props) => {
 
 ## Accessing returned txID
 
-The returned transaction ID can be accessed several different ways. Setting the `context` prop to `{this}` and the `returnTo` prop to a `state` key (as string) will return the txID directly to your parent component's state without the need for additional callback or event handler code. The address can also be accessed with `Pipeline.txID`:
+The returned transaction ID can be accessed several different ways. Setting the `context` prop to `{this}` and the `returnTo` prop to a `state` key (as string) will return the txID directly to your parent component's state without the need for additional callback or event handler code. The txID can also be accessed with `Pipeline.txID`:
 
 ```jsx
 componentDidMount() {
-      this.interval = setInterval(() => this.setState({balance: Pipeline.txID}), 1000);
+      this.interval = setInterval(() => this.setState({txID: Pipeline.txID}), 1000);
     }
 ```
 
