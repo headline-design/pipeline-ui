@@ -1,0 +1,28 @@
+# SwitchNet
+
+A checkbox component to switch between MainNet and TestNet. The box is checked by default. Unchecking it will automatically change the default genesis hash and server url. 
+
+:::tip
+
+Before switching nets, make sure to change the net you are using via the MyAlgo Connect interface.
+
+:::
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+export function BrowserOnlyCheck() {
+  return (
+    <BrowserOnly fallback={<p>Some Fallback Content</p>}>
+      {() => {
+const SwitchNet = require('pipeline-ui').SwitchNet; return <SwitchNet />      }}
+    </BrowserOnly>
+  );
+}
+
+<BrowserOnlyCheck />
+
+## Example usage
+
+```jsx
+<SwitchNet/>
+```

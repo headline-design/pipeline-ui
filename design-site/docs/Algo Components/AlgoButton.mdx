@@ -1,8 +1,6 @@
 # AlgoButton
 
-A button to connect to MyAlgo. 
-
-Generates a popup window to connect to MyAlgo. Uppon success, returns first wallet address to the context and returnTo specified.
+A button to connect to MyAlgo. Generates a popup window to connect to MyAlgo. Uppon success, returns the first wallet address.
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
@@ -15,8 +13,29 @@ const AlgoButton = require('pipeline-ui').AlgoButton; const Pipeline = require('
   );
 }
 
+<BrowserOnlyButton /><br/>
 
-<BrowserOnlyButton />
+## Accessing returned address
+
+The returned address can be accessed several different ways. Setting the `context` prop to `{this}` and the `returnTo` prop to a `state` key (as string) will return the address directly to your parent component's state without the need for additional callback or event handler code. The address can also be accessed with `Pipeline.address`:
+
+```jsx
+componentDidMount() {
+      this.interval = setInterval(() => this.setState({balance: Pipeline.address}), 1000);
+    }
+```
+
+or with an `onChange` handler:
+
+```jsx
+handleChange = (value) =>{
+    this.setState({myAddress: value})
+  }
+
+  render(){
+    return <AlgoButton onChange={this.handleChange} wallet={myAlgoWallet}/>
+  }
+```
 
 ## Use Example  
 
@@ -68,5 +87,6 @@ import {Table} from 'pipeline-ui';
   <tr><td>wallet</td><td>reference</td><td></td><td></td></tr>
   <tr><td>context</td><td>reference</td><td></td><td></td></tr>
   <tr><td>returnTo</td><td>string</td><td>empty string</td><td>key in state to return fetched address</td></tr>
+  <tr><td>onChange</td><td>function</td><td></td><td>enables callback (see example above)</td></tr>
     </tbody>
     </Table>

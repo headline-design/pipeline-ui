@@ -35,7 +35,7 @@
     "hast-util-is-element": "1.1.0",
     "netlify-plugin-cache": "^1.0.3",
     "npm-to-yarn": "^1.0.0-2",
-    "pipeline-ui": "file:../pipeline-ui-0.2.4.tgz",
+    "pipeline-ui": "file:../pipeline-ui-0.2.5.tgz",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
