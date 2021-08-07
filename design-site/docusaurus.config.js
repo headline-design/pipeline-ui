@@ -31,10 +31,10 @@ module.exports = {
   themeConfig: {
 
     algolia: {
-    apiKey: '6c8df293aba1bc005a225f6b5cd25cbe', indexName: 'pipelinedoc',
+    apiKey: 'b0405f4a756319e8958c9663f6894137', indexName: 'netlify_40588036-5b95-4358-a88a-e601e5db99e1_main_all',
       // Optional: see doc section below contextualSearch: true,
       // Optional: see doc section below 
-      appId: 'RXQN7UK0TL',
+      appId: 'MVTCBKVE16',
       // Optional: Algolia search parameters searchParameters: {},
       //... other Algolia params    
     },
