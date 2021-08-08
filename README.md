@@ -126,6 +126,10 @@ The AlgoSend button has the largest number of mandatory props. Failing to set th
 - Added PipelineShell component
 - Updated Demo app to reflect changes to parent library
 
+### 0.2.5
+- Added SwitchNet component to switch between MainNet and TestNet
+- Add onChange props to AlgoButton and AlgoSendButton components
+
 
 ## License
 
