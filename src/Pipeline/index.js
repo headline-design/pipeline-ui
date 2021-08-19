@@ -27,6 +27,7 @@ export default class Pipeline {
       return data3
     } catch (error) {
       console.log(error)
+      return 0
     }
   }
 
