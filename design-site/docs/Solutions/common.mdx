@@ -15,9 +15,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img alt="Docusaurus with Keytar" width="100%" height="400px" src={useBaseUrl('/img/pipeline_vectilla_5.svg')} />
 
-## setState is not defined
+## setState or this is not defined
 
-Make sure that your app is written as a class rather than as a function. Your code in App.js should look like this:
+:::tip
+
+Make sure that your app is written as a class rather than as a function if you are using the `context` and `returnTo` props (used by `AlgoButton` and `AlgoSendButton`). If you want to write your app as a function, used the `onChange` prop instead, along with a callback/handler function. 
+
+:::
+
+
+Your code in App.js should look like this (when writing a React app as a class):
 
 ```jsx
 import React, {Component} from 'react';
