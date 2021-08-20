@@ -15,9 +15,9 @@
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/headline-design/pipeline-ui)<br>
 [![NPM](https://nodei.co/npm/pipeline-ui.png?downloads=true)](https://www.npmjs.com/package/pipeline-ui)
 
-PIPELINE is a project from HEADLINE Design, aiming to provide adaptable components and design standards for decentralized Algorand applications (dAApps). Our goal is to make it easier for developers to build dAApps with outstanding user experience. If you're interested, we have written a bit more about [our rationale and approach to building PIPELINE](https://www.reddit.com/r/HEADLINECrypto).
+PIPELINE-UI is a project from HEADLINE Design (in partnership with the Algorand Foundation), aiming to deliver a suite of development tools and reusable React components for decentralized Algorand applications (dAApps). Our goal is to make it as easy as possible for developers to build dAApps with outstanding functionality and visual design. If you're interested, we have written a bit more about [our rationale and approach to building PIPELINE](https://www.reddit.com/r/HEADLINECrypto).
 
-PIPELINE is in beta development and should not be considered stable today. We have made the project public in a very early stage of work in order to gather feedback from the community of designers and developers building Algorand dAApps.
+PIPELINE is in beta development and should not be considered stable. We have made the project public in order to gather feedback from the community of designers and developers building Algorand dAApps.
 
 We are actively working on adding new components to PIPELINE and will be sharing more information on the roadmap very soon.
 ## Modifying and testing the library on local machine:
