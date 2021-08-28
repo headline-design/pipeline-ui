@@ -91,7 +91,7 @@ module.exports = {
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/',
+                href: 'https://discord.com/channels/829453270237446165/829453270803152948/',
               },
               {
                 label: 'Twitter',
