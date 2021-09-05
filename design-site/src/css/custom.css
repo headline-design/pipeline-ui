@@ -469,6 +469,8 @@ border-bottom: 1px solid var(--ifm-toc-border-color);
 
     .navbar__toggle {
         border: 1px solid var(--ifm-toc-border-color);
+        border-left: 0px;
+        border-right: 0px;
         display: inherit;
         height: 3rem;
         max-width: 4rem;
