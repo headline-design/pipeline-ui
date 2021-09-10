@@ -8,6 +8,12 @@ We recommend using this class only for more advanced users who do not wish to us
 
 :::
 
+:::info
+
+WalletConnect is now supported in the standalone Pipeline class at `@pipeline-ui-2/pipeline` and Pipeline Express. It is not yet supported in the full Pipeline UI library but will be soon!
+
+:::
+
 
 Note: For faster loading, the codesandbox example below imports the Pipeline class from `@pipeline-ui-2/pipeline`. If you have installed `pipeline-ui`, the class is bundled with it and can be imported like below:
 
@@ -26,6 +32,29 @@ Note: `Pipeline.connect`, `Pipeline.send` and `Pipeline.balance` are 'asyc' func
 The above example will send 1 micro Algo to the Headline Dev Team test account. We recommend changing the value `const recipient` (currently on line 5) to your preferred testing addressing before sending a transaction. 
 
 :::
+
+## Fields/Properties
+
+The Pipeline class has several fields or properties that developers can use to change several settings for Pipeline.
+
+```jsx
+Pipeline.main = false; //switch to testNet
+```
+
+<Table>
+  <thead>
+  <tr>
+    <th>Field</th>
+    <th>Default</th>
+    <th>Options</th>
+    <th>Effect</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>Pipeline.main</td><td>string "myAlgoWallet"</td><td>"myAlgoWallet" or currently any other string</td><td>Switch between MyAlgo and WalletConnect wallets</td></tr>
+  <tr><td>Pipeline.pipeConnector</td><td>true</td><td>Boolean</td><td>Switch between mainNet and testNet</td></tr>
+    </tbody>
+    </Table>
 
 ## Methods
 
