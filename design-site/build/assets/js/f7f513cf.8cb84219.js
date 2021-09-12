@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[3966],{13284:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/btoa","name":"btoa","count":1,"permalink":"/blog/tags/btoa"}')}}]);

@@ -13,5 +13,9 @@
         <link href="https://pipeline-ui.com/blog/ssr"/>
         <updated>2019-05-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Server side build failure is a fairly common and frustrating issue that is encountered when generating documentation sites with tools like Docusaurus. SSR issues typically arise when code that functioned flawlessly in a client-side React app is incorporated on a doc site either as a component or live code block. The problem can typically be traced to dependencies or contexts that the server does not have access to. Often, such issues can be difficult to track down due to the complexities of rollup, babel, webpack, polyfills, transpiling and minifying. Fortunately, two simple bypasses can resolve the majority of such problems.]]></summary>
+        <author>
+            <name>Headline Team</name>
+            <uri>https://github.com/headline-design</uri>
+        </author>
     </entry>
 </feed>

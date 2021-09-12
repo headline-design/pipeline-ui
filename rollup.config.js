@@ -49,6 +49,11 @@ export default {
       exclude: 'node_modules/**',
     }),
     resolve(),
-    commonjs(),
+    commonjs({
+      namedExports: {
+        '@walletconnect/environment': [ 'isNode' ],
+        '@json-rpc-tools/utils/dist/cjs/index.js': [ 'formatJsonRpcRequest' ]
+      }
+    })
   ],
 };
