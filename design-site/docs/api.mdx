@@ -1,0 +1,43 @@
+# Developer API (Sandbox)
+
+Due to popular demand, we have added developer api (or "sandbox" mode) to Pipeline UI. As the objective of Pipeline UI is to provide rapid Algorand functionality to non-developers, and the sandbox is not easy to use without prior experience, we recommend using this feature only for advanced developers. Furthermore, balance checking via indexer is currently not available in the official Algorand sandbox in many of its modes. 
+
+To turn on developer API, add the following lines to your react app below the `import` statements:
+
+```jsx
+const myAlgoWallet = Pipeline.init();
+Pipeline.EnableDeveloperAPI = true;
+```
+
+The last line above sets the token, servers, genesis hash and id to point to the sandbox devnet.
+
+To start up devnet, after installing the sandbox per the Algorand github instructions, in git bash run:
+
+```bash
+$ ./sandbox up devnet -v
+```
+
+In order to test your Pipeline app, which uses MyAlgo Connect or WalletConnect to sign your transaction, your wallet address must be added to the genesis file for devnet. Changing an addresses changes the genesis hash, so in git bash run:
+
+```bash
+$ ./sandbox status
+```
+
+Copy the genesis hash, and set your app's genesis hash like below (your gen hash string will not be the same, however):
+
+```jsx
+Pipeline.devGenHash = "92sOQtim+vfpHlDwDcsGfFLrcTDlnjVHPnr6DSQqcAs=";
+```
+
+## Complete Reference
+
+Below is an example of setting properties to fully customize the API. Note: setting Pipeline.main mainNet toggle will have no effect. Also, include only the base url and port numbers for the indexer and algod servers (i.e., do not include /v2/transactions/, etc. in url)
+
+```jsx
+Pipeline.EnableDeveloperAPI = false;
+Pipline.indexer = "http://localhost:8980";
+Pipeline.algod = "http://localhost:4001";
+Pipeline.token = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+Pipeline.devGenHash = "sC3P7e2SdbqKJK0tbiCdK9tdSpbe6XeCGKdoNzmlj0E="
+Pipeline.devGenId = "devnet-v1.0"
+```
