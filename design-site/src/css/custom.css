@@ -76,7 +76,9 @@ li>code,p>code,td>code {
 
 .navbar__link {
     text-decoration: none;
-    padding: 12px
+    padding: 12px;
+    padding-top: 11px;
+    padding-bottom: 11px
 }
 
 .docSidebarContainer,.menu--responsive .menu__button {
@@ -104,7 +106,8 @@ li>code,p>code,td>code {
     background-color: var(--ifm-navbar-background-color)!important;
     border-top: 1px solid var(--ifm-toc-border-color);
     border-bottom: 0!important;
-    color: var(--ifm-navbar-link-color)!important
+    color: var(--ifm-navbar-link-color)!important;
+    width: 100%;
 }
 
 .navbar__toggle {
@@ -401,7 +404,7 @@ li>code,p>code,td>code {
     }
 }
 
-.h1Heading_27L5 {
+header {
 border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
@@ -413,7 +416,7 @@ border-bottom: 1px solid var(--ifm-toc-border-color);
     justify-content: space-between;
     padding-right: 16px!important;
     width: 100%;
-    border-left: 1px solid var(--ifm-toc-border-color);
+    border-left: 0px;
     border-top: 1px solid var(--ifm-toc-border-color);
     width: 30%;
     right: 0px;
@@ -422,7 +425,7 @@ border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
 @media (min-width:997px) {
-    .h1Heading_27L5 {
+    header {
         background-color: var(--ra-color-note);
         border-bottom: 1px solid var(--ifm-toc-border-color);
         color: var(--ifm-color-content);
@@ -445,7 +448,7 @@ border-bottom: 1px solid var(--ifm-toc-border-color);
         padding-left: 1.2rem!important
     }
 
-    .h1Heading_27L5 {
+    header {
         padding-left: calc(var(--doc-sidebar-width) + 4rem)
     }
 }
@@ -535,7 +538,14 @@ border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
 .navbar__title {
-    padding: 12px
+    padding: 12px;
+    padding-top: 11px;
+    padding-bottom: 11px
+}
+
+
+.menu_Bmed {
+    padding: unset;
 }
 
 table td {
@@ -563,7 +573,7 @@ table {
 }
 
 @media (max-width:996px) {
-    .h1Heading_27L5 {
+    header {
         font-size: 3rem;
         display: flex;
         flex-direction: row;
@@ -1459,5 +1469,9 @@ button.Box__StyledBox-sc-12bsn2y-0.BaseButton__StyledButton-sc-1hj5v8i-0.SolidBu
 }
 
 .codeBlockContainer_K1bP {
-    border-radius: 0px;
+    border-radius: 0px !important;
+}
+
+.tocCollapsible_1PrD.theme-doc-toc-mobile.tocMobile_3Hoh {
+    z-index: 100000;
 }
