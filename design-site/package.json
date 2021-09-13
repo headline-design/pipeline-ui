@@ -34,6 +34,7 @@
     "file-loader": "^6.2.0",
     "hast-util-is-element": "1.1.0",
     "netlify-plugin-cache": "^1.0.3",
+    "node-polyfill-webpack-plugin": "^1.1.4",
     "npm-to-yarn": "^1.0.0-2",
     "pipeline-ui": "file:../pipeline-ui-0.3.2.tgz",
     "prism-react-renderer": "^1.2.1",

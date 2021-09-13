@@ -5,8 +5,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
     // ...
       plugins: ['@docusaurus/theme-live-codeblock',
-                '@docusaurus/plugin-ideal-image'],
-  
+                '@docusaurus/plugin-ideal-image',
+                require.resolve('./webpkconfig.js')],
 
       themeConfig: {
         liveCodeBlock: {
