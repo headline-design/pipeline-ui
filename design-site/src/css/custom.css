@@ -57,7 +57,6 @@ li>code,p>code,td>code {
     right: auto;
     height: 100%;
     width: 16rem;
-    transform: translateX(16rem);
     overflow-y: hidden;
     transition: all .11s cubic-bezier(.2,0,1,.9)
 }
@@ -137,7 +136,6 @@ li>code,p>code,td>code {
     padding: 1rem;
     position: fixed;
     top: 0;
-    transform: translateX(16rem);
     transition: .11s cubic-bezier(.2,0,1,.9);
     width: 16rem;
     z-index: var(--ifm-z-index-overlay);
@@ -150,8 +148,40 @@ li>code,p>code,td>code {
     z-index: var(--ifm-z-index-fixed)
 }
 
-.menu--show,.navbar-sidebar--show .navbar-sidebar {
-    top: 3rem
+.menu--show, .navbar-sidebar--show .navbar-sidebar {
+    top: calc(5rem + 2px);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: var(--ifm-toc-border-color)
+}
+
+.navbar-sidebar__back {
+    font-weight: 500;
+}
+
+button.clean-btn.tocCollapsibleButton_2O1e {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: var(--ifm-toc-border-color);
+}
+
+@media (max-width: 996px){
+.tocCollapsibleContent_2Ydz>ul {
+    background-color: var(--ifm-background-surface-color);
+    border-left: none;
+    border-top: 1px solid var(--ifm-toc-border-color);
+    font-size: 15px;
+    padding: .2rem 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--ifm-toc-border-color);
+}
+}
+
+@media (max-width: 750px){
+.DocSearch-Container {
+    z-index: 1000000;
+}
 }
 
 .menu--responsive .menu__button {
@@ -349,6 +379,7 @@ li>code,p>code,td>code {
     border-bottom: 1px solid var(--ifm-toc-border-color);
     border-radius: 0px;
     top: 3rem;
+    height: 2rem;
 }
 }
 
@@ -400,17 +431,33 @@ li>code,p>code,td>code {
     }
 
     .navbar-sidebar__brand {
-        bottom: 5rem
+        bottom: 7rem
     }
 }
 
-header {
-border-bottom: 1px solid var(--ifm-toc-border-color);
+.markdown header {
+border-bottom: 1px solid var(--ifm-toc-border-color) !important;
+}
+
+.navbar-sidebar__item {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media (min-width: 997px){
+.menu_Bmed {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+}
+
+.navbar-sidebar__back:hover {
+    background-color: var(--ifm-menu-color-background-hover);
 }
 
 @media (max-width: 996px){
 .navbar-sidebar__brand {
-    bottom: 5rem;
+    bottom: 7rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -424,8 +471,16 @@ border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 }
 
+.navbar__brand {
+    height: calc(3rem - 2px) !important;
+}
+
+.navbar-sidebar {
+    transform: translateZ(0);
+}
+
 @media (min-width:997px) {
-    header {
+    .markdown header {
         background-color: var(--ra-color-note);
         border-bottom: 1px solid var(--ifm-toc-border-color);
         color: var(--ifm-color-content);
@@ -448,7 +503,7 @@ border-bottom: 1px solid var(--ifm-toc-border-color);
         padding-left: 1.2rem!important
     }
 
-    header {
+    .markdown header {
         padding-left: calc(var(--doc-sidebar-width) + 4rem)
     }
 }
@@ -471,14 +526,14 @@ border-bottom: 1px solid var(--ifm-toc-border-color);
     }
 
     .navbar__toggle {
-        border: 1px solid var(--ifm-toc-border-color);
+        border: unset;
         border-left: 0px;
         border-right: 0px;
         display: inherit;
-        height: 3rem;
         max-width: 4rem;
         vertical-align: middle;
-        width: 4rem
+        width: 4rem;
+        height: calc(3rem - 2px)!important;
     }
 }
 
@@ -518,7 +573,7 @@ border-bottom: 1px solid var(--ifm-toc-border-color);
 
     .menu--responsive .menu__button:hover,.navbar__toggle:hover {
         background-color: var(--ifm-button-background-color-2);
-        border-color: var(--ifm-color-secondary-darker)
+        border-color: unset;
     }
 
     .navbar-sidebar__brand .navbar__brand,.navbar__toggle {
@@ -573,7 +628,7 @@ table {
 }
 
 @media (max-width:996px) {
-    header {
+    .markdown header {
         font-size: 3rem;
         display: flex;
         flex-direction: row;
@@ -881,7 +936,7 @@ table {
     }
 
     .navbar-sidebar__brand {
-        bottom: 5rem;
+        bottom: 7rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
