@@ -136,4 +136,4 @@ The AlgoSend button has the largest number of mandatory props. Failing to set th
 
 ## License
 
-MIT © [PIPELINE UI](https://github.com/headline-design/pipeline-ui)
+MIT © [PIPELINE UI](https://github.com/headline-design/pipeline-ui/blob/main/LICENSE)
