@@ -13,6 +13,10 @@ div[class*=pipeline-select]>div {
     position: relative
 }
 
+ul.menu__list {
+    padding-bottom: unset;
+}
+
 .button,.button--secondary,.codeBlock_23N8,.menu__link,.menu__link:hover,.navbar__item.dropdown,.pagination-nav__link {
     border-radius: 0
 }
