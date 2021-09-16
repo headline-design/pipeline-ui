@@ -110,10 +110,17 @@ module.exports = {
                 label: 'GitHub',
                 href: 'https://github.com/headline-design',
               },
+              {
+                html: `
+                  <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+                    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+                  </a>
+                `,
+              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} HEADLINE INC. Built with ReactJS.`,
+        copyright: `Copyright © ${new Date().getFullYear()} HEADLINE INC. Built with PIPELINE-UI, Carbon Design, and Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
