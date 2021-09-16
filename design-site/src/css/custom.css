@@ -13,7 +13,7 @@ div[class*=pipeline-select]>div {
     position: relative
 }
 
-ul.menu__list {
+.menu__list .menu__list {
     padding-bottom: unset;
 }
 
