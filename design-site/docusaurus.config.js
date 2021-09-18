@@ -29,18 +29,11 @@ module.exports = {
   organizationName: 'headline-design', // Usually your GitHub org/user name.
   projectName: 'pipeline-ui', // Usually your repo name.
   themeConfig: {
-
-    algolia: {
-    apiKey: 'b0405f4a756319e8958c9663f6894137',
-      indexName: 'netlify_40588036-5b95-4358-a88a-e601e5db99e1_main_all',
-      siteId: '40588036-5b95-4358-a88a-e601e5db99e1',
-      // Optional: see doc section below contextualSearch: true,
-      // Optional: see doc section below 
-      appId: 'MVTCBKVE16',
-      // Optional: Algolia search parameters searchParameters: {},
-      //... other Algolia params    
-    },
-
+      algolia: {
+        apiKey: '2c9fb3a0cacd974418ccf64818c49bea',
+        indexName: 'PIPES',
+        contextualSearch: true,
+      },
     announcementBar: {
       id: 'announcementBar-1', // Increment on change
       content:
