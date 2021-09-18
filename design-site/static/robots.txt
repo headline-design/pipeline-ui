@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.pipeline-ui.com/sitemap/sitemap-index.xml
+Sitemap: https://www.pipeline-ui.com/sitemap.xml
 Host: https://www.pipeline-ui.com
