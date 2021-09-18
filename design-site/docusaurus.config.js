@@ -21,7 +21,7 @@ module.exports = {
 // ...
   title: 'Pipeline UI',
   tagline: 'Integrating Algorand and React',
-  url: 'https://pipeline-ui.com',
+  url: 'https:www.//pipeline-ui.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -29,11 +29,14 @@ module.exports = {
   organizationName: 'headline-design', // Usually your GitHub org/user name.
   projectName: 'pipeline-ui', // Usually your repo name.
   themeConfig: {
-      algolia: {
-        apiKey: '2c9fb3a0cacd974418ccf64818c49bea',
-        indexName: 'PIPES',
-        contextualSearch: true,
-      },
+        // highlight-start
+    algolia: {
+      appId: 'S4FDTAHLXR', // Test test.
+      apiKey: '2c9fb3a0cacd974418ccf64818c49bea', // Test test.
+      indexName: 'prod_PIPES', // Test test.
+      contextualSearch: true, // Test test.
+    },
+    // highlight-end.
     announcementBar: {
       id: 'announcementBar-1', // Increment on change
       content:
