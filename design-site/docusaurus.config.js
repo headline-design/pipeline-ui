@@ -21,7 +21,7 @@ module.exports = {
 // ...
   title: 'Pipeline UI',
   tagline: 'Integrating Algorand and React',
-  url: 'https:www.//pipeline-ui.com',
+  url: 'https://pipeline-ui.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
