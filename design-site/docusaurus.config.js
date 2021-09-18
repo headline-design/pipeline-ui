@@ -31,7 +31,9 @@ module.exports = {
   themeConfig: {
 
     algolia: {
-    apiKey: 'b0405f4a756319e8958c9663f6894137', indexName: 'netlify_40588036-5b95-4358-a88a-e601e5db99e1_main_all',
+    apiKey: 'b0405f4a756319e8958c9663f6894137',
+      indexName: 'netlify_40588036-5b95-4358-a88a-e601e5db99e1_main_all',
+      siteId: '40588036-5b95-4358-a88a-e601e5db99e1',
       // Optional: see doc section below contextualSearch: true,
       // Optional: see doc section below 
       appId: 'MVTCBKVE16',
