@@ -1,0 +1,9 @@
+# Contact Us
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import {Button, Input} from 'pipeline-ui';
+
+export function click(){alert("Submitted!")}
+
+<form id="doc-form"><Input placeholder="Name" type="text"></Input><Input placeholder="Email" type="email"></Input><br></br></form>
+<Button id="submit_button" onClick={() => {click()}} type="submit" form="doc-form">Submit</Button>

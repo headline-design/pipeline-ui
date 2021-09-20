@@ -133,6 +133,11 @@ The AlgoSend button has the largest number of mandatory props. Failing to set th
 ### 0.2.6
 - Added return of 0 for Pipeline.balance() when error occurs.
 
+### 0.3.4
+- Numerous updates
+- WalletConnect integration
+- Fixed Peer dependency issue
+
 
 ## License
 
