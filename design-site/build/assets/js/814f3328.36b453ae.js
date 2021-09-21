@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpipeline_ui_website=self.webpackChunkpipeline_ui_website||[]).push([[2535],{45641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Solving Server Side Render Issues","permalink":"/blog/ssr"}]}')}}]);
