@@ -6,7 +6,8 @@ module.exports = {
     // ...
       plugins: ['@docusaurus/theme-live-codeblock',
                 '@docusaurus/plugin-ideal-image',
-                require.resolve('./webpkconfig.js')],
+                require.resolve('./webpkconfig.js'),
+                require.resolve('docusaurus-lunr-search')],
 
       themeConfig: {
         liveCodeBlock: {
@@ -29,13 +30,7 @@ module.exports = {
   organizationName: 'headline-design', // Usually your GitHub org/user name.
   projectName: 'pipeline-ui', // Usually your repo name.
   themeConfig: {
-        // highlight-start
-    algolia: {
-      appId: 'S4FDTAHLXR', // Test test.
-      apiKey: '2c9fb3a0cacd974418ccf64818c49bea', // Test test.
-      indexName: 'prod_PIPES', // Test test.
-      contextualSearch: true, // Test test.
-    },
+    // highlight-start
     // highlight-end.
     announcementBar: {
       id: 'announcementBar-1', // Increment on change
