@@ -7,7 +7,7 @@ module.exports = {
       plugins: ['@docusaurus/theme-live-codeblock',
                 '@docusaurus/plugin-ideal-image',
                 require.resolve('./webpkconfig.js'),
-                require.resolve('docusaurus-lunr-search')],
+                require.resolve('@easyops-cn/docusaurus-search-local')],
 
       themeConfig: {
         liveCodeBlock: {
