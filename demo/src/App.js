@@ -19,6 +19,8 @@ import {
   Link,
   Loader,
   AlgoButton,
+  AlgoWCButton,
+  AlgoSignerButton,
   AlgoSendButton,
   Modal,
   Pill,
@@ -69,6 +71,8 @@ const MyAlgoWallet = Pipeline.init();
 const testComponents = props => (
   <React.Fragment>
     <AlgoButton wallet={MyAlgoWallet}/>
+    <AlgoWCButton wallet={MyAlgoWallet}/>
+    <AlgoSignerButton wallet={MyAlgoWallet}/>
     <h1>H1 - {testText}</h1>
     <h2>H1 - {testText}</h2>
     <h3>H1 - {testText}</h3>

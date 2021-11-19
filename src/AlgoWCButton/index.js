@@ -105,7 +105,7 @@ const AlgoWCButton = props => {
   return (
     <MyAlgoButton
       onClick={() => {
-        Pipeline.pipeConnector = 'walletConnect'
+        Pipeline.pipeConnector = 'WalletConnect'
         Pipeline.connect(props.wallet).then(accounts => {
           if (props.returnTo !== undefined) {
             const data = {}
