@@ -27,7 +27,7 @@
   "dependencies": {
     "@d8660091/react-popper": "^1.0.4",
     "@pipeline-ui/icons": "^0.1.1",
-    "@pipeline-ui-2/pipeline": "^1.2.5",
+    "@pipeline-ui-2/pipeline": "1.2.7",
     "@styled-system/prop-types": "^5.1.2",
     "@styled-system/theme-get": "^5.1.2",
     "@svgr/rollup": "^4.2.0",
