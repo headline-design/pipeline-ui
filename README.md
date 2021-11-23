@@ -138,6 +138,11 @@ The AlgoSend button has the largest number of mandatory props. Failing to set th
 - WalletConnect integration
 - Fixed Peer dependency issue
 
+### 0.3.5
+- MultiWalletConnect component
+- AlgoSigner integration
+- Fused Pipeline connector
+
 
 ## License
 
