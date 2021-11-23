@@ -1,0 +1,99 @@
+# MultiWalletConnect
+
+A select component with button. Clicking on the button will prompt the user to connect to the selected wallet. 
+
+import "regenerator-runtime/runtime.js";
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+export function BrowserOnlyButton() {
+  return (
+    <BrowserOnly fallback={<p>Some Fallback Content</p>}>
+      {() => {
+const MultiWalletConnect = require('pipeline-ui').MultiWalletConnect; const Pipeline = require('pipeline-ui').Pipeline; return <MultiWalletConnect wallet={Pipeline.init()} />      }}
+    </BrowserOnly>
+  );
+}
+
+<BrowserOnlyButton /><br/>
+
+## Example usage
+
+```jsx
+<MultiWalletConnect wallet={myWallet}/>
+```
+
+## Accessing returned address
+
+The returned address can be accessed several different ways. Setting the `context` prop to `{this}` and the `returnTo` prop to a `state` key (as string) will return the address directly to your parent component's state without the need for additional callback or event handler code. The address can also be accessed with `Pipeline.address`:
+
+```jsx
+componentDidMount() {
+      this.interval = setInterval(() => this.setState({address: Pipeline.address}), 1000);
+    }
+```
+
+or with an `onChange` handler:
+
+```jsx
+handleChange = (value) =>{
+    this.setState({myAddress: value})
+  }
+
+  render(){
+    return <MultiWalletConnect onChange={this.handleChange} wallet={myWallet}/>
+  }
+```
+
+## Use Example  
+
+```jsx
+import React, { Component } from 'react';
+import { MultiWalletConnect, Pipeline} from 'pipeline-ui';
+
+
+class TestButton extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      Algaddress: ""
+    }
+  }
+  
+  myWallet = Pipeline.init();
+
+  render() {
+    return <div>
+      <MultiWalletConnect 
+            wallet={this.myWallet} 
+            context={this} 
+            returnTo={"Algaddress"} 
+            />
+      <h1>{this.state.Algaddress}</h1>
+    </div>
+  }
+}
+
+export default TestButton;
+```
+
+### Props
+
+import {Table} from 'pipeline-ui';
+
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>wallet</td><td>reference</td><td></td><td></td></tr>
+  <tr><td>context</td><td>reference</td><td></td><td></td></tr>
+  <tr><td>returnTo</td><td>string</td><td>empty string</td><td>key in state to return fetched address</td></tr>
+  <tr><td>onChange</td><td>function</td><td></td><td>enables callback (see example above)</td></tr>
+    </tbody>
+    </Table>
