@@ -14,6 +14,7 @@ const MultiWalletConnect = props => {
     <div>
       <Select
         id="walletswitch"
+        placeholder="Select a Wallet"
         onChange={() => {
           Pipeline.pipeConnector = document.getElementById('walletswitch').value
         }}
