@@ -71,7 +71,6 @@ const MyAlgoWallet = Pipeline.init();
 
 const testComponents = props => (
   <React.Fragment>
-    <button onClick={() => {console.log(Pipeline.pipeConnector)}}>Check connector</button>
     <AlgoButton wallet={MyAlgoWallet}/>
     <AlgoWCButton wallet={MyAlgoWallet}/>
     <AlgoSignerButton wallet={MyAlgoWallet}/>
