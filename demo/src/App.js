@@ -21,6 +21,7 @@ import {
   AlgoButton,
   AlgoWCButton,
   AlgoSignerButton,
+  MultiWalletConnect,
   AlgoSendButton,
   Modal,
   Pill,
@@ -70,9 +71,11 @@ const MyAlgoWallet = Pipeline.init();
 
 const testComponents = props => (
   <React.Fragment>
+    <button onClick={() => {console.log(Pipeline.pipeConnector)}}>Check connector</button>
     <AlgoButton wallet={MyAlgoWallet}/>
     <AlgoWCButton wallet={MyAlgoWallet}/>
     <AlgoSignerButton wallet={MyAlgoWallet}/>
+    <MultiWalletConnect wallet={MyAlgoWallet}/>
     <h1>H1 - {testText}</h1>
     <h2>H1 - {testText}</h2>
     <h3>H1 - {testText}</h3>

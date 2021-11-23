@@ -10,14 +10,15 @@ const options = [
 ]
 
 const MultiWalletConnect = props => {
+  function walletChanged(event) {
+    Pipeline.pipeConnector = event.value
+  }
   return (
     <div>
       <Select
         id="walletswitch"
         placeholder="Select a Wallet"
-        onChange={() => {
-          Pipeline.pipeConnector = document.getElementById('walletswitch').value
-        }}
+        onChange={event => walletChanged(event)}
         options={options}
       />
       <br />
