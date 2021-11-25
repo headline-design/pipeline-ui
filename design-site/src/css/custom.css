@@ -110,7 +110,7 @@ li>code,p>code,td>code {
 }
 
 @media (min-width:997px) {
-    .docSidebarContainer,.docSidebarContainer_3Kbt {
+    .docSidebarContainer,.docSidebarContainer_0YBq {
         background-color: var(--ifm-background-surface-color);
         z-index: 1
     }
@@ -126,7 +126,7 @@ li>code,p>code,td>code {
 }
 
 
-.announcementBar_3WsW {
+.announcementBar_axC9 {
     z-index: 1000;
     position: fixed!important;
     bottom: 0!important;
@@ -149,7 +149,8 @@ li>code,p>code,td>code {
 }
 
 .navbar__title {
-    font-family: IBM Plex Sans,Helvetica Neue,Arial,sans-serif
+    font-family: IBM Plex Sans,Helvetica Neue,Arial,sans-serif;
+    font-weight: 500;
 }
 
 .navbar-sidebar {
@@ -185,7 +186,18 @@ li>code,p>code,td>code {
     margin-top: 0px;
 }
 
-button.clean-btn.tocCollapsibleButton_2O1e {
+.searchBar_DBlZ .dropdownMenu_0bDV .suggestion_uMTE {
+    align-items: center;
+    background: var(--search-local-hit-background,#fff);
+    border-radius: 0px !important;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    height: var(--docsearch-footer-height) !important;
+    width: 100%;
+}
+
+button.clean-btn.tocCollapsibleButton_zr6a {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-color: var(--ifm-toc-border-color);
@@ -193,7 +205,7 @@ button.clean-btn.tocCollapsibleButton_2O1e {
 }
 
 @media (max-width: 996px){
-.tocCollapsibleContent_2Ydz>ul {
+    .tocCollapsibleContent_0dom>ul {
     background-color: var(--ifm-background-surface-color);
     border-left: none;
     border-top: 1px solid var(--ifm-toc-border-color);
@@ -243,7 +255,7 @@ button.clean-btn.tocCollapsibleButton_2O1e {
 }
 }
 
-.searchBar .dropdownMenu .suggestion, .searchBar_2TTC .dropdownMenu_MoYd .suggestion_3FkI{
+.searchBar .dropdownMenu .suggestion, .searchBar_DBlZ .dropdownMenu_0bDV .suggestion_uMTE{
     box-shadow: none !important;
 }
 
@@ -426,7 +438,7 @@ span[class*=dropdownMenu] {
 }
 
 @media (max-width: 996px) {
-.tocCollapsible_1PrD {
+.tocCollapsible_aw-L {
     background-color: var(--ifm-menu-color-background-active);
     margin: 1rem 0;
     position: fixed;
@@ -447,7 +459,7 @@ span[class*=dropdownMenu] {
 }
 
 @media (max-width: 996px) {
-.tocCollapsibleContent_2Ydz>ul {
+    .tocCollapsibleContent_0dom>ul {
     border-left: none;
     border-top: 1px solid var(--ifm-color-emphasis-300);
     font-size: 15px;
@@ -502,7 +514,7 @@ border-bottom: 1px solid var(--ifm-toc-border-color) !important;
 }
 
 @media (min-width: 997px){
-.menu_Bmed {
+.menu_cyFh {
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
@@ -679,7 +691,7 @@ table {
     border-color: var(--ifm-toc-border-color)!important
 }
 
-.button .button--secondary .button--outline .collapseSidebarButton_1CGd {
+.button .button--secondary .button--outline .collapseSidebarButton_eoK2 {
     margin-bottom: 3px!important
 }
 
@@ -1545,7 +1557,7 @@ mark {
 }
 
 @media (min-width:997px) {
-    .collapseSidebarButton_1CGd {
+    .collapseSidebarButton_eoK2 {
         margin-bottom: 1.86rem!important
     }
 }
@@ -1605,7 +1617,7 @@ button.Box__StyledBox-sc-12bsn2y-0.BaseButton__StyledButton-sc-1hj5v8i-0.SolidBu
     border-radius: 0px !important;
 }
 
-.tocCollapsible_1PrD.theme-doc-toc-mobile.tocMobile_3Hoh {
+.tocCollapsible_aw-L theme-doc-toc-mobile tocMobile_Tx6Y {
     z-index: 100000;
 }
 
@@ -2250,7 +2262,7 @@ html[data-theme=dark] {
 
 
 
-.collapseSidebarButton_1CGd,.sidebarLogo_3h0W,.themedImage_1VuW,.uil-d-none,svg.DocSearch-Hit-Select-Icon {
+.collapseSidebarButton_eoK2,.sidebarLogo_3h0W,.themedImage_1VuW,.uil-d-none,svg.DocSearch-Hit-Select-Icon {
     display: none
 }
 
@@ -2324,7 +2336,7 @@ html[data-theme=dark] {
         color: var(--ifm-navbar-link-color) !important;
     }
 
-    .tocCollapsible_1PrD.theme-doc-toc-mobile.tocMobile_3Hoh {
+    .tocCollapsible_aw-L theme-doc-toc-mobile tocMobile_Tx6Y {
         z-index: 99 !important;
     }
 
@@ -2415,7 +2427,7 @@ html[data-theme=dark] {
           color: #f5deb300;
       }
 
-      .navbar__search-input:focus:focus{
+      .navbar__search-input:focus{
         color: var(--ifm-menu-color) !important;
       }
       
