@@ -243,7 +243,26 @@ button.clean-btn.tocCollapsibleButton_2O1e {
 }
 }
 
-.sidebar_15mo .menu--show,.sidebar_15mo .navbar-sidebar--show .navbar-sidebar {
+.searchBar .dropdownMenu .suggestion, .searchBar_2TTC .dropdownMenu_MoYd .suggestion_3FkI{
+    box-shadow: none !important;
+}
+
+span[class*=dropdownMenu] {
+    background-color: #161615 !important;
+    border: 1px solid !important;
+    border-top: none !important;
+    box-shadow: 0 4px 8px 0 #00000080 !important;
+    padding: 1rem 0 !important;
+    top: 3rem !important;
+    z-index: 10000 !important;
+    margin-top: 0px !important;
+}
+
+.searchBar_2TTC .dropdownMenu_MoYd .suggestion_3FkI{
+    border-radius: 0px !important;
+}
+
+.sidebar_a3j0 .menu--show,.sidebar_a3j0 .navbar-sidebar--show .navbar-sidebar {
     padding-top: 3rem!important;
     padding: inherit;
     top: 0;
@@ -1061,6 +1080,9 @@ html[data-theme=dark] {
     --ifm-interactive-03: #fff;
     --ifm-interactive-04: #4589ff;
     --ifm-ui-background: #161616;
+    --search-local-highlight-color: var(--ifm-code-background) !important;
+    --search-local-hit-background: var(--ifm-background-surface-color)!important;
+    --search-local-hit-active-color: var(--ifm-menu-color) !important;
     --ifm-ui-01: #262626;
     --ifm-ui-02: #393939;
     --ifm-ui-03: #393939;
@@ -1506,6 +1528,14 @@ tr:hover {
     border-style: solid;
     border-width: 1px;
     padding: .5rem!important
+}
+
+.hitWrapper mark, .hitWrapper_2Uh4 mark{
+    color: var(--ifm-menu-color);
+}
+
+mark {
+    color: var(--ifm-menu-color) !important;
 }
 
 .copyButton_Ue-o:hover {
@@ -2109,10 +2139,10 @@ html[data-theme=dark] {
     
 
 .navbar__search-input:focus {
-    max-width: 40vh;
-    width: 16rem;
-    right: 0px;
+    max-width: 16rem !important;
     padding-left: 3rem;
+    right: 0;
+    width: 16rem !important;
 }
 
 .navbar__search-input:active, .navbar__search-input:focus, .navbar__search-input:hover {
@@ -2321,6 +2351,10 @@ html[data-theme=dark] {
         outline: 2px solid var(--ifm-focus,#0f62fe)!important;
     }
 
+    .navbar__search-input {
+        color: #fff0 !important;
+    }
+
     .aa-Item:hover {
         background-color: var(--ifm-menu-color-background-hover) !important;
     }
@@ -2342,11 +2376,16 @@ html[data-theme=dark] {
         padding: 1rem 0;
         position: absolute;
         right: 0;
-        top: 3rem !important;
+        top: calc(3rem - 1px)!important;
         width: 16rem !important;
         z-index: 10000 !important;
         background-color: var(--ifm-background-surface-color) !important;
       }
+
+      .hitWrapper mark {
+        background: none;
+        color: unset !important;
+    }
 
       html[data-theme="dark"] span[class*=dropdownMenu] {
         box-shadow: 0 4px 8px 0 #00000080 !important;
@@ -2364,17 +2403,24 @@ html[data-theme=dark] {
       
       .searchBar .dropdownMenu .suggestion {
         cursor: pointer;
-        background: var(--search-local-hit-background, #fff);
+        background: var(--ifm-code-background) !important;
         border-radius: 0px !important;
         box-shadow: var(--search-local-hit-shadow, 0 1px 3px 0 #d4d9e1);
         padding: 0 var(--search-local-spacing, 12px);
         width: 100%;
-      
         align-items: center;
-        color: var(--search-local-hit-color, #444950);
+        color: var(--ifm-color-primary-lighter) !important;
         display: flex;
         flex-direction: row;
         height: var(--search-local-hit-height, 56px);
+      }
+
+      html[data-theme=dark] .navbar__search-input{
+          color: #f5deb300;
+      }
+
+      .navbar__search-input:focus:focus{
+        color: var(--ifm-menu-color) !important;
       }
       
       html[data-theme="dark"] .dropdownMenu .suggestion {
@@ -2388,10 +2434,7 @@ html[data-theme=dark] {
       }
       
       .searchBar .dropdownMenu .suggestion.cursor {
-        background-color: var(
-          --search-local-highlight-color,
-          var(--ifm-color-primary)
-        );
+        background-color: var(--ifm-code-background);
       }
       
       .hitTree,
@@ -2508,10 +2551,7 @@ html[data-theme=dark] {
       .suggestion.cursor .hitTree,
       .suggestion.cursor .hitIcon,
       .suggestion.cursor .hitPath {
-        color: var(
-          --search-local-hit-active-color,
-          var(--ifm-color-white)
-        ) !important;
+        color: var(--ifm-code-background) !important;
       }
       
       .suggestion.cursor mark {
