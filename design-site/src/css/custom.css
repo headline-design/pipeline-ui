@@ -2145,10 +2145,6 @@ html[data-theme=dark] {
     width: 16rem !important;
 }
 
-.navbar__search-input:active, .navbar__search-input:focus, .navbar__search-input:hover {
-    background: var(--ifm-navbar-search-input-background-color) url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' width='20' height='20' viewBox='0 0 32 32' aria-hidden='true'%3E%3Cpath d='m29 27.586-7.552-7.552a11.018 11.018 0 1 0-1.414 1.414L27.586 29ZM4 13a9 9 0 1 1 9 9 9.01 9.01 0 0 1-9-9Z'/%3E%3C/svg%3E) .7rem/2.1rem 1.6rem no-repeat !important;
-}
-
 @media (max-width:750px) {
     .aa-DetachedSearchButtonPlaceholder {
         display: none
