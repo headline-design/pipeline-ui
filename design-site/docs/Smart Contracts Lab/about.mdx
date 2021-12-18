@@ -1,0 +1,48 @@
+# Overview
+
+The Smart Contract Command Lab is an online tool to experiment with deploying and using TEAL (Transaction Execution Approval Lanuage) smart contracts. 
+
+## Get started
+
+- • Select your net (for security reasons, the demo only allows the selection of testnet. You can enable mainnet by forking our github repoisotory and adding MainNet to the network `<Select>` element)
+
+- • Navigate to your MyAlgo wallet and set your wallet to testnet using their dropdown menu.
+
+- • Fund your wallet via the link provided in the Demo
+
+- • Select either a Reach or Teal contract using the dropdown menus. 
+
+:::tip
+
+The demo's `log` window will only log messages provided by the reach "frontend" and transaction id's for teal-only deploys. We reccomend that at this point user open their browser console logs by right-clicking on the screen, hitting `inspect` and selecting the `console` options.
+
+:::
+
+- • For all Reach contracts (except `Morra Game`), clicking `Deploy and Run Reach` will both deploy the smart contract and run the frontend and "backend" code associated with the Reach example, using your own connected addess to run the code for all participants.
+
+- • A key feature of our implementation of the `Morra Game` is to demonstrate how Reach code can be utilized without any third-party "backends" or RPC servers. The same code exists on all client machines, with participants merely inputing the app id of the Morra Game. 
+
+- • The Morra Game must be played with two seperate addresses (documented below)
+
+- • For the provided TEAL contracts, clicking `Deploy TEAL` will merely deploy the smart contract with the following initial conditions: 
+
+```jsx
+let registrationStart = algosdk.encodeUint64(params.firstRound)
+let registrationEnd = algosdk.encodeUint64(params.firstRound + 1000)
+let voteStart = algosdk.encodeUint64(params.firstRound + 2000)
+let voteEnd = algosdk.encodeUint64(params.firstRound + 3000)
+```
+
+- • Custom TEAL contracts will also be only deployed, but `appArgs`, byte slices and local/global integers can be fully customized.
+
+## Morra Game
+
+Selecting the Reach Morra Game will display a dropdown to select a role and input for an app id.
+
+- • To run the game, 2 users load the demo on seperate machines and connect their seperate accounts. The user who will deploy the contract and act as participant `Alice` selects the `Deployer` role and deploys the contract.
+
+- • Immediately after deploying the contract, Alice must locate the app id on AlgoExplorer and share it with user `Bob`
+- • User `Bob` inputs the app id and clicks `deploy`
+- • At this point, the Reach code automatically generates the bets and guesses for both participants, only requiring that the transactions be signed in MyAlgo
+- • If the smart contract obverves a winner, the winner will recienve the amount wagered by the loser. 
+- • In the event of either a winner or timeout, the Reach code will automatically prompt user `Alice` to delete the app.
