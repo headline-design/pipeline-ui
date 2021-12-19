@@ -4,27 +4,27 @@ The Smart Contract Command Lab is an online tool to experiment with deploying an
 
 ## Get started
 
-- • Select your net (for security reasons, the demo only allows the selection of testnet. You can enable mainnet by forking our github repoisotory and adding MainNet to the network `<Select>` element)
+- • Select your net (for security reasons, the demo only allows the selection of testnet. You can enable mainnet by forking our github repository and adding MainNet to the network `<Select>` element)
 
 - • Navigate to your MyAlgo wallet and set your wallet to testnet using their dropdown menu.
 
 - • Fund your wallet via the link provided in the Demo
 
-- • Select either a Reach or Teal contract using the dropdown menus. 
+- • Select either a Reach or TEAL contract using demo's the dropdown menus. 
 
 :::tip
 
-The demo's `log` window will only log messages provided by the reach "frontend" and transaction id's for teal-only deploys. We reccomend that at this point user open their browser console logs by right-clicking on the screen, hitting `inspect` and selecting the `console` options.
+The demo's `log` window will only log messages provided by the Reach "frontend" code or transaction id's for TEAL-only deploys. We recommend that at this point the user open their browser console log by right-clicking on the screen, hitting `inspect` and selecting the `console` option.
 
 :::
 
 - • For all Reach contracts (except `Morra Game`), clicking `Deploy and Run Reach` will both deploy the smart contract and run the frontend and "backend" code associated with the Reach example, using your own connected addess to run the code for all participants.
 
-- • A key feature of our implementation of the `Morra Game` is to demonstrate how Reach code can be utilized without any third-party "backends" or RPC servers. The same code exists on all client machines, with participants merely inputing the app id of the Morra Game. 
+- • A key feature of our implementation of the `Morra Game` is to demonstrate how Reach code can be utilized without any RPC servers or backends needed. Identical code exists on all client machines and runs entirely server-side (with the exception of the smart contract), with participants merely inputing the app id of the Morra Game smart contract. 
 
 - • The Morra Game must be played with two seperate addresses (documented below)
 
-- • For the provided TEAL contracts, clicking `Deploy TEAL` will merely deploy the smart contract with the following initial conditions: 
+- • For the provided TEAL contracts, clicking `Deploy TEAL Contract` will merely deploy the smart contract with hard-coded global/local bytes/integers and the following initial appArgs: 
 
 ```jsx
 let registrationStart = algosdk.encodeUint64(params.firstRound)
@@ -33,16 +33,67 @@ let voteStart = algosdk.encodeUint64(params.firstRound + 2000)
 let voteEnd = algosdk.encodeUint64(params.firstRound + 3000)
 ```
 
-- • Custom TEAL contracts will also be only deployed, but `appArgs`, byte slices and local/global integers can be fully customized.
+- • Custom TEAL contracts will also be only deployed, but `appArgs`, byte slices and local/global integers can be fully customized. Appargs are entered as an array of strings `["",""]` and formated behind the scenes by the Demo's code. 
 
 ## Morra Game
 
-Selecting the Reach Morra Game will display a dropdown to select a role and input for an app id.
+Selecting the `Reach Morra Game` will display a dropdown to select a role and an input for an app id.
 
-- • To run the game, 2 users load the demo on seperate machines and connect their seperate accounts. The user who will deploy the contract and act as participant `Alice` selects the `Deployer` role and deploys the contract.
+- • To run the game, 2 users load the demo on seperate machines and connect their seperate accounts. The user who will deploy the contract and act as participant `Alice` selects the `Deployer & Participant` role and clicks `Deploy & Run Reach`.
 
-- • Immediately after deploying the contract, Alice must locate the app id on AlgoExplorer and share it with user `Bob`
-- • User `Bob` inputs the app id and clicks `deploy`
-- • At this point, the Reach code automatically generates the bets and guesses for both participants, only requiring that the transactions be signed in MyAlgo
-- • If the smart contract obverves a winner, the winner will recienve the amount wagered by the loser. 
+- • Immediately after deploying the contract, `Alice` must locate the app id on AlgoExplorer and share it with user `Bob`.
+
+- • User `Bob` inputs the app id, selects the `Participant` role and clicks `Deploy & Run Reach`.
+
+- • At this point, the Reach code automatically generates the bets and guesses for both participants, only requiring that the transactions be signed in the MyAlgo popup windows.
+
+- • If the smart contract obverves a winner, the winner will receive the amount wagered by the loser.
+
 - • In the event of either a winner or timeout, the Reach code will automatically prompt user `Alice` to delete the app.
+
+## Adapting Reach Code
+
+The code examples provided in the ReachLang github examples folder can be utilized in serverless online apps via the following process: 
+
+- • Clone the repo and compile the Reach code following the instructions provided on the Reach doc site
+
+- • Copy the "backend" code from the created `build` folder and import it into your main JavaScript or React file (app.js or index.js)
+
+- • Copy the "frontend" code (index.mjs from parent folder) and paste or import it into your main file. 
+
+- • replace the following line wherever it occurs with a variable that contains an Algorand address as string:
+
+```jsx
+await stdlib.newTestAccount(startingBalance);
+```
+
+- • Locate the code that begins at: 
+
+```jsx
+await Promise.all([
+```
+
+- • Copy this entire block and rewrite it to conditionaly run only the segment corresponding to the role that the client selects. 
+
+- • Replace the `getInfo()` function call with `parseInt(appId)` and set `appId` to the id of the smart contract
+
+- • Replace `ldstdlib` call with:
+
+```jsx
+const stdlib = loadStdlib('ALGO')`
+```
+
+Finally, the following code must be run before the Reach frontend code:
+
+```jsx
+stdlib.setWalletFallback(stdlib.walletFallback({
+    providerEnv: net, MyAlgoConnect
+}));
+
+stdlib.getDefaultAccount().then(
+    response => {
+        acct = response.networkAccount.addr;
+    }
+)
+```
+
