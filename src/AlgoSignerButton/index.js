@@ -6,9 +6,9 @@ import Pipeline from '../Pipeline'
 import Button, { StyledButton } from '../Button/BaseButton'
 
 const brandColors = {
-  baseColor: '#000',
-  hoverColor: '#4c4c4c',
-  activeColor: '#999',
+  baseColor: '#f16522',
+  hoverColor: '#f05d16',
+  activeColor: '#eb560f',
   foregroundColor: '#FFFFFF',
 }
 
@@ -118,7 +118,7 @@ const AlgoSignerButton = props => {
         })
       }}
     >
-      Connect to AlgoSigner
+      AlgoSigner
     </MyAlgoButton>
   )
 }

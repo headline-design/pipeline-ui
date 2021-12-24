@@ -6,9 +6,9 @@ import Pipeline from '../Pipeline'
 import Button, { StyledButton } from '../Button/BaseButton'
 
 const brandColors = {
-  baseColor: '#000',
-  hoverColor: '#4c4c4c',
-  activeColor: '#999',
+  baseColor: '#3182ce',
+  hoverColor: '#2b6cb0',
+  activeColor: '#2c5282',
   foregroundColor: '#FFFFFF',
 }
 
@@ -118,7 +118,7 @@ const AlgoWCButton = props => {
         })
       }}
     >
-      Connect to WalletConnect
+      WalletConnect
     </MyAlgoButton>
   )
 }
