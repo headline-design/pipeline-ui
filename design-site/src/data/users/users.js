@@ -144,15 +144,15 @@
      preview: require('./showcase/randlabs.png'),
      website: 'https://algoexplorer.io/',
      source: 'https://algoexplorer.io/',
-     tags: ['opensource','algorand'],
+     tags: ['opensource','algorand',],
    },
    {
      title: 'NFT JAM',
      description: 'Algorand NFT Marketplace for Resellers. Buy and Sell NFTS in ALGO and ASAs. Forwards/reverse and token auctions. Offers.',
-     preview: require('./showcase/randlabs.png'),
-     website: 'https://algoexplorer.io/',
-     source: 'https://algoexplorer.io/',
-     tags: ['opensource','algorand'],
+     preview: require('./showcase/nftjam.png'),
+     website: 'https://app.nftjam.net/',
+     source: 'https://app.nftjam.net/',
+     tags: ['opensource','algorand','NFT'],
    },
   ]
  
