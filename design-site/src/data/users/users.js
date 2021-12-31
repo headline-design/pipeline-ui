@@ -152,7 +152,7 @@
      preview: require('./showcase/randlabs.png'),
      website: 'https://algoexplorer.io/',
      source: 'https://algoexplorer.io/',
-     tags: ['algorand'],
+     tags: ['opensource','algorand'],
    },
   ]
  
