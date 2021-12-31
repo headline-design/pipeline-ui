@@ -61,7 +61,6 @@
      description: 'Sites associated to a commercial product!',
      icon: <>💵</>,
    },
- 
    design: {
      label: 'Design',
      description:
@@ -152,7 +151,7 @@
      preview: require('./showcase/nftjam.png'),
      website: 'https://app.nftjam.net/',
      source: 'https://app.nftjam.net/',
-     tags: ['opensource','algorand','NFT'],
+     tags: ['opensource','algorand'],
    },
   ]
  
