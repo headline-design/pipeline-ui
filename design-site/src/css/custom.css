@@ -2452,10 +2452,6 @@ span[class*=hitFooter] span[class*=a]:hover {
     text-decoration: underline
 }
 
-.searchBarContainer {
-    margin-left: 16px
-}
-
 .searchBarContainer .searchBarLoadingRing {
     display: none;
     position: absolute;
