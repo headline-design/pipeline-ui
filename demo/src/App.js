@@ -42,7 +42,8 @@ import {
   AsaList,
   Pipeline,
   AlgoFetch,
-  PipelineShell
+  PipelineShell,
+  PipeChart
 } from 'pipeline-ui'
 
 import { Algo, Btc } from '@pipeline-ui/icons'
@@ -71,6 +72,7 @@ const MyAlgoWallet = Pipeline.init();
 
 const testComponents = props => (
   <React.Fragment>
+    <PipeChart width="100%" />
     <AlgoButton wallet={MyAlgoWallet}/>
     <AlgoWCButton wallet={MyAlgoWallet}/>
     <AlgoSignerButton wallet={MyAlgoWallet}/>
