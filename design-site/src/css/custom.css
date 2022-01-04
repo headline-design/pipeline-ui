@@ -2089,7 +2089,7 @@ form#doc-form {
 
 .navbar__search-input:focus {
     max-width: 16rem!important;
-    padding-left: 3rem;
+    text-indent: 3rem;
     right: 0;
     width: 16rem!important
 }
