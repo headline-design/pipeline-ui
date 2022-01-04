@@ -21,6 +21,10 @@ div[class*=pipeline-select]>div {
     border-radius: 0
 }
 
+table td {
+    font-family: 'IBM Plex Sans VF' !important;
+}
+
 .menu__link {
     display: flex;
     justify-content: space-between;
