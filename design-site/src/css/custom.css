@@ -8,10 +8,6 @@
     }
 }
 
-span.searchBar_DBlZ {
-    right: 3px;
-}
-
 div[class*=pipeline-select]>div {
     z-index: 1;
     position: relative
@@ -634,6 +630,10 @@ span[class*=dropdownMenu] {
 
 .navbar__items--right>:last-child {
     margin-left: 0
+}
+
+.navbar__items--right {
+  padding-right: 2px;
 }
 
 @media (max-width:996px) {
