@@ -1,0 +1,158 @@
+# PipeChart
+A powerfull wrapping of React ApexCharts that automatically fetches, parses and plots data.
+
+import "regenerator-runtime/runtime.js";
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+export function BrowserOnlyChart() {
+  return (
+    <BrowserOnly fallback={<p>Some Fallback Content</p>}>
+      {() => {
+const PipeChart = require('pipeline-ui').PipeChart; return <PipeChart width="100%" />      }}
+    </BrowserOnly>
+  );
+}
+
+<BrowserOnlyChart/>
+
+
+## Usage Example
+
+```jsx
+const myUrl = 'https://indexer.algoexplorerapi.io/stats/v2/movements?time-start=1638618727&interval=6H&asset-id=137594422'
+
+myParseFunction(data){
+  let series1 = []
+  let series2 = []
+  let i = false
+  data.data.forEach(point => {
+    i = !i
+    if (i) {
+      series1.push(parseInt(point['tx-count']))
+      series2.push(parseInt(point.volume))
+    }
+  })
+  return [
+    { name: 'Transactions', type: 'area', data: series1 },
+    { name: 'Volume', type: 'bar', color: '#3a904f', data: series2 },
+  ]
+}
+
+const myOptions = {
+  chart: {
+    background: 'white',
+    type: 'line',
+    stacked: false,
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    width: [3, 3, 3],
+  },
+  title: {
+    text: 'Algorand Blockchain Statistics',
+    align: 'left',
+    offsetX: 110,
+  },
+  xaxis: {
+    categories: [],
+    labels: {
+      hideOverlappingLabels: true,
+      rotate: 0,
+      style: {
+        colors: 'black',
+      },
+    },
+  },
+  yaxis: [
+    {
+      axisTicks: {
+        show: true,
+      },
+      axisBorder: {
+        show: true,
+        color: '#008FFB',
+      },
+      labels: {
+        style: {
+          colors: '#008FFB',
+        },
+      },
+      title: {
+        text: 'Transaction Count',
+        style: {
+          color: '#008FFB',
+        },
+      },
+      tooltip: {
+        enabled: true,
+      },
+    },
+    {
+      seriesName: 'Volume',
+      opposite: true,
+      axisTicks: {
+        show: true,
+      },
+      axisBorder: {
+        show: true,
+        color: 'black',
+      },
+      labels: {
+        style: {
+          colors: 'black',
+        },
+      },
+      title: {
+        text: 'Unit Volume',
+        style: {
+          color: 'black',
+        },
+      },
+    },
+  ],
+  tooltip: {
+    fixed: {
+      enabled: true,
+      position: 'topLeft', // topRight, topLeft, bottomRight, bottomLeft
+      offsetY: 30,
+      offsetX: 60,
+    },
+  },
+  legend: {
+    horizontalAlign: 'left',
+    offsetX: 40,
+  },
+}
+
+<PipeChart 
+  options={myOptions}
+  parseFunction={myParseFunction}
+  url={myUrl}
+  interval={5000}
+/>
+```
+
+### Props
+
+import {Table} from 'pipeline-ui';
+
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>options</td><td>object</td><td></td><td>object containing ApexCharts specified options</td></tr>
+  <tr><td>series</td><td>array</td><td></td><td>array containing ApexCharts specified series objects</td></tr>
+  <tr><td>interval</td><td>integer</td><td>20000</td><td>interval to update chart in milliseconds</td></tr>
+  <tr><td>width</td><td>string</td><td>"80%"</td><td></td></tr>
+  <tr><td>url</td><td>string</td><td></td><td>complete url to fetch and update data</td></tr>
+  <tr><td>parseFunction</td><td>function</td><td></td><td>function that takes argument of json parsed data from url fetch and must return an array of ApexCharts specified `series` objects</td></tr>
+    </tbody>
+    </Table>
