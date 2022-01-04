@@ -13,6 +13,10 @@ div[class*=pipeline-select]>div {
     position: relative
 }
 
+.padding-top--md, .padding-vert--md {
+    padding-top: 0rem!important;
+}
+
 .menu__list .menu__list {
     padding-bottom: unset
 }
