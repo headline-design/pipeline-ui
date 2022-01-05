@@ -41,6 +41,18 @@ Selecting `Permissionless Voting` will display an interact module.
 
 - • To view the votes progress, both deployer and voters can then click `refresh` which will trigger automated checking and visualization of vote tallies via the Alogrand indexer.
 
+## Permissioned Voting
+
+Selecting `Permissioned Voting` will also display an interact module with an additional input field for an `asset id`.
+
+- • To run the poll, 2 or more users load the demo on seperate machines and connect their seperate accounts. The user who will deploy the contract selects `Permissionled Voting` and clicks `Deploy TEAL`, which will trigger the creation of an ASA (Algorand standard asset) with 10 voting tokens. After the creation of the tokens, another MyAlgo window will pop up requesting the deployer to create the app. 
+
+- • Immediately after deploying the contract, the deployer must share the app id and token id with voters. 
+
+- • After adding the token via myAlgo Wallet and recieving a token from the deployer, voters input the app id and asset id into their interact module, select candidates and click `Vote`.
+
+- • To view the votes progress, both deployer and voters can then click `refresh` which will trigger automated checking and visualization of vote tallies via the Alogrand indexer.
+
 ## Frontend implementation
 
 :::tip
@@ -49,4 +61,4 @@ We are working to port our React smart contract code to vanilla JavaScript. Curr
 
 :::
 
-- • To utilize the fronend functions, simply set `teal` and `teal2` to actual teal program and clear program values as strings
+- • To utilize the frontend functions, simply set `teal` and `teal2` to actual teal program and clear program values as strings
