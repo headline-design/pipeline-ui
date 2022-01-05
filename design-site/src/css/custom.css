@@ -2093,9 +2093,14 @@ form#doc-form {
 
 .navbar__search-input:focus, .navbar__search-input:active {
     min-width: 16rem!important;
-    text-indent: 2rem;
+    text-indent: 3rem;
     z-index: 10000 !important;
     right: 0;
+}
+
+.navbar__search-input:not(:focus){
+  text-indent:3rem;
+  z-index: 10000 !important;
 }
 
 @media (max-width:750px) {
