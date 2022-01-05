@@ -1,0 +1,52 @@
+# Overview
+
+The TEAL Contract Lab is an online tool to experiment with deploying and using TEAL (Transaction Execution Approval Lanuage) smart contracts. 
+
+## Get started
+
+- • Select your net (for security reasons, the demo only allows the selection of testnet. You can enable mainnet by forking our github repository and adding MainNet to the network `<Select>` element)
+
+- • Navigate to your MyAlgo wallet and set your wallet to testnet using their dropdown menu.
+
+- • Fund your wallet via the link provided in the Demo
+
+- • Select a TEAL contract using demo's the dropdown menus. 
+
+:::tip
+
+The demo's `log` window will only log select messages. We recommend that at this point the user open their browser console log by right-clicking on the screen, hitting `inspect` and selecting the `console` option.
+
+:::
+
+- • For the provided TEAL contracts, clicking `Deploy TEAL Contract` will deploy the smart contract with hard-coded global/local bytes/integers and the following initial appArgs: 
+
+```jsx
+let registrationStart = algosdk.encodeUint64(params.firstRound)
+let registrationEnd = algosdk.encodeUint64(params.firstRound + 1000)
+let voteStart = algosdk.encodeUint64(params.firstRound)
+let voteEnd = algosdk.encodeUint64(params.firstRound + 1000)
+```
+
+- • Custom TEAL contracts will also be only deployed, but `appArgs`, byte slices and local/global integers can be fully customized. Appargs are entered as an array of strings `["",""]` and formated behind the scenes by the Demo's code. 
+
+## Permissionless Voting
+
+Selecting `Permissionless Voting` will display an interact module.
+
+- • To run the poll, 2 or more users load the demo on seperate machines and connect their seperate accounts. The user who will deploy the contract selects `Permissionless Voting` and clicks `Deploy TEAL`.
+
+- • Immediately after deploying the contract, the deployer must share the app id with voters.
+
+- • Voters input the app id, selects a candidate and click `Vote`.
+
+- • To view the votes progress, both deployer and voters can then click `refresh` which will trigger automated checking and visualization of vote tallies via the Alogrand indexer.
+
+## Frontend implementation
+
+:::tip
+
+We are working to port our React smart contract code to vanilla JavaScript. Currently, only some frontend functions are provided in the `Permissionless Voting` frontend codeblock. Stay tuned for a full port to the Pipeline Class!
+
+:::
+
+- • To utilize the fronend functions, simply set `teal` and `teal2` to actual teal program and clear program values as strings
