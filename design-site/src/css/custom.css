@@ -2324,12 +2324,6 @@ html[data-theme=dark] .navbar__search-input {
     color: #f5deb300
 }
 
-@media (max-width:576px) {
-    .navbar__search-input:not(:focus) {
-        width: 4rem!important
-    }
-}
-
 .searchBar .dropdownMenu .suggestion {
     cursor: pointer;
     background: var(--ifm-code-background)!important;
