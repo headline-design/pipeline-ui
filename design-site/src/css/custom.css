@@ -2092,10 +2092,9 @@ form#doc-form {
 }
 
 .navbar__search-input:focus {
-    max-width: 16rem!important;
+    min-width: 16rem!important;
     text-indent: 3rem;
     right: 0;
-    width: 16rem!important
 }
 
 @media (max-width:750px) {
