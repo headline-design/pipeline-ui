@@ -8,6 +8,30 @@
     }
 }
 
+@media (min-width:930px) {
+    .iframe-video {
+        min-height: 60vh!important
+    }
+}
+
+@media (min-width:650px) {
+    .iframe-video {
+        min-height: 50vh!important
+    }
+}
+
+@media (min-width:450px) {
+    .iframe-video {
+        min-height: 40vh
+    }
+}
+
+@media (max-width:449px) {
+    .iframe-video {
+        min-height: 30vh
+    }
+}
+
 div[class*=pipeline-select]>div {
     z-index: 1;
     position: relative
@@ -281,7 +305,8 @@ span[class*=dropdownMenu] {
     position: absolute;
     width: 16rem!important;
     z-index: 10000!important;
-    background-color: var(--ifm-background-surface-color)!important
+    background-color: var(--ifm-background-surface-color)!important;
+    top: calc(3rem - 1px)!important
 }
 
 .searchBar_2TTC .dropdownMenu_MoYd .suggestion_3FkI {
@@ -446,11 +471,11 @@ span[class*=dropdownMenu] {
 }
 
 .navbar__search-input {
-    height: calc(3rem - 2px)!important;
+    height: calc(3rem - 2px)!important
 }
 
-.tocCollapsible_aw-L{
-    z-index: 1;
+.tocCollapsible_aw-L {
+    z-index: 1
 }
 
 @media (max-width:996px) {
@@ -676,16 +701,13 @@ span[class*=dropdownMenu] {
     padding: 11px 12px
 }
 
-span[class*=dropdownMenu] {
-    top: calc(3rem - 1px) !important;
-}
-
 .menu_Bmed {
     padding: unset
 }
 
 .navbar__search-input:not(:focus) {
     width: 4rem!important;
+        transition: background-color .11s cubic-bezier(.2,0,.38,.9),opacity .11s cubic-bezier(.2,0,.38,.9);
 }
 
 .cWVRmn {
@@ -1987,7 +2009,7 @@ form#doc-form {
 
 .navbar__search-input:active,.navbar__search-input:focus,.navbar__search-input:hover {
     box-shadow: none!important;
-    transition: max-width .11s cubic-bezier(.2,0,.38,.9),background .11s cubic-bezier(.2,0,.38,.9);
+        transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
     outline: 0
 }
 
@@ -2013,7 +2035,7 @@ form#doc-form {
     font-weight: 400;
     line-height: 1.375;
     letter-spacing: 0;
-    caret-color: #fff;
+    caret-color: var(--search-local-hit-color);
     background-color: initial;
     border: 0;
     outline: 0;
