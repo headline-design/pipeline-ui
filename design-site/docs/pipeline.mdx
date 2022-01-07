@@ -14,6 +14,12 @@ WalletConnect and AlgoSigner are now supported in all Pipeline libraries!
 
 :::
 
+:::info
+
+Pipeline Class now supports ASA creation / NFT minting!
+
+:::
+
 
 Note: For faster loading, the codesandbox example below imports the Pipeline class from `@pipeline-ui-2/pipeline`. If you have installed `pipeline-ui`, the class is bundled with it and can be imported like below:
 
@@ -73,6 +79,7 @@ import {Table} from 'pipeline-ui';
   <tr><td>Pipeline.balance()</td><td>string (balance + "Algos")</td><td>Takes input string address. Pipeline.init not neccesary for use.</td></tr>
   <tr><td>Pipeline.connect()</td><td>string (address)</td><td>Generates pop-up to sign in. Must be called before Pipeline.send</td></tr>
   <tr><td>Pipeline.send()</td><td>string (transaction id) </td><td>Can only be called after Pipeline.init and Pipeline.connect.</td></tr>
+  <tr><td>Pipeline.createAsa()</td><td>string (transaction id) </td><td>Should only be called after Pipeline.init and Pipeline.connect.</td></tr>
     </tbody>
     </Table>
 
@@ -125,5 +132,47 @@ import {Table} from 'pipeline-ui';
        <tr><td>sendingAddress</td><td>string</td><td>senders's Algorand address</td></tr>
         <tr><td>wallet</td><td>reference</td><td>instance of Pipeline.init() that is called once in app</td></tr>
         <tr><td>index</td><td>integer</td><td>0 = Algorand, otherwise asset index number</td></tr>
+    </tbody>
+    </Table>
+
+### Pipeline.createAsa()
+
+<Table>
+  <thead>
+  <tr>
+    <th>Argument</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>asaObject </td><td>object</td><td>object containing parameters for the creation of an asset creation transaction </td></tr>
+    </tbody>
+    </Table>
+
+#### asaObject Fields
+
+<Table>
+  <thead>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Default value</th>
+  </tr>
+  </thead>
+    <tbody>
+      <tr><td>creator</td><td>string</td><td>empty string</td></tr>
+      <tr><td>note</td><td>string</td><td>empty string</td></tr>
+      <tr><td>amount</td><td>integer</td><td>1</td></tr>
+      <tr><td>decimals</td><td>integer</td><td>0</td></tr>
+      <tr><td>deafultFrozen</td><td>boolean</td><td>false</td></tr>
+      <tr><td>manager</td><td>string</td><td>undefined</td></tr>
+      <tr><td>clawback</td><td>string</td><td>undefined</td></tr>
+      <tr><td>reserve</td><td>string</td><td>undefined</td></tr>
+      <tr><td>freeze</td><td>string</td><td>undefined</td></tr>
+      <tr><td>assetName</td><td>string</td><td>empty string</td></tr>
+      <tr><td>assetUnit</td><td>string</td><td>assetName</td></tr>
+      <tr><td>assetURL</td><td>string</td><td>undefined</td></tr>
+      <tr><td>assetMetadataHash</td><td>string</td><td>undefined</td></tr>
     </tbody>
     </Table>
