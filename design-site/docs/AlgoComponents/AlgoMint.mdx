@@ -1,0 +1,93 @@
+# AlgoMint
+
+Clicking the `AlgoMint` button will assemble an ASA creation / NFT minting transaction and open a new window prompting the user to confirm the transaction. 
+
+:::info
+
+The rendered AlgoMint button below is nonfunctional. To see it in action, check out the [Component Demo!](../Demos/demo)
+
+:::
+
+:::caution
+
+The AlgoMint button executes transactions on the MainNet by default. To switch to TestNet, check out [SwitchNet Component](./SwitchNet)
+
+:::
+
+Upon confirmation, it returns the index number of the created ASA to the context and key specified. Failing to include to correct object parameters, or setting them incorrectly will result in a transaction not executing.
+
+import "regenerator-runtime/runtime.js";
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+export const BrowserOnlyButton = (props) => {
+  return (
+    <BrowserOnly>{() => {
+      const AlgoMint = require('pipeline-ui').AlgoMint;
+      return <AlgoMint asaObject={{}} />;
+      }
+    }
+    </BrowserOnly>
+    );
+    };
+
+<BrowserOnlyButton />
+
+## Accessing returned asset index
+
+The returned asset index can be accessed several different ways. Setting the `context` prop to `{this}` and the `returnTo` prop to a `state` key (as string) will return the number directly to your parent component's state without the need for additional callback or event handler code, but can also be accessed with an `onChange` handler:
+
+```jsx
+handleChange = (value) =>{
+    this.setState({asaId: value})
+  }
+
+  render(){
+    return <AlgoMint 
+              onChange={this.handleChange} 
+              asaObject={//your object goes here}
+            />
+  }
+```
+
+## Use Example
+```jsx
+import {AlgoButton, AlgoMint, Pipeline} from 'pipeline-ui'
+
+const asaData = {
+  creator: "",
+  note: "Hello",
+  amount: 2,
+  decimals: 0,
+  assetName: "AnotherNft",
+  unitName: "NFTA"
+}
+
+const wallet = Pipeline.init();
+
+<AlgoButton
+  wallet={wallet}
+  onChange={(address)=>{asaData.creator = address}}/>
+<AlgoMint
+      asaObject={asaData}
+      context={this}
+      returnTo={"asaIndex"}
+      />
+```
+
+### Props
+
+import {Table} from 'pipeline-ui';
+
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>asaObject</td><td>object</td><td></td><td>an object containing the algosdk keys and values for the creation of an Algorand standard asset</td></tr>
+    </tbody>
+    </Table>

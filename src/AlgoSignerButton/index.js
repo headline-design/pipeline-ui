@@ -7,8 +7,8 @@ import Button, { StyledButton } from '../Button/BaseButton'
 
 const brandColors = {
   baseColor: '#f16522',
-  hoverColor: '#f05d16',
-  activeColor: '#eb560f',
+  hoverColor: '#b5420b',
+  activeColor: '#f69b70',
   foregroundColor: '#FFFFFF',
 }
 

@@ -1,0 +1,64 @@
+# AlgoReadAppGlobal
+
+Clicking the `AlgoReadAppGlobal` button will fetch the global state of an app. 
+
+:::caution
+
+This button executes transactions on the MainNet by default. To switch to TestNet, check out [SwitchNet Component](./SwitchNet)
+
+:::
+
+Upon confirmation, it returns an array containing information about the global app state.
+
+import "regenerator-runtime/runtime.js";
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+export const BrowserOnlyButton = (props) => {
+  return (
+    <BrowserOnly>{() => {
+      const Pipeline = require ('pipeline-ui').Pipeline
+      const AlgoReadAppGlobal = require('pipeline-ui').AlgoReadAppGlobal;
+      Pipeline.init()
+      return <AlgoReadAppGlobal appId={539166481} onChange={(data)=>{alert(JSON.stringify(data))}} />;
+      }
+    }
+    </BrowserOnly>
+    );
+    };
+
+<BrowserOnlyButton />
+
+## Accessing returned data
+
+The returned array can be accessed several different ways. Setting the `context` prop to `{this}` and the `returnTo` prop to a `state` key (as string) will return the array directly to your parent component's state without the need for additional callback or event handler code, but can also be accessed with an `onChange` handler:
+
+```jsx
+handleChange = (value) =>{
+    this.setState({globalAppData: value})
+  }
+
+  render(){
+    return <AlgoDeleteApp
+              onChange={this.handleChange} 
+              appId={539166481}
+            />
+  }
+```
+
+### Props
+
+import {Table} from 'pipeline-ui';
+
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>appId</td><td>integer</td><td></td><td>index of the Algorand app</td></tr>
+    </tbody>
+    </Table>

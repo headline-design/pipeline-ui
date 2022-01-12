@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-
 import './index.css'
-
 import {
   Avatar,
   Blockie,
@@ -43,13 +41,31 @@ import {
   Pipeline,
   AlgoFetch,
   PipelineShell,
-  PipeChart
+  PipeChart,
+  AlgoMint,
+  AlgoDeploy,
+  AlgoOpt,
+  AlgoAppCall,
+  AlgoDeleteApp,
+  AlgoReadAppGlobal,
+  AlgoAppCallWTxn
 } from 'pipeline-ui'
+
+
 
 import { Algo, Btc } from '@pipeline-ui/icons'
 
 import TestForm from './components/TestForm'
 import BaseLineGrid from './components/BaseLineGrid'
+
+const asaData = {
+  creator: "",
+  note: "Hello",
+  amount: 2,
+  decimals: 0,
+  assetName: "AnotherNft",
+  unitName: "NFTA"
+}
 
 const testTheme = {
   ...theme,
@@ -73,10 +89,27 @@ const MyAlgoWallet = Pipeline.init();
 const testComponents = props => (
   <React.Fragment>
     <PipeChart width="100%" />
-    <AlgoButton wallet={MyAlgoWallet}/>
-    <AlgoWCButton wallet={MyAlgoWallet}/>
-    <AlgoSignerButton wallet={MyAlgoWallet}/>
-    <MultiWalletConnect wallet={MyAlgoWallet}/>
+    <AlgoButton wallet={MyAlgoWallet} onChange={(data)=>{asaData.creator = data}}/>
+    <AlgoWCButton wallet={MyAlgoWallet} onChange={(data)=>{asaData.creator = data}}/>
+    <AlgoSignerButton wallet={MyAlgoWallet} onChange={(data)=>{asaData.creator = data}}/>
+    <MultiWalletConnect wallet={MyAlgoWallet} onChange={(data)=>{asaData.creator = data}}/>
+    <Card>
+    <Flash variant={'warning'}>Some of the following buttons will generate transactions to sign in your Algorand Wallet with dummy data. We recommend rejecting the txns after clicking.</Flash><br></br>
+    <AlgoMint asaObject={asaData}/>
+    <AlgoDeploy/>
+    <AlgoOpt appId={123456}/>
+    <AlgoAppCall appId={123456} appArgs={[]} />
+    <AlgoDeleteApp appId={123456} />
+    <AlgoReadAppGlobal appId={539166481} onChange={(data)=>{alert(JSON.stringify(data))}}/>
+    <AlgoAppCallWTxn
+      appId={123456}
+      appArgs={[]}
+      receiver="C5E5W3BERJALL2ZH4YB3TAP7ZSJH2PJUPDHLGF74YE6DBMQ62AA47IXGNQ"
+      amount={0}
+      note=""
+      index={0}
+    />
+    </Card>
     <h1>H1 - {testText}</h1>
     <h2>H1 - {testText}</h2>
     <h3>H1 - {testText}</h3>

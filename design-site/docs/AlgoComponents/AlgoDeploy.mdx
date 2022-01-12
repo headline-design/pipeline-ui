@@ -1,0 +1,97 @@
+# AlgoDeploy
+
+Clicking the `AlgoDeploy` button will assemble an app deployment transaction and open a new window prompting the user to confirm the transaction. 
+
+:::info
+
+The rendered button below is nonfunctional. To see the action that it implements, check out: [Teal Contracts Lab](../Teal%20Contracts%20Lab/demo)
+
+:::
+
+:::caution
+
+The AlgoDeploy button executes transactions on the MainNet by default. To switch to TestNet, check out [SwitchNet Component](./SwitchNet)
+
+:::
+
+Upon signing, it returns app index (after 15 seconds) of the created App to the context and key specified. Failing to set props, or setting them incorrectly will result in a transaction not executing.
+
+import "regenerator-runtime/runtime.js";
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+export const BrowserOnlyButton = (props) => {
+  return (
+    <BrowserOnly>{() => {
+      const AlgoDeploy = require('pipeline-ui').AlgoDeploy;
+      return <AlgoDeploy />;
+      }
+    }
+    </BrowserOnly>
+    );
+    };
+
+<BrowserOnlyButton />
+
+## Accessing returned app index
+
+The returned app index can be accessed several different ways. Setting the `context` prop to `{this}` and the `returnTo` prop to a `state` key (as string) will return the number directly to your parent component's state without the need for additional callback or event handler code, but can also be accessed with an `onChange` handler:
+
+```jsx
+
+this.state = {
+  program: "",
+  clearProgram:"",
+  appArgs: [],
+  bytesInts: [],
+  appIndex
+}
+
+getContract = async () => {
+    let data = await fetch("teal/Permissionless_Voting.txt")
+    this.setState({program: data.text()})
+    let data2 = await fetch("teal/Permissionless_Voting_clear.txt")
+    this.setState({clearProgram: data2.text()})
+}
+
+componentDidMount(){
+  this.getContract()
+}
+
+
+handleChange = (value) =>{
+    this.setState({appIndex: value})
+  }
+
+  render(){
+    return 
+    
+    <AlgoDeploy
+      tealProgram={this.state.program}
+      tealClear={this.state.clearProgram}
+      bytesInts={this.state.bytesInts}
+      appArgs={this.state.appArgs}
+      onChange={this.handleChange}
+    />
+  }
+```
+
+### Props
+
+import {Table} from 'pipeline-ui';
+
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>tealProgram</td><td>string</td><td></td><td>Transaction Executional Approval Language program as string</td></tr>
+  <tr><td>tealClear</td><td>string</td><td></td><td>Transaction Executional Approval Language clear program as string</td></tr>
+  <tr><td>bytesInts</td><td>array</td><td></td><td>array of number of slots to allocate for program variables</td></tr>
+  <tr><td>appArgs</td><td>array</td><td></td><td>array of strings and/or numbers.</td></tr>
+    </tbody>
+    </Table>

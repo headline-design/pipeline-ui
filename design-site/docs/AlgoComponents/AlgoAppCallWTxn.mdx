@@ -1,0 +1,79 @@
+# AlgoAppCallWTxn
+
+Clicking the `AlgoAppCallWTxn` button will assemble an call and transfer/payment transaction and open a new window prompting the user to confirm the transaction. 
+
+:::info
+
+The rendered button below is nonfunctional. To see it in action, check out the [Component Demo!](../Demos/demo)
+
+:::
+
+:::caution
+
+The AlgoOpt button executes transactions on the MainNet by default. To switch to TestNet, check out [SwitchNet Component](./SwitchNet)
+
+:::
+
+Upon confirmation, it returns the transaction id to the context and key specified. Failing to include to correct object parameters, or setting them incorrectly will result in a transaction not executing.
+
+import "regenerator-runtime/runtime.js";
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+export const BrowserOnlyButton = (props) => {
+  return (
+    <BrowserOnly>{() => {
+      const AlgoAppCallWTxn = require('pipeline-ui').AlgoAppCallWTxn;
+      return <AlgoAppCallWTxn/>;
+      }
+    }
+    </BrowserOnly>
+    );
+    };
+
+<BrowserOnlyButton />
+
+## Accessing returned transaction id
+
+The returned id can be accessed several different ways. Setting the `context` prop to `{this}` and the `returnTo` prop to a `state` key (as string) will return the number directly to your parent component's state without the need for additional callback or event handler code, but can also be accessed with an `onChange` handler:
+
+```jsx
+handleChange = (value) =>{
+    this.setState({txId: value})
+  }
+
+  render(){
+    return 
+    <AlgoAppCallWTxn
+      appId={123456}
+      appArgs={[]}
+      receiver="C5E5W3BERJALL2ZH4YB3TAP7ZSJH2PJUPDHLGF74YE6DBMQ62AA47IXGNQ"
+      amount={0}
+      note=""
+      index={0}
+    />
+  }
+```
+
+
+### Props
+
+import {Table} from 'pipeline-ui';
+
+<Table>
+  <thead>
+  <tr>
+    <th>Prop</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>appId</td><td>integer</td><td></td><td>index of app to opt-in to</td></tr>
+  <tr><td>appArgs</td><td>array</td><td></td><td>array of integers/strings</td></tr>
+  <tr><td>receiver</td><td>string</td><td></td><td>receiver's Algorand address</td></tr>
+  <tr><td>amount</td><td>integer</td><td></td><td>amount to send in smallest units</td></tr>
+  <tr><td>note</td><td>string</td><td></td><td></td></tr>
+  <tr><td>index</td><td>integer</td><td></td><td>index of ASA, or 0 for Algos</td></tr>
+    </tbody>
+    </Table>
