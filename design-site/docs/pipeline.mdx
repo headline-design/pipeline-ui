@@ -16,8 +16,7 @@ WalletConnect and AlgoSigner are now supported in all Pipeline libraries!
 
 :::info
 
-Pipeline Class now supports ASA creation / NFT minting!
-
+Pipeline Class now supports ASA creation / NFT minting and smart contract deployment and interaction!
 :::
 
 
@@ -28,6 +27,12 @@ import { Pipeline } from 'pipeline-ui';
 ```
 
 Note: `Pipeline.connect`, `Pipeline.send` and `Pipeline.balance` are 'asyc' functions. They initally return a promise, so to get the returned data, the `.then(data => doSomeThingwithData)` notation must be used when calling them (if the returned data is needed.)
+
+:::info
+
+The following example is experiencing issues in codesandbox due to incompatability with some nodJS functions. If errors are encountered, try forking the linked gihub repo which will work without issues in VSCode or gitpod. 
+
+:::
 
 ## Use Example
 
@@ -40,6 +45,12 @@ The above example will send 1 micro Algo to the Headline Dev Team test account. 
 :::
 
 ## Fields/Properties
+
+:::info
+
+We have add a sizeable number of new smart contract methods to the Pipeline class. Documentation for these new methods will be coming soon! In the meantime, these new methods have all been implemented in the Pipeline-UI react library and documented in the `AlgoComponents` tab.
+
+:::
 
 The Pipeline class has several fields or properties that developers can use to change several settings for Pipeline.
 
