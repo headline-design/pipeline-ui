@@ -1,6 +1,6 @@
 # Overview
 
-The Smart Contract Command Lab is an online tool to experiment with deploying and using TEAL (Transaction Execution Approval Lanuage) smart contracts.
+The Pipeline Reach Lab is an online tool to experiment with deploying and using TEAL (Transaction Execution Approval Lanuage) smart contracts that have been created with the Reach language.
 
 :::tip
 
@@ -30,16 +30,6 @@ The demo's `log` window will only log messages provided by the Reach "frontend" 
 
 - • The Morra Game must be played with two seperate addresses (documented below)
 
-- • For the provided TEAL contracts, clicking `Deploy TEAL Contract` will merely deploy the smart contract with hard-coded global/local bytes/integers and the following initial appArgs: 
-
-```jsx
-let registrationStart = algosdk.encodeUint64(params.firstRound)
-let registrationEnd = algosdk.encodeUint64(params.firstRound + 1000)
-let voteStart = algosdk.encodeUint64(params.firstRound + 2000)
-let voteEnd = algosdk.encodeUint64(params.firstRound + 3000)
-```
-
-- • Custom TEAL contracts will also be only deployed, but `appArgs`, byte slices and local/global integers can be fully customized. Appargs are entered as an array of strings `["",""]` and formated behind the scenes by the Demo's code. 
 
 ## Morra Game
 
