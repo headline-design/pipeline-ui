@@ -1,0 +1,25 @@
+# Overview
+
+The `Algo Vote` tool allows DAO's ("decentralized autonomous organizations") to create and deploy a "permissioned" voting system. 
+
+## Instructions
+
+The deployer of the voting system:
+
+- • Creates a new Algorand Standard Asset (ASA) or "token", or inputs the index of an existing ASA 
+- • Deploys a "smart contract" that only allows 1 vote per address and only authorizes that vote when the specified token is transfered from the voter to the creator address
+- • Transfers the created tokens to the voters
+- • Integrates the generated widget code onto their website of choice
+
+The voter:
+
+- • "Opts in" to the ASA
+- • Waits for receipt of the ASA
+- • "Opts in" to the voting smart contract
+- • Transfers the token back to the creator along with an "app call" that specifies the voting option
+
+The deployer:
+
+- • May cancel the vote at any time by deleting the app or "smart contract"
+- • Can re-use the voting token is a subsequent vote
+

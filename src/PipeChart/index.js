@@ -17,7 +17,7 @@ const defaultOptions = {
     width: [3, 3, 3],
   },
   title: {
-    text: 'Algorand Blockchain Statistics',
+    text: 'HDL Transaction Statistics',
     align: 'left',
     offsetX: 110,
   },
@@ -122,9 +122,10 @@ class PipeChart extends Component {
     this.state = {
       options: props.options || defaultOptions,
       series: props.series || defaultSeries,
-      labels: [],
+      labels: props.labels || [],
       interval: props.interval || 20000,
       width: props.width || '80%',
+      type: props.type || 'area',
       url:
         props.url ||
         'https://indexer.algoexplorerapi.io/stats/v2/movements?time-start=1638618727&interval=6H&asset-id=137594422',
@@ -162,7 +163,17 @@ class PipeChart extends Component {
     let data = await fetch(this.state.url)
     let dataObject = await data.json()
     let newSeries = this.state.parse(dataObject)
-    this.setState({ series: newSeries })
+    if (newSeries.length === 2 && typeof newSeries[0][0] === 'number') {
+      this.setState({ series: newSeries[0] })
+      this.setState({
+        options: {
+          ...this.state.options,
+          labels: newSeries[1],
+        },
+      })
+    } else {
+      this.setState({ series: newSeries })
+    }
   }
 
   render() {
@@ -173,7 +184,7 @@ class PipeChart extends Component {
           options={this.state.options}
           yaxis={this.state.yaxis}
           series={this.state.series}
-          type="area"
+          type={this.state.type}
           labels={this.state.labels}
         />
       </div>

@@ -100,7 +100,7 @@ const testComponents = props => (
     <AlgoOpt appId={123456}/>
     <AlgoAppCall appId={123456} appArgs={[]} />
     <AlgoDeleteApp appId={123456} />
-    <AlgoReadAppGlobal appId={539166481} onChange={(data)=>{alert(JSON.stringify(data))}}/>
+    <AlgoReadAppGlobal appId={562238635} onChange={(data)=>{alert(JSON.stringify(data))}}/>
     <AlgoAppCallWTxn
       appId={123456}
       appArgs={[]}
