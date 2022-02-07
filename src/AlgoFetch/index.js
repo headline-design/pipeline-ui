@@ -8,7 +8,7 @@ export default function AlgoFetch(props) {
 
   async function getData() {
     let url2 =
-      'https://algoexplorerapi.io/idx2/v2/accounts/' +
+      'https://indexer.algoexplorerapi.io/v2/accounts/' +
       props.address +
       '/transactions?limit=5'
 
