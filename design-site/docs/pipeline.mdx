@@ -19,6 +19,23 @@ WalletConnect and AlgoSigner are now supported in all Pipeline libraries!
 Pipeline Class now supports ASA creation / NFT minting and smart contract deployment and interaction!
 :::
 
+## Use in browser (NEW!)
+
+```html
+<button onclick="connect()">TEST</button>
+
+<script src="https://unpkg.com/@pipeline-ui-2/pipeline@1.3.4/dist/index.js"></script>
+
+<script>
+    const Pipeline = window.pipeline
+    const wallet = Pipeline.init()
+    function connect(){
+        Pipeline.connect(wallet).then(data => {
+            console.log(data)
+        })
+    }
+</script>
+```
 
 Note: For faster loading, the codesandbox example below imports the Pipeline class from `@pipeline-ui-2/pipeline`. If you have installed `pipeline-ui`, the class is bundled with it and can be imported like below:
 
