@@ -1,0 +1,41 @@
+# Stack Trace
+
+:::info
+
+Stack Trace is a work-in-progress open-source project to create an easy-to-use JavaScript TEAL interpreter and debugger. Stack trace currently supports 29 TEAL opcodes. Instructions and source code can be found on [Github](https://github.com/headline-design/stack-trace)
+
+:::
+
+import {useEffect} from 'react'
+
+import main from './browserMain.js'
+
+export function Tracer() {
+    useEffect(() => main(""))
+    return(
+    <div align="center" style={{"background-color":"black !important"}}>
+    <h1>Stack Trace</h1>
+    <textarea id="myTeal" placeholder="paste some TEAL here!" style={{size: 20}}/>
+    <button onClick={() => {
+        main(document.getElementById("myTeal").value)
+        }}>Compile and Trace
+        </button>
+    <table>
+        <thead>
+            <td>TEAL</td>
+            <td>Stack</td>
+            <td>Storage</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="teal"></td>
+                <td id="stackLog"></td>
+                <td id="log"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    )
+}
+
+<Tracer/>
