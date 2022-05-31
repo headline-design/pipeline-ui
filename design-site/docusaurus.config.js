@@ -41,7 +41,11 @@ module.exports = {
       textColor: '#091E42', // Defaults to `#000`.
       isCloseable: false // Defaults to `true`.
     },
-    hideableSidebar: true,
+    docs: {
+      sidebar: {
+        hideable: true
+      }
+    },
     navbar: {
       title: 'PIPELINE-UI',
       logo: {

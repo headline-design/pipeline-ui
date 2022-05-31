@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpipeline_ui_website=self.webpackChunkpipeline_ui_website||[]).push([[1760],{2806:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/client","name":"client","count":1,"permalink":"/blog/tags/client"}')}}]);
