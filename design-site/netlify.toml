@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build"
-  publish = "build"
+  NETLIFY_USE_YARN = "true"
+  YARN_VERSION = "1.22.5"
+  NODE_VERSION = "16"
 
   [[headers]]
   for = "/pipeline-report"
