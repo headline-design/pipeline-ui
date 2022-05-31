@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
-  publish = "build"
+  command = "npm run serve"
+  publish = "serve"
 
   [[headers]]
   for = "/pipeline-report"
