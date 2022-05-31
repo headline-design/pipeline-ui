@@ -1,0 +1,36 @@
+# Overview
+
+The `ARC Minter` tool allows users to create assets (NFTs) on the Algorand network.
+
+It supports creation of assets using the ARC-19 and ARC-69 standards.
+
+## ARC-19 Asset Standard
+
+The ARC-19 standard uses the 'Reserve Address' to store the pointer to the IPFS data.
+
+More information about the ARC-19 standard is available here:
+
+https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0019.md
+
+## ARC19 Minting
+
+1. Upload image or file to IPFS.
+2. Choose an Asset Name for your NFT.
+3. Choose a Unit Name for your NFT.
+4. Write a solid description of your NFT.
+5. Choose how many decimals you want for your NFT (0 is the recommended number).
+6. Change the Image Mimetype if you are inclined.
+7. Use the Advanced JSON Editor to add additional properties to your NFT’s JSON object.
+8. Upload the JSON object to IPFS.
+9. Add an additional note field if you are so inclined.
+10. At this point, you must sign in with your Algorand wallet if you have not already. Perra Wallet and MyAlgo are both supported at launch.
+11. Sign the Asset creation transaction.
+12. Wait approximately 15 seconds for your asset number to be returned.
+13. Review the NFT details via NFTExplorer, ARC3.xyz, or any other provider that supports ARC19 NFTs.
+
+## ARC19 Configuration
+
+1. Paste your asset ID into the Asset Index field. Click “Fetch Metadata” to pre-populate fields with your latest JSON object.
+2. Modify your new JSON object with the decimals, image mimetype, unit name, description, and advanced editor fields.
+3. Upload your new JSON object to IPFS.
+4. Complete any additional asset config fields if you are so inclined. Sign the asset config transaction. You have now minted and modified an ARC19 NFT! chain. 
