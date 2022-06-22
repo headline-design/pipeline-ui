@@ -153,6 +153,14 @@
      source: 'https://app.nftjam.net/',
      tags: ['opensource','algorand'],
    },
+   {
+     title: 'Althena',
+     description: 'The goal of Althena is to deliver the best market prices for traders and developers by aggregating over multiple decentralized exchanges, market makers, and lending protocols.',
+     preview: require('./showcase/althena.png'),
+     website: 'https://www.althena.io/',
+     source: 'https://github.com/nnnggel/althena',
+     tags: ['opensource','algorand'],
+   },
   ]
  
  export const TagList = Object.keys(Tags);
